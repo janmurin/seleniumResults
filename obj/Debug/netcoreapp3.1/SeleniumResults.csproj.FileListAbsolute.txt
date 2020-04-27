@@ -1,0 +1,14 @@
+C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\SeleniumResults.exe
+C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\SeleniumResults.deps.json
+C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\SeleniumResults.runtimeconfig.json
+C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\SeleniumResults.runtimeconfig.dev.json
+C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\SeleniumResults.dll
+C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\SeleniumResults.pdb
+C:\DATA\Repositories\SeleniumResults\obj\Debug\netcoreapp3.1\SeleniumResults.csprojAssemblyReference.cache
+C:\DATA\Repositories\SeleniumResults\obj\Debug\netcoreapp3.1\SeleniumResults.AssemblyInfoInputs.cache
+C:\DATA\Repositories\SeleniumResults\obj\Debug\netcoreapp3.1\SeleniumResults.AssemblyInfo.cs
+C:\DATA\Repositories\SeleniumResults\obj\Debug\netcoreapp3.1\SeleniumResults.dll
+C:\DATA\Repositories\SeleniumResults\obj\Debug\netcoreapp3.1\SeleniumResults.pdb
+C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\HtmlAgilityPack.dll
+C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\DATA\Repositories\SeleniumResults\obj\Debug\netcoreapp3.1\SeleniumResults.csproj.CopyComplete

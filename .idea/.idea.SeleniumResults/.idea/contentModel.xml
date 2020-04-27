@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\DATA\Repositories\SeleniumResults" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="DATA" t="Include">
+        <e p="desktop.ini" t="Include" />
+        <e p="sel (1).html" t="Include" />
+        <e p="sel (10).html" t="Include" />
+        <e p="sel (100).html" t="Include" />
+        <e p="sel (101).html" t="Include" />
+        <e p="sel (102).html" t="Include" />
+        <e p="sel (103).html" t="Include" />
+        <e p="sel (104).html" t="Include" />
+        <e p="sel (105).html" t="Include" />
+        <e p="sel (106).html" t="Include" />
+        <e p="sel (107).html" t="Include" />
+        <e p="sel (108).html" t="Include" />
+        <e p="sel (109).html" t="Include" />
+        <e p="sel (11).html" t="Include" />
+        <e p="sel (110).html" t="Include" />
+        <e p="sel (111).html" t="Include" />
+        <e p="sel (112).html" t="Include" />
+        <e p="sel (113).html" t="Include" />
+        <e p="sel (114).html" t="Include" />
+        <e p="sel (115).html" t="Include" />
+        <e p="sel (116).html" t="Include" />
+        <e p="sel (117).html" t="Include" />
+        <e p="sel (118).html" t="Include" />
+        <e p="sel (119).html" t="Include" />
+        <e p="sel (12).html" t="Include" />
+        <e p="sel (120).html" t="Include" />
+        <e p="sel (121).html" t="Include" />
+        <e p="sel (122).html" t="Include" />
+        <e p="sel (123).html" t="Include" />
+        <e p="sel (124).html" t="Include" />
+        <e p="sel (125).html" t="Include" />
+        <e p="sel (13).html" t="Include" />
+        <e p="sel (14).html" t="Include" />
+        <e p="sel (15).html" t="Include" />
+        <e p="sel (16).html" t="Include" />
+        <e p="sel (17).html" t="Include" />
+        <e p="sel (18).html" t="Include" />
+        <e p="sel (19).html" t="Include" />
+        <e p="sel (2).html" t="Include" />
+        <e p="sel (20).html" t="Include" />
+        <e p="sel (21).html" t="Include" />
+        <e p="sel (22).html" t="Include" />
+        <e p="sel (23).html" t="Include" />
+        <e p="sel (24).html" t="Include" />
+        <e p="sel (25).html" t="Include" />
+        <e p="sel (26).html" t="Include" />
+        <e p="sel (27).html" t="Include" />
+        <e p="sel (28).html" t="Include" />
+        <e p="sel (29).html" t="Include" />
+        <e p="sel (3).html" t="Include" />
+        <e p="sel (30).html" t="Include" />
+        <e p="sel (31).html" t="Include" />
+        <e p="sel (32).html" t="Include" />
+        <e p="sel (33).html" t="Include" />
+        <e p="sel (34).html" t="Include" />
+        <e p="sel (35).html" t="Include" />
+        <e p="sel (36).html" t="Include" />
+        <e p="sel (37).html" t="Include" />
+        <e p="sel (38).html" t="Include" />
+        <e p="sel (39).html" t="Include" />
+        <e p="sel (4).html" t="Include" />
+        <e p="sel (40).html" t="Include" />
+        <e p="sel (41).html" t="Include" />
+        <e p="sel (42).html" t="Include" />
+        <e p="sel (43).html" t="Include" />
+        <e p="sel (44).html" t="Include" />
+        <e p="sel (45).html" t="Include" />
+        <e p="sel (46).html" t="Include" />
+        <e p="sel (47).html" t="Include" />
+        <e p="sel (48).html" t="Include" />
+        <e p="sel (49).html" t="Include" />
+        <e p="sel (5).html" t="Include" />
+        <e p="sel (50).html" t="Include" />
+        <e p="sel (51).html" t="Include" />
+        <e p="sel (52).html" t="Include" />
+        <e p="sel (53).html" t="Include" />
+        <e p="sel (54).html" t="Include" />
+        <e p="sel (55).html" t="Include" />
+        <e p="sel (56).html" t="Include" />
+        <e p="sel (57).html" t="Include" />
+        <e p="sel (58).html" t="Include" />
+        <e p="sel (59).html" t="Include" />
+        <e p="sel (6).html" t="Include" />
+        <e p="sel (60).html" t="Include" />
+        <e p="sel (61).html" t="Include" />
+        <e p="sel (62).html" t="Include" />
+        <e p="sel (63).html" t="Include" />
+        <e p="sel (64).html" t="Include" />
+        <e p="sel (65).html" t="Include" />
+        <e p="sel (66).html" t="Include" />
+        <e p="sel (67).html" t="Include" />
+        <e p="sel (68).html" t="Include" />
+        <e p="sel (69).html" t="Include" />
+        <e p="sel (7).html" t="Include" />
+        <e p="sel (70).html" t="Include" />
+        <e p="sel (71).html" t="Include" />
+        <e p="sel (72).html" t="Include" />
+        <e p="sel (73).html" t="Include" />
+        <e p="sel (74).html" t="Include" />
+        <e p="sel (75).html" t="Include" />
+        <e p="sel (76).html" t="Include" />
+        <e p="sel (77).html" t="Include" />
+        <e p="sel (78).html" t="Include" />
+        <e p="sel (79).html" t="Include" />
+        <e p="sel (8).html" t="Include" />
+        <e p="sel (80).html" t="Include" />
+        <e p="sel (81).html" t="Include" />
+        <e p="sel (82).html" t="Include" />
+        <e p="sel (83).html" t="Include" />
+        <e p="sel (84).html" t="Include" />
+        <e p="sel (85).html" t="Include" />
+        <e p="sel (86).html" t="Include" />
+        <e p="sel (87).html" t="Include" />
+        <e p="sel (88).html" t="Include" />
+        <e p="sel (89).html" t="Include" />
+        <e p="sel (9).html" t="Include" />
+        <e p="sel (90).html" t="Include" />
+        <e p="sel (91).html" t="Include" />
+        <e p="sel (92).html" t="Include" />
+        <e p="sel (93).html" t="Include" />
+        <e p="sel (94).html" t="Include" />
+        <e p="sel (95).html" t="Include" />
+        <e p="sel (96).html" t="Include" />
+        <e p="sel (97).html" t="Include" />
+        <e p="sel (98).html" t="Include" />
+        <e p="sel (99).html" t="Include" />
+        <e p="selen (1).html" t="Include" />
+        <e p="selen (10).html" t="Include" />
+        <e p="selen (11).html" t="Include" />
+        <e p="selen (12).html" t="Include" />
+        <e p="selen (13).html" t="Include" />
+        <e p="selen (14).html" t="Include" />
+        <e p="selen (15).html" t="Include" />
+        <e p="selen (16).html" t="Include" />
+        <e p="selen (17).html" t="Include" />
+        <e p="selen (18).html" t="Include" />
+        <e p="selen (19).html" t="Include" />
+        <e p="selen (2).html" t="Include" />
+        <e p="selen (20).html" t="Include" />
+        <e p="selen (21).html" t="Include" />
+        <e p="selen (22).html" t="Include" />
+        <e p="selen (23).html" t="Include" />
+        <e p="selen (24).html" t="Include" />
+        <e p="selen (25).html" t="Include" />
+        <e p="selen (26).html" t="Include" />
+        <e p="selen (27).html" t="Include" />
+        <e p="selen (28).html" t="Include" />
+        <e p="selen (29).html" t="Include" />
+        <e p="selen (3).html" t="Include" />
+        <e p="selen (30).html" t="Include" />
+        <e p="selen (31).html" t="Include" />
+        <e p="selen (32).html" t="Include" />
+        <e p="selen (33).html" t="Include" />
+        <e p="selen (34).html" t="Include" />
+        <e p="selen (35).html" t="Include" />
+        <e p="selen (36).html" t="Include" />
+        <e p="selen (37).html" t="Include" />
+        <e p="selen (38).html" t="Include" />
+        <e p="selen (39).html" t="Include" />
+        <e p="selen (4).html" t="Include" />
+        <e p="selen (40).html" t="Include" />
+        <e p="selen (41).html" t="Include" />
+        <e p="selen (42).html" t="Include" />
+        <e p="selen (43).html" t="Include" />
+        <e p="selen (44).html" t="Include" />
+        <e p="selen (5).html" t="Include" />
+        <e p="selen (6).html" t="Include" />
+        <e p="selen (7).html" t="Include" />
+        <e p="selen (8).html" t="Include" />
+        <e p="selen (9).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (1).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (10).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (100).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (11).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (12).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (13).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (14).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (15).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (16).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (17).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (18).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (19).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (2).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (20).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (21).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (22).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (23).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (24).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (25).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (26).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (27).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (28).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (29).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (3).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (30).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (31).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (32).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (33).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (34).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (35).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (36).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (37).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (38).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (39).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (4).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (40).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (41).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (42).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (43).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (44).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (45).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (46).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (47).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (48).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (49).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (5).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (50).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (51).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (52).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (53).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (54).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (55).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (56).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (57).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (58).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (59).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (6).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (60).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (61).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (62).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (63).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (64).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (65).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (66).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (67).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (68).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (69).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (7).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (70).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (71).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (72).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (73).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (74).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (75).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (76).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (77).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (78).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (79).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (8).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (80).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (81).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (82).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (83).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (84).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (85).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (86).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (87).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (88).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (89).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (9).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (90).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (91).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (92).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (93).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (94).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (95).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (96).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (97).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (98).html" t="Include" />
+        <e p="selenium-TEST-RESULTS (99).html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-01-29T201932.575.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-01-29T222033.175.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-01-29T222527.731.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-01-30T145807.589.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-01-30T184010.713.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-03T143825.266.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-03T160045.464.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-04T064231.646.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-04T064311.248.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-04T112323.494.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-04T170818.912.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-05T073102.287.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-05T083413.338.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-05T083936.032.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-05T084307.493.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-05T141027.658.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-05T141047.035.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-06T090404.339.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-06T135623.067.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-06T170708.488.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-06T205427.043.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-06T210342.587.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-06T211032.239.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-06T211109.810.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-06T222213.364.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-06T225340.077.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-06T231934.117.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-06T233021.417.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-06T233025.895.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-07T123647.757.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-07T163337.746.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-10T165712.897.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-11T112202.550.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-11T131433.921.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-11T141805.340.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-11T150933.674.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-11T160417.930.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T101428.753.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T110402.141.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T115233.053.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T115306.765.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T123031.098.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T130722.444.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T131320.991.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T131340.127.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T131359.394.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T133917.902.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T133930.344.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T134034.638.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T134044.078.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T135424.551.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T162708.440.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T163613.089.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T204850.271.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T213506.160.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-12T221352.276.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-13T094204.032.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-13T095307.216.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-13T103419.334.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-13T105723.082.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-13T110647.858.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-13T113059.998.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-14T103202.956.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-14T111451.967.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-14T111454.230.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-14T111517.801.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-14T130909.803.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-14T131058.043.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-14T133934.461.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-14T144221.647.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-14T144229.132.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-14T182556.389.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-14T183124.384.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-14T200152.478.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-14T200156.344.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-17T131104.574.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-17T131110.207.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-17T133942.445.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-17T133950.482.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-18T073337.197.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-18T073341.920.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-18T183624.489.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-18T183628.775.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-19T101338.602.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T100219.319.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T100237.138.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T100240.967.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T100257.910.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T100304.007.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T100327.106.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T100400.033.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T100409.827.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T100423.421.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T100428.347.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T112155.787.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T112205.601.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T140351.046.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T140403.492.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T141518.157.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T152308.298.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-20T152313.190.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-27T123529.787.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-27T123608.775.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-27T134320.822.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-27T134326.386.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-27T144208.106.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-28T102109.218.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-28T102122.636.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-28T110008.875.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-28T143419.653.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-28T143513.831.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-28T143518.324.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-02-28T143542.113.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-02T094726.379.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-02T114309.826.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-02T121619.565.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-02T122838.074.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-02T122853.345.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-02T150450.284.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-02T173025.406.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-02T173946.008.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-03T091952.768.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-04T125325.289.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-04T140737.463.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-04T140743.551.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-04T144446.417.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-05T074901.728.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-05T074911.085.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-05T090852.787.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-05T090907.608.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-06T115912.975.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-06T185859.949.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-06T191013.403.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-07T124739.315.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-07T124917.128.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-09T105912.597.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-11T084438.159.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-11T084519.881.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-11T135907.979.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-11T160418.060.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-16T221510.204.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-17T083019.283.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-17T083026.021.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-17T092834.098.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-17T092841.312.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-17T110857.047.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-17T110910.068.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-18T081214.361.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-18T081219.245.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-18T090139.299.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-18T090144.361.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-18T223404.332.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-24T105717.035.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-24T105742.216.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-24T105800.980.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-24T201910.286.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-25T082009.471.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-25T181311.174.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-26T082707.026.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-26T201415.154.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-03-26T201420.930.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-04-03T193452.905.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-04-07T140011.507.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-04-08T093255.193.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-04-08T093322.856.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-04-08T113715.708.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-04-08T114306.568.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-04-09T082318.553.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-04-09T082345.591.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-04-09T082413.501.html" t="Include" />
+        <e p="selenium-TEST-RESULTS - 2020-04-24T174533.984.html" t="Include" />
+        <e p="selenium-TEST-RESULTS.html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (1).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (10).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (11).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (12).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (13).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (14).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (15).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (16).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (17).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (18).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (19).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (2).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (20).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (21).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (22).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (23).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (24).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (25).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (26).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (27).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (28).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (29).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (3).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (30).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (31).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (32).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (33).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (34).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (35).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (36).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (37).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (38).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (39).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (4).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (40).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (41).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (42).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (43).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (44).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (45).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (46).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (47).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (48).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (49).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (5).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (50).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (51).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (52).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (53).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (54).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (55).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (56).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (57).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (58).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (59).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (6).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (7).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (8).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS (9).html" t="Include" />
+        <e p="selenium2-TEST-RESULTS.html" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="SeleniumResults.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+      <e p="ResultData.cs" t="Include" />
+      <e p="SeleniumResult.cs" t="Include" />
+      <e p="SeleniumResults.csproj" t="IncludeRecursive" />
+      <e p="SeleniumResults.sln" t="IncludeFlat" />
+      <e p="TestStats.cs" t="Include" />
+    </e>
+    <e p="C:\Users\Murin Jan\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Murin Jan\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_SeleniumResults.603230407.00" t="ExcludeRecursive" />
+  </component>
+</project>
