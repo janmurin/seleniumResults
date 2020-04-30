@@ -10,6 +10,14 @@ namespace SeleniumResults
 
         public List<TestStats> OrderedData =>
             ResultDict.Values.OrderByDescending(x => x.Sel1Failures + x.Sel2Failures).ToList();
+        
+        public string MostRecentTime
+        {
+            get
+            {
+                return ResultDict.Values.OrderByDescending(x => x.GetMostRecentTime()).ToArray()[0].GetMostRecentTime();
+            }
+        }
 
         public void AddResults(List<SeleniumResult> results)
         {

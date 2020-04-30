@@ -12,12 +12,26 @@ namespace SeleniumResults
             Results = new HashSet<SeleniumResult>() {sr};
         }
 
-        public string Name { get; set; }
-        public HashSet<SeleniumResult> Results { get; set; }
+        public string Name { get; }
+        public HashSet<SeleniumResult> Results { get; }
         public int Sel1Failures => Results.Count(x => x.IsFailure && !x.IsSel2);
         public int Sel2Failures => Results.Count(x => x.IsFailure && x.IsSel2);
         public int Sel1Count => Results.Count(x => !x.IsSel2);
         public int Sel2Count => Results.Count(x => x.IsSel2);
+        private string MostRecentTime { get; set; }
+
+        public string GetMostRecentTime()
+        {
+            if (MostRecentTime == null)
+            {
+                if (Results.Any())
+                {
+                    MostRecentTime = Results.OrderByDescending(x => x.Time).ToArray()[0].Time;
+                }
+            }
+
+            return MostRecentTime;
+        }
 
         public override string ToString()
         {

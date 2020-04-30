@@ -130,6 +130,37 @@
         <e p="sel (97).html" t="Include" />
         <e p="sel (98).html" t="Include" />
         <e p="sel (99).html" t="Include" />
+        <e p="sele (1).html" t="Include" />
+        <e p="sele (10).html" t="Include" />
+        <e p="sele (11).html" t="Include" />
+        <e p="sele (12).html" t="Include" />
+        <e p="sele (13).html" t="Include" />
+        <e p="sele (14).html" t="Include" />
+        <e p="sele (15).html" t="Include" />
+        <e p="sele (16).html" t="Include" />
+        <e p="sele (17).html" t="Include" />
+        <e p="sele (18).html" t="Include" />
+        <e p="sele (19).html" t="Include" />
+        <e p="sele (2).html" t="Include" />
+        <e p="sele (20).html" t="Include" />
+        <e p="sele (21).html" t="Include" />
+        <e p="sele (22).html" t="Include" />
+        <e p="sele (23).html" t="Include" />
+        <e p="sele (24).html" t="Include" />
+        <e p="sele (25).html" t="Include" />
+        <e p="sele (26).html" t="Include" />
+        <e p="sele (27).html" t="Include" />
+        <e p="sele (28).html" t="Include" />
+        <e p="sele (29).html" t="Include" />
+        <e p="sele (3).html" t="Include" />
+        <e p="sele (30).html" t="Include" />
+        <e p="sele (31).html" t="Include" />
+        <e p="sele (4).html" t="Include" />
+        <e p="sele (5).html" t="Include" />
+        <e p="sele (6).html" t="Include" />
+        <e p="sele (7).html" t="Include" />
+        <e p="sele (8).html" t="Include" />
+        <e p="sele (9).html" t="Include" />
         <e p="selen (1).html" t="Include" />
         <e p="selen (10).html" t="Include" />
         <e p="selen (11).html" t="Include" />
@@ -174,6 +205,7 @@
         <e p="selen (7).html" t="Include" />
         <e p="selen (8).html" t="Include" />
         <e p="selen (9).html" t="Include" />
+        <e p="selen34.html" t="Include" />
         <e p="selenium-TEST-RESULTS (1).html" t="Include" />
         <e p="selenium-TEST-RESULTS (10).html" t="Include" />
         <e p="selenium-TEST-RESULTS (100).html" t="Include" />
@@ -521,7 +553,17 @@
       <e p="SeleniumResults.csproj" t="IncludeRecursive" />
       <e p="SeleniumResults.sln" t="IncludeFlat" />
       <e p="TestStats.cs" t="Include" />
+      <e p="unprocessed" t="Include">
+        <e p="1.0.9903-sel1-bv.zip" t="Include" />
+        <e p="1.0.9903-sel1-bvv.zip" t="Include" />
+        <e p="1.0.9903-sel1-car.zip" t="Include" />
+        <e p="1.0.9903-sel1-ppt.zip" t="Include" />
+        <e p="1.0.9903-sel1-scc.zip" t="Include" />
+        <e p="1.0.9903-sel2-car.zip" t="Include" />
+        <e p="1.0.9903-sel2-ppt.zip" t="Include" />
+      </e>
     </e>
+    <e p="C:\Users\Murin Jan\.Rider2019.3\config\scratches" t="IncludeRecursive" />
     <e p="C:\Users\Murin Jan\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Murin Jan\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_SeleniumResults.603230407.00" t="ExcludeRecursive" />
   </component>

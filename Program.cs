@@ -9,7 +9,7 @@ namespace SeleniumResults
     class Program
     {
         private static readonly ResultData ResultData = new ResultData();
-        private const int FAILURE_THRESHOLD = 11; 
+        private const int FAILURE_THRESHOLD = 11;
 
         static void Main(string[] args)
         {
@@ -28,6 +28,7 @@ namespace SeleniumResults
 
             Console.WriteLine($"\n FILES WITH MORE THAN {FAILURE_THRESHOLD} FAILURES SKIPPED");
             Console.WriteLine($"skipped duplicate test results count: {ResultData.TotalDuplicates}\n");
+            Console.WriteLine($"most recent time: {ResultData.MostRecentTime}");
             Console.WriteLine($"{"test:",40} {"Selenium1",12} {"Selenium2",12}");
             var orderedResults = ResultData.OrderedData;
 
@@ -35,6 +36,13 @@ namespace SeleniumResults
             {
                 Console.WriteLine(or);
             }
+
+            var stats = orderedResults.First(x => x.Name == "JournalFromClientDetailsSmokeTest");
+            var results = stats.Results
+                .Where(x => x.IsSel2)
+                .OrderByDescending(x => x.Time).ToList();
+            Console.WriteLine(
+                $"JournalFromClientDetailsSmokeTest: {string.Join(",", results)}");
         }
 
         private static void ProcessFile(string fileName, int idx)
@@ -42,7 +50,6 @@ namespace SeleniumResults
             string shortName = fileName.Substring(fileName.LastIndexOf('\\') + 1);
             Console.Write($"{idx}. filename: {shortName,35}");
 
-            bool isSel2 = fileName.Contains("selenium2");
             HtmlDocument htmlDoc = new HtmlDocument();
             htmlDoc.OptionFixNestedTags = true;
             htmlDoc.Load(fileName);
@@ -61,7 +68,7 @@ namespace SeleniumResults
                 {
                     foreach (var card in cards)
                     {
-                        results.Add(ParseCard(card, isSel2));
+                        results.Add(ParseCard(card));
                     }
                 }
 
@@ -75,10 +82,11 @@ namespace SeleniumResults
             }
         }
 
-        private static SeleniumResult ParseCard(HtmlNode card, bool isSel2)
+        private static SeleniumResult ParseCard(HtmlNode card)
         {
+            // C:\TestResults\Selenium\
             SeleniumResult sr = new SeleniumResult();
-            sr.IsSel2 = isSel2;
+            sr.IsSel2 = card.SelectSingleNode("//div[@id='modal1']").InnerText.Contains("C:\\TestResults\\Selenium2\\");
             sr.Name = card.SelectSingleNode(".//span[@class='fixture-name']").InnerText;
             sr.IsFailure = card.SelectSingleNode(".//span[contains(@class, 'fixture-result')]").HasClass("failed");
             sr.Time = card.SelectSingleNode(".//span[@class='endedAt']").InnerText;
