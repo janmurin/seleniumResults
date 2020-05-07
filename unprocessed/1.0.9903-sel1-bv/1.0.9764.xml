@@ -1,0 +1,1513 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="57" result="Failed" total="51" passed="0" failed="51" inconclusive="0" skipped="0" asserts="0" engine-version="3.9.0.0" clr-version="4.0.30319.42000" start-time="2020-04-08 09:01:47Z" end-time="2020-04-08 09:03:37Z" duration="110.450054">
+  <command-line><![CDATA["C:\Program Files (x86)\Visma Unique AS\Visma Flyt BV Selenium\NunitConsoleRunner\nunit3-console.exe" --result:"C:\TestResults\Selenium\1.0.9764.xml" "C:\Program Files (x86)\Visma Unique AS\Visma Flyt BV Selenium\Flow.Tests.Selenium.dll" --where "cat == BasicSmoke" ]]></command-line>
+  <filter>
+    <cat>BasicSmoke</cat>
+  </filter>
+  <test-suite type="Assembly" id="0-1102" name="Flow.Tests.Selenium.dll" fullname="C:\Program Files (x86)\Visma Unique AS\Visma Flyt BV Selenium\Flow.Tests.Selenium.dll" runstate="Runnable" testcasecount="57" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:03:37Z" duration="109.461138" total="51" passed="0" failed="51" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.10.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.14393.0" platform="Win32NT" cwd="C:\Octopus\Work\20200408090144-258916-3246\Deployment\Scripts\Octopus" machine-name="FLYTCHILDWEB902" user="SYSTEM" user-domain="FLYTTEST" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Octopus\Work\20200408090144-258916-3246\Deployment\Scripts\Octopus" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.1" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="2" />
+    </settings>
+    <properties>
+      <property name="_PID" value="7752" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1103" name="Flow" fullname="Flow" runstate="Runnable" testcasecount="57" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:03:37Z" duration="109.438859" total="51" passed="0" failed="51" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <properties />
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="0-1104" name="Tests" fullname="Flow.Tests" runstate="Runnable" testcasecount="57" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:03:37Z" duration="109.438315" total="51" passed="0" failed="51" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="0-1105" name="Selenium" fullname="Flow.Tests.Selenium" runstate="Runnable" testcasecount="57" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:03:37Z" duration="109.438299" total="51" passed="0" failed="51" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="0-1106" name="Tests" fullname="Flow.Tests.Selenium.Tests" runstate="Runnable" testcasecount="57" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:03:37Z" duration="109.438289" total="51" passed="0" failed="51" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="0-1000" name="LoginSmokeTest" fullname="Flow.Tests.Selenium.Tests.LoginSmokeTest" classname="Flow.Tests.Selenium.Tests.LoginSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:01:59Z" duration="11.379895" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+              </failure>
+              <output><![CDATA[=============== LoginSmokeTest started at: 4/8/2020 11:01:57 AM ===============
+---> LoginSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> LoginSmokeTest Config[SeleniumBrowser]: chrome
+---> LoginSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> LoginSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+              <test-case id="0-1001" name="CheckLogin" fullname="Flow.Tests.Selenium.Tests.LoginSmokeTest.CheckLogin" methodname="CheckLogin" classname="Flow.Tests.Selenium.Tests.LoginSmokeTest" runstate="Runnable" seed="1573701624" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                <properties>
+                  <property name="Category" value="BasicSmoke" />
+                  <property name="CustomRetry" value="3" />
+                </properties>
+                <failure>
+                  <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                </failure>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestSuite" id="0-1117" name="Regression" fullname="Flow.Tests.Selenium.Tests.Regression" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:02:02Z" duration="13.872834" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-suite type="TestSuite" id="0-1118" name="Events" fullname="Flow.Tests.Selenium.Tests.Regression.Events" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:02:02Z" duration="13.872794" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-suite type="TestSuite" id="0-1119" name="Correspondence" fullname="Flow.Tests.Selenium.Tests.Regression.Events.Correspondence" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:02:01Z" duration="13.872276" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[One or more child tests had errors]]></message>
+                  </failure>
+                  <test-suite type="TestFixture" id="0-1100" name="CorrespondenceTest" fullname="Flow.Tests.Selenium.Tests.Regression.Events.Correspondence.CorrespondenceTest" classname="Flow.Tests.Selenium.Tests.Regression.Events.Correspondence.CorrespondenceTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:01:59Z" end-time="2020-04-08 09:02:01Z" duration="2.479499" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                    <properties />
+                    <failure>
+                      <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                      <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                    </failure>
+                    <output><![CDATA[=============== CorrespondenceTest started at: 4/8/2020 11:01:59 AM ===============
+---> CorrespondenceTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> CorrespondenceTest Config[SeleniumBrowser]: chrome
+---> CorrespondenceTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> CorrespondenceTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                    <test-case id="0-1101" name="CheckCorrespondence" fullname="Flow.Tests.Selenium.Tests.Regression.Events.Correspondence.CorrespondenceTest.CheckCorrespondence" methodname="CheckCorrespondence" classname="Flow.Tests.Selenium.Tests.Regression.Events.Correspondence.CorrespondenceTest" runstate="Runnable" seed="1502190706" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                      <properties>
+                        <property name="Category" value="BasicSmoke" />
+                        <property name="CustomRetry" value="3" />
+                      </properties>
+                      <failure>
+                        <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                      </failure>
+                    </test-case>
+                  </test-suite>
+                </test-suite>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestSuite" id="0-1107" name="Smoke" fullname="Flow.Tests.Selenium.Tests.Smoke" runstate="Runnable" testcasecount="54" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:03:37Z" duration="109.438247" total="49" passed="0" failed="49" warnings="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-suite type="TestFixture" id="0-1004" name="ApprovalSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.ApprovalSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.ApprovalSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:02Z" end-time="2020-04-08 09:02:04Z" duration="2.604773" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                </failure>
+                <output><![CDATA[=============== ApprovalSmokeTest started at: 4/8/2020 11:02:02 AM ===============
+---> ApprovalSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> ApprovalSmokeTest Config[SeleniumBrowser]: chrome
+---> ApprovalSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> ApprovalSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                <test-case id="0-1005" name="CheckApproval" fullname="Flow.Tests.Selenium.Tests.Smoke.ApprovalSmokeTest.CheckApproval" methodname="CheckApproval" classname="Flow.Tests.Selenium.Tests.Smoke.ApprovalSmokeTest" runstate="Ignored" seed="1726268579" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                  <properties>
+                    <property name="Category" value="BasicSmoke" />
+                    <property name="_SKIPREASON" value="might be causing failure of other tests" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  </failure>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestSuite" id="0-1115" name="BackLinkTests" fullname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:02:09Z" duration="21.426279" total="6" passed="0" failed="6" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-suite type="TestFixture" id="0-1082" name="HomeBackLinkSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.HomeBackLinkSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.HomeBackLinkSmokeTest" runstate="Runnable" testcasecount="4" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:04Z" end-time="2020-04-08 09:02:07Z" duration="2.429416" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== HomeBackLinkSmokeTest started at: 4/8/2020 11:02:05 AM ===============
+---> HomeBackLinkSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> HomeBackLinkSmokeTest Config[SeleniumBrowser]: chrome
+---> HomeBackLinkSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> HomeBackLinkSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1083" name="CheckCorrespondenceBackLinkFromHome" fullname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.HomeBackLinkSmokeTest.CheckCorrespondenceBackLinkFromHome" methodname="CheckCorrespondenceBackLinkFromHome" classname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.HomeBackLinkSmokeTest" runstate="Runnable" seed="104580429" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                  <test-case id="0-1085" name="CheckHomeBackLinkFromHomeCorrespondenceClientDetails" fullname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.HomeBackLinkSmokeTest.CheckHomeBackLinkFromHomeCorrespondenceClientDetails" methodname="CheckHomeBackLinkFromHomeCorrespondenceClientDetails" classname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.HomeBackLinkSmokeTest" runstate="Runnable" seed="1888526689" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                  <test-case id="0-1086" name="CheckHomeBackLinkFromHomeJournalClientDetails" fullname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.HomeBackLinkSmokeTest.CheckHomeBackLinkFromHomeJournalClientDetails" methodname="CheckHomeBackLinkFromHomeJournalClientDetails" classname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.HomeBackLinkSmokeTest" runstate="Runnable" seed="950307900" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                  <test-case id="0-1084" name="CheckJournalBackLinkFromHome" fullname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.HomeBackLinkSmokeTest.CheckJournalBackLinkFromHome" methodname="CheckJournalBackLinkFromHome" classname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.HomeBackLinkSmokeTest" runstate="Runnable" seed="913117404" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+                <test-suite type="TestFixture" id="0-1087" name="JournalBackLinkSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.JournalBackLinkSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.JournalBackLinkSmokeTest" runstate="Runnable" testcasecount="2" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:07Z" end-time="2020-04-08 09:02:09Z" duration="2.517837" total="2" passed="0" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== JournalBackLinkSmokeTest started at: 4/8/2020 11:02:07 AM ===============
+---> JournalBackLinkSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> JournalBackLinkSmokeTest Config[SeleniumBrowser]: chrome
+---> JournalBackLinkSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> JournalBackLinkSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1089" name="CheckJournalBackLinkToCase" fullname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.JournalBackLinkSmokeTest.CheckJournalBackLinkToCase" methodname="CheckJournalBackLinkToCase" classname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.JournalBackLinkSmokeTest" runstate="Runnable" seed="1343660514" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                  <test-case id="0-1088" name="CheckJournalBackLinkToClientDetailsEventAndCase" fullname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.JournalBackLinkSmokeTest.CheckJournalBackLinkToClientDetailsEventAndCase" methodname="CheckJournalBackLinkToClientDetailsEventAndCase" classname="Flow.Tests.Selenium.Tests.Smoke.BackLinkTests.JournalBackLinkSmokeTest" runstate="Runnable" seed="583746941" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+              </test-suite>
+              <test-suite type="TestSuite" id="0-1111" name="BasicPageTests" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests" runstate="Runnable" testcasecount="15" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:02:30Z" duration="42.335180" total="15" passed="0" failed="15" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-suite type="TestSuite" id="0-1112" name="MainApp" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp" runstate="Runnable" testcasecount="15" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:02:30Z" duration="42.335153" total="15" passed="0" failed="15" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[One or more child tests had errors]]></message>
+                  </failure>
+                  <test-suite type="TestSuite" id="0-1114" name="Administration" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Administration" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:02:12Z" duration="23.895912" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                    <properties />
+                    <failure>
+                      <message><![CDATA[One or more child tests had errors]]></message>
+                    </failure>
+                    <test-suite type="TestFixture" id="0-1080" name="AdministrationSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Administration.AdministrationSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Administration.AdministrationSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:09Z" end-time="2020-04-08 09:02:12Z" duration="2.469566" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                      <properties />
+                      <failure>
+                        <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                        <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                      </failure>
+                      <output><![CDATA[=============== AdministrationSmokeTest started at: 4/8/2020 11:02:10 AM ===============
+---> AdministrationSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> AdministrationSmokeTest Config[SeleniumBrowser]: chrome
+---> AdministrationSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> AdministrationSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                      <test-case id="0-1081" name="CheckAdministrationCodeElements" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Administration.AdministrationSmokeTest.CheckAdministrationCodeElements" methodname="CheckAdministrationCodeElements" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Administration.AdministrationSmokeTest" runstate="Runnable" seed="1102274750" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                        <properties>
+                          <property name="Category" value="BasicSmoke" />
+                          <property name="CustomRetry" value="3" />
+                        </properties>
+                        <failure>
+                          <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                        </failure>
+                      </test-case>
+                    </test-suite>
+                  </test-suite>
+                  <test-suite type="TestFixture" id="0-1059" name="BVIncomingPostSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.BVIncomingPostSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.BVIncomingPostSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:12Z" end-time="2020-04-08 09:02:14Z" duration="2.489372" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                    <properties />
+                    <failure>
+                      <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                      <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                    </failure>
+                    <output><![CDATA[=============== BVIncomingPostSmokeTest started at: 4/8/2020 11:02:12 AM ===============
+---> BVIncomingPostSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> BVIncomingPostSmokeTest Config[SeleniumBrowser]: chrome
+---> BVIncomingPostSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> BVIncomingPostSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                    <test-case id="0-1060" name="VerifyIncomingPostElementsBV" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.BVIncomingPostSmokeTest.VerifyIncomingPostElementsBV" methodname="VerifyIncomingPostElementsBV" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.BVIncomingPostSmokeTest" runstate="Runnable" seed="1378433894" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                      <properties>
+                        <property name="Category" value="BasicSmoke" />
+                        <property name="CustomRetry" value="3" />
+                      </properties>
+                      <failure>
+                        <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                      </failure>
+                    </test-case>
+                  </test-suite>
+                  <test-suite type="TestFixture" id="0-1061" name="BVVIncomingPostSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.BVVIncomingPostSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.BVVIncomingPostSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:14Z" end-time="2020-04-08 09:02:17Z" duration="2.633823" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                    <properties />
+                    <failure>
+                      <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                      <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                    </failure>
+                    <output><![CDATA[=============== BVVIncomingPostSmokeTest started at: 4/8/2020 11:02:15 AM ===============
+---> BVVIncomingPostSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> BVVIncomingPostSmokeTest Config[SeleniumBrowser]: chrome
+---> BVVIncomingPostSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> BVVIncomingPostSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                    <test-case id="0-1062" name="VerifyIncomingPostElementsBVV" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.BVVIncomingPostSmokeTest.VerifyIncomingPostElementsBVV" methodname="VerifyIncomingPostElementsBVV" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.BVVIncomingPostSmokeTest" runstate="Runnable" seed="445042304" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                      <properties>
+                        <property name="Category" value="BasicSmoke" />
+                        <property name="CustomRetry" value="3" />
+                      </properties>
+                      <failure>
+                        <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                      </failure>
+                    </test-case>
+                  </test-suite>
+                  <test-suite type="TestFixture" id="0-1063" name="EnquiryElementsTest" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.EnquiryElementsTest" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.EnquiryElementsTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:17Z" end-time="2020-04-08 09:02:19Z" duration="2.621754" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                    <properties />
+                    <failure>
+                      <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                      <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                    </failure>
+                    <output><![CDATA[=============== EnquiryElementsTest started at: 4/8/2020 11:02:17 AM ===============
+---> EnquiryElementsTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> EnquiryElementsTest Config[SeleniumBrowser]: chrome
+---> EnquiryElementsTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> EnquiryElementsTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                    <test-case id="0-1064" name="CheckEnquiryElementsFromClientDetails" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.EnquiryElementsTest.CheckEnquiryElementsFromClientDetails" methodname="CheckEnquiryElementsFromClientDetails" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.EnquiryElementsTest" runstate="Runnable" seed="141903210" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                      <properties>
+                        <property name="Category" value="BasicSmoke" />
+                        <property name="CustomRetry" value="3" />
+                      </properties>
+                      <failure>
+                        <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                      </failure>
+                    </test-case>
+                  </test-suite>
+                  <test-suite type="TestFixture" id="0-1065" name="IncomingPostReferralTest" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.IncomingPostReferralTest" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.IncomingPostReferralTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:19Z" end-time="2020-04-08 09:02:22Z" duration="2.855247" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                    <properties />
+                    <failure>
+                      <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                      <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                    </failure>
+                    <output><![CDATA[=============== IncomingPostReferralTest started at: 4/8/2020 11:02:20 AM ===============
+---> IncomingPostReferralTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> IncomingPostReferralTest Config[SeleniumBrowser]: chrome
+---> IncomingPostReferralTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> IncomingPostReferralTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                    <test-case id="0-1066" name="CreatePostRegistrationReferral" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.IncomingPostReferralTest.CreatePostRegistrationReferral" methodname="CreatePostRegistrationReferral" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.IncomingPostReferralTest" runstate="Runnable" seed="1137654404" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                      <properties>
+                        <property name="Category" value="BasicSmoke" />
+                        <property name="CustomRetry" value="3" />
+                      </properties>
+                      <failure>
+                        <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                      </failure>
+                    </test-case>
+                  </test-suite>
+                  <test-suite type="TestFixture" id="0-1067" name="IncomingPostSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.IncomingPostSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.IncomingPostSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:22Z" end-time="2020-04-08 09:02:25Z" duration="2.663543" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                    <properties />
+                    <failure>
+                      <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                      <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                    </failure>
+                    <output><![CDATA[=============== IncomingPostSmokeTest started at: 4/8/2020 11:02:23 AM ===============
+---> IncomingPostSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> IncomingPostSmokeTest Config[SeleniumBrowser]: chrome
+---> IncomingPostSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> IncomingPostSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                    <test-case id="0-1068" name="VerifyIncomingPostElements" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.IncomingPostSmokeTest.VerifyIncomingPostElements" methodname="VerifyIncomingPostElements" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.IncomingPostSmokeTest" runstate="Runnable" seed="1853021811" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                      <properties>
+                        <property name="Category" value="BasicSmoke" />
+                        <property name="CustomRetry" value="3" />
+                      </properties>
+                      <failure>
+                        <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                      </failure>
+                    </test-case>
+                  </test-suite>
+                  <test-suite type="TestSuite" id="0-1113" name="Statistics" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:02:30Z" duration="42.335128" total="9" passed="0" failed="9" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                    <properties />
+                    <failure>
+                      <message><![CDATA[One or more child tests had errors]]></message>
+                    </failure>
+                    <test-suite type="TestFixture" id="0-1069" name="QuerySmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.QuerySmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.QuerySmokeTest" runstate="Runnable" testcasecount="4" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:25Z" end-time="2020-04-08 09:02:27Z" duration="2.695342" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                      <properties />
+                      <failure>
+                        <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                        <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                      </failure>
+                      <output><![CDATA[=============== QuerySmokeTest started at: 4/8/2020 11:02:25 AM ===============
+---> QuerySmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> QuerySmokeTest Config[SeleniumBrowser]: chrome
+---> QuerySmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> QuerySmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                      <test-case id="0-1072" name="CheckClientQuery" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.QuerySmokeTest.CheckClientQuery" methodname="CheckClientQuery" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.QuerySmokeTest" runstate="Runnable" seed="66924031" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                        <properties>
+                          <property name="Category" value="BasicSmoke" />
+                          <property name="CustomRetry" value="3" />
+                        </properties>
+                        <failure>
+                          <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                        </failure>
+                      </test-case>
+                      <test-case id="0-1073" name="CheckEventQuery" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.QuerySmokeTest.CheckEventQuery" methodname="CheckEventQuery" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.QuerySmokeTest" runstate="Runnable" seed="1629447648" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                        <properties>
+                          <property name="Category" value="BasicSmoke" />
+                          <property name="CustomRetry" value="3" />
+                        </properties>
+                        <failure>
+                          <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                        </failure>
+                      </test-case>
+                      <test-case id="0-1070" name="CheckPersonCaseQuery" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.QuerySmokeTest.CheckPersonCaseQuery" methodname="CheckPersonCaseQuery" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.QuerySmokeTest" runstate="Runnable" seed="1790979960" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                        <properties>
+                          <property name="Category" value="BasicSmoke" />
+                          <property name="CustomRetry" value="3" />
+                        </properties>
+                        <failure>
+                          <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                        </failure>
+                      </test-case>
+                      <test-case id="0-1071" name="CheckSystemCaseQuery" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.QuerySmokeTest.CheckSystemCaseQuery" methodname="CheckSystemCaseQuery" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.QuerySmokeTest" runstate="Runnable" seed="853705527" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                        <properties>
+                          <property name="Category" value="BasicSmoke" />
+                          <property name="CustomRetry" value="3" />
+                        </properties>
+                        <failure>
+                          <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                        </failure>
+                      </test-case>
+                    </test-suite>
+                    <test-suite type="TestFixture" id="0-1074" name="StatisticsTableSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.StatisticsTableSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.StatisticsTableSmokeTest" runstate="Runnable" testcasecount="5" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:27Z" end-time="2020-04-08 09:02:30Z" duration="2.479758" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                      <properties />
+                      <failure>
+                        <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                        <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                      </failure>
+                      <output><![CDATA[=============== StatisticsTableSmokeTest started at: 4/8/2020 11:02:28 AM ===============
+---> StatisticsTableSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> StatisticsTableSmokeTest Config[SeleniumBrowser]: chrome
+---> StatisticsTableSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> StatisticsTableSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                      <test-case id="0-1078" name="CheckAllOtherEventsFilters" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.StatisticsTableSmokeTest.CheckAllOtherEventsFilters" methodname="CheckAllOtherEventsFilters" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.StatisticsTableSmokeTest" runstate="Runnable" seed="85125812" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                        <properties>
+                          <property name="Category" value="BasicSmoke" />
+                          <property name="CustomRetry" value="3" />
+                        </properties>
+                        <failure>
+                          <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                        </failure>
+                      </test-case>
+                      <test-case id="0-1079" name="CheckEventsFilters" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.StatisticsTableSmokeTest.CheckEventsFilters" methodname="CheckEventsFilters" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.StatisticsTableSmokeTest" runstate="Runnable" seed="1520052522" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                        <properties>
+                          <property name="Category" value="BasicSmoke" />
+                          <property name="CustomRetry" value="3" />
+                        </properties>
+                        <failure>
+                          <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                        </failure>
+                      </test-case>
+                      <test-case id="0-1075" name="CheckPersonCasesFilters" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.StatisticsTableSmokeTest.CheckPersonCasesFilters" methodname="CheckPersonCasesFilters" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.StatisticsTableSmokeTest" runstate="Runnable" seed="1709890006" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                        <properties>
+                          <property name="Category" value="BasicSmoke" />
+                          <property name="CustomRetry" value="3" />
+                        </properties>
+                        <failure>
+                          <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                        </failure>
+                      </test-case>
+                      <test-case id="0-1077" name="CheckReferralsFilters" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.StatisticsTableSmokeTest.CheckReferralsFilters" methodname="CheckReferralsFilters" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.StatisticsTableSmokeTest" runstate="Runnable" seed="1233977195" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                        <properties>
+                          <property name="Category" value="BasicSmoke" />
+                          <property name="CustomRetry" value="3" />
+                        </properties>
+                        <failure>
+                          <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                        </failure>
+                      </test-case>
+                      <test-case id="0-1076" name="CheckSystemCasesFilters" fullname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.StatisticsTableSmokeTest.CheckSystemCasesFilters" methodname="CheckSystemCasesFilters" classname="Flow.Tests.Selenium.Tests.Smoke.BasicPageTests.MainApp.Statistics.StatisticsTableSmokeTest" runstate="Runnable" seed="9544222" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                        <properties>
+                          <property name="Category" value="BasicSmoke" />
+                          <property name="CustomRetry" value="3" />
+                        </properties>
+                        <failure>
+                          <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                        </failure>
+                      </test-case>
+                    </test-suite>
+                  </test-suite>
+                </test-suite>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1006" name="Ck5EditorCorrespondenceSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.Ck5EditorCorrespondenceSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.Ck5EditorCorrespondenceSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:30Z" end-time="2020-04-08 09:02:32Z" duration="2.540481" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                </failure>
+                <output><![CDATA[=============== Ck5EditorCorrespondenceSmokeTest started at: 4/8/2020 11:02:30 AM ===============
+---> Ck5EditorCorrespondenceSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> Ck5EditorCorrespondenceSmokeTest Config[SeleniumBrowser]: chrome
+---> Ck5EditorCorrespondenceSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> Ck5EditorCorrespondenceSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                <test-case id="0-1007" name="CheckCk5EditorOnCorrespondence" fullname="Flow.Tests.Selenium.Tests.Smoke.Ck5EditorCorrespondenceSmokeTest.CheckCk5EditorOnCorrespondence" methodname="CheckCk5EditorOnCorrespondence" classname="Flow.Tests.Selenium.Tests.Smoke.Ck5EditorCorrespondenceSmokeTest" runstate="Runnable" seed="2092559597" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                  <properties>
+                    <property name="Category" value="BasicSmoke" />
+                    <property name="CustomRetry" value="3" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  </failure>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1008" name="Ck5EditorEnquirySmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.Ck5EditorEnquirySmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.Ck5EditorEnquirySmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:32Z" end-time="2020-04-08 09:02:35Z" duration="2.665218" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                </failure>
+                <output><![CDATA[=============== Ck5EditorEnquirySmokeTest started at: 4/8/2020 11:02:33 AM ===============
+---> Ck5EditorEnquirySmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> Ck5EditorEnquirySmokeTest Config[SeleniumBrowser]: chrome
+---> Ck5EditorEnquirySmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> Ck5EditorEnquirySmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                <test-case id="0-1009" name="CheckCk5EditorOnEnquiry" fullname="Flow.Tests.Selenium.Tests.Smoke.Ck5EditorEnquirySmokeTest.CheckCk5EditorOnEnquiry" methodname="CheckCk5EditorOnEnquiry" classname="Flow.Tests.Selenium.Tests.Smoke.Ck5EditorEnquirySmokeTest" runstate="Runnable" seed="1219944954" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                  <properties>
+                    <property name="Category" value="BasicSmoke" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  </failure>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1010" name="Ck5EditorJournalSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.Ck5EditorJournalSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.Ck5EditorJournalSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:35Z" end-time="2020-04-08 09:02:38Z" duration="2.696722" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                </failure>
+                <output><![CDATA[=============== Ck5EditorJournalSmokeTest started at: 4/8/2020 11:02:36 AM ===============
+---> Ck5EditorJournalSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> Ck5EditorJournalSmokeTest Config[SeleniumBrowser]: chrome
+---> Ck5EditorJournalSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> Ck5EditorJournalSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                <test-case id="0-1011" name="CheckCk5EditorOnJournal" fullname="Flow.Tests.Selenium.Tests.Smoke.Ck5EditorJournalSmokeTest.CheckCk5EditorOnJournal" methodname="CheckCk5EditorOnJournal" classname="Flow.Tests.Selenium.Tests.Smoke.Ck5EditorJournalSmokeTest" runstate="Runnable" seed="885879449" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                  <properties>
+                    <property name="Category" value="BasicSmoke" />
+                    <property name="CustomRetry" value="3" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  </failure>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1012" name="CkEditorCorrespondenceSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.CkEditorCorrespondenceSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.CkEditorCorrespondenceSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:38Z" end-time="2020-04-08 09:02:40Z" duration="2.440709" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                </failure>
+                <output><![CDATA[=============== CkEditorCorrespondenceSmokeTest started at: 4/8/2020 11:02:38 AM ===============
+---> CkEditorCorrespondenceSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> CkEditorCorrespondenceSmokeTest Config[SeleniumBrowser]: chrome
+---> CkEditorCorrespondenceSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> CkEditorCorrespondenceSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                <test-case id="0-1013" name="CheckCkEditorOnCorrespondence" fullname="Flow.Tests.Selenium.Tests.Smoke.CkEditorCorrespondenceSmokeTest.CheckCkEditorOnCorrespondence" methodname="CheckCkEditorOnCorrespondence" classname="Flow.Tests.Selenium.Tests.Smoke.CkEditorCorrespondenceSmokeTest" runstate="Runnable" seed="1936011612" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                  <properties>
+                    <property name="Category" value="BasicSmoke" />
+                    <property name="CustomRetry" value="3" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  </failure>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1014" name="CkEditorEnquirySmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.CkEditorEnquirySmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.CkEditorEnquirySmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:40Z" end-time="2020-04-08 09:02:43Z" duration="2.532421" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                </failure>
+                <output><![CDATA[=============== CkEditorEnquirySmokeTest started at: 4/8/2020 11:02:41 AM ===============
+---> CkEditorEnquirySmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> CkEditorEnquirySmokeTest Config[SeleniumBrowser]: chrome
+---> CkEditorEnquirySmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> CkEditorEnquirySmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                <test-case id="0-1015" name="CheckCkEditorOnEnquiry" fullname="Flow.Tests.Selenium.Tests.Smoke.CkEditorEnquirySmokeTest.CheckCkEditorOnEnquiry" methodname="CheckCkEditorOnEnquiry" classname="Flow.Tests.Selenium.Tests.Smoke.CkEditorEnquirySmokeTest" runstate="Runnable" seed="1378986892" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                  <properties>
+                    <property name="Category" value="BasicSmoke" />
+                    <property name="CustomRetry" value="3" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  </failure>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1016" name="CkEditorJournalSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.CkEditorJournalSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.CkEditorJournalSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:43Z" end-time="2020-04-08 09:02:45Z" duration="2.470252" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                </failure>
+                <output><![CDATA[=============== CkEditorJournalSmokeTest started at: 4/8/2020 11:02:43 AM ===============
+---> CkEditorJournalSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> CkEditorJournalSmokeTest Config[SeleniumBrowser]: chrome
+---> CkEditorJournalSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> CkEditorJournalSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                <test-case id="0-1017" name="CheckCkEditorOnJournal" fullname="Flow.Tests.Selenium.Tests.Smoke.CkEditorJournalSmokeTest.CheckCkEditorOnJournal" methodname="CheckCkEditorOnJournal" classname="Flow.Tests.Selenium.Tests.Smoke.CkEditorJournalSmokeTest" runstate="Runnable" seed="345571191" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                  <properties>
+                    <property name="Category" value="BasicSmoke" />
+                    <property name="CustomRetry" value="3" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  </failure>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestSuite" id="0-1110" name="CopyToSiblings" fullname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:02:53Z" duration="65.518890" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-suite type="TestFixture" id="0-1052" name="CorrespondenceCopyToSiblingsSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings.CorrespondenceCopyToSiblingsSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings.CorrespondenceCopyToSiblingsSmokeTest" runstate="Runnable" testcasecount="2" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:45Z" end-time="2020-04-08 09:02:48Z" duration="2.501335" total="2" passed="0" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== CorrespondenceCopyToSiblingsSmokeTest started at: 4/8/2020 11:02:46 AM ===============
+---> CorrespondenceCopyToSiblingsSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> CorrespondenceCopyToSiblingsSmokeTest Config[SeleniumBrowser]: chrome
+---> CorrespondenceCopyToSiblingsSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> CorrespondenceCopyToSiblingsSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1053" name="CheckCorrespondenceCopyToSiblings" fullname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings.CorrespondenceCopyToSiblingsSmokeTest.CheckCorrespondenceCopyToSiblings" methodname="CheckCorrespondenceCopyToSiblings" classname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings.CorrespondenceCopyToSiblingsSmokeTest" runstate="Runnable" seed="1462363569" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                  <test-case id="0-1054" name="CopyToSiblingsFinishedCorrespondenceCheck" fullname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings.CorrespondenceCopyToSiblingsSmokeTest.CopyToSiblingsFinishedCorrespondenceCheck" methodname="CopyToSiblingsFinishedCorrespondenceCheck" classname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings.CorrespondenceCopyToSiblingsSmokeTest" runstate="Runnable" seed="980341084" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+                <test-suite type="TestFixture" id="0-1055" name="EnquiryCopyToSiblingsSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings.EnquiryCopyToSiblingsSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings.EnquiryCopyToSiblingsSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:48Z" end-time="2020-04-08 09:02:50Z" duration="2.463795" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== EnquiryCopyToSiblingsSmokeTest started at: 4/8/2020 11:02:48 AM ===============
+---> EnquiryCopyToSiblingsSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> EnquiryCopyToSiblingsSmokeTest Config[SeleniumBrowser]: chrome
+---> EnquiryCopyToSiblingsSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> EnquiryCopyToSiblingsSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1056" name="CheckEnquiryCopyToSiblings" fullname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings.EnquiryCopyToSiblingsSmokeTest.CheckEnquiryCopyToSiblings" methodname="CheckEnquiryCopyToSiblings" classname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings.EnquiryCopyToSiblingsSmokeTest" runstate="Runnable" seed="826288034" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+                <test-suite type="TestFixture" id="0-1057" name="JournalCopyToSiblingsSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings.JournalCopyToSiblingsSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings.JournalCopyToSiblingsSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:50Z" end-time="2020-04-08 09:02:53Z" duration="2.872400" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== JournalCopyToSiblingsSmokeTest started at: 4/8/2020 11:02:51 AM ===============
+---> JournalCopyToSiblingsSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> JournalCopyToSiblingsSmokeTest Config[SeleniumBrowser]: chrome
+---> JournalCopyToSiblingsSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> JournalCopyToSiblingsSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1058" name="CheckJournalCopyToSiblings" fullname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings.JournalCopyToSiblingsSmokeTest.CheckJournalCopyToSiblings" methodname="CheckJournalCopyToSiblings" classname="Flow.Tests.Selenium.Tests.Smoke.CopyToSiblings.JournalCopyToSiblingsSmokeTest" runstate="Runnable" seed="1452434915" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1018" name="EnquiryFromClientDetailsSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.EnquiryFromClientDetailsSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.EnquiryFromClientDetailsSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:53Z" end-time="2020-04-08 09:02:56Z" duration="2.562559" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                </failure>
+                <output><![CDATA[=============== EnquiryFromClientDetailsSmokeTest started at: 4/8/2020 11:02:54 AM ===============
+---> EnquiryFromClientDetailsSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> EnquiryFromClientDetailsSmokeTest Config[SeleniumBrowser]: chrome
+---> EnquiryFromClientDetailsSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> EnquiryFromClientDetailsSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                <test-case id="0-1019" name="CheckEnquiryCreationFromClientDetails" fullname="Flow.Tests.Selenium.Tests.Smoke.EnquiryFromClientDetailsSmokeTest.CheckEnquiryCreationFromClientDetails" methodname="CheckEnquiryCreationFromClientDetails" classname="Flow.Tests.Selenium.Tests.Smoke.EnquiryFromClientDetailsSmokeTest" runstate="Runnable" seed="1755198578" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                  <properties>
+                    <property name="Category" value="BasicSmoke" />
+                    <property name="CustomRetry" value="3" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  </failure>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1020" name="EnquiryFromEventsSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.EnquiryFromEventsSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.EnquiryFromEventsSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:56Z" end-time="2020-04-08 09:02:58Z" duration="2.611706" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                </failure>
+                <output><![CDATA[=============== EnquiryFromEventsSmokeTest started at: 4/8/2020 11:02:56 AM ===============
+---> EnquiryFromEventsSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> EnquiryFromEventsSmokeTest Config[SeleniumBrowser]: chrome
+---> EnquiryFromEventsSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> EnquiryFromEventsSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                <test-case id="0-1021" name="CheckEnquiryCreationFromEvents" fullname="Flow.Tests.Selenium.Tests.Smoke.EnquiryFromEventsSmokeTest.CheckEnquiryCreationFromEvents" methodname="CheckEnquiryCreationFromEvents" classname="Flow.Tests.Selenium.Tests.Smoke.EnquiryFromEventsSmokeTest" runstate="Runnable" seed="1372023898" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                  <properties>
+                    <property name="Category" value="BasicSmoke" />
+                    <property name="CustomRetry" value="3" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  </failure>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestSuite" id="0-1109" name="FollowUp" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:03:24Z" duration="96.821892" total="10" passed="0" failed="10" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-suite type="TestFixture" id="0-1032" name="BVVFollowUpFromCalendarSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromCalendarSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromCalendarSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:02:58Z" end-time="2020-04-08 09:03:01Z" duration="2.611342" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== BVVFollowUpFromCalendarSmokeTest started at: 4/8/2020 11:02:59 AM ===============
+---> BVVFollowUpFromCalendarSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> BVVFollowUpFromCalendarSmokeTest Config[SeleniumBrowser]: chrome
+---> BVVFollowUpFromCalendarSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> BVVFollowUpFromCalendarSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1033" name="BVV_CheckFollowUpCreateElementsOnCalendarPage" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromCalendarSmokeTest.BVV_CheckFollowUpCreateElementsOnCalendarPage" methodname="BVV_CheckFollowUpCreateElementsOnCalendarPage" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromCalendarSmokeTest" runstate="Runnable" seed="1136785350" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+                <test-suite type="TestFixture" id="0-1034" name="BVVFollowUpFromCaseSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromCaseSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromCaseSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:03:01Z" end-time="2020-04-08 09:03:04Z" duration="2.701339" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== BVVFollowUpFromCaseSmokeTest started at: 4/8/2020 11:03:02 AM ===============
+---> BVVFollowUpFromCaseSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> BVVFollowUpFromCaseSmokeTest Config[SeleniumBrowser]: chrome
+---> BVVFollowUpFromCaseSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> BVVFollowUpFromCaseSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1035" name="BVV_CheckFollowUpCreateElementsOnCaseEventsPage" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromCaseSmokeTest.BVV_CheckFollowUpCreateElementsOnCaseEventsPage" methodname="BVV_CheckFollowUpCreateElementsOnCaseEventsPage" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromCaseSmokeTest" runstate="Runnable" seed="1493895731" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+                <test-suite type="TestFixture" id="0-1036" name="BVVFollowUpFromEventSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromEventSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromEventSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:03:04Z" end-time="2020-04-08 09:03:06Z" duration="2.625269" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== BVVFollowUpFromEventSmokeTest started at: 4/8/2020 11:03:04 AM ===============
+---> BVVFollowUpFromEventSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> BVVFollowUpFromEventSmokeTest Config[SeleniumBrowser]: chrome
+---> BVVFollowUpFromEventSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> BVVFollowUpFromEventSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1037" name="BVV_CheckFollowUpCreateElementsOnEventPage" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromEventSmokeTest.BVV_CheckFollowUpCreateElementsOnEventPage" methodname="BVV_CheckFollowUpCreateElementsOnEventPage" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromEventSmokeTest" runstate="Runnable" seed="1430923833" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+                <test-suite type="TestFixture" id="0-1038" name="BVVFollowUpFromHomeSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromHomeSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromHomeSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:03:06Z" end-time="2020-04-08 09:03:09Z" duration="2.553036" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== BVVFollowUpFromHomeSmokeTest started at: 4/8/2020 11:03:07 AM ===============
+---> BVVFollowUpFromHomeSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> BVVFollowUpFromHomeSmokeTest Config[SeleniumBrowser]: chrome
+---> BVVFollowUpFromHomeSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> BVVFollowUpFromHomeSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1039" name="BVV_CheckFollowUpCreateElementsOnHomePage" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromHomeSmokeTest.BVV_CheckFollowUpCreateElementsOnHomePage" methodname="BVV_CheckFollowUpCreateElementsOnHomePage" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.BVVFollowUpFromHomeSmokeTest" runstate="Runnable" seed="1965849405" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+                <test-suite type="TestFixture" id="0-1040" name="PPTFollowUpFromCaseSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.PPTFollowUpFromCaseSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.PPTFollowUpFromCaseSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:03:09Z" end-time="2020-04-08 09:03:11Z" duration="2.692136" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== PPTFollowUpFromCaseSmokeTest started at: 4/8/2020 11:03:09 AM ===============
+---> PPTFollowUpFromCaseSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> PPTFollowUpFromCaseSmokeTest Config[SeleniumBrowser]: chrome
+---> PPTFollowUpFromCaseSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> PPTFollowUpFromCaseSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1041" name="PPT_CheckFollowUpCreateElementsOnCaseEventsPage" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.PPTFollowUpFromCaseSmokeTest.PPT_CheckFollowUpCreateElementsOnCaseEventsPage" methodname="PPT_CheckFollowUpCreateElementsOnCaseEventsPage" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.PPTFollowUpFromCaseSmokeTest" runstate="Runnable" seed="122082144" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+                <test-suite type="TestFixture" id="0-1042" name="PPTFollowUpFromEventSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.PPTFollowUpFromEventSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.PPTFollowUpFromEventSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:03:11Z" end-time="2020-04-08 09:03:14Z" duration="2.838517" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== PPTFollowUpFromEventSmokeTest started at: 4/8/2020 11:03:12 AM ===============
+---> PPTFollowUpFromEventSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> PPTFollowUpFromEventSmokeTest Config[SeleniumBrowser]: chrome
+---> PPTFollowUpFromEventSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> PPTFollowUpFromEventSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1043" name="PPT_CheckFollowUpCreateElementsOnEventPage" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.PPTFollowUpFromEventSmokeTest.PPT_CheckFollowUpCreateElementsOnEventPage" methodname="PPT_CheckFollowUpCreateElementsOnEventPage" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.PPTFollowUpFromEventSmokeTest" runstate="Runnable" seed="135357289" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+                <test-suite type="TestFixture" id="0-1044" name="SCCFollowUpFromCalendarSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromCalendarSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromCalendarSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:03:14Z" end-time="2020-04-08 09:03:17Z" duration="2.698854" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== SCCFollowUpFromCalendarSmokeTest started at: 4/8/2020 11:03:15 AM ===============
+---> SCCFollowUpFromCalendarSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> SCCFollowUpFromCalendarSmokeTest Config[SeleniumBrowser]: chrome
+---> SCCFollowUpFromCalendarSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> SCCFollowUpFromCalendarSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1045" name="SCC_CheckFollowUpCreateElementsOnCalendarPage" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromCalendarSmokeTest.SCC_CheckFollowUpCreateElementsOnCalendarPage" methodname="SCC_CheckFollowUpCreateElementsOnCalendarPage" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromCalendarSmokeTest" runstate="Runnable" seed="1221595818" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+                <test-suite type="TestFixture" id="0-1046" name="SCCFollowUpFromCaseSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromCaseSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromCaseSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:03:17Z" end-time="2020-04-08 09:03:20Z" duration="2.529415" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== SCCFollowUpFromCaseSmokeTest started at: 4/8/2020 11:03:18 AM ===============
+---> SCCFollowUpFromCaseSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> SCCFollowUpFromCaseSmokeTest Config[SeleniumBrowser]: chrome
+---> SCCFollowUpFromCaseSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> SCCFollowUpFromCaseSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1047" name="SCC_CheckFollowUpCreateElementsOnCaseEventsPage" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromCaseSmokeTest.SCC_CheckFollowUpCreateElementsOnCaseEventsPage" methodname="SCC_CheckFollowUpCreateElementsOnCaseEventsPage" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromCaseSmokeTest" runstate="Runnable" seed="1544229223" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+                <test-suite type="TestFixture" id="0-1048" name="SCCFollowUpFromEventSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromEventSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromEventSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:03:20Z" end-time="2020-04-08 09:03:22Z" duration="2.485618" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== SCCFollowUpFromEventSmokeTest started at: 4/8/2020 11:03:20 AM ===============
+---> SCCFollowUpFromEventSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> SCCFollowUpFromEventSmokeTest Config[SeleniumBrowser]: chrome
+---> SCCFollowUpFromEventSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> SCCFollowUpFromEventSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1049" name="SCC_CheckFollowUpCreateElementsOnEventPage" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromEventSmokeTest.SCC_CheckFollowUpCreateElementsOnEventPage" methodname="SCC_CheckFollowUpCreateElementsOnEventPage" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromEventSmokeTest" runstate="Runnable" seed="1931804302" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+                <test-suite type="TestFixture" id="0-1050" name="SCCFollowUpFromHomeSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromHomeSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromHomeSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:03:22Z" end-time="2020-04-08 09:03:24Z" duration="2.392610" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== SCCFollowUpFromHomeSmokeTest started at: 4/8/2020 11:03:23 AM ===============
+---> SCCFollowUpFromHomeSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> SCCFollowUpFromHomeSmokeTest Config[SeleniumBrowser]: chrome
+---> SCCFollowUpFromHomeSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> SCCFollowUpFromHomeSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1051" name="SCC_CheckFollowUpCreateElementsOnHomePage" fullname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromHomeSmokeTest.SCC_CheckFollowUpCreateElementsOnHomePage" methodname="SCC_CheckFollowUpCreateElementsOnHomePage" classname="Flow.Tests.Selenium.Tests.Smoke.FollowUp.SCCFollowUpFromHomeSmokeTest" runstate="Runnable" seed="1265550004" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+              </test-suite>
+              <test-suite type="TestSuite" id="0-1108" name="PostRegistration" fullname="Flow.Tests.Selenium.Tests.Smoke.PostRegistration" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2020-04-08 09:01:48Z" end-time="2020-04-08 09:03:27Z" duration="99.255855" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-suite type="TestFixture" id="0-1030" name="PostRegistrationOnNewCaseSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.PostRegistration.PostRegistrationOnNewCaseSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.PostRegistration.PostRegistrationOnNewCaseSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:03:24Z" end-time="2020-04-08 09:03:27Z" duration="2.433910" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <failure>
+                    <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                  </failure>
+                  <output><![CDATA[=============== PostRegistrationOnNewCaseSmokeTest started at: 4/8/2020 11:03:25 AM ===============
+---> PostRegistrationOnNewCaseSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> PostRegistrationOnNewCaseSmokeTest Config[SeleniumBrowser]: chrome
+---> PostRegistrationOnNewCaseSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> PostRegistrationOnNewCaseSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                  <test-case id="0-1031" name="CheckReceivedDate" fullname="Flow.Tests.Selenium.Tests.Smoke.PostRegistration.PostRegistrationOnNewCaseSmokeTest.CheckReceivedDate" methodname="CheckReceivedDate" classname="Flow.Tests.Selenium.Tests.Smoke.PostRegistration.PostRegistrationOnNewCaseSmokeTest" runstate="Runnable" seed="1721455232" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                    <properties>
+                      <property name="Category" value="BasicSmoke" />
+                      <property name="CustomRetry" value="3" />
+                    </properties>
+                    <failure>
+                      <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                    </failure>
+                  </test-case>
+                </test-suite>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1022" name="SccCk5EditorEnquirySmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.SccCk5EditorEnquirySmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.SccCk5EditorEnquirySmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:03:27Z" end-time="2020-04-08 09:03:29Z" duration="2.424201" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                </failure>
+                <output><![CDATA[=============== SccCk5EditorEnquirySmokeTest started at: 4/8/2020 11:03:27 AM ===============
+---> SccCk5EditorEnquirySmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> SccCk5EditorEnquirySmokeTest Config[SeleniumBrowser]: chrome
+---> SccCk5EditorEnquirySmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> SccCk5EditorEnquirySmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                <test-case id="0-1023" name="CheckCk5EditorOnEnquiry" fullname="Flow.Tests.Selenium.Tests.Smoke.SccCk5EditorEnquirySmokeTest.CheckCk5EditorOnEnquiry" methodname="CheckCk5EditorOnEnquiry" classname="Flow.Tests.Selenium.Tests.Smoke.SccCk5EditorEnquirySmokeTest" runstate="Runnable" seed="319855626" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                  <properties>
+                    <property name="Category" value="BasicSmoke" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  </failure>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1024" name="SccCkEditorEnquirySmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.SccCkEditorEnquirySmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.SccCkEditorEnquirySmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:03:29Z" end-time="2020-04-08 09:03:32Z" duration="2.550310" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                </failure>
+                <output><![CDATA[=============== SccCkEditorEnquirySmokeTest started at: 4/8/2020 11:03:30 AM ===============
+---> SccCkEditorEnquirySmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> SccCkEditorEnquirySmokeTest Config[SeleniumBrowser]: chrome
+---> SccCkEditorEnquirySmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> SccCkEditorEnquirySmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                <test-case id="0-1025" name="CheckCkEditorOnEnquiry" fullname="Flow.Tests.Selenium.Tests.Smoke.SccCkEditorEnquirySmokeTest.CheckCkEditorOnEnquiry" methodname="CheckCkEditorOnEnquiry" classname="Flow.Tests.Selenium.Tests.Smoke.SccCkEditorEnquirySmokeTest" runstate="Runnable" seed="1578046225" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                  <properties>
+                    <property name="Category" value="BasicSmoke" />
+                    <property name="CustomRetry" value="3" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  </failure>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1026" name="SccEnquiryFromClientDetailsSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.SccEnquiryFromClientDetailsSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.SccEnquiryFromClientDetailsSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:03:32Z" end-time="2020-04-08 09:03:35Z" duration="2.684025" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                </failure>
+                <output><![CDATA[=============== SccEnquiryFromClientDetailsSmokeTest started at: 4/8/2020 11:03:32 AM ===============
+---> SccEnquiryFromClientDetailsSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> SccEnquiryFromClientDetailsSmokeTest Config[SeleniumBrowser]: chrome
+---> SccEnquiryFromClientDetailsSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> SccEnquiryFromClientDetailsSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                <test-case id="0-1027" name="CheckEnquiryCreationFromClientDetails" fullname="Flow.Tests.Selenium.Tests.Smoke.SccEnquiryFromClientDetailsSmokeTest.CheckEnquiryCreationFromClientDetails" methodname="CheckEnquiryCreationFromClientDetails" classname="Flow.Tests.Selenium.Tests.Smoke.SccEnquiryFromClientDetailsSmokeTest" runstate="Runnable" seed="684094997" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                  <properties>
+                    <property name="Category" value="BasicSmoke" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  </failure>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1028" name="SccEnquiryFromEventsSmokeTest" fullname="Flow.Tests.Selenium.Tests.Smoke.SccEnquiryFromEventsSmokeTest" classname="Flow.Tests.Selenium.Tests.Smoke.SccEnquiryFromEventsSmokeTest" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="TearDown" start-time="2020-04-08 09:03:35Z" end-time="2020-04-08 09:03:37Z" duration="2.523350" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.
+TearDown : System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  <stack-trace><![CDATA[   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeSetUp()
+--TearDown
+   at AutoMapper.Mapper.set_Configuration(IConfigurationProvider value)
+   at AutoMapper.Mapper.Initialize(Action`1 config)
+   at Flow.Tests.Selenium.Core.TestBasePpt.get_DatabaseManager()
+   at Flow.Tests.Selenium.Core.TestBasePpt.OneTimeTearDown()]]></stack-trace>
+                </failure>
+                <output><![CDATA[=============== SccEnquiryFromEventsSmokeTest started at: 4/8/2020 11:03:35 AM ===============
+---> SccEnquiryFromEventsSmokeTest Config[AppUrl]: https://flytchildweb902.flyttest.visma.com:444/
+---> SccEnquiryFromEventsSmokeTest Config[SeleniumBrowser]: chrome
+---> SccEnquiryFromEventsSmokeTest Config[SeleniumGridUrl]: http://flytapp901.flyttest.visma.com:4444/wd/hub
+---> SccEnquiryFromEventsSmokeTest Resolution: 1024x768
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+Environment variable BV_SPECFLOW_TEST_DB found:data source=10.58.171.19;initial catalog=BV_Specflow;User ID=test;Password=test;sslmode=none;
+]]></output>
+                <test-case id="0-1029" name="CheckEnquiryCreationFromEvents" fullname="Flow.Tests.Selenium.Tests.Smoke.SccEnquiryFromEventsSmokeTest.CheckEnquiryCreationFromEvents" methodname="CheckEnquiryCreationFromEvents" classname="Flow.Tests.Selenium.Tests.Smoke.SccEnquiryFromEventsSmokeTest" runstate="Runnable" seed="830793020" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+                  <properties>
+                    <property name="Category" value="BasicSmoke" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OneTimeSetUp: System.InvalidOperationException : Mapper already initialized. You must call Initialize once per application domain/process.]]></message>
+                  </failure>
+                </test-case>
+              </test-suite>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
