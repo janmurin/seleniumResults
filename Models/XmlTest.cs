@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace SeleniumResults.objects
+namespace SeleniumResults.Models
 {
     [XmlRoot(ElementName = "filter")]
     public class Filter

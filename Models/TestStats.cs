@@ -2,18 +2,18 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SeleniumResults.objects
+namespace SeleniumResults.Models
 {
     public class TestStats
     {
-        public TestStats(SeleniumResult sr)
+        public TestStats(SingleTestResult sr)
         {
             Name = sr.Name;
-            Results = new HashSet<SeleniumResult>() {sr};
+            Results = new HashSet<SingleTestResult>() {sr};
         }
 
         public string Name { get; }
-        public HashSet<SeleniumResult> Results { get; }
+        public HashSet<SingleTestResult> Results { get; }
         public int Sel1Failures => Results.Count(x => x.IsFailure && !x.IsSel2);
         public int Sel2Failures => Results.Count(x => x.IsFailure && x.IsSel2);
         public int Sel1Count => Results.Count(x => !x.IsSel2);

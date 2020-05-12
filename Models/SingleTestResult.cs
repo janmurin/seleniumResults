@@ -1,13 +1,13 @@
-namespace SeleniumResults.objects
+namespace SeleniumResults.Models
 {
-    public class SeleniumResult
+    public class SingleTestResult
     {
         public string Name { get; set; }
         public string Time { get; set; }
         public bool IsFailure { get; set; }
         public bool IsSel2 { get; set; }
 
-        protected bool Equals(SeleniumResult other)
+        protected bool Equals(SingleTestResult other)
         {
             return Time == other.Time;
         }
@@ -17,7 +17,7 @@ namespace SeleniumResults.objects
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
-            return Equals((SeleniumResult) obj);
+            return Equals((SingleTestResult) obj);
         }
 
         public override int GetHashCode()
@@ -25,12 +25,12 @@ namespace SeleniumResults.objects
             return (Time != null ? Time.GetHashCode() : 0);
         }
 
-        public static bool operator ==(SeleniumResult left, SeleniumResult right)
+        public static bool operator ==(SingleTestResult left, SingleTestResult right)
         {
             return Equals(left, right);
         }
 
-        public static bool operator !=(SeleniumResult left, SeleniumResult right)
+        public static bool operator !=(SingleTestResult left, SingleTestResult right)
         {
             return !Equals(left, right);
         }
