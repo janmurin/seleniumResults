@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SeleniumResults
+namespace SeleniumResults.objects
 {
     public class ResultData
     {

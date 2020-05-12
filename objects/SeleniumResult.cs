@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-namespace SeleniumResults
+namespace SeleniumResults.objects
 {
     public class SeleniumResult
     {
