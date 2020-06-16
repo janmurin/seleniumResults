@@ -14,10 +14,10 @@ namespace SeleniumResults.Models
 
         public string Name { get; }
         public HashSet<SingleTestResult> Results { get; }
-        public int Sel1Failures => Results.Count(x => x.IsFailure && !x.IsSel2);
-        public int Sel2Failures => Results.Count(x => x.IsFailure && x.IsSel2);
-        public int Sel1Count => Results.Count(x => !x.IsSel2);
-        public int Sel2Count => Results.Count(x => x.IsSel2);
+        public int Sel1Failures => Results.Count(x => x.IsFailure && x.TestRunType == TestRunType.Selenium);
+        public int Sel2Failures => Results.Count(x => x.IsFailure && x.TestRunType == TestRunType.Selenium2);
+        public int Sel1Count => Results.Count(x => x.TestRunType == TestRunType.Selenium);
+        public int Sel2Count => Results.Count(x => x.TestRunType == TestRunType.Selenium2);
         private string MostRecentTime { get; set; }
 
         public string GetMostRecentTime()

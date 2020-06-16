@@ -27,9 +27,11 @@ namespace SeleniumResults
                 {
                     var type = ParseApplicationType(htmlDoc);
                     var lastRun = ParseLastRun(htmlDoc);
-                    var results = ParseTestResults(htmlDoc);
+                    var testRunType = ParseTestRunType(htmlDoc);
+                    var testRun = new TestRun(shortName, type, lastRun, new List<SingleTestResult>(), testRunType);
+                    testRun.Results = ParseTestResults(htmlDoc, testRun);
                     
-                    return new TestRun(shortName, type, lastRun, results);
+                    return testRun;
                 }
                 catch (Exception e)
                 {
@@ -38,6 +40,34 @@ namespace SeleniumResults
             }
 
             return null;
+        }
+
+        private static TestRunType ParseTestRunType(HtmlDocument htmlDoc)
+        {
+            string innerText = htmlDoc.DocumentNode?.SelectSingleNode("//div[@id='modal1']").InnerText;
+
+            if (innerText == null)
+            {
+                return TestRunType.Undefined;
+            }
+            if (innerText.Contains("Selenium2"))
+            {
+                return TestRunType.Selenium2;
+            }
+            if (innerText.Contains("Selenium"))
+            {
+                return TestRunType.Selenium;
+            }
+            if (innerText.Contains("API"))
+            {
+                return TestRunType.API;
+            }
+            if (innerText.Contains("SpecFlow"))
+            {
+                return TestRunType.Specflow;
+            }
+            
+            return TestRunType.Undefined;
         }
 
         private static DateTime ParseLastRun(HtmlDocument htmlDoc)
@@ -76,7 +106,7 @@ namespace SeleniumResults
             throw new Exception($"unknown machine name: [{innerText}]");
         }
 
-        private static List<SingleTestResult> ParseTestResults(HtmlDocument htmlDoc)
+        private static List<SingleTestResult> ParseTestResults(HtmlDocument htmlDoc, TestRun testRun)
         {
             var cards = htmlDoc.DocumentNode?.SelectNodes("//div[@class='fixtures']//div[@class='card-panel']");
 
@@ -86,23 +116,43 @@ namespace SeleniumResults
             {
                 foreach (var card in cards)
                 {
-                    results.Add(ParseCard(card));
+                    results.Add(ParseCard(card, testRun));
                 }
             }
 
             return results;
         }
 
-        private static SingleTestResult ParseCard(HtmlNode card)
+        private static SingleTestResult ParseCard(HtmlNode card, TestRun testRun)
         {
             SingleTestResult sr = new SingleTestResult();
-            sr.IsSel2 = card.SelectSingleNode("//div[@id='modal1']").InnerText.Contains("C:\\TestResults\\Selenium2\\");
+            sr.OriginalFile = testRun.FileName;
+            sr.TestRunType = testRun.TestRunType;
             sr.Name = card.SelectSingleNode(".//span[@class='fixture-name']").InnerText;
-            sr.IsFailure = card.SelectSingleNode(".//span[contains(@class, 'fixture-result')]").HasClass("failed");
+            sr.TestResultType = ParseTestResultType(card);
             sr.Time = card.SelectSingleNode(".//span[@class='endedAt']").InnerText;
             //Console.Write($"   test-{sr.Name,40} time-{sr.Time}");
 
             return sr;
+        }
+
+        private static TestResultType ParseTestResultType(HtmlNode card)
+        {
+            var node = card.SelectSingleNode(".//span[contains(@class, 'fixture-result')]");
+            if (node.HasClass("failed"))
+            {
+                return TestResultType.Failed;
+            }
+            if (node.HasClass("passed"))
+            {
+                return TestResultType.Passed;
+            }
+            if (node.HasClass("skipped"))
+            {
+                return TestResultType.Skipped;
+            }
+
+            return TestResultType.Undefined;
         }
     }
 }

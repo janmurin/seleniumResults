@@ -59,23 +59,11 @@ namespace SeleniumResults
             Console.WriteLine($"3. selenium2 success rate by every {daysPeriod} days");
             ResultsDatabase.PrintSuccessRateOfSelenium2BuildsPerDay(daysPeriod);
             
-            // Console.WriteLine($"\n FILES WITH MORE THAN {Constants.FAILURE_THRESHOLD} FAILURES SKIPPED");
-            // Console.WriteLine($"skipped duplicate test results count: {ResultsDatabase.TotalDuplicates}\n");
-            // Console.WriteLine($"most recent time: {ResultsDatabase.MostRecentTime}");
-            // Console.WriteLine($"{"test:",40} {"Selenium1",12} {"Selenium2",12}");
-            // var orderedResults = ResultsDatabase.OrderedData;
-            //
-            // foreach (var or in orderedResults)
-            // {
-            //     Console.WriteLine(or);
-            // }
-            //
-            // var stats = orderedResults.First(x => x.Name == "JournalFromClientDetailsSmokeTest");
-            // var results = stats.Results
-            //     .Where(x => x.IsSel2)
-            //     .OrderByDescending(x => x.Time).ToList();
-            // Console.WriteLine(
-            //     $"JournalFromClientDetailsSmokeTest: {string.Join(",", results)}");
+            // 4. get total success rate by each test
+            Console.WriteLine($"4. total success rate by each test");
+            ResultsDatabase.PrintEachTestTotalSuccessRate();
+
+
         }
 
        

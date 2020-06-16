@@ -4,9 +4,12 @@ namespace SeleniumResults.Models
     {
         public string Name { get; set; }
         public string Time { get; set; }
-        public bool IsFailure { get; set; }
-        public bool IsSel2 { get; set; }
-
+        public string OriginalFile { get; set; }
+        public TestResultType TestResultType { get; set; }
+        public TestRunType TestRunType { get; set; }
+        public bool IsFailure => TestResultType == TestResultType.Failed;
+        public bool IsPassedOrFailed => TestResultType == TestResultType.Failed || TestResultType == TestResultType.Passed;
+        
         protected bool Equals(SingleTestResult other)
         {
             return Time == other.Time;
@@ -37,7 +40,7 @@ namespace SeleniumResults.Models
 
         public override string ToString()
         {
-            return $"time-{Time}";
+            return $"time-{Time}, file-{OriginalFile}, result-{TestResultType}";
         }
     }
     

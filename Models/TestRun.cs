@@ -7,21 +7,21 @@ namespace SeleniumResults.Models
 {
     public class TestRun
     {
-        public TestRun(string shortName, Application type, DateTime lastRun, List<SingleTestResult> results)
+        public TestRun(string shortName, Application type, DateTime lastRun, List<SingleTestResult> results, TestRunType testRunType)
         {
             FileName = shortName;
             ApplicationType = type;
             LastRun = lastRun;
             Results = results;
             IsSuccessfull = results.All(x => !x.IsFailure);
-            IsSelenium2 = results.First().IsSel2;
+            TestRunType = testRunType;
         }
 
-        public bool IsSelenium2 { get; }
+        public TestRunType TestRunType { get; }
         public string FileName { get; }
         public Application ApplicationType { get; }
         public DateTime LastRun { get; }
-        public List<SingleTestResult> Results { get; }
+        public List<SingleTestResult> Results { get; set; }
         public bool IsSuccessfull { get; }
 
         public string GetId()
@@ -31,7 +31,7 @@ namespace SeleniumResults.Models
 
         public override string ToString()
         {
-            return $"(id={GetId()}, filename={FileName}, isSelenium2={IsSelenium2}, isSucessful={IsSuccessfull})";
+            return $"(id={GetId()}, filename={FileName}, TestRunType={TestRunType}, isSucessful={IsSuccessfull})";
         }
 
         protected bool Equals(TestRun other)
