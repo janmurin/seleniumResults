@@ -1,6 +1,6 @@
 namespace SeleniumResults.Models
 {
-    public enum Application
+    public enum FlytApplication
     {
         BV = 0,
         CAR = 1,

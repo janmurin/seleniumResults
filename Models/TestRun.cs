@@ -7,26 +7,28 @@ namespace SeleniumResults.Models
 {
     public class TestRun
     {
-        public TestRun(string shortName, Application type, DateTime lastRun, List<SingleTestResult> results, TestRunType testRunType)
+        public TestRun(string fileName, FlytApplication type, DateTime lastRun, List<SingleTestResult> results, TestRunType testRunType, string buildNumber)
         {
-            FileName = shortName;
-            ApplicationType = type;
+            FileName = fileName;
+            FlytApplicationType = type;
             LastRun = lastRun;
             Results = results;
             IsSuccessfull = results.All(x => !x.IsFailure);
             TestRunType = testRunType;
+            BuildNumber = buildNumber;
         }
 
+        public string BuildNumber { get; set; }
         public TestRunType TestRunType { get; }
         public string FileName { get; }
-        public Application ApplicationType { get; }
+        public FlytApplication FlytApplicationType { get; }
         public DateTime LastRun { get; }
         public List<SingleTestResult> Results { get; set; }
         public bool IsSuccessfull { get; }
 
         public string GetId()
         {
-            return $"{ApplicationType}-{LastRun:yyyy-MM-dd HH:mm:ss}";
+            return $"{FlytApplicationType}-{LastRun:yyyy-MM-dd HH:mm:ss}";
         }
 
         public override string ToString()
@@ -36,7 +38,7 @@ namespace SeleniumResults.Models
 
         protected bool Equals(TestRun other)
         {
-            return ApplicationType == other.ApplicationType && LastRun == other.LastRun;
+            return FlytApplicationType == other.FlytApplicationType && LastRun == other.LastRun;
         }
 
         public override bool Equals(object obj)
@@ -49,7 +51,7 @@ namespace SeleniumResults.Models
 
         public override int GetHashCode()
         {
-            return HashCode.Combine((int) ApplicationType, LastRun);
+            return HashCode.Combine((int) FlytApplicationType, LastRun);
         }
 
         public static bool operator ==(TestRun left, TestRun right)

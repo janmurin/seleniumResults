@@ -3,6 +3,7 @@ namespace SeleniumResults.Models
     public class SingleTestResult
     {
         public string Name { get; set; }
+        public string BuildNumber { get; set; }
         public string Time { get; set; }
         public string OriginalFile { get; set; }
         public TestResultType TestResultType { get; set; }
@@ -40,7 +41,7 @@ namespace SeleniumResults.Models
 
         public override string ToString()
         {
-            return $"time-{Time}, file-{OriginalFile}, result-{TestResultType}";
+            return $"time-{Time}, file-{OriginalFile}, result-{TestResultType}, buildNumber-{BuildNumber}";
         }
     }
     

@@ -1849,13 +1849,13 @@
         <e p="selenium-9001 (99).html" t="Include" />
       </e>
       <e p="Models" t="Include">
-        <e p="Application.cs" t="Include" />
+        <e p="FlytApplication.cs" t="Include" />
         <e p="ResultsDatabase.cs" t="Include" />
         <e p="SingleTestResult.cs" t="Include" />
+        <e p="SingleTestStats.cs" t="Include" />
         <e p="TestResultType.cs" t="Include" />
         <e p="TestRun.cs" t="Include" />
         <e p="TestRunType.cs" t="Include" />
-        <e p="TestStats.cs" t="Include" />
         <e p="XmlTest.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive">

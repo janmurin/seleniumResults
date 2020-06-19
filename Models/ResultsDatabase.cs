@@ -75,7 +75,7 @@ namespace SeleniumResults.Models
                 .ForEach(x =>
                 {
                     var appGroups = from result in x.ToList()
-                        group result by result.ApplicationType
+                        group result by result.FlytApplicationType
                         into appGroup
                         orderby appGroup.Key
                         select appGroup;
@@ -100,7 +100,7 @@ namespace SeleniumResults.Models
                 .ForEach(x =>
                 {
                     var appGroups = from result in x.ToList()
-                        group result by result.ApplicationType
+                        group result by result.FlytApplicationType
                         into appGroup
                         orderby appGroup.Key
                         select appGroup;
@@ -113,7 +113,7 @@ namespace SeleniumResults.Models
 
         public void PrintEachTestTotalSuccessRate()
         {
-            var resultDict = new ConcurrentDictionary<string, TestStats>();
+            var resultDict = new ConcurrentDictionary<string, SingleTestStats>();
 
             foreach (TestRun testRun in _testRuns.Values)
             {
@@ -124,7 +124,7 @@ namespace SeleniumResults.Models
                         // add only passed or failed tests into statistics
                         if (!resultDict.ContainsKey(sr.Name))
                         {
-                            resultDict.TryAdd(sr.Name, new TestStats(sr));
+                            resultDict.TryAdd(sr.Name, new SingleTestStats(sr));
                         }
                         else
                         {
@@ -148,11 +148,11 @@ namespace SeleniumResults.Models
                 Console.WriteLine(or);
             }
 
-            var stats = orderedResults.First(x => x.Name == "DeletePersonSmokeTest");
+            var stats = orderedResults.First(x => x.Name == "JournalFromCaseSmokeTest");
             var results = stats.Results
                 .Where(x => x.TestRunType == TestRunType.Selenium2)
                 .OrderByDescending(x => x.Time).ToList();
-            Console.WriteLine($"DeletePersonSmokeTest: {string.Join(",\n", results)}");
+            Console.WriteLine($"JournalFromCaseSmokeTest: {string.Join(",\n", results)}");
         }
 
         #endregion

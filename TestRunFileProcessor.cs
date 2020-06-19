@@ -28,7 +28,8 @@ namespace SeleniumResults
                     var type = ParseApplicationType(htmlDoc);
                     var lastRun = ParseLastRun(htmlDoc);
                     var testRunType = ParseTestRunType(htmlDoc);
-                    var testRun = new TestRun(shortName, type, lastRun, new List<SingleTestResult>(), testRunType);
+                    var buildNumber = ParseBuildNumber(htmlDoc);
+                    var testRun = new TestRun(shortName, type, lastRun, new List<SingleTestResult>(), testRunType, buildNumber);
                     testRun.Results = ParseTestResults(htmlDoc, testRun);
                     
                     return testRun;
@@ -40,6 +41,17 @@ namespace SeleniumResults
             }
 
             return null;
+        }
+
+        private static string ParseBuildNumber(HtmlDocument htmlDoc)
+        {
+            string resultFileUrl = htmlDoc.DocumentNode?.SelectSingleNode("//div[@id='modal1']//tr//*[contains(text(),'TestResult ')]//parent::tr/td[2]").InnerText;
+            
+            string buildNumber = resultFileUrl.Substring(resultFileUrl.LastIndexOf("\\", StringComparison.Ordinal));
+            buildNumber = buildNumber
+                .Replace("\\1.0.", "")
+                .Replace(".xml","");
+            return buildNumber;
         }
 
         private static TestRunType ParseTestRunType(HtmlDocument htmlDoc)
@@ -74,33 +86,37 @@ namespace SeleniumResults
         {
             string date = htmlDoc.DocumentNode?.SelectSingleNode("//div[@id='modal1']//tr//*[contains(text(),'Last Run')]//parent::tr/td[2]").InnerText;
             // few corrections
-            date = date.Replace("des", "Dec").Replace("feb", "Feb").Replace("jan","Jan").Replace(".",":");
+            date = date
+                .Replace("des", "Dec")
+                .Replace("feb", "Feb")
+                .Replace("jan","Jan")
+                .Replace(".",":");
             var dateTime = DateTime.Parse(date);
             return dateTime;
         }
 
-        private static Application ParseApplicationType(HtmlDocument htmlDoc)
+        private static FlytApplication ParseApplicationType(HtmlDocument htmlDoc)
         {
             string innerText = htmlDoc.DocumentNode?.SelectSingleNode("//div[@id='modal1']//tr//*[contains(text(),'Machine')]//parent::tr/td[2]").InnerText;
             if (innerText.Contains("FLYTCHILDWEB902") || innerText.Contains("FLYTCHILDWEB401"))
             {
-                return Application.BV;
+                return FlytApplication.BV;
             }
             if (innerText.Contains("FLYTOMSWEB902") || innerText.Contains("FLYTOMSWEB401"))
             {
-                return Application.CAR;
+                return FlytApplication.CAR;
             }
             if (innerText.Contains("FLYTBVVWEB902") || innerText.Contains("FLYTBVVWEB901") || innerText.Contains("FLYTBVVWEB401")  || innerText.Contains("FLYTBVVWEB402"))
             {
-                return Application.BVV;
+                return FlytApplication.BVV;
             }
             if (innerText.Contains("FLYTPPTWEB902") || innerText.Contains("FLYTPPTWEB901") || innerText.Contains("FLYTPPTWEB401") || innerText.Contains("FLYTPPTWEB402"))
             {
-                return Application.PPT;
+                return FlytApplication.PPT;
             }
             if (innerText.Contains("FLYTSCWEB902") || innerText.Contains("FLYTSCWEB401") || innerText.Contains("FLYTSCWEB901") || innerText.Contains("FLYTSCWEB402"))
             {
-                return Application.SCC;
+                return FlytApplication.SCC;
             }
             
             throw new Exception($"unknown machine name: [{innerText}]");
@@ -128,6 +144,7 @@ namespace SeleniumResults
             SingleTestResult sr = new SingleTestResult();
             sr.OriginalFile = testRun.FileName;
             sr.TestRunType = testRun.TestRunType;
+            sr.BuildNumber = testRun.BuildNumber;
             sr.Name = card.SelectSingleNode(".//span[@class='fixture-name']").InnerText;
             sr.TestResultType = ParseTestResultType(card);
             sr.Time = card.SelectSingleNode(".//span[@class='endedAt']").InnerText;

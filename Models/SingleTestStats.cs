@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace SeleniumResults.Models
 {
-    public class TestStats
+    public class SingleTestStats
     {
-        public TestStats(SingleTestResult sr)
+        public SingleTestStats(SingleTestResult sr)
         {
             Name = sr.Name;
             Results = new HashSet<SingleTestResult>() {sr};
@@ -16,8 +16,8 @@ namespace SeleniumResults.Models
         public HashSet<SingleTestResult> Results { get; }
         public int Sel1Failures => Results.Count(x => x.IsFailure && x.TestRunType == TestRunType.Selenium);
         public int Sel2Failures => Results.Count(x => x.IsFailure && x.TestRunType == TestRunType.Selenium2);
-        public int Sel1Count => Results.Count(x => x.TestRunType == TestRunType.Selenium);
-        public int Sel2Count => Results.Count(x => x.TestRunType == TestRunType.Selenium2);
+        private int Sel1Count => Results.Count(x => x.TestRunType == TestRunType.Selenium);
+        private int Sel2Count => Results.Count(x => x.TestRunType == TestRunType.Selenium2);
         private string MostRecentTime { get; set; }
 
         public string GetMostRecentTime()
