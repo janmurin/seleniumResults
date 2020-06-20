@@ -2,15 +2,23 @@ namespace SeleniumResults.Models
 {
     public class SingleTestResult
     {
-        public string Name { get; set; }
-        public string BuildNumber { get; set; }
-        public string Time { get; set; }
-        public string OriginalFile { get; set; }
-        public TestResultType TestResultType { get; set; }
-        public TestRunType TestRunType { get; set; }
-        public bool IsFailure => TestResultType == TestResultType.Failed;
-        public bool IsPassedOrFailed => TestResultType == TestResultType.Failed || TestResultType == TestResultType.Passed;
+        public TestRunMetaData TestRunData { get; }
+        public string Name { get; }
+        public string Time { get; }
+        private TestResultType TestResultType { get; }
         
+        public SingleTestResult(TestRunMetaData testRunMetaData, string name, TestResultType testResultType, string time)
+        {
+            TestRunData = testRunMetaData;
+            Name = name;
+            TestResultType = testResultType;
+            Time = time;
+        }
+
+        public bool IsFailed => TestResultType == TestResultType.Failed;
+        public bool IsPassedOrSkipped => TestResultType == TestResultType.Passed || TestResultType == TestResultType.Skipped;
+        public bool IsPassedOrFailed => TestResultType == TestResultType.Failed || TestResultType == TestResultType.Passed;
+
         protected bool Equals(SingleTestResult other)
         {
             return Time == other.Time;
@@ -41,9 +49,7 @@ namespace SeleniumResults.Models
 
         public override string ToString()
         {
-            return $"time-{Time}, file-{OriginalFile}, result-{TestResultType}, buildNumber-{BuildNumber}";
+            return $"time-{Time}, file-{TestRunData.OriginalFileName}, result-{TestResultType}, buildNumber-{TestRunData.BuildNumber}";
         }
     }
-    
-    
 }

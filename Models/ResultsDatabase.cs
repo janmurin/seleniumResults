@@ -20,17 +20,17 @@ namespace SeleniumResults.Models
                 return;
             }
 
-            if (testRun.TestRunType != TestRunType.Selenium && testRun.TestRunType != TestRunType.Selenium2)
+            if (testRun.TestRunMetaData.TestRunType != TestRunType.Selenium && testRun.TestRunMetaData.TestRunType != TestRunType.Selenium2)
             {
                 Console.WriteLine($"DB: ignoring test run {testRun}");
                 return;
             }
 
-            int failures = testRun.Results.Count(x => x.IsFailure);
+            int failures = testRun.Results.Count(x => x.IsFailed);
             if (failures > Constants.FAILURE_THRESHOLD)
             {
                 //Console.WriteLine($"skipping test run [{testRun.FileName}] because of too many failures: {failures}");
-                _tooManyFailures.Add($"({testRun.FileName}, failures-{failures})");
+                _tooManyFailures.Add($"({testRun.TestRunMetaData.OriginalFileName}, failures-{failures})");
                 return;
             }
 
@@ -38,7 +38,7 @@ namespace SeleniumResults.Models
             if (results < Constants.RESULTS_THRESHOLD)
             {
                 //Console.WriteLine($"skipping test run [{testRun.FileName}] because of too few results: {results}");
-                _tooFewResults.Add($"({testRun.FileName}, results-{results})");
+                _tooFewResults.Add($"({testRun.TestRunMetaData.OriginalFileName}, results-{results})");
                 return;
             }
 
@@ -64,8 +64,8 @@ namespace SeleniumResults.Models
         public void PrintCountOfSelenium2BuildsPerDay()
         {
             var orderedEnumerable =
-                from testRun in _testRuns.Values.Where(x => x.TestRunType == TestRunType.Selenium2 && x.LastRun >= Constants.TEST_RESULTS_START_DATETIME)
-                group testRun by testRun.LastRun.ToString("yyyy-MM-dd")
+                from testRun in _testRuns.Values.Where(x => x.TestRunMetaData.TestRunType == TestRunType.Selenium2 && x.TestRunMetaData.LastRun >= Constants.TEST_RESULTS_START_DATETIME)
+                group testRun by testRun.TestRunMetaData.LastRun.ToString("yyyy-MM-dd")
                 into newGroup
                 orderby newGroup.Key
                 select newGroup;
@@ -75,13 +75,13 @@ namespace SeleniumResults.Models
                 .ForEach(x =>
                 {
                     var appGroups = from result in x.ToList()
-                        group result by result.FlytApplicationType
+                        group result by result.TestRunMetaData.FlytApplicationType
                         into appGroup
                         orderby appGroup.Key
                         select appGroup;
 
                     Console.Write($"{x.Key},  total counts: {x.Count()}, ");
-                    appGroups.ToList().ForEach(t => { Console.Write($"{t.Key}-{t.Count(tt => tt.IsSuccessfull)}/{t.Count()} "); });
+                    appGroups.ToList().ForEach(t => { Console.Write($"{t.Key}-{t.Count(tt => tt.IsPassed)}/{t.Count()} "); });
                     Console.WriteLine($"");
                 });
         }
@@ -89,8 +89,8 @@ namespace SeleniumResults.Models
         public void PrintSuccessRateOfSelenium2BuildsPerDay(int daysPeriod)
         {
             var orderedEnumerable =
-                from testRun in _testRuns.Values.Where(x => x.TestRunType == TestRunType.Selenium2 && x.LastRun >= Constants.TEST_RESULTS_START_DATETIME)
-                group testRun by testRun.LastRun.DayOfYear / daysPeriod // every x days
+                from testRun in _testRuns.Values.Where(x => x.TestRunMetaData.TestRunType == TestRunType.Selenium2 && x.TestRunMetaData.LastRun >= Constants.TEST_RESULTS_START_DATETIME)
+                group testRun by testRun.TestRunMetaData.LastRun.DayOfYear / daysPeriod // every x days
                 into newGroup
                 orderby newGroup.Key
                 select newGroup;
@@ -100,13 +100,13 @@ namespace SeleniumResults.Models
                 .ForEach(x =>
                 {
                     var appGroups = from result in x.ToList()
-                        group result by result.FlytApplicationType
+                        group result by result.TestRunMetaData.FlytApplicationType
                         into appGroup
                         orderby appGroup.Key
                         select appGroup;
 
                     Console.Write($"{x.Key},  total counts: {x.Count()}, ");
-                    appGroups.ToList().ForEach(t => { Console.Write($"{t.Key}-{t.Count(tt => tt.IsSuccessfull)}/{t.Count()} "); });
+                    appGroups.ToList().ForEach(t => { Console.Write($"{t.Key}-{t.Count(tt => tt.IsPassed)}/{t.Count()} "); });
                     Console.WriteLine($"");
                 });
         }
@@ -148,11 +148,11 @@ namespace SeleniumResults.Models
                 Console.WriteLine(or);
             }
 
-            var stats = orderedResults.First(x => x.Name == "DeletePersonSmokeTest");
+            var stats = orderedResults.First(x => x.Name == "JournalFromClientDetailsSmokeTest");
             var results = stats.Results
-                .Where(x => x.TestRunType == TestRunType.Selenium2)
+                .Where(x => x.TestRunData.TestRunType == TestRunType.Selenium2)
                 .OrderByDescending(x => x.Time).ToList();
-            Console.WriteLine($"DeletePersonSmokeTest: {string.Join(",\n", results)}");
+            Console.WriteLine($"JournalFromClientDetailsSmokeTest: {string.Join(",\n", results)}");
         }
 
         #endregion

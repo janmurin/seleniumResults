@@ -7,38 +7,33 @@ namespace SeleniumResults.Models
 {
     public class TestRun
     {
-        public TestRun(string fileName, FlytApplication type, DateTime lastRun, List<SingleTestResult> results, TestRunType testRunType, string buildNumber)
-        {
-            FileName = fileName;
-            FlytApplicationType = type;
-            LastRun = lastRun;
-            Results = results;
-            IsSuccessfull = results.All(x => !x.IsFailure);
-            TestRunType = testRunType;
-            BuildNumber = buildNumber;
-        }
+        public TestRunMetaData TestRunMetaData { get; }
+        public List<SingleTestResult> Results { get; }
+        public bool IsPassed { get; }
 
-        public string BuildNumber { get; set; }
-        public TestRunType TestRunType { get; }
-        public string FileName { get; }
-        public FlytApplication FlytApplicationType { get; }
-        public DateTime LastRun { get; }
-        public List<SingleTestResult> Results { get; set; }
-        public bool IsSuccessfull { get; }
+        public TestRun(TestRunMetaData testRunMetaData, List<SingleTestResult> results)
+        {
+            TestRunMetaData = testRunMetaData;
+            Results = results;
+            IsPassed = results.Any() && results.All(x => x.IsPassedOrSkipped);
+        }
 
         public string GetId()
         {
-            return $"{FlytApplicationType}-{LastRun:yyyy-MM-dd HH:mm:ss}";
+            return $"{TestRunMetaData.FlytApplicationType}-{TestRunMetaData.LastRun:yyyy-MM-dd HH:mm:ss}";
         }
-
+        
         public override string ToString()
         {
-            return $"(id={GetId()}, filename={FileName}, TestRunType={TestRunType}, isSucessful={IsSuccessfull})";
+            return $"(id={GetId()}, filename={TestRunMetaData.OriginalFileName}, TestRunType={TestRunMetaData.TestRunType}, IsPassed={IsPassed})";
         }
+
+        #region overrides
 
         protected bool Equals(TestRun other)
         {
-            return FlytApplicationType == other.FlytApplicationType && LastRun == other.LastRun;
+            return TestRunMetaData.FlytApplicationType == other.TestRunMetaData.FlytApplicationType
+                   && TestRunMetaData.LastRun == other.TestRunMetaData.LastRun;
         }
 
         public override bool Equals(object obj)
@@ -51,7 +46,7 @@ namespace SeleniumResults.Models
 
         public override int GetHashCode()
         {
-            return HashCode.Combine((int) FlytApplicationType, LastRun);
+            return HashCode.Combine((int) TestRunMetaData.FlytApplicationType, TestRunMetaData.LastRun);
         }
 
         public static bool operator ==(TestRun left, TestRun right)
@@ -63,5 +58,7 @@ namespace SeleniumResults.Models
         {
             return !Equals(left, right);
         }
+
+        #endregion
     }
 }

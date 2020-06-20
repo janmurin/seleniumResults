@@ -16,7 +16,6 @@ namespace SeleniumResults
         static void Main(string[] args)
         {
             string filesDir = "..\\..\\..\\data";
-            long totalSize = 0;
 
             Console.WriteLine($"files dir: {filesDir}");
 
@@ -48,7 +47,7 @@ namespace SeleniumResults
             
             // 1. get sorted list of test runs
             List<TestRun> listOfTestRuns = ResultsDatabase.GetSortedListOfTestRuns();
-            listOfTestRuns.ForEach(tr=>{ Console.WriteLine($"{tr}"); });
+            //listOfTestRuns.ForEach(tr=>{ Console.WriteLine($"{tr}"); });
 
             // 2. get count of builds per day
             Console.WriteLine("2. selenium2 count of builds per day (successful/Total)");
@@ -65,7 +64,5 @@ namespace SeleniumResults
 
 
         }
-
-       
     }
 }

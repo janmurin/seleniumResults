@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO.Enumeration;
 using System.Linq;
 using HtmlAgilityPack;
 using SeleniumResults.Models;
@@ -12,9 +13,8 @@ namespace SeleniumResults
         public static TestRun ProcessFile(string fileName, int idx)
         {
             string shortName = fileName.Substring(fileName.LastIndexOf('\\') + 1);
-            
-            HtmlDocument htmlDoc = new HtmlDocument();
-            htmlDoc.OptionFixNestedTags = true;
+
+            HtmlDocument htmlDoc = new HtmlDocument {OptionFixNestedTags = true};
             htmlDoc.Load(fileName);
 
             if (htmlDoc.ParseErrors != null && htmlDoc.ParseErrors.Any())
@@ -25,14 +25,15 @@ namespace SeleniumResults
             {
                 try
                 {
-                    var type = ParseApplicationType(htmlDoc);
+                    var applicationType = ParseApplicationType(htmlDoc);
                     var lastRun = ParseLastRun(htmlDoc);
                     var testRunType = ParseTestRunType(htmlDoc);
                     var buildNumber = ParseBuildNumber(htmlDoc);
-                    var testRun = new TestRun(shortName, type, lastRun, new List<SingleTestResult>(), testRunType, buildNumber);
-                    testRun.Results = ParseTestResults(htmlDoc, testRun);
-                    
-                    return testRun;
+
+                    var testRunMetaData = new TestRunMetaData(shortName, applicationType, lastRun, testRunType, buildNumber);
+                    var results = ParseTestResults(htmlDoc, testRunMetaData);
+
+                    return new TestRun(testRunMetaData, results);
                 }
                 catch (Exception e)
                 {
@@ -45,12 +46,13 @@ namespace SeleniumResults
 
         private static string ParseBuildNumber(HtmlDocument htmlDoc)
         {
-            string resultFileUrl = htmlDoc.DocumentNode?.SelectSingleNode("//div[@id='modal1']//tr//*[contains(text(),'TestResult ')]//parent::tr/td[2]").InnerText;
-            
+            string resultFileUrl = htmlDoc.DocumentNode?.SelectSingleNode("//div[@id='modal1']//tr//*[contains(text(),'TestResult ')]//parent::tr/td[2]")
+                .InnerText;
+
             string buildNumber = resultFileUrl.Substring(resultFileUrl.LastIndexOf("\\", StringComparison.Ordinal));
             buildNumber = buildNumber
                 .Replace("\\1.0.", "")
-                .Replace(".xml","");
+                .Replace(".xml", "");
             return buildNumber;
         }
 
@@ -62,23 +64,27 @@ namespace SeleniumResults
             {
                 return TestRunType.Undefined;
             }
+
             if (innerText.Contains("Selenium2"))
             {
                 return TestRunType.Selenium2;
             }
+
             if (innerText.Contains("Selenium"))
             {
                 return TestRunType.Selenium;
             }
+
             if (innerText.Contains("API"))
             {
                 return TestRunType.API;
             }
+
             if (innerText.Contains("SpecFlow"))
             {
                 return TestRunType.Specflow;
             }
-            
+
             return TestRunType.Undefined;
         }
 
@@ -89,8 +95,8 @@ namespace SeleniumResults
             date = date
                 .Replace("des", "Dec")
                 .Replace("feb", "Feb")
-                .Replace("jan","Jan")
-                .Replace(".",":");
+                .Replace("jan", "Jan")
+                .Replace(".", ":");
             var dateTime = DateTime.Parse(date);
             return dateTime;
         }
@@ -102,27 +108,34 @@ namespace SeleniumResults
             {
                 return FlytApplication.BV;
             }
+
             if (innerText.Contains("FLYTOMSWEB902") || innerText.Contains("FLYTOMSWEB401"))
             {
                 return FlytApplication.CAR;
             }
-            if (innerText.Contains("FLYTBVVWEB902") || innerText.Contains("FLYTBVVWEB901") || innerText.Contains("FLYTBVVWEB401")  || innerText.Contains("FLYTBVVWEB402"))
+
+            if (innerText.Contains("FLYTBVVWEB902") || innerText.Contains("FLYTBVVWEB901") || innerText.Contains("FLYTBVVWEB401") ||
+                innerText.Contains("FLYTBVVWEB402"))
             {
                 return FlytApplication.BVV;
             }
-            if (innerText.Contains("FLYTPPTWEB902") || innerText.Contains("FLYTPPTWEB901") || innerText.Contains("FLYTPPTWEB401") || innerText.Contains("FLYTPPTWEB402"))
+
+            if (innerText.Contains("FLYTPPTWEB902") || innerText.Contains("FLYTPPTWEB901") || innerText.Contains("FLYTPPTWEB401") ||
+                innerText.Contains("FLYTPPTWEB402"))
             {
                 return FlytApplication.PPT;
             }
-            if (innerText.Contains("FLYTSCWEB902") || innerText.Contains("FLYTSCWEB401") || innerText.Contains("FLYTSCWEB901") || innerText.Contains("FLYTSCWEB402"))
+
+            if (innerText.Contains("FLYTSCWEB902") || innerText.Contains("FLYTSCWEB401") || innerText.Contains("FLYTSCWEB901") ||
+                innerText.Contains("FLYTSCWEB402"))
             {
                 return FlytApplication.SCC;
             }
-            
+
             throw new Exception($"unknown machine name: [{innerText}]");
         }
 
-        private static List<SingleTestResult> ParseTestResults(HtmlDocument htmlDoc, TestRun testRun)
+        private static List<SingleTestResult> ParseTestResults(HtmlDocument htmlDoc, TestRunMetaData testRunMetaData)
         {
             var cards = htmlDoc.DocumentNode?.SelectNodes("//div[@class='fixtures']//div[@class='card-panel']");
 
@@ -132,25 +145,20 @@ namespace SeleniumResults
             {
                 foreach (var card in cards)
                 {
-                    results.Add(ParseCard(card, testRun));
+                    results.Add(ParseCard(card, testRunMetaData));
                 }
             }
 
             return results;
         }
 
-        private static SingleTestResult ParseCard(HtmlNode card, TestRun testRun)
+        private static SingleTestResult ParseCard(HtmlNode card, TestRunMetaData testRunMetaData)
         {
-            SingleTestResult sr = new SingleTestResult();
-            sr.OriginalFile = testRun.FileName;
-            sr.TestRunType = testRun.TestRunType;
-            sr.BuildNumber = testRun.BuildNumber;
-            sr.Name = card.SelectSingleNode(".//span[@class='fixture-name']").InnerText;
-            sr.TestResultType = ParseTestResultType(card);
-            sr.Time = card.SelectSingleNode(".//span[@class='endedAt']").InnerText;
-            //Console.Write($"   test-{sr.Name,40} time-{sr.Time}");
+            var name = card.SelectSingleNode(".//span[@class='fixture-name']").InnerText;
+            var testResultType = ParseTestResultType(card);
+            var time = card.SelectSingleNode(".//span[@class='endedAt']").InnerText;
 
-            return sr;
+            return new SingleTestResult(testRunMetaData, name, testResultType, time);
         }
 
         private static TestResultType ParseTestResultType(HtmlNode card)
@@ -160,16 +168,18 @@ namespace SeleniumResults
             {
                 return TestResultType.Failed;
             }
+
             if (node.HasClass("passed"))
             {
                 return TestResultType.Passed;
             }
+
             if (node.HasClass("skipped"))
             {
                 return TestResultType.Skipped;
             }
 
-            return TestResultType.Undefined;
+            throw new Exception($"test result is undefined for: [{node.OuterHtml}]");
         }
     }
 }

@@ -1737,6 +1737,32 @@
         <e p="selenium-10304 (7).html" t="Include" />
         <e p="selenium-10304 (8).html" t="Include" />
         <e p="selenium-10304 (9).html" t="Include" />
+        <e p="selenium-10311 (1).html" t="Include" />
+        <e p="selenium-10311 (10).html" t="Include" />
+        <e p="selenium-10311 (11).html" t="Include" />
+        <e p="selenium-10311 (12).html" t="Include" />
+        <e p="selenium-10311 (13).html" t="Include" />
+        <e p="selenium-10311 (14).html" t="Include" />
+        <e p="selenium-10311 (15).html" t="Include" />
+        <e p="selenium-10311 (16).html" t="Include" />
+        <e p="selenium-10311 (17).html" t="Include" />
+        <e p="selenium-10311 (18).html" t="Include" />
+        <e p="selenium-10311 (19).html" t="Include" />
+        <e p="selenium-10311 (2).html" t="Include" />
+        <e p="selenium-10311 (20).html" t="Include" />
+        <e p="selenium-10311 (21).html" t="Include" />
+        <e p="selenium-10311 (22).html" t="Include" />
+        <e p="selenium-10311 (23).html" t="Include" />
+        <e p="selenium-10311 (24).html" t="Include" />
+        <e p="selenium-10311 (25).html" t="Include" />
+        <e p="selenium-10311 (26).html" t="Include" />
+        <e p="selenium-10311 (3).html" t="Include" />
+        <e p="selenium-10311 (4).html" t="Include" />
+        <e p="selenium-10311 (5).html" t="Include" />
+        <e p="selenium-10311 (6).html" t="Include" />
+        <e p="selenium-10311 (7).html" t="Include" />
+        <e p="selenium-10311 (8).html" t="Include" />
+        <e p="selenium-10311 (9).html" t="Include" />
         <e p="selenium-235 (1).html" t="Include" />
         <e p="selenium-235 (10).html" t="Include" />
         <e p="selenium-235 (11).html" t="Include" />
@@ -1855,6 +1881,7 @@
         <e p="SingleTestStats.cs" t="Include" />
         <e p="TestResultType.cs" t="Include" />
         <e p="TestRun.cs" t="Include" />
+        <e p="TestRunMetaData.cs" t="Include" />
         <e p="TestRunType.cs" t="Include" />
         <e p="XmlTest.cs" t="Include" />
       </e>
@@ -1869,6 +1896,7 @@
       <e p="Program.cs" t="Include" />
       <e p="SeleniumResults.csproj" t="IncludeRecursive" />
       <e p="SeleniumResults.sln" t="IncludeFlat" />
+      <e p="SeleniumResults.sln.DotSettings" t="Include" />
       <e p="TestRunFileProcessor.cs" t="Include" />
       <e p="unprocessed" t="Include">
         <e p="1.0.9903-sel1-bv" t="Include">
