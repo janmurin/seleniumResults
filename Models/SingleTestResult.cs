@@ -19,6 +19,7 @@ namespace SeleniumResults.Models
         public bool IsPassedOrSkipped => TestResultType == TestResultType.Passed || TestResultType == TestResultType.Skipped;
         public bool IsPassedOrFailed => TestResultType == TestResultType.Failed || TestResultType == TestResultType.Passed;
 
+        // TODO: add proper equality comparator
         protected bool Equals(SingleTestResult other)
         {
             return Time == other.Time;
