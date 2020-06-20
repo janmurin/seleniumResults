@@ -148,11 +148,11 @@ namespace SeleniumResults.Models
                 Console.WriteLine(or);
             }
 
-            var stats = orderedResults.First(x => x.Name == "JournalFromCaseSmokeTest");
+            var stats = orderedResults.First(x => x.Name == "DeletePersonSmokeTest");
             var results = stats.Results
                 .Where(x => x.TestRunType == TestRunType.Selenium2)
                 .OrderByDescending(x => x.Time).ToList();
-            Console.WriteLine($"JournalFromCaseSmokeTest: {string.Join(",\n", results)}");
+            Console.WriteLine($"DeletePersonSmokeTest: {string.Join(",\n", results)}");
         }
 
         #endregion
