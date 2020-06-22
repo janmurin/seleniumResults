@@ -5,6 +5,7 @@ using System.IO.Enumeration;
 using System.Linq;
 using HtmlAgilityPack;
 using SeleniumResults.Models;
+using SeleniumResults.Models.enums;
 
 namespace SeleniumResults
 {

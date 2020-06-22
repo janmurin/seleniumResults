@@ -2,16 +2,19 @@ using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
+using SeleniumResults.Models;
+using SeleniumResults.Models.enums;
 
-namespace SeleniumResults.Models
+namespace SeleniumResults
 {
     public class ResultsDatabase
     {
-        private int TotalDuplicates { get; set; }
         private readonly ConcurrentDictionary<string, TestRun> _testRuns = new ConcurrentDictionary<string, TestRun>();
         private readonly List<string> _tooFewResults = new List<string>();
         private readonly List<string> _tooManyFailures = new List<string>();
+        private ConcurrentDictionary<string, SingleTestStats> _singleTestStatsDict;
+
+        private int DuplicateTestRunsCount { get; set; }
 
         public void AddTestRunData(TestRun testRun)
         {
@@ -43,7 +46,8 @@ namespace SeleniumResults.Models
             }
 
             // do not add duplicate test runs
-            _testRuns.TryAdd(testRun.GetId(), testRun);
+            bool isAdded = _testRuns.TryAdd(testRun.GetId(), testRun);
+            DuplicateTestRunsCount += isAdded ? 0 : 1;
         }
 
         #region Statistics
@@ -56,15 +60,29 @@ namespace SeleniumResults.Models
             Console.WriteLine($"{string.Join(",", _tooFewResults)}");
         }
 
-        public List<TestRun> GetSortedListOfTestRuns()
+        public void PrintDbStats()
         {
-            return _testRuns.Values.OrderBy(x => x.GetId()).ToList();
+            var resultDict = GetSingleTestStats();
+
+            var mostRecentTime = resultDict.Values.OrderByDescending(x => x.GetMostRecentTime()).ToArray()[0].GetMostRecentTime();
+            Console.WriteLine($"most recent time: {mostRecentTime}");
+            Console.WriteLine($"DuplicateTestRunsCount: {DuplicateTestRunsCount}");
+            Console.WriteLine($"Total test runs: {_testRuns.Count}");
+        }
+
+        public void PrintSortedListOfTestRuns()
+        {
+            _testRuns.Values
+                .OrderBy(x => x.GetId())
+                .ToList()
+                .ForEach(tr => { Console.WriteLine($"{tr}"); });
         }
 
         public void PrintCountOfSelenium2BuildsPerDay()
         {
             var orderedEnumerable =
-                from testRun in _testRuns.Values.Where(x => x.TestRunMetaData.TestRunType == TestRunType.Selenium2 && x.TestRunMetaData.LastRun >= Constants.TEST_RESULTS_START_DATETIME)
+                from testRun in _testRuns.Values.Where(x =>
+                    x.TestRunMetaData.TestRunType == TestRunType.Selenium2 && x.TestRunMetaData.LastRun >= Constants.TEST_RESULTS_START_DATETIME)
                 group testRun by testRun.TestRunMetaData.LastRun.ToString("yyyy-MM-dd")
                 into newGroup
                 orderby newGroup.Key
@@ -89,7 +107,8 @@ namespace SeleniumResults.Models
         public void PrintSuccessRateOfSelenium2BuildsPerDay(int daysPeriod)
         {
             var orderedEnumerable =
-                from testRun in _testRuns.Values.Where(x => x.TestRunMetaData.TestRunType == TestRunType.Selenium2 && x.TestRunMetaData.LastRun >= Constants.TEST_RESULTS_START_DATETIME)
+                from testRun in _testRuns.Values.Where(x =>
+                    x.TestRunMetaData.TestRunType == TestRunType.Selenium2 && x.TestRunMetaData.LastRun >= Constants.TEST_RESULTS_START_DATETIME)
                 group testRun by testRun.TestRunMetaData.LastRun.DayOfYear / daysPeriod // every x days
                 into newGroup
                 orderby newGroup.Key
@@ -113,33 +132,9 @@ namespace SeleniumResults.Models
 
         public void PrintEachTestTotalSuccessRate()
         {
-            var resultDict = new ConcurrentDictionary<string, SingleTestStats>();
-
-            foreach (TestRun testRun in _testRuns.Values)
-            {
-                testRun.Results.ForEach(sr =>
-                {
-                    if (sr.IsPassedOrFailed)
-                    {
-                        // add only passed or failed tests into statistics
-                        if (!resultDict.ContainsKey(sr.Name))
-                        {
-                            resultDict.TryAdd(sr.Name, new SingleTestStats(sr));
-                        }
-                        else
-                        {
-                            bool added = resultDict[sr.Name].Results.Add(sr);
-                            TotalDuplicates += added ? 0 : 1;
-                        }
-                    }
-                });
-            }
-
-            var mostRecentTime = resultDict.Values.OrderByDescending(x => x.GetMostRecentTime()).ToArray()[0].GetMostRecentTime();
+            var resultDict = GetSingleTestStats();
 
             Console.WriteLine($"\n FILES WITH MORE THAN {Constants.FAILURE_THRESHOLD} FAILURES SKIPPED");
-            Console.WriteLine($"skipped duplicate test results count: {TotalDuplicates}\n");
-            Console.WriteLine($"most recent time: {mostRecentTime}");
             Console.WriteLine($"{"test:",40} {"Selenium1",12} {"Selenium2",12}");
             var orderedResults = resultDict.Values.OrderByDescending(x => x.Sel1Failures + x.Sel2Failures).ToList();
 
@@ -152,12 +147,50 @@ namespace SeleniumResults.Models
             var results = stats.Results
                 .Where(x => x.TestRunData.TestRunType == TestRunType.Selenium2)
                 .OrderByDescending(x => x.Time).ToList();
-            Console.WriteLine($"DeletePersonSmokeTest: {string.Join(",\n", results)}");
+            Console.WriteLine($"DeletePersonSmokeTest:\n {string.Join(",\n", results)}");
         }
 
         #endregion
 
         #region private
+
+        private ConcurrentDictionary<string, SingleTestStats> GetSingleTestStats()
+        {
+            if (_singleTestStatsDict != null)
+            {
+                return _singleTestStatsDict;
+            }
+
+            _singleTestStatsDict = new ConcurrentDictionary<string, SingleTestStats>();
+            int singleTestTotalDuplicates = 0;
+
+            foreach (TestRun testRun in _testRuns.Values)
+            {
+                testRun.Results.ForEach(sr =>
+                {
+                    if (sr.IsPassedOrFailed)
+                    {
+                        // add only passed or failed tests into statistics
+                        if (!_singleTestStatsDict.ContainsKey(sr.Name))
+                        {
+                            _singleTestStatsDict.TryAdd(sr.Name, new SingleTestStats(sr));
+                        }
+                        else
+                        {
+                            bool added = _singleTestStatsDict[sr.Name].Results.Add(sr);
+                            singleTestTotalDuplicates += added ? 0 : 1;
+                        }
+                    }
+                });
+            }
+
+            if (singleTestTotalDuplicates > 0)
+            {
+                throw new Exception($"singleTestTotalDuplicates={singleTestTotalDuplicates}. no duplicates are expected");
+            }
+
+            return _singleTestStatsDict;
+        }
 
         #endregion
     }

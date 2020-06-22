@@ -1,4 +1,4 @@
-namespace SeleniumResults.Models
+namespace SeleniumResults.Models.enums
 {
     public enum FlytApplication
     {

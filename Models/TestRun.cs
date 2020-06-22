@@ -25,10 +25,10 @@ namespace SeleniumResults.Models
         
         public override string ToString()
         {
-            return $"(id={GetId()}, filename={TestRunMetaData.OriginalFileName}, TestRunType={TestRunMetaData.TestRunType}, IsPassed={IsPassed})";
+            return $"(id={GetId()}, IsPassed={IsPassed}), TestRunMetaData={TestRunMetaData}";
         }
 
-        #region overrides
+        #region equals
 
         protected bool Equals(TestRun other)
         {

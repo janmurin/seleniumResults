@@ -1,4 +1,5 @@
 using System;
+using SeleniumResults.Models.enums;
 
 namespace SeleniumResults.Models
 {
@@ -18,5 +19,43 @@ namespace SeleniumResults.Models
             TestRunType = testRunType;
             BuildNumber = buildNumber;
         }
+
+        public override string ToString()
+        {
+            return $"(OriginalFileName={OriginalFileName}, TestRunType={TestRunType}, FlytApplicationType={FlytApplicationType}), buildNumber={BuildNumber}, LastRun={LastRun}";
+        }
+
+        #region equals
+
+        protected bool Equals(TestRunMetaData other)
+        {
+            return BuildNumber == other.BuildNumber && TestRunType == other.TestRunType && FlytApplicationType == other.FlytApplicationType &&
+                   LastRun.Equals(other.LastRun);
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((TestRunMetaData) obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(BuildNumber, (int) TestRunType, (int) FlytApplicationType, LastRun);
+        }
+
+        public static bool operator ==(TestRunMetaData left, TestRunMetaData right)
+        {
+            return Equals(left, right);
+        }
+
+        public static bool operator !=(TestRunMetaData left, TestRunMetaData right)
+        {
+            return !Equals(left, right);
+        }
+
+        #endregion
     }
 }

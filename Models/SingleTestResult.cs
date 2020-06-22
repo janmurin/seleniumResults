@@ -1,3 +1,6 @@
+using System;
+using SeleniumResults.Models.enums;
+
 namespace SeleniumResults.Models
 {
     public class SingleTestResult
@@ -6,7 +9,7 @@ namespace SeleniumResults.Models
         public string Name { get; }
         public string Time { get; }
         private TestResultType TestResultType { get; }
-        
+
         public SingleTestResult(TestRunMetaData testRunMetaData, string name, TestResultType testResultType, string time)
         {
             TestRunData = testRunMetaData;
@@ -19,10 +22,16 @@ namespace SeleniumResults.Models
         public bool IsPassedOrSkipped => TestResultType == TestResultType.Passed || TestResultType == TestResultType.Skipped;
         public bool IsPassedOrFailed => TestResultType == TestResultType.Failed || TestResultType == TestResultType.Passed;
 
-        // TODO: add proper equality comparator
+        public override string ToString()
+        {
+            return $"time-{Time}, file-{TestRunData.OriginalFileName}, result-{TestResultType}, buildNumber-{TestRunData.BuildNumber}";
+        }
+
+        #region equals
+
         protected bool Equals(SingleTestResult other)
         {
-            return Time == other.Time;
+            return Equals(TestRunData, other.TestRunData) && Name == other.Name && Time == other.Time;
         }
 
         public override bool Equals(object obj)
@@ -35,7 +44,7 @@ namespace SeleniumResults.Models
 
         public override int GetHashCode()
         {
-            return (Time != null ? Time.GetHashCode() : 0);
+            return HashCode.Combine(TestRunData, Name, Time);
         }
 
         public static bool operator ==(SingleTestResult left, SingleTestResult right)
@@ -48,9 +57,6 @@ namespace SeleniumResults.Models
             return !Equals(left, right);
         }
 
-        public override string ToString()
-        {
-            return $"time-{Time}, file-{TestRunData.OriginalFileName}, result-{TestResultType}, buildNumber-{TestRunData.BuildNumber}";
-        }
+        #endregion
     }
 }

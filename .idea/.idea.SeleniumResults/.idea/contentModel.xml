@@ -1918,14 +1918,15 @@
         <e p="selenium-9001 (99).html" t="Include" />
       </e>
       <e p="Models" t="Include">
-        <e p="FlytApplication.cs" t="Include" />
-        <e p="ResultsDatabase.cs" t="Include" />
+        <e p="enums" t="Include">
+          <e p="FlytApplication.cs" t="Include" />
+          <e p="TestResultType.cs" t="Include" />
+          <e p="TestRunType.cs" t="Include" />
+        </e>
         <e p="SingleTestResult.cs" t="Include" />
         <e p="SingleTestStats.cs" t="Include" />
-        <e p="TestResultType.cs" t="Include" />
         <e p="TestRun.cs" t="Include" />
         <e p="TestRunMetaData.cs" t="Include" />
-        <e p="TestRunType.cs" t="Include" />
         <e p="XmlTest.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive">
@@ -1937,6 +1938,7 @@
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="Program.cs" t="Include" />
+      <e p="ResultsDatabase.cs" t="Include" />
       <e p="SeleniumResults.csproj" t="IncludeRecursive" />
       <e p="SeleniumResults.sln" t="IncludeFlat" />
       <e p="SeleniumResults.sln.DotSettings" t="Include" />
