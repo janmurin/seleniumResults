@@ -18,6 +18,7 @@ namespace SeleniumResults.Models
             Time = time;
         }
 
+        public bool IsPassed => TestResultType == TestResultType.Passed;
         public bool IsFailed => TestResultType == TestResultType.Failed;
         public bool IsPassedOrSkipped => TestResultType == TestResultType.Passed || TestResultType == TestResultType.Skipped;
         public bool IsPassedOrFailed => TestResultType == TestResultType.Failed || TestResultType == TestResultType.Passed;

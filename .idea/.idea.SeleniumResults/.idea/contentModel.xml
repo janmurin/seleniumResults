@@ -1923,6 +1923,7 @@
           <e p="TestResultType.cs" t="Include" />
           <e p="TestRunType.cs" t="Include" />
         </e>
+        <e p="LastXBuildsStat.cs" t="Include" />
         <e p="SingleTestResult.cs" t="Include" />
         <e p="SingleTestStats.cs" t="Include" />
         <e p="TestRun.cs" t="Include" />

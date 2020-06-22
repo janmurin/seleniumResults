@@ -2,6 +2,7 @@ using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Channels;
 using SeleniumResults.Models;
 using SeleniumResults.Models.enums;
 
@@ -62,7 +63,7 @@ namespace SeleniumResults
 
         public void PrintDbStats()
         {
-            var resultDict = GetSingleTestStats();
+            var resultDict = GetSingleTestStatsFromTestRuns();
 
             var mostRecentTime = resultDict.Values.OrderByDescending(x => x.GetMostRecentTime()).ToArray()[0].GetMostRecentTime();
             Console.WriteLine($"most recent time: {mostRecentTime}");
@@ -132,9 +133,8 @@ namespace SeleniumResults
 
         public void PrintEachTestTotalSuccessRate()
         {
-            var resultDict = GetSingleTestStats();
+            var resultDict = GetSingleTestStatsFromTestRuns();
 
-            Console.WriteLine($"\n FILES WITH MORE THAN {Constants.FAILURE_THRESHOLD} FAILURES SKIPPED");
             Console.WriteLine($"{"test:",40} {"Selenium1",12} {"Selenium2",12}");
             var orderedResults = resultDict.Values.OrderByDescending(x => x.Sel1Failures + x.Sel2Failures).ToList();
 
@@ -150,11 +150,38 @@ namespace SeleniumResults
             Console.WriteLine($"DeletePersonSmokeTest:\n {string.Join(",\n", results)}");
         }
 
+        public void PrintEachTestSuccessRateForTheLastXBuilds(int builds)
+        {
+            var singleTestStats = GetSingleTestStatsFromTestRuns().Values.ToList();
+
+            Console.WriteLine($"{"test:",40} {"P",4}");
+            foreach (var sr in singleTestStats)
+            {
+                sr.CalculateLastXBuildsStats(builds);
+            }
+
+            foreach (var stat in singleTestStats.OrderByDescending(x => x.LastXFailureRate).ToList())
+            {
+                Console.WriteLine(stat);
+            }
+
+            Console.WriteLine($"\nDeletePersonSmokeTest");
+            var testStats = singleTestStats.First(x => x.Name == "DeletePersonSmokeTest");
+            foreach (var lastXBuildsStat in testStats.LastXBuildsDict)
+            {
+                Console.WriteLine($"{lastXBuildsStat.Key} = {lastXBuildsStat.Value}");
+                lastXBuildsStat.Value.GetOrderedTestRuns().ForEach(x =>
+                {
+                    Console.WriteLine($"{x}");   
+                });
+            }
+        }
+
         #endregion
 
         #region private
 
-        private ConcurrentDictionary<string, SingleTestStats> GetSingleTestStats()
+        private ConcurrentDictionary<string, SingleTestStats> GetSingleTestStatsFromTestRuns()
         {
             if (_singleTestStatsDict != null)
             {
@@ -168,9 +195,9 @@ namespace SeleniumResults
             {
                 testRun.Results.ForEach(sr =>
                 {
+                    // add only passed or failed tests into statistics
                     if (sr.IsPassedOrFailed)
                     {
-                        // add only passed or failed tests into statistics
                         if (!_singleTestStatsDict.ContainsKey(sr.Name))
                         {
                             _singleTestStatsDict.TryAdd(sr.Name, new SingleTestStats(sr));

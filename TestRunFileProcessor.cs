@@ -45,7 +45,7 @@ namespace SeleniumResults
             return null;
         }
 
-        private static string ParseBuildNumber(HtmlDocument htmlDoc)
+        private static int ParseBuildNumber(HtmlDocument htmlDoc)
         {
             string resultFileUrl = htmlDoc.DocumentNode?.SelectSingleNode("//div[@id='modal1']//tr//*[contains(text(),'TestResult ')]//parent::tr/td[2]")
                 .InnerText;
@@ -54,7 +54,7 @@ namespace SeleniumResults
             buildNumber = buildNumber
                 .Replace("\\1.0.", "")
                 .Replace(".xml", "");
-            return buildNumber;
+            return int.Parse(buildNumber);
         }
 
         private static TestRunType ParseTestRunType(HtmlDocument htmlDoc)
