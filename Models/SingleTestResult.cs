@@ -25,7 +25,7 @@ namespace SeleniumResults.Models
 
         public override string ToString()
         {
-            return $"time-{Time}, file-{TestRunData.OriginalFileName}, result-{TestResultType}, buildNumber-{TestRunData.BuildNumber}";
+            return $"time-{Time}, file-{TestRunData.OriginalFileName}, result-{TestResultType}, app-{TestRunData.FlytApplicationType}, buildNumber-{TestRunData.BuildNumber}";
         }
 
         #region equals

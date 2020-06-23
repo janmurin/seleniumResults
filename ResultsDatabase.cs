@@ -143,11 +143,11 @@ namespace SeleniumResults
                 Console.WriteLine(or);
             }
 
-            var stats = orderedResults.First(x => x.Name == "DeletePersonSmokeTest");
+            var stats = orderedResults.First(x => x.Name == "CorrespondenceFromCaseSmokeTest2");
             var results = stats.Results
                 .Where(x => x.TestRunData.TestRunType == TestRunType.Selenium2)
                 .OrderByDescending(x => x.Time).ToList();
-            Console.WriteLine($"DeletePersonSmokeTest:\n {string.Join(",\n", results)}");
+            Console.WriteLine($"CorrespondenceFromCaseSmokeTest2:\n {string.Join(",\n", results)}");
         }
 
         public void PrintEachTestSuccessRateForTheLastXBuilds(int builds)
