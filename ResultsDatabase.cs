@@ -51,6 +51,47 @@ namespace SeleniumResults
             DuplicateTestRunsCount += isAdded ? 0 : 1;
         }
 
+        public void ProcessData()
+        {
+            _singleTestStatsDict = new ConcurrentDictionary<string, SingleTestStats>();
+            int singleTestTotalDuplicates = 0;
+
+            foreach (TestRun testRun in _testRuns.Values)
+            {
+                testRun.Results.ForEach(sr =>
+                {
+                    // add only passed or failed tests into statistics
+                    if (sr.IsPassedOrFailed)
+                    {
+                        if (!_singleTestStatsDict.ContainsKey(sr.Name))
+                        {
+                            _singleTestStatsDict.TryAdd(sr.Name, new SingleTestStats(sr));
+                        }
+                        else
+                        {
+                            bool added = _singleTestStatsDict[sr.Name].Results.Add(sr);
+                            singleTestTotalDuplicates += added ? 0 : 1;
+                        }
+                    }
+                });
+            }
+
+            if (singleTestTotalDuplicates > 0)
+            {
+                throw new Exception($"singleTestTotalDuplicates={singleTestTotalDuplicates}. no duplicates are expected");
+            }
+            
+            foreach (var sr in _singleTestStatsDict.Values)
+            {
+                sr.CalculateLastXBuildsStats(10);
+            }
+        }
+        
+        public List<SingleTestStats> GetTestStatsList()
+        {
+            return _singleTestStatsDict.Values.OrderByDescending(x => x.Sel2Stat).ToList();
+        }
+
         #region Statistics
 
         public void PrintTooFewAndTooMany()
@@ -63,9 +104,7 @@ namespace SeleniumResults
 
         public void PrintDbStats()
         {
-            var resultDict = GetSingleTestStatsFromTestRuns();
-
-            var mostRecentTime = resultDict.Values.OrderByDescending(x => x.GetMostRecentTime()).ToArray()[0].GetMostRecentTime();
+            var mostRecentTime = _singleTestStatsDict.Values.OrderByDescending(x => x.GetMostRecentTime()).ToArray()[0].GetMostRecentTime();
             Console.WriteLine($"most recent time: {mostRecentTime}");
             Console.WriteLine($"DuplicateTestRunsCount: {DuplicateTestRunsCount}");
             Console.WriteLine($"Total test runs: {_testRuns.Count}");
@@ -133,10 +172,8 @@ namespace SeleniumResults
 
         public void PrintEachTestTotalSuccessRate()
         {
-            var resultDict = GetSingleTestStatsFromTestRuns();
-
             Console.WriteLine($"{"test:",40} {"Selenium1",12} {"Selenium2",12}");
-            var orderedResults = resultDict.Values.OrderByDescending(x => x.Sel1Failures + x.Sel2Failures).ToList();
+            var orderedResults = _singleTestStatsDict.Values.OrderByDescending(x => x.Sel1Failures + x.Sel2Failures).ToList();
 
             foreach (var or in orderedResults)
             {
@@ -150,23 +187,17 @@ namespace SeleniumResults
             Console.WriteLine($"CorrespondenceFromCaseSmokeTest2:\n {string.Join(",\n", results)}");
         }
 
-        public void PrintEachTestSuccessRateForTheLastXBuilds(int builds)
+        public void PrintEachTestSuccessRateForTheLastXBuilds()
         {
-            var singleTestStats = GetSingleTestStatsFromTestRuns().Values.ToList();
-
             Console.WriteLine($"{"test:",40} {"P",4}");
-            foreach (var sr in singleTestStats)
-            {
-                sr.CalculateLastXBuildsStats(builds);
-            }
 
-            foreach (var stat in singleTestStats.OrderByDescending(x => x.LastXFailureRate).ToList())
+            foreach (var stat in _singleTestStatsDict.Values.OrderByDescending(x => x.LastXFailureRate).ToList())
             {
                 Console.WriteLine(stat);
             }
 
             Console.WriteLine($"\nDeletePersonSmokeTest");
-            var testStats = singleTestStats.First(x => x.Name == "DeletePersonSmokeTest");
+            var testStats = _singleTestStatsDict.Values.First(x => x.Name == "DeletePersonSmokeTest");
             foreach (var lastXBuildsStat in testStats.LastXBuildsDict)
             {
                 Console.WriteLine($"{lastXBuildsStat.Key} = {lastXBuildsStat.Value}");
@@ -180,45 +211,9 @@ namespace SeleniumResults
         #endregion
 
         #region private
-
-        private ConcurrentDictionary<string, SingleTestStats> GetSingleTestStatsFromTestRuns()
-        {
-            if (_singleTestStatsDict != null)
-            {
-                return _singleTestStatsDict;
-            }
-
-            _singleTestStatsDict = new ConcurrentDictionary<string, SingleTestStats>();
-            int singleTestTotalDuplicates = 0;
-
-            foreach (TestRun testRun in _testRuns.Values)
-            {
-                testRun.Results.ForEach(sr =>
-                {
-                    // add only passed or failed tests into statistics
-                    if (sr.IsPassedOrFailed)
-                    {
-                        if (!_singleTestStatsDict.ContainsKey(sr.Name))
-                        {
-                            _singleTestStatsDict.TryAdd(sr.Name, new SingleTestStats(sr));
-                        }
-                        else
-                        {
-                            bool added = _singleTestStatsDict[sr.Name].Results.Add(sr);
-                            singleTestTotalDuplicates += added ? 0 : 1;
-                        }
-                    }
-                });
-            }
-
-            if (singleTestTotalDuplicates > 0)
-            {
-                throw new Exception($"singleTestTotalDuplicates={singleTestTotalDuplicates}. no duplicates are expected");
-            }
-
-            return _singleTestStatsDict;
-        }
+        
 
         #endregion
+        
     }
 }

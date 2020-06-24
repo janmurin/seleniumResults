@@ -33,6 +33,14 @@
         "HtmlAgilityPack": {
           "target": "Package",
           "version": "[1.11.24, )"
+        },
+        "RazorLight.NetCore3": {
+          "target": "Package",
+          "version": "[3.0.2, )"
+        },
+        "System.Configuration.ConfigurationManager": {
+          "target": "Package",
+          "version": "[4.7.0, )"
         }
       },
       "imports": [
@@ -46,6 +54,9 @@
       "assetTargetFallback": true,
       "warn": true,
       "frameworkReferences": {
+        "Microsoft.AspNetCore.App": {
+          "privateAssets": "none"
+        },
         "Microsoft.NETCore.App": {
           "privateAssets": "all"
         }

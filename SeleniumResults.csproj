@@ -5,8 +5,17 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <!-- This group contains project properties for RazorLight on .NET Core -->
+        <PreserveCompilationContext>true</PreserveCompilationContext>
+        <MvcRazorCompileOnPublish>false</MvcRazorCompileOnPublish>
+        <MvcRazorExcludeRefAssembliesFromPublish>false</MvcRazorExcludeRefAssembliesFromPublish>
+    </PropertyGroup>
+
     <ItemGroup>
       <PackageReference Include="HtmlAgilityPack" Version="1.11.24" />
+      <PackageReference Include="RazorLight.NetCore3" Version="3.0.2" />
+      <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
     </ItemGroup>
 
 </Project>

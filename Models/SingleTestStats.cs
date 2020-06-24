@@ -23,10 +23,32 @@ namespace SeleniumResults.Models
         private int Sel1Count => Results.Count(x => x.TestRunData.TestRunType == TestRunType.Selenium);
         private int Sel2Count => Results.Count(x => x.TestRunData.TestRunType == TestRunType.Selenium2);
         private string MostRecentTime { get; set; }
-        public double LastXFailureRate
+
+        public double LastXFailureRate => LastXBuildsDict.First().Value.FailureRate;
+
+        public string Sel1Stat
         {
-            get => LastXBuildsDict.First().Value.FailureRate;
+            get
+            {
+                int sel1Perc = (int) (Sel1Count > 0 ? Decimal.Divide(Sel1Failures, Sel1Count) * 100 : 0);
+
+                return $"{sel1Perc:D2} % ({Sel1Failures}/{Sel1Count})";
+            }
         }
+
+        public string Sel2Stat
+        {
+            get
+            {
+                int sel2Perc = (int) (Sel2Count > 0 ? Decimal.Divide(Sel2Failures, Sel2Count) * 100 : 0);
+
+                return $"{sel2Perc:D2} % ({Sel2Failures}/{Sel2Count})";
+            }
+        }
+
+        public string TotalFailures => $"{Sel1Failures + Sel2Failures}";
+        public string TotalRuns => $"{Sel1Count + Sel2Count}";
+        public string LastXFailureRateString => $"{(int) (LastXFailureRate * 100):D2} % ";
 
         public string GetMostRecentTime()
         {
@@ -60,6 +82,7 @@ namespace SeleniumResults.Models
             {
                 return "";
             }
+
             string[] array = LastXBuildsDict.Select(x => new String($"{x.Key}-{x.Value.FailureRate * 100:0}")).ToArray();
             return string.Join(" ", array);
         }
@@ -68,22 +91,22 @@ namespace SeleniumResults.Models
         {
             var byBuildNumber = GetResultsOrderedByBuildNumber().ToList();
             LastXBuildsDict = new Dictionary<int, LastXBuildsStat>();
-            
+
             if (byBuildNumber.Count > buildsInGroup)
             {
                 for (int i = 0; i < byBuildNumber.Count - buildsInGroup; i++)
                 {
                     var take = byBuildNumber.Skip(i).Take(buildsInGroup).ToList();
                     int buildNumber = take.First().Key;
-                    
-                    LastXBuildsDict.TryAdd(buildNumber, new LastXBuildsStat(take));    
+
+                    LastXBuildsDict.TryAdd(buildNumber, new LastXBuildsStat(take));
                 }
             }
             else
             {
                 int buildNumber = byBuildNumber.First().Key;
                 var take = byBuildNumber.Take(Math.Min(buildsInGroup, byBuildNumber.Count()));
-                
+
                 LastXBuildsDict.TryAdd(buildNumber, new LastXBuildsStat(take));
             }
 
@@ -96,9 +119,8 @@ namespace SeleniumResults.Models
             return from result in Results.ToList()
                 group result by result.TestRunData.BuildNumber
                 into appGroup
-                orderby appGroup.Key descending 
+                orderby appGroup.Key descending
                 select appGroup;
         }
-
     }
 }
