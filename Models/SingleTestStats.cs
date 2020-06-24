@@ -24,31 +24,16 @@ namespace SeleniumResults.Models
         private int Sel2Count => Results.Count(x => x.TestRunData.TestRunType == TestRunType.Selenium2);
         private string MostRecentTime { get; set; }
 
-        public double LastXFailureRate => LastXBuildsDict.First().Value.FailureRate;
+        public int LastXFailureRate => (int) (LastXBuildsDict.First().Value.FailureRate * 100);
 
-        public string Sel1Stat
-        {
-            get
-            {
-                int sel1Perc = (int) (Sel1Count > 0 ? Decimal.Divide(Sel1Failures, Sel1Count) * 100 : 0);
-
-                return $"{sel1Perc:D2} % ({Sel1Failures}/{Sel1Count})";
-            }
-        }
-
-        public string Sel2Stat
-        {
-            get
-            {
-                int sel2Perc = (int) (Sel2Count > 0 ? Decimal.Divide(Sel2Failures, Sel2Count) * 100 : 0);
-
-                return $"{sel2Perc:D2} % ({Sel2Failures}/{Sel2Count})";
-            }
-        }
+        public int Sel1FailureRate => (int) (Sel1Count > 0 ? Decimal.Divide(Sel1Failures, Sel1Count) * 100 : 0);
+        public string Sel1Stat => $"{Sel1FailureRate:D2} % ({Sel1Failures}/{Sel1Count})";
+        public int Sel2FailureRate => (int) (Sel2Count > 0 ? Decimal.Divide(Sel2Failures, Sel2Count) * 100 : 0);
+        public string Sel2Stat => $"{Sel2FailureRate:D2} % ({Sel2Failures}/{Sel2Count})";
 
         public string TotalFailures => $"{Sel1Failures + Sel2Failures}";
         public string TotalRuns => $"{Sel1Count + Sel2Count}";
-        public string LastXFailureRateString => $"{(int) (LastXFailureRate * 100):D2} % ";
+        public string LastXFailureRateString => $"{LastXFailureRate:D2} % ";
 
         public string GetMostRecentTime()
         {
