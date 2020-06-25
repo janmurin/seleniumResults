@@ -3,7 +3,6 @@
   <component name="ContentModelStore">
     <e p="C:\DATA\Repositories\SeleniumResults" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
-      <e p="1.0.10243.xml" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Constants.cs" t="Include" />
       <e p="Models" t="Include">
@@ -2079,7 +2078,6 @@
           <e p="selenium-10329 (1).html" t="Include" />
           <e p="selenium-10329 (10).html" t="Include" />
           <e p="selenium-10329 (11).html" t="Include" />
-          <e p="selenium-10329 (12).html" t="Include" />
           <e p="selenium-10329 (13).html" t="Include" />
           <e p="selenium-10329 (14).html" t="Include" />
           <e p="selenium-10329 (15).html" t="Include" />
@@ -2188,7 +2186,6 @@
           <e p="selenium-9001 (51).html" t="Include" />
           <e p="selenium-9001 (52).html" t="Include" />
           <e p="selenium-9001 (53).html" t="Include" />
-          <e p="selenium-9001 (54).html" t="Include" />
           <e p="selenium-9001 (55).html" t="Include" />
           <e p="selenium-9001 (56).html" t="Include" />
           <e p="selenium-9001 (57).html" t="Include" />
