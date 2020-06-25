@@ -8,7 +8,7 @@ namespace SeleniumResults.Models
         public TestRunMetaData TestRunData { get; }
         public string Name { get; }
         public string Time { get; }
-        private TestResultType TestResultType { get; }
+        public TestResultType TestResultType { get; }
 
         public SingleTestResult(TestRunMetaData testRunMetaData, string name, TestResultType testResultType, string time)
         {

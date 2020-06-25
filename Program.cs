@@ -13,7 +13,7 @@ namespace SeleniumResults
 
         static void Main(string[] args)
         {
-            string filesDir = "..\\..\\..\\data";
+            string filesDir = "..\\..\\..\\webreport\\data";
 
             Console.WriteLine($"files dir: {filesDir}");
 
