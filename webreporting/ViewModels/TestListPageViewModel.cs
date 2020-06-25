@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using SeleniumResults.Models;
 
-namespace SeleniumResults.ViewModels
+namespace SeleniumResults.webreporting.ViewModels
 {
-    public class TestsPageViewModel
+    public class TestListPageViewModel
     {
         public List<SingleTestStats> TestStatsList { get; set; }
     }

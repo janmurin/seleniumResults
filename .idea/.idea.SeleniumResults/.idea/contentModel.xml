@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\DATA\Repositories\SeleniumResults" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
+      <e p="App_Code" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Constants.cs" t="Include" />
       <e p="Models" t="Include">
@@ -233,9 +234,6 @@
         <e p="Selenium2-car-10260.zip" t="Include" />
         <e p="Selenium2-ppt-10260.zip" t="Include" />
         <e p="Selenium2-scc-10260.zip" t="Include" />
-      </e>
-      <e p="ViewModels" t="Include">
-        <e p="TestsPageViewModel.cs" t="Include" />
       </e>
       <e p="webreport" t="Include">
         <e p=".browserslistrc" t="Include" />
@@ -4165,7 +4163,12 @@
       <e p="webreporting" t="Include">
         <e p="templates" t="Include">
           <e p="template.cshtml" t="Include" />
+          <e p="testPage.cshtml" t="Include" />
           <e p="testStats.cshtml" t="Include" />
+        </e>
+        <e p="ViewModels" t="Include">
+          <e p="TestListPageViewModel.cs" t="Include" />
+          <e p="TestPageViewModel.cs" t="Include" />
         </e>
         <e p="WebReportGenerator.cs" t="Include" />
       </e>

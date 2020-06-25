@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using RazorLight;
 using SeleniumResults.Models;
-using SeleniumResults.ViewModels;
+using SeleniumResults.webreporting.ViewModels;
 
 namespace SeleniumResults.webreporting
 {
@@ -19,7 +19,7 @@ namespace SeleniumResults.webreporting
                 .UseMemoryCachingProvider()
                 .Build();
 
-            var viewModel = new TestsPageViewModel()
+            var viewModel = new TestListPageViewModel()
             {
                 TestStatsList = testStatsList
             };
