@@ -11,7 +11,7 @@ namespace SeleniumResults.Models
             Builds = buildsGroup;
 
             int failed = 0;
-            double builds = 0;
+            int builds = 0;
             Builds.ToList().ForEach(results =>
             {
                 foreach (var testResult in results)
@@ -22,15 +22,13 @@ namespace SeleniumResults.Models
                 builds += results.Count();
             });
 
-            TotalBuilds = (int) builds;
+            TotalBuilds = builds;
             TotalFailed = failed;
-            FailureRate = failed / builds;
+            FailureRate = (int) (builds > 0 ? Decimal.Divide(failed, builds) * 100 : 0);
         }
 
         public double TotalFailed { get; }
-
-        public double FailureRate { get; }
-
+        public int FailureRate { get; }
         public int TotalBuilds { get; }
 
         public IEnumerable<IGrouping<int, SingleTestResult>> Builds { get; }

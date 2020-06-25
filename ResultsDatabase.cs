@@ -89,7 +89,7 @@ namespace SeleniumResults
         
         public List<SingleTestStats> GetTestStatsList()
         {
-            return _singleTestStatsDict.Values.OrderByDescending(x => x.Sel2Stat).ToList();
+            return _singleTestStatsDict.Values.OrderByDescending(x => x.LastXFailureRate).ToList();
         }
 
         #region Statistics

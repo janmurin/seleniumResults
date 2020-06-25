@@ -399,7 +399,18 @@ to avoid runtime error when RazorEngine compiles your templates. *@
                                 @{
                                   KeyValuePair<int, LastXBuildsStat> valuePair = testStat.LastXBuildsDict.First();
                                 }
-                                <p>@($"{valuePair.Key} = {valuePair.Value}")</p>
+                                <table class="table table-borderless table-sm w-auto">
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">Failure rate:</th>
+                                      <td>@valuePair.Value.FailureRate %</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">Total builds:</th>
+                                      <td>@valuePair.Value.TotalFailed/@valuePair.Value.TotalBuilds</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                                 <table class="table table-bordered modal-datatable" width="100%" cellspacing="0">
                                   <thead>
                                   <tr>

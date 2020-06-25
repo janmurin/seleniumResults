@@ -24,7 +24,7 @@ namespace SeleniumResults.Models
         private int Sel2Count => Results.Count(x => x.TestRunData.TestRunType == TestRunType.Selenium2);
         private string MostRecentTime { get; set; }
 
-        public int LastXFailureRate => (int) (LastXBuildsDict.First().Value.FailureRate * 100);
+        public int LastXFailureRate => LastXBuildsDict.First().Value.FailureRate;
 
         public int Sel1FailureRate => (int) (Sel1Count > 0 ? Decimal.Divide(Sel1Failures, Sel1Count) * 100 : 0);
         public string Sel1Stat => $"{Sel1FailureRate:D2} % ({Sel1Failures}/{Sel1Count})";
@@ -68,7 +68,7 @@ namespace SeleniumResults.Models
                 return "";
             }
 
-            string[] array = LastXBuildsDict.Select(x => new String($"{x.Key}-{x.Value.FailureRate * 100:0}")).ToArray();
+            string[] array = LastXBuildsDict.Select(x => new String($"{x.Key}-{x.Value.FailureRate:0}")).ToArray();
             return string.Join(" ", array);
         }
 

@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\DATA\Repositories\SeleniumResults" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
+      <e p="1.0.10243.xml" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Constants.cs" t="Include" />
       <e p="Models" t="Include">
@@ -2097,6 +2098,32 @@
           <e p="selenium-10329 (7).html" t="Include" />
           <e p="selenium-10329 (8).html" t="Include" />
           <e p="selenium-10329 (9).html" t="Include" />
+          <e p="selenium-10334 (1).html" t="Include" />
+          <e p="selenium-10334 (10).html" t="Include" />
+          <e p="selenium-10334 (11).html" t="Include" />
+          <e p="selenium-10334 (12).html" t="Include" />
+          <e p="selenium-10334 (13).html" t="Include" />
+          <e p="selenium-10334 (14).html" t="Include" />
+          <e p="selenium-10334 (15).html" t="Include" />
+          <e p="selenium-10334 (16).html" t="Include" />
+          <e p="selenium-10334 (17).html" t="Include" />
+          <e p="selenium-10334 (18).html" t="Include" />
+          <e p="selenium-10334 (19).html" t="Include" />
+          <e p="selenium-10334 (2).html" t="Include" />
+          <e p="selenium-10334 (20).html" t="Include" />
+          <e p="selenium-10334 (21).html" t="Include" />
+          <e p="selenium-10334 (22).html" t="Include" />
+          <e p="selenium-10334 (23).html" t="Include" />
+          <e p="selenium-10334 (24).html" t="Include" />
+          <e p="selenium-10334 (25).html" t="Include" />
+          <e p="selenium-10334 (26).html" t="Include" />
+          <e p="selenium-10334 (3).html" t="Include" />
+          <e p="selenium-10334 (4).html" t="Include" />
+          <e p="selenium-10334 (5).html" t="Include" />
+          <e p="selenium-10334 (6).html" t="Include" />
+          <e p="selenium-10334 (7).html" t="Include" />
+          <e p="selenium-10334 (8).html" t="Include" />
+          <e p="selenium-10334 (9).html" t="Include" />
           <e p="selenium-235 (1).html" t="Include" />
           <e p="selenium-235 (10).html" t="Include" />
           <e p="selenium-235 (11).html" t="Include" />
@@ -2226,6 +2253,28 @@
         </e>
         <e p="LICENSE" t="Include" />
         <e p="login.html" t="Include" />
+        <e p="node_modules\@fortawesome\fontawesome-free" t="IncludeRecursive" />
+        <e p="node_modules\@types" t="IncludeRecursive">
+          <e p="events" t="IncludeRecursive" />
+          <e p="minimatch" t="IncludeRecursive" />
+          <e p="node" t="IncludeRecursive" />
+        </e>
+        <e p="node_modules\bootstrap" t="IncludeRecursive" />
+        <e p="node_modules\browser-sync" t="IncludeRecursive" />
+        <e p="node_modules\chart.js" t="IncludeRecursive" />
+        <e p="node_modules\datatables.net-bs4" t="IncludeRecursive" />
+        <e p="node_modules\del" t="IncludeRecursive" />
+        <e p="node_modules\gulp" t="IncludeRecursive" />
+        <e p="node_modules\gulp-autoprefixer" t="IncludeRecursive" />
+        <e p="node_modules\gulp-clean-css" t="IncludeRecursive" />
+        <e p="node_modules\gulp-header" t="IncludeRecursive" />
+        <e p="node_modules\gulp-plumber" t="IncludeRecursive" />
+        <e p="node_modules\gulp-rename" t="IncludeRecursive" />
+        <e p="node_modules\gulp-sass" t="IncludeRecursive" />
+        <e p="node_modules\gulp-uglify" t="IncludeRecursive" />
+        <e p="node_modules\jquery" t="IncludeRecursive" />
+        <e p="node_modules\jquery.easing" t="IncludeRecursive" />
+        <e p="node_modules\merge-stream" t="IncludeRecursive" />
         <e p="package-lock.json" t="Include" />
         <e p="package.json" t="Include" />
         <e p="README.md" t="Include" />
@@ -4125,7 +4174,8 @@
         <e p="WebReportGenerator.cs" t="Include" />
       </e>
     </e>
-    <e p="C:\Users\jan.murin.INTERNAL\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\jan.murin.INTERNAL\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_SeleniumResults.603230407.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Murin Jan\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Murin Jan\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_SeleniumResults.603230407.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Murin Jan\AppData\Roaming\JetBrains\Rider2020.1\scratches" t="IncludeRecursive" />
   </component>
 </project>
