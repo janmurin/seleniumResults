@@ -244,6 +244,7 @@
         <e p="buttons.html" t="Include" />
         <e p="cards.html" t="Include" />
         <e p="charts.html" t="Include" />
+        <e p="CorrespondenceFromCaseSmokeTest2.html" t="Include" />
         <e p="css" t="Include">
           <e p="sb-admin-2.css" t="Include" />
           <e p="sb-admin-2.min.css" t="Include" />
@@ -2280,10 +2281,10 @@
             <e p="chart-area-demo.js" t="Include" />
             <e p="chart-bar-demo.js" t="Include" />
             <e p="chart-pie-demo.js" t="Include" />
-            <e p="datatables-demo.js" t="Include" />
           </e>
           <e p="sb-admin-2.js" t="Include" />
           <e p="sb-admin-2.min.js" t="Include" />
+          <e p="utils.js" t="Include" />
         </e>
         <e p="LICENSE" t="Include" />
         <e p="login.html" t="Include" />
@@ -2342,7 +2343,96 @@
             <e p="_text.scss" t="Include" />
           </e>
         </e>
-        <e p="tables.html" t="Include" />
+        <e p="seleniumRuns.html" t="Include" />
+        <e p="seleniumTests.html" t="Include" />
+        <e p="testPages" t="Include">
+          <e p="AdministrationMigrationSmokeTest.html" t="Include" />
+          <e p="AdministrationSmokeTest.html" t="Include" />
+          <e p="ApiRedirectErrorPageSmokeTest.html" t="Include" />
+          <e p="BVAppointmentFromCalendarSmokeTest.html" t="Include" />
+          <e p="BVAppointmentFromHomeSmokeTest.html" t="Include" />
+          <e p="BVIncomingPostSmokeTest.html" t="Include" />
+          <e p="BVVAppointmentFromCalendarSmokeTest.html" t="Include" />
+          <e p="BVVAppointmentFromHomeSmokeTest.html" t="Include" />
+          <e p="BVVFollowUpFromCalendarSmokeTest.html" t="Include" />
+          <e p="BVVFollowUpFromCaseSmokeTest.html" t="Include" />
+          <e p="BVVFollowUpFromEventSmokeTest.html" t="Include" />
+          <e p="BVVFollowUpFromHomeSmokeTest.html" t="Include" />
+          <e p="BVVIncomingPostSmokeTest.html" t="Include" />
+          <e p="CalendarSmokeTest.html" t="Include" />
+          <e p="CARAppointmentFromCalendarSmokeTest.html" t="Include" />
+          <e p="CARFollowUpFromCalendarSmokeTest.html" t="Include" />
+          <e p="CARFollowUpFromCaseSmokeTest.html" t="Include" />
+          <e p="CARFollowUpFromEventSmokeTest.html" t="Include" />
+          <e p="CARFollowUpFromHomeSmokeTest.html" t="Include" />
+          <e p="CaseBackLinkSmokeTest.html" t="Include" />
+          <e p="CasesSmokeTest.html" t="Include" />
+          <e p="Ck5EditorCorrespondenceSmokeTest.html" t="Include" />
+          <e p="Ck5EditorEnquirySmokeTest.html" t="Include" />
+          <e p="Ck5EditorJournalSmokeTest.html" t="Include" />
+          <e p="CkEditorCorrespondenceSmokeTest.html" t="Include" />
+          <e p="CkEditorEnquirySmokeTest.html" t="Include" />
+          <e p="CkEditorJournalSmokeTest.html" t="Include" />
+          <e p="CorrespondenceBackLinkSmokeTest.html" t="Include" />
+          <e p="CorrespondenceCopyToSiblingsSmokeTest.html" t="Include" />
+          <e p="CorrespondenceFromCaseSmokeTest.html" t="Include" />
+          <e p="CorrespondenceFromCaseSmokeTest2.html" t="Include" />
+          <e p="CorrespondenceFromClientDetailsSmokeTest.html" t="Include" />
+          <e p="CorrespondenceTest.html" t="Include" />
+          <e p="CreateTeamTest.html" t="Include" />
+          <e p="DeletePersonSmokeTest.html" t="Include" />
+          <e p="EmployeeSmokeTest.html" t="Include" />
+          <e p="EmployeeTest.html" t="Include" />
+          <e p="EnquiryCopyToSiblingsSmokeTest.html" t="Include" />
+          <e p="EnquiryElementsTest.html" t="Include" />
+          <e p="EnquiryFromClientDetailsSmokeTest.html" t="Include" />
+          <e p="EnquiryFromEventsSmokeTest.html" t="Include" />
+          <e p="EventBackLinkSmokeTest.html" t="Include" />
+          <e p="EventListSmokeTest.html" t="Include" />
+          <e p="EventSmokeTest.html" t="Include" />
+          <e p="FollowUpFromCalendarSmokeTest.html" t="Include" />
+          <e p="FormattingSmokeTest.html" t="Include" />
+          <e p="HomeBackLinkSmokeTest.html" t="Include" />
+          <e p="HomeSmokeTest.html" t="Include" />
+          <e p="IncomingPostReferralTest.html" t="Include" />
+          <e p="IncomingPostSmokeTest.html" t="Include" />
+          <e p="JournalBackLinkSmokeTest.html" t="Include" />
+          <e p="JournalCopyToSiblingsSmokeTest.html" t="Include" />
+          <e p="JournalFromCaseSmokeTest.html" t="Include" />
+          <e p="JournalFromClientDetailsSmokeTest.html" t="Include" />
+          <e p="KeyfiguresSmokeTest.html" t="Include" />
+          <e p="LoginSmokeTest.html" t="Include" />
+          <e p="MergefieldSmokeTest.html" t="Include" />
+          <e p="OrganizationSmokeTest.html" t="Include" />
+          <e p="PdfPreviewTest.html" t="Include" />
+          <e p="PersonDetailsTest.html" t="Include" />
+          <e p="PersonsBackLinkSmokeTest.html" t="Include" />
+          <e p="PersonSearchTest.html" t="Include" />
+          <e p="PersonsSmokeTest.html" t="Include" />
+          <e p="PostRegistrationOnNewCaseSmokeTest.html" t="Include" />
+          <e p="PPTAppointmentFromCalendarSmokeTest.html" t="Include" />
+          <e p="PPTAppointmentFromHomeSmokeTest.html" t="Include" />
+          <e p="PPTFollowUpFromCalendarSmokeTest.html" t="Include" />
+          <e p="PPTFollowUpFromCaseSmokeTest.html" t="Include" />
+          <e p="PPTFollowUpFromEventSmokeTest.html" t="Include" />
+          <e p="PPTFollowUpFromHomeSmokeTest.html" t="Include" />
+          <e p="QuerySmokeTest.html" t="Include" />
+          <e p="RolesTest.html" t="Include" />
+          <e p="SCCAppointmentFromCalendarSmokeTest.html" t="Include" />
+          <e p="SccCk5EditorEnquirySmokeTest.html" t="Include" />
+          <e p="SccCkEditorEnquirySmokeTest.html" t="Include" />
+          <e p="SccEnquiryFromClientDetailsSmokeTest.html" t="Include" />
+          <e p="SccEnquiryFromEventsSmokeTest.html" t="Include" />
+          <e p="SCCFollowUpFromCalendarSmokeTest.html" t="Include" />
+          <e p="SCCFollowUpFromCaseSmokeTest.html" t="Include" />
+          <e p="SCCFollowUpFromEventSmokeTest.html" t="Include" />
+          <e p="SCCFollowUpFromHomeSmokeTest.html" t="Include" />
+          <e p="SearchTest.html" t="Include" />
+          <e p="StatisticsSmokeTest.html" t="Include" />
+          <e p="StatisticsTableSmokeTest.html" t="Include" />
+          <e p="TemplateEditorTest.html" t="Include" />
+          <e p="TemplatesSmokeTest.html" t="Include" />
+        </e>
         <e p="utilities-animation.html" t="Include" />
         <e p="utilities-border.html" t="Include" />
         <e p="utilities-color.html" t="Include" />
@@ -4202,13 +4292,16 @@
       </e>
       <e p="webreporting" t="Include">
         <e p="templates" t="Include">
-          <e p="template.cshtml" t="Include" />
-          <e p="testPage.cshtml" t="Include" />
-          <e p="testStats.cshtml" t="Include" />
+          <e p="_Layout.cshtml" t="Include" />
+          <e p="_TestPageLayout.cshtml" t="Include" />
+          <e p="seleniumRuns.cshtml" t="Include" />
+          <e p="seleniumTest.cshtml" t="Include" />
+          <e p="seleniumTests.cshtml" t="Include" />
         </e>
         <e p="ViewModels" t="Include">
-          <e p="TestListPageViewModel.cs" t="Include" />
-          <e p="TestPageViewModel.cs" t="Include" />
+          <e p="SeleniumRunsViewModel.cs" t="Include" />
+          <e p="SeleniumTestsViewModel.cs" t="Include" />
+          <e p="SeleniumTestViewModel.cs" t="Include" />
         </e>
         <e p="WebReportGenerator.cs" t="Include" />
       </e>

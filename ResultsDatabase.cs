@@ -12,7 +12,7 @@ namespace SeleniumResults
     {
         private readonly ConcurrentDictionary<string, TestRun> _testRuns = new ConcurrentDictionary<string, TestRun>();
         private readonly List<string> _tooFewResults = new List<string>();
-        private readonly List<string> _tooManyFailures = new List<string>();
+        private readonly List<TestRun> _tooManyErrorRuns = new List<TestRun>();
         private ConcurrentDictionary<string, SingleTestStats> _singleTestStatsDict;
 
         private int DuplicateTestRunsCount { get; set; }
@@ -33,8 +33,7 @@ namespace SeleniumResults
             int failures = testRun.Results.Count(x => x.IsFailed);
             if (failures > Constants.FAILURE_THRESHOLD)
             {
-                //Console.WriteLine($"skipping test run [{testRun.FileName}] because of too many failures: {failures}");
-                _tooManyFailures.Add($"({testRun.TestRunMetaData.OriginalFileName}, failures-{failures})");
+                _tooManyErrorRuns.Add(testRun);
                 return;
             }
 
@@ -80,16 +79,23 @@ namespace SeleniumResults
             {
                 throw new Exception($"singleTestTotalDuplicates={singleTestTotalDuplicates}. no duplicates are expected");
             }
-            
+
             foreach (var sr in _singleTestStatsDict.Values)
             {
                 sr.CalculateLastXBuildsStats(10);
             }
         }
-        
+
         public List<SingleTestStats> GetTestStatsList()
         {
             return _singleTestStatsDict.Values.OrderByDescending(x => x.LastXFailureRate).ToList();
+        }
+
+        public List<TestRun> GetAllTestRuns()
+        {
+            var testRuns = _testRuns.Values.ToList();
+            testRuns.AddRange(_tooManyErrorRuns);
+            return testRuns.OrderByDescending(x => x.TestRunMetaData.LastRun).ToList();
         }
 
         #region Statistics
@@ -97,7 +103,7 @@ namespace SeleniumResults
         public void PrintTooFewAndTooMany()
         {
             Console.WriteLine("Too many failures:");
-            Console.WriteLine($"{string.Join(",", _tooManyFailures)}");
+            Console.WriteLine($"{string.Join(",", _tooManyErrorRuns)}");
             Console.WriteLine("Too few results:");
             Console.WriteLine($"{string.Join(",", _tooFewResults)}");
         }
@@ -182,7 +188,7 @@ namespace SeleniumResults
 
             var stats = orderedResults.First(x => x.Name == "CorrespondenceFromCaseSmokeTest2");
             var results = stats.Results
-                .Where(x => x.TestRunData.TestRunType == TestRunType.Selenium2)
+                .Where(x => x.TestRunMetaData.TestRunType == TestRunType.Selenium2)
                 .OrderByDescending(x => x.Time).ToList();
             Console.WriteLine($"CorrespondenceFromCaseSmokeTest2:\n {string.Join(",\n", results)}");
         }
@@ -201,19 +207,14 @@ namespace SeleniumResults
             foreach (var lastXBuildsStat in testStats.LastXBuildsDict)
             {
                 Console.WriteLine($"{lastXBuildsStat.Key} = {lastXBuildsStat.Value}");
-                lastXBuildsStat.Value.GetOrderedTestRuns().ForEach(x =>
-                {
-                    Console.WriteLine($"{x}");   
-                });
+                lastXBuildsStat.Value.GetOrderedTestRuns().ForEach(x => { Console.WriteLine($"{x}"); });
             }
         }
 
         #endregion
 
         #region private
-        
 
         #endregion
-        
     }
 }

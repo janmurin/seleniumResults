@@ -10,12 +10,14 @@ namespace SeleniumResults.Models
         public TestRunMetaData TestRunMetaData { get; }
         public List<SingleTestResult> Results { get; }
         public bool IsPassed { get; }
+        public bool HasTooManyFailures { get; }
 
         public TestRun(TestRunMetaData testRunMetaData, List<SingleTestResult> results)
         {
             TestRunMetaData = testRunMetaData;
             Results = results;
             IsPassed = results.Any() && results.All(x => x.IsPassedOrSkipped);
+            HasTooManyFailures = results.Count(x => x.IsFailed) > Constants.FAILURE_THRESHOLD;
         }
 
         public string GetId()

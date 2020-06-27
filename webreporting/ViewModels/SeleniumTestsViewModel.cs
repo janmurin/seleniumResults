@@ -3,7 +3,7 @@ using SeleniumResults.Models;
 
 namespace SeleniumResults.webreporting.ViewModels
 {
-    public class TestListPageViewModel
+    public class SeleniumTestsViewModel
     {
         public List<SingleTestStats> TestStatsList { get; set; }
     }

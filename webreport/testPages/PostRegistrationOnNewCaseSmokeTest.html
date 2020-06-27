@@ -1,0 +1,2470 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Tables</title>
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">Test Statistics</div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+
+    <!-- Divider -->
+
+
+    <!-- Divider -->
+
+
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Selenium
+    </div>
+    <li class="nav-item active">
+        <a class="nav-link" href="../seleniumRuns.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Test runs</span>
+        </a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="../seleniumTests.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Tests</span>
+        </a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+</ul>
+<!-- End of Sidebar -->
+
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+<!-- Main Content -->
+<div id="content">
+
+    <!-- Topbar -->
+    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+        <!-- Sidebar Toggle (Topbar) -->
+        <form class="form-inline">
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                <i class="fa fa-bars"></i>
+            </button>
+        </form>
+
+        <!-- Topbar Search -->
+        <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Topbar Navbar -->
+        <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+                <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-search fa-fw"></i>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                    <form class="form-inline mr-auto w-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bell fa-fw"></i>
+                    <!-- Counter - Alerts -->
+                    <span class="badge badge-danger badge-counter">3+</span>
+                </a>
+                <!-- Dropdown - Alerts -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                    <h6 class="dropdown-header">
+                        Alerts Center
+                    </h6>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-primary">
+                                <i class="fas fa-file-alt text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 12, 2019</div>
+                            <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-success">
+                                <i class="fas fa-donate text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 7, 2019</div>
+                            $290.29 has been deposited into your account!
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-warning">
+                                <i class="fas fa-exclamation-triangle text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 2, 2019</div>
+                            Spending Alert: We've noticed unusually high spending for your account.
+                        </div>
+                    </a>
+                    <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                </div>
+            </li>
+
+            <!-- Nav Item - Messages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-envelope fa-fw"></i>
+                    <!-- Counter - Messages -->
+                    <span class="badge badge-danger badge-counter">7</span>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                    <h6 class="dropdown-header">
+                        Message Center
+                    </h6>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                            <div class="status-indicator bg-success"></div>
+                        </div>
+                        <div class="font-weight-bold">
+                            <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                            <div class="small text-gray-500">Emily Fowler · 58m</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                            <div class="status-indicator"></div>
+                        </div>
+                        <div>
+                            <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+                            <div class="small text-gray-500">Jae Chun · 1d</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                            <div class="status-indicator bg-warning"></div>
+                        </div>
+                        <div>
+                            <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                            <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                            <div class="status-indicator bg-success"></div>
+                        </div>
+                        <div>
+                            <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+                            <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                </div>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                    <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                </a>
+                <!-- Dropdown - User Information -->
+                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Profile
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Settings
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Activity Log
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Logout
+                    </a>
+                </div>
+            </li>
+
+        </ul>
+
+    </nav>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+        
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">PostRegistrationOnNewCaseSmokeTest</h1>
+
+<div class="row">
+
+    <!-- Area Chart -->
+    <div class="col-xl-12">
+        <div class="card shadow mb-4">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-header">Dropdown Header:</div>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+                <div class="chart-area">
+                    <canvas id="myAreaChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="table-responsive bg-white">
+    <table class="table table-bordered" id="seleniumTestDatatable" width="100%" cellspacing="0">
+        <thead>
+        <tr>
+            <th>Time</th>
+            <th>File</th>
+            <th>Application</th>
+            <th>Sel1/Sel2</th>
+            <th>Result</th>
+            <th>BuildNumber</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <th>Time</th>
+            <th>File</th>
+            <th>Application</th>
+            <th>Sel1/Sel2</th>
+            <th>Result</th>
+            <th>BuildNumber</th>
+        </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>2020-01-29 20:43:36</td>
+                <td>
+                    <a href="../data/selenium (814).html" target="_blank">selenium (814).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9165</td>
+            </tr>
+            <tr>
+                <td>2020-05-19 09:42:47</td>
+                <td>
+                    <a href="../data/selenium-10075 (46).html" target="_blank">selenium-10075 (46).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10054</td>
+            </tr>
+            <tr>
+                <td>2020-05-27 10:05:05</td>
+                <td>
+                    <a href="../data/selenium-10159 (5).html" target="_blank">selenium-10159 (5).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10127</td>
+            </tr>
+            <tr>
+                <td>2020-06-18 16:19:24</td>
+                <td>
+                    <a href="../data/selenium-10304 (12).html" target="_blank">selenium-10304 (12).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10297</td>
+            </tr>
+            <tr>
+                <td>2020-05-05 17:05:46</td>
+                <td>
+                    <a href="../data/selenium (501).html" target="_blank">selenium (501).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9955</td>
+            </tr>
+            <tr>
+                <td>2020-05-22 15:32:39</td>
+                <td>
+                    <a href="../data/selenium-10098 (51).html" target="_blank">selenium-10098 (51).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10092</td>
+            </tr>
+            <tr>
+                <td>2020-05-05 22:25:54</td>
+                <td>
+                    <a href="../data/selenium (505).html" target="_blank">selenium (505).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9958</td>
+            </tr>
+            <tr>
+                <td>2020-01-10 20:00:14</td>
+                <td>
+                    <a href="../data/selenium (678).html" target="_blank">selenium (678).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9018</td>
+            </tr>
+            <tr>
+                <td>2019-11-27 19:56:42</td>
+                <td>
+                    <a href="../data/selenium (17).html" target="_blank">selenium (17).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>8724</td>
+            </tr>
+            <tr>
+                <td>2020-02-12 12:49:27</td>
+                <td>
+                    <a href="../data/selenium (862).html" target="_blank">selenium (862).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9283</td>
+            </tr>
+            <tr>
+                <td>2020-01-24 10:27:09</td>
+                <td>
+                    <a href="../data/selenium (1051).html" target="_blank">selenium (1051).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9125</td>
+            </tr>
+            <tr>
+                <td>2020-06-09 18:39:45</td>
+                <td>
+                    <a href="../data/selenium-10218 (21).html" target="_blank">selenium-10218 (21).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10217</td>
+            </tr>
+            <tr>
+                <td>2020-01-27 09:27:20</td>
+                <td>
+                    <a href="../data/selenium (1062).html" target="_blank">selenium (1062).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9140</td>
+            </tr>
+            <tr>
+                <td>2020-05-29 21:28:15</td>
+                <td>
+                    <a href="../data/selenium-10159 (25).html" target="_blank">selenium-10159 (25).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10159</td>
+            </tr>
+            <tr>
+                <td>2019-12-02 17:54:11</td>
+                <td>
+                    <a href="../data/selenium (29).html" target="_blank">selenium (29).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>8757</td>
+            </tr>
+            <tr>
+                <td>2020-05-21 07:48:18</td>
+                <td>
+                    <a href="../data/selenium-10098 (65).html" target="_blank">selenium-10098 (65).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10076</td>
+            </tr>
+            <tr>
+                <td>2020-06-16 13:16:19</td>
+                <td>
+                    <a href="../data/selenium-10266 (7).html" target="_blank">selenium-10266 (7).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span>
+                </td>
+                <td>10265</td>
+            </tr>
+            <tr>
+                <td>2020-01-15 15:27:02</td>
+                <td>
+                    <a href="../data/selenium (1029).html" target="_blank">selenium (1029).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9043</td>
+            </tr>
+            <tr>
+                <td>2020-05-19 16:31:49</td>
+                <td>
+                    <a href="../data/selenium-10075 (43).html" target="_blank">selenium-10075 (43).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10063</td>
+            </tr>
+            <tr>
+                <td>2020-05-12 18:11:06</td>
+                <td>
+                    <a href="../data/selenium-9001 (78).html" target="_blank">selenium-9001 (78).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10007</td>
+            </tr>
+            <tr>
+                <td>2020-06-01 10:03:33</td>
+                <td>
+                    <a href="../data/selenium-10202 (7).html" target="_blank">selenium-10202 (7).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10160</td>
+            </tr>
+            <tr>
+                <td>2020-01-16 04:04:27</td>
+                <td>
+                    <a href="../data/selenium (1030).html" target="_blank">selenium (1030).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9056</td>
+            </tr>
+            <tr>
+                <td>2020-06-03 09:28:39</td>
+                <td>
+                    <a href="../data/selenium-10202 (13).html" target="_blank">selenium-10202 (13).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10181</td>
+            </tr>
+            <tr>
+                <td>2020-06-11 19:10:39</td>
+                <td>
+                    <a href="../data/selenium-235 (24).html" target="_blank">selenium-235 (24).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10235</td>
+            </tr>
+            <tr>
+                <td>2020-05-26 14:38:38</td>
+                <td>
+                    <a href="../data/selenium-10123 (2).html" target="_blank">selenium-10123 (2).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10116</td>
+            </tr>
+            <tr>
+                <td>2019-12-09 17:44:19</td>
+                <td>
+                    <a href="../data/selenium (35).html" target="_blank">selenium (35).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>8808</td>
+            </tr>
+            <tr>
+                <td>2020-06-12 12:57:02</td>
+                <td>
+                    <a href="../data/selenium-10247 (10).html" target="_blank">selenium-10247 (10).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10243</td>
+            </tr>
+            <tr>
+                <td>2020-05-21 15:34:46</td>
+                <td>
+                    <a href="../data/selenium-10098 (60).html" target="_blank">selenium-10098 (60).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10082</td>
+            </tr>
+            <tr>
+                <td>2019-12-02 19:31:29</td>
+                <td>
+                    <a href="../data/selenium (22).html" target="_blank">selenium (22).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>8759</td>
+            </tr>
+            <tr>
+                <td>2020-03-02 11:17:55</td>
+                <td>
+                    <a href="../data/selenium (929).html" target="_blank">selenium (929).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9410</td>
+            </tr>
+            <tr>
+                <td>2020-05-18 09:32:25</td>
+                <td>
+                    <a href="../data/selenium-10045 (11).html" target="_blank">selenium-10045 (11).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10039</td>
+            </tr>
+            <tr>
+                <td>2020-05-13 17:50:11</td>
+                <td>
+                    <a href="../data/selenium-05-13 (5).html" target="_blank">selenium-05-13 (5).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10016</td>
+            </tr>
+            <tr>
+                <td>2020-05-14 14:57:13</td>
+                <td>
+                    <a href="../data/selenium-10030 (22).html" target="_blank">selenium-10030 (22).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10019</td>
+            </tr>
+            <tr>
+                <td>2020-06-03 13:09:15</td>
+                <td>
+                    <a href="../data/selenium-10202 (15).html" target="_blank">selenium-10202 (15).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10182</td>
+            </tr>
+            <tr>
+                <td>2020-02-13 19:48:12</td>
+                <td>
+                    <a href="../data/selenium (634).html" target="_blank">selenium (634).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9299</td>
+            </tr>
+            <tr>
+                <td>2020-05-20 00:31:42</td>
+                <td>
+                    <a href="../data/selenium-10075 (39).html" target="_blank">selenium-10075 (39).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10067</td>
+            </tr>
+            <tr>
+                <td>2020-02-13 16:38:53</td>
+                <td>
+                    <a href="../data/selenium (633).html" target="_blank">selenium (633).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9299</td>
+            </tr>
+            <tr>
+                <td>2020-01-14 14:21:57</td>
+                <td>
+                    <a href="../data/selenium (1024).html" target="_blank">selenium (1024).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9033</td>
+            </tr>
+            <tr>
+                <td>2020-05-26 20:42:21</td>
+                <td>
+                    <a href="../data/selenium-10123 (5).html" target="_blank">selenium-10123 (5).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10122</td>
+            </tr>
+            <tr>
+                <td>2020-02-04 16:07:46</td>
+                <td>
+                    <a href="../data/selenium (822).html" target="_blank">selenium (822).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9208</td>
+            </tr>
+            <tr>
+                <td>2020-05-08 23:00:03</td>
+                <td>
+                    <a href="../data/selenium (590).html" target="_blank">selenium (590).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9992</td>
+            </tr>
+            <tr>
+                <td>2020-06-04 18:15:52</td>
+                <td>
+                    <a href="../data/selenium-10202 (23).html" target="_blank">selenium-10202 (23).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10196</td>
+            </tr>
+            <tr>
+                <td>2020-02-04 17:23:19</td>
+                <td>
+                    <a href="../data/selenium (825).html" target="_blank">selenium (825).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9209</td>
+            </tr>
+            <tr>
+                <td>2020-03-25 17:05:02</td>
+                <td>
+                    <a href="../data/selenium (969).html" target="_blank">selenium (969).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9646</td>
+            </tr>
+            <tr>
+                <td>2020-05-07 18:58:58</td>
+                <td>
+                    <a href="../data/selenium (588).html" target="_blank">selenium (588).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9980</td>
+            </tr>
+            <tr>
+                <td>2020-05-26 08:25:35</td>
+                <td>
+                    <a href="../data/selenium-10123 (24).html" target="_blank">selenium-10123 (24).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10113</td>
+            </tr>
+            <tr>
+                <td>2020-05-07 02:25:30</td>
+                <td>
+                    <a href="../data/selenium (586).html" target="_blank">selenium (586).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9971</td>
+            </tr>
+            <tr>
+                <td>2020-02-20 08:58:47</td>
+                <td>
+                    <a href="../data/selenium (903).html" target="_blank">selenium (903).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9347</td>
+            </tr>
+            <tr>
+                <td>2020-06-24 21:09:19</td>
+                <td>
+                    <a href="../data/selenium-10334 (19).html" target="_blank">selenium-10334 (19).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10332</td>
+            </tr>
+            <tr>
+                <td>2020-06-10 15:15:43</td>
+                <td>
+                    <a href="../data/selenium-235 (12).html" target="_blank">selenium-235 (12).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10221</td>
+            </tr>
+            <tr>
+                <td>2020-05-28 00:33:45</td>
+                <td>
+                    <a href="../data/selenium-10159 (10).html" target="_blank">selenium-10159 (10).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10134</td>
+            </tr>
+            <tr>
+                <td>2020-05-11 18:41:32</td>
+                <td>
+                    <a href="../data/selenium (118).html" target="_blank">selenium (118).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9999</td>
+            </tr>
+            <tr>
+                <td>2020-05-28 18:55:27</td>
+                <td>
+                    <a href="../data/selenium-10159 (17).html" target="_blank">selenium-10159 (17).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10139</td>
+            </tr>
+            <tr>
+                <td>2020-05-08 00:38:09</td>
+                <td>
+                    <a href="../data/selenium (589).html" target="_blank">selenium (589).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9981</td>
+            </tr>
+            <tr>
+                <td>2019-12-03 11:06:04</td>
+                <td>
+                    <a href="../data/selenium (25).html" target="_blank">selenium (25).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>8763</td>
+            </tr>
+            <tr>
+                <td>2020-05-27 15:10:46</td>
+                <td>
+                    <a href="../data/selenium-10159 (7).html" target="_blank">selenium-10159 (7).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10132</td>
+            </tr>
+            <tr>
+                <td>2020-05-12 00:34:20</td>
+                <td>
+                    <a href="../data/selenium (119).html" target="_blank">selenium (119).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>2020-06-08 12:37:11</td>
+                <td>
+                    <a href="../data/selenium-10218 (15).html" target="_blank">selenium-10218 (15).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10207</td>
+            </tr>
+            <tr>
+                <td>2020-06-08 19:27:50</td>
+                <td>
+                    <a href="../data/selenium-10218 (17).html" target="_blank">selenium-10218 (17).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10211</td>
+            </tr>
+            <tr>
+                <td>2020-06-17 16:41:24</td>
+                <td>
+                    <a href="../data/selenium-10285 (6).html" target="_blank">selenium-10285 (6).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10282</td>
+            </tr>
+            <tr>
+                <td>2020-04-14 22:37:30</td>
+                <td>
+                    <a href="../data/selenium (10).html" target="_blank">selenium (10).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9801</td>
+            </tr>
+            <tr>
+                <td>2020-05-11 08:46:40</td>
+                <td>
+                    <a href="../data/selenium (166).html" target="_blank">selenium (166).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9994</td>
+            </tr>
+            <tr>
+                <td>2020-05-09 06:45:38</td>
+                <td>
+                    <a href="../data/selenium (591).html" target="_blank">selenium (591).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9992</td>
+            </tr>
+            <tr>
+                <td>2020-03-06 22:19:39</td>
+                <td>
+                    <a href="../data/selenium (946).html" target="_blank">selenium (946).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9462</td>
+            </tr>
+            <tr>
+                <td>2020-04-06 14:00:16</td>
+                <td>
+                    <a href="../data/selenium (974).html" target="_blank">selenium (974).html</a>
+                </td>
+                <td>BVV</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span>
+                </td>
+                <td>9740</td>
+            </tr>
+            <tr>
+                <td>2020-02-14 17:27:52</td>
+                <td>
+                    <a href="../data/selenium (884).html" target="_blank">selenium (884).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9308</td>
+            </tr>
+            <tr>
+                <td>2020-06-24 15:58:17</td>
+                <td>
+                    <a href="../data/selenium-10334 (21).html" target="_blank">selenium-10334 (21).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10330</td>
+            </tr>
+            <tr>
+                <td>2020-05-29 17:57:10</td>
+                <td>
+                    <a href="../data/selenium-10159 (23).html" target="_blank">selenium-10159 (23).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10157</td>
+            </tr>
+            <tr>
+                <td>2020-01-27 07:43:23</td>
+                <td>
+                    <a href="../data/selenium (1061).html" target="_blank">selenium (1061).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9139</td>
+            </tr>
+            <tr>
+                <td>2020-05-05 11:12:52</td>
+                <td>
+                    <a href="../data/selenium (498).html" target="_blank">selenium (498).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9950</td>
+            </tr>
+            <tr>
+                <td>2020-05-18 16:02:58</td>
+                <td>
+                    <a href="../data/selenium-10045 (15).html" target="_blank">selenium-10045 (15).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10045</td>
+            </tr>
+            <tr>
+                <td>2020-05-14 21:33:13</td>
+                <td>
+                    <a href="../data/selenium-10030 (27).html" target="_blank">selenium-10030 (27).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10030</td>
+            </tr>
+            <tr>
+                <td>2020-02-06 19:52:19</td>
+                <td>
+                    <a href="../data/selenium (834).html" target="_blank">selenium (834).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9240</td>
+            </tr>
+            <tr>
+                <td>2020-04-29 08:25:03</td>
+                <td>
+                    <a href="../data/selenium (300).html" target="_blank">selenium (300).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9912</td>
+            </tr>
+            <tr>
+                <td>2020-05-21 14:12:18</td>
+                <td>
+                    <a href="../data/selenium-10098 (62).html" target="_blank">selenium-10098 (62).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10081</td>
+            </tr>
+            <tr>
+                <td>2020-06-10 18:43:40</td>
+                <td>
+                    <a href="../data/selenium-235 (13).html" target="_blank">selenium-235 (13).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10222</td>
+            </tr>
+            <tr>
+                <td>2020-02-28 23:46:42</td>
+                <td>
+                    <a href="../data/selenium (622).html" target="_blank">selenium (622).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9406</td>
+            </tr>
+            <tr>
+                <td>2020-06-16 21:26:16</td>
+                <td>
+                    <a href="../data/selenium-10266 (10).html" target="_blank">selenium-10266 (10).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span>
+                </td>
+                <td>10266</td>
+            </tr>
+            <tr>
+                <td>2020-01-08 19:44:17</td>
+                <td>
+                    <a href="../data/selenium (1005).html" target="_blank">selenium (1005).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>8996</td>
+            </tr>
+            <tr>
+                <td>2020-05-06 18:12:25</td>
+                <td>
+                    <a href="../data/selenium (562).html" target="_blank">selenium (562).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9969</td>
+            </tr>
+            <tr>
+                <td>2020-05-27 20:01:47</td>
+                <td>
+                    <a href="../data/selenium-10159 (9).html" target="_blank">selenium-10159 (9).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10133</td>
+            </tr>
+            <tr>
+                <td>2020-05-15 01:30:51</td>
+                <td>
+                    <a href="../data/selenium-10039 (26).html" target="_blank">selenium-10039 (26).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10031</td>
+            </tr>
+            <tr>
+                <td>2020-04-27 15:30:24</td>
+                <td>
+                    <a href="../data/selenium (170).html" target="_blank">selenium (170).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9896</td>
+            </tr>
+            <tr>
+                <td>2020-03-18 21:33:08</td>
+                <td>
+                    <a href="../data/selenium (963).html" target="_blank">selenium (963).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9572</td>
+            </tr>
+            <tr>
+                <td>2020-05-28 08:05:09</td>
+                <td>
+                    <a href="../data/selenium-10159 (12).html" target="_blank">selenium-10159 (12).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10135</td>
+            </tr>
+            <tr>
+                <td>2020-05-21 19:24:47</td>
+                <td>
+                    <a href="../data/selenium-10098 (56).html" target="_blank">selenium-10098 (56).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10088</td>
+            </tr>
+            <tr>
+                <td>2020-05-14 07:05:02</td>
+                <td>
+                    <a href="../data/selenium-10030 (20).html" target="_blank">selenium-10030 (20).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10017</td>
+            </tr>
+            <tr>
+                <td>2020-05-26 17:41:32</td>
+                <td>
+                    <a href="../data/selenium-10123 (3).html" target="_blank">selenium-10123 (3).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10118</td>
+            </tr>
+            <tr>
+                <td>2020-06-18 08:23:39</td>
+                <td>
+                    <a href="../data/selenium-10304 (8).html" target="_blank">selenium-10304 (8).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10285</td>
+            </tr>
+            <tr>
+                <td>2020-05-29 14:46:59</td>
+                <td>
+                    <a href="../data/selenium-10159 (21).html" target="_blank">selenium-10159 (21).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10155</td>
+            </tr>
+            <tr>
+                <td>2020-06-17 18:19:31</td>
+                <td>
+                    <a href="../data/selenium-10285 (7).html" target="_blank">selenium-10285 (7).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10284</td>
+            </tr>
+            <tr>
+                <td>2020-05-12 11:58:10</td>
+                <td>
+                    <a href="../data/selenium-9001 (72).html" target="_blank">selenium-9001 (72).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10001</td>
+            </tr>
+            <tr>
+                <td>2020-06-03 18:24:51</td>
+                <td>
+                    <a href="../data/selenium-10202 (17).html" target="_blank">selenium-10202 (17).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10187</td>
+            </tr>
+            <tr>
+                <td>2020-05-22 18:27:36</td>
+                <td>
+                    <a href="../data/selenium-10098 (48).html" target="_blank">selenium-10098 (48).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10095</td>
+            </tr>
+            <tr>
+                <td>2020-06-16 15:21:51</td>
+                <td>
+                    <a href="../data/selenium-10266 (11).html" target="_blank">selenium-10266 (11).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span>
+                </td>
+                <td>10266</td>
+            </tr>
+            <tr>
+                <td>2020-04-29 23:14:43</td>
+                <td>
+                    <a href="../data/selenium (302).html" target="_blank">selenium (302).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9922</td>
+            </tr>
+            <tr>
+                <td>2020-03-15 14:16:33</td>
+                <td>
+                    <a href="../data/selenium (5).html" target="_blank">selenium (5).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9514</td>
+            </tr>
+            <tr>
+                <td>2020-05-04 11:58:12</td>
+                <td>
+                    <a href="../data/selenium (471).html" target="_blank">selenium (471).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9935</td>
+            </tr>
+            <tr>
+                <td>2020-05-22 07:09:28</td>
+                <td>
+                    <a href="../data/selenium-10098 (54).html" target="_blank">selenium-10098 (54).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10088</td>
+            </tr>
+            <tr>
+                <td>2020-04-22 10:04:57</td>
+                <td>
+                    <a href="../data/selenium (202).html" target="_blank">selenium (202).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9856</td>
+            </tr>
+            <tr>
+                <td>2020-02-05 13:08:34</td>
+                <td>
+                    <a href="../data/selenium (827).html" target="_blank">selenium (827).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9219</td>
+            </tr>
+            <tr>
+                <td>2020-06-11 06:20:49</td>
+                <td>
+                    <a href="../data/selenium-235 (19).html" target="_blank">selenium-235 (19).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10228</td>
+            </tr>
+            <tr>
+                <td>2019-11-29 13:48:46</td>
+                <td>
+                    <a href="../data/selenium (18).html" target="_blank">selenium (18).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>8748</td>
+            </tr>
+            <tr>
+                <td>2020-06-05 08:45:42</td>
+                <td>
+                    <a href="../data/selenium-10202 (26).html" target="_blank">selenium-10202 (26).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10197</td>
+            </tr>
+            <tr>
+                <td>2020-06-17 15:00:47</td>
+                <td>
+                    <a href="../data/selenium-10285 (5).html" target="_blank">selenium-10285 (5).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10280</td>
+            </tr>
+            <tr>
+                <td>2020-06-18 18:26:16</td>
+                <td>
+                    <a href="../data/selenium-10304 (14).html" target="_blank">selenium-10304 (14).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10299</td>
+            </tr>
+            <tr>
+                <td>2020-02-20 10:13:09</td>
+                <td>
+                    <a href="../data/selenium (907).html" target="_blank">selenium (907).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9348</td>
+            </tr>
+            <tr>
+                <td>2020-01-27 21:57:42</td>
+                <td>
+                    <a href="../data/selenium (654).html" target="_blank">selenium (654).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9152</td>
+            </tr>
+            <tr>
+                <td>2020-05-26 11:25:40</td>
+                <td>
+                    <a href="../data/selenium-10123 (26).html" target="_blank">selenium-10123 (26).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10114</td>
+            </tr>
+            <tr>
+                <td>2019-11-29 20:27:48</td>
+                <td>
+                    <a href="../data/selenium (19).html" target="_blank">selenium (19).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>8753</td>
+            </tr>
+            <tr>
+                <td>2020-06-10 08:47:00</td>
+                <td>
+                    <a href="../data/selenium-235 (9).html" target="_blank">selenium-235 (9).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10219</td>
+            </tr>
+            <tr>
+                <td>2020-04-30 09:34:20</td>
+                <td>
+                    <a href="../data/selenium (303).html" target="_blank">selenium (303).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9923</td>
+            </tr>
+            <tr>
+                <td>2020-05-01 06:03:30</td>
+                <td>
+                    <a href="../data/selenium (304).html" target="_blank">selenium (304).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9934</td>
+            </tr>
+            <tr>
+                <td>2020-05-14 00:07:54</td>
+                <td>
+                    <a href="../data/selenium-10030 (17).html" target="_blank">selenium-10030 (17).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10017</td>
+            </tr>
+            <tr>
+                <td>2020-05-26 23:40:52</td>
+                <td>
+                    <a href="../data/selenium-10123 (8).html" target="_blank">selenium-10123 (8).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10123</td>
+            </tr>
+            <tr>
+                <td>2020-06-19 08:21:50</td>
+                <td>
+                    <a href="../data/selenium-10304 (18).html" target="_blank">selenium-10304 (18).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10304</td>
+            </tr>
+            <tr>
+                <td>2020-06-19 06:29:49</td>
+                <td>
+                    <a href="../data/selenium-10304 (17).html" target="_blank">selenium-10304 (17).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10303</td>
+            </tr>
+            <tr>
+                <td>2020-04-24 22:49:26</td>
+                <td>
+                    <a href="../data/selenium (216).html" target="_blank">selenium (216).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9889</td>
+            </tr>
+            <tr>
+                <td>2020-05-29 11:20:42</td>
+                <td>
+                    <a href="../data/selenium-10159 (19).html" target="_blank">selenium-10159 (19).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10154</td>
+            </tr>
+            <tr>
+                <td>2020-06-18 09:56:38</td>
+                <td>
+                    <a href="../data/selenium-10304 (9).html" target="_blank">selenium-10304 (9).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10286</td>
+            </tr>
+            <tr>
+                <td>2020-06-10 21:54:32</td>
+                <td>
+                    <a href="../data/selenium-235 (16).html" target="_blank">selenium-235 (16).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10226</td>
+            </tr>
+            <tr>
+                <td>2020-06-11 01:06:04</td>
+                <td>
+                    <a href="../data/selenium-235 (17).html" target="_blank">selenium-235 (17).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10227</td>
+            </tr>
+            <tr>
+                <td>2020-05-02 09:40:03</td>
+                <td>
+                    <a href="../data/selenium (305).html" target="_blank">selenium (305).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9934</td>
+            </tr>
+            <tr>
+                <td>2020-01-29 16:02:19</td>
+                <td>
+                    <a href="../data/selenium (1081).html" target="_blank">selenium (1081).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9165</td>
+            </tr>
+            <tr>
+                <td>2020-01-05 10:10:37</td>
+                <td>
+                    <a href="../data/selenium (993).html" target="_blank">selenium (993).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>8955</td>
+            </tr>
+            <tr>
+                <td>2020-06-02 14:15:15</td>
+                <td>
+                    <a href="../data/selenium-10202 (11).html" target="_blank">selenium-10202 (11).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10172</td>
+            </tr>
+            <tr>
+                <td>2020-01-18 11:27:18</td>
+                <td>
+                    <a href="../data/selenium (661).html" target="_blank">selenium (661).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9076</td>
+            </tr>
+            <tr>
+                <td>2020-06-11 10:30:36</td>
+                <td>
+                    <a href="../data/selenium-235 (21).html" target="_blank">selenium-235 (21).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10230</td>
+            </tr>
+            <tr>
+                <td>2020-01-13 12:36:45</td>
+                <td>
+                    <a href="../data/selenium (1014).html" target="_blank">selenium (1014).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9022</td>
+            </tr>
+            <tr>
+                <td>2020-01-05 11:43:01</td>
+                <td>
+                    <a href="../data/selenium (1001).html" target="_blank">selenium (1001).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>8956</td>
+            </tr>
+            <tr>
+                <td>2020-06-18 11:41:31</td>
+                <td>
+                    <a href="../data/selenium-10304 (11).html" target="_blank">selenium-10304 (11).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-info">Selenium 2</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10288</td>
+            </tr>
+            <tr>
+                <td>2020-04-27 16:49:53</td>
+                <td>
+                    <a href="../data/selenium (171).html" target="_blank">selenium (171).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9898</td>
+            </tr>
+            <tr>
+                <td>2020-04-29 17:34:25</td>
+                <td>
+                    <a href="../data/selenium (301).html" target="_blank">selenium (301).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9919</td>
+            </tr>
+            <tr>
+                <td>2020-05-07 08:51:03</td>
+                <td>
+                    <a href="../data/selenium (587).html" target="_blank">selenium (587).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>9972</td>
+            </tr>
+            <tr>
+                <td>2020-05-28 13:31:20</td>
+                <td>
+                    <a href="../data/selenium-10159 (14).html" target="_blank">selenium-10159 (14).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10137</td>
+            </tr>
+            <tr>
+                <td>2020-05-30 08:56:38</td>
+                <td>
+                    <a href="../data/selenium-10159 (27).html" target="_blank">selenium-10159 (27).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10159</td>
+            </tr>
+            <tr>
+                <td>2020-06-05 14:40:29</td>
+                <td>
+                    <a href="../data/selenium-10202 (27).html" target="_blank">selenium-10202 (27).html</a>
+                </td>
+                <td>PPT</td>
+                <td>
+                        <span class="badge badge-light">Selenium 1</span>
+                </td>
+                <td>
+                        <span class="badge badge-success">Passed</span>
+                </td>
+                <td>10198</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+
+<!-- Footer -->
+<footer class="sticky-footer bg-white">
+    <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2020</span>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+</div>
+<!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="../login.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="../js/sb-admin-2.min.js"></script>
+
+<!-- Page level plugins -->
+<script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="../vendor/chart.js/Chart.min.js"></script>
+<script src="../js/utils.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#seleniumTestDatatable').DataTable({
+                "order": [[0, "desc"]],
+                "pageLength": 25
+            });
+        });
+        
+    Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+    Chart.defaults.global.defaultFontColor = '#858796';
+
+    function number_format(number, decimals, dec_point, thousands_sep) {
+      // *     example: number_format(1234.56, 2, ',', ' ');
+      // *     return: '1 234,56'
+      number = (number + '').replace(',', '').replace(' ', '');
+      var n = !isFinite(+number) ? 0 : +number,
+        prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
+        sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
+        dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
+        s = '',
+        toFixedFix = function(n, prec) {
+          var k = Math.pow(10, prec);
+          return '' + Math.round(n * k) / k;
+        };
+      // Fix for IE parseFloat(0.55).toFixed(0) = 0;
+      s = (prec ? toFixedFix(n, prec) : '' + Math.round(n)).split('.');
+      if (s[0].length > 3) {
+        s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+      }
+      if ((s[1] || '').length < prec) {
+        s[1] = s[1] || '';
+        s[1] += new Array(prec - s[1].length + 1).join('0');
+      }
+      return s.join(dec);
+    }
+
+    // Area Chart Example
+    var ctx = document.getElementById("myAreaChart");
+    var myLineChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        datasets: [{
+          label: "Earnings", 
+            fill: false,
+          lineTension: 0.3,
+          //backgroundColor: "rgba(78, 115, 223, 0.05)",
+          borderColor: window.chartColors.green,
+          pointRadius: 3,
+          pointBackgroundColor: window.chartColors.green,
+          pointBorderColor: window.chartColors.green,
+          pointHoverRadius: 3,
+          pointHoverBackgroundColor: window.chartColors.green,
+          pointHoverBorderColor: window.chartColors.green,
+          pointHitRadius: 10,
+          pointBorderWidth: 2,
+          data: [0, 12, 14, 34, 55, 12, 8, 0, 23, 56],
+        },{
+            label: "Earnings2",
+            fill: false,
+            lineTension: 0.3,
+            backgroundColor: "rgba(78, 115, 223, 0.05)",
+            borderColor: "rgba(78, 115, 223, 1)",
+            pointRadius: 3,
+            pointBackgroundColor: "rgba(78, 115, 223, 1)",
+            pointBorderColor: "rgba(78, 115, 223, 1)",
+            pointHoverRadius: 3,
+            pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
+            pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+            pointHitRadius: 10,
+            pointBorderWidth: 2,
+            data: [15, 42, 82, 40, 3, 6, 10, 22, 34, 4],
+        }],
+      },
+      options: {
+        maintainAspectRatio: false,
+        layout: {
+          padding: {
+            left: 10,
+            right: 25,
+            top: 25,
+            bottom: 0
+          }
+        },
+        scales: {
+          xAxes: [{
+            time: {
+              unit: 'date'
+            },
+            gridLines: {
+              display: false,
+              drawBorder: false
+            },
+            ticks: {
+              maxTicksLimit: 7
+            }
+          }],
+          yAxes: [{
+            ticks: {
+              maxTicksLimit: 5,
+              padding: 10,
+              // Include a dollar sign in the ticks
+              callback: function(value, index, values) {
+                return number_format(value) + "%";
+              }
+            },
+            gridLines: {
+              color: "rgb(234, 236, 244)",
+              zeroLineColor: "rgb(234, 236, 244)",
+              drawBorder: false,
+              borderDash: [2],
+              zeroLineBorderDash: [2]
+            }
+          }],
+        },
+        legend: {
+          display: false
+        },
+        tooltips: {
+          backgroundColor: "rgb(255,255,255)",
+          bodyFontColor: "#858796",
+          titleMarginBottom: 10,
+          titleFontColor: '#6e707e',
+          titleFontSize: 14,
+          borderColor: '#dddfeb',
+          borderWidth: 1,
+          xPadding: 15,
+          yPadding: 15,
+          displayColors: false,
+          intersect: false,
+          mode: 'index',
+          caretPadding: 10,
+          callbacks: {
+            label: function(tooltipItem, chart) {
+              var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
+              return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
+            }
+          }
+        }
+      }
+    });
+    </script>
+
+</body>
+
+</html>

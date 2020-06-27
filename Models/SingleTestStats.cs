@@ -15,11 +15,18 @@ namespace SeleniumResults.Models
 
         public string Name { get; }
         public HashSet<SingleTestResult> Results { get; }
+        
         public Dictionary<int, LastXBuildsStat> LastXBuildsDict { get; set; }
-        public int Sel1Failures => Results.Count(x => x.IsFailed && x.TestRunData.TestRunType == TestRunType.Selenium);
-        public int Sel2Failures => Results.Count(x => x.IsFailed && x.TestRunData.TestRunType == TestRunType.Selenium2);
-        private int Sel1Count => Results.Count(x => x.TestRunData.TestRunType == TestRunType.Selenium);
-        private int Sel2Count => Results.Count(x => x.TestRunData.TestRunType == TestRunType.Selenium2);
+        public Dictionary<int, LastXBuildsStat> BVVLastXBuildsDict { get; set; }
+        public Dictionary<int, LastXBuildsStat> CARLastXBuildsDict { get; set; }
+        public Dictionary<int, LastXBuildsStat> SCCLastXBuildsDict { get; set; }
+        public Dictionary<int, LastXBuildsStat> BVLastXBuildsDict { get; set; }
+        public Dictionary<int, LastXBuildsStat> PPTLastXBuildsDict { get; set; }
+
+        public int Sel1Failures => Results.Count(x => x.IsFailed && x.TestRunMetaData.TestRunType == TestRunType.Selenium);
+        public int Sel2Failures => Results.Count(x => x.IsFailed && x.TestRunMetaData.TestRunType == TestRunType.Selenium2);
+        private int Sel1Count => Results.Count(x => x.TestRunMetaData.TestRunType == TestRunType.Selenium);
+        private int Sel2Count => Results.Count(x => x.TestRunMetaData.TestRunType == TestRunType.Selenium2);
         private string MostRecentTime { get; set; }
 
         public int LastXFailureRate => LastXBuildsDict.First().Value.FailureRate;
@@ -73,34 +80,73 @@ namespace SeleniumResults.Models
         public void CalculateLastXBuildsStats(int buildsInGroup)
         {
             var byBuildNumber = GetResultsOrderedByBuildNumber().ToList();
-            LastXBuildsDict = new Dictionary<int, LastXBuildsStat>();
+            LastXBuildsDict = CreateLastXBuildDictionary(byBuildNumber, buildsInGroup).OrderByDescending(x => x.Key)
+                .ToDictionary(x => x.Key, y => y.Value);
 
-            if (byBuildNumber.Count > buildsInGroup)
+            byBuildNumber = GetResultsOrderedByBuildNumber(FlytApplication.BV).ToList();
+            BVLastXBuildsDict = CreateLastXBuildDictionary(byBuildNumber, buildsInGroup)
+                .OrderByDescending(x => x.Key)
+                .ToDictionary(x => x.Key, y => y.Value);
+
+            byBuildNumber = GetResultsOrderedByBuildNumber(FlytApplication.BVV).ToList();
+            BVVLastXBuildsDict = CreateLastXBuildDictionary(byBuildNumber, buildsInGroup)
+                .OrderByDescending(x => x.Key)
+                .ToDictionary(x => x.Key, y => y.Value);
+
+            byBuildNumber = GetResultsOrderedByBuildNumber(FlytApplication.CAR).ToList();
+            CARLastXBuildsDict = CreateLastXBuildDictionary(byBuildNumber, buildsInGroup)
+                .OrderByDescending(x => x.Key)
+                .ToDictionary(x => x.Key, y => y.Value);
+
+            byBuildNumber = GetResultsOrderedByBuildNumber(FlytApplication.PPT).ToList();
+            PPTLastXBuildsDict = CreateLastXBuildDictionary(byBuildNumber, buildsInGroup)
+                .OrderByDescending(x => x.Key)
+                .ToDictionary(x => x.Key, y => y.Value);
+
+            byBuildNumber = GetResultsOrderedByBuildNumber(FlytApplication.SCC).ToList();
+            SCCLastXBuildsDict = CreateLastXBuildDictionary(byBuildNumber, buildsInGroup)
+                .OrderByDescending(x => x.Key)
+                .ToDictionary(x => x.Key, y => y.Value);
+        }
+
+        private Dictionary<int, LastXBuildsStat> CreateLastXBuildDictionary(List<IGrouping<int, SingleTestResult>> byBuildGrouping, int buildsInGroup)
+        {
+            var lastXBuildsDict = new Dictionary<int, LastXBuildsStat>();
+
+            if (byBuildGrouping.Count() > buildsInGroup)
             {
-                for (int i = 0; i < byBuildNumber.Count - buildsInGroup; i++)
+                for (int i = 0; i < byBuildGrouping.Count() - buildsInGroup; i++)
                 {
-                    var take = byBuildNumber.Skip(i).Take(buildsInGroup).ToList();
+                    var take = byBuildGrouping.Skip(i).Take(buildsInGroup).ToList();
                     int buildNumber = take.First().Key;
 
-                    LastXBuildsDict.TryAdd(buildNumber, new LastXBuildsStat(take));
+                    lastXBuildsDict.TryAdd(buildNumber, new LastXBuildsStat(take));
                 }
             }
             else
             {
-                int buildNumber = byBuildNumber.First().Key;
-                var take = byBuildNumber.Take(Math.Min(buildsInGroup, byBuildNumber.Count()));
+                int buildNumber = byBuildGrouping.First().Key;
+                var take = byBuildGrouping.Take(Math.Min(buildsInGroup, byBuildGrouping.Count()));
 
-                LastXBuildsDict.TryAdd(buildNumber, new LastXBuildsStat(take));
+                lastXBuildsDict.TryAdd(buildNumber, new LastXBuildsStat(take));
             }
 
-            LastXBuildsDict = LastXBuildsDict.OrderByDescending(x => x.Key)
-                .ToDictionary(x => x.Key, y => y.Value);
+            return lastXBuildsDict;
         }
 
         private IOrderedEnumerable<IGrouping<int, SingleTestResult>> GetResultsOrderedByBuildNumber()
         {
             return from result in Results.ToList()
-                group result by result.TestRunData.BuildNumber
+                group result by result.TestRunMetaData.BuildNumber
+                into appGroup
+                orderby appGroup.Key descending
+                select appGroup;
+        }
+
+        private IOrderedEnumerable<IGrouping<int, SingleTestResult>> GetResultsOrderedByBuildNumber(FlytApplication app)
+        {
+            return from result in Results.Where(x => x.TestRunMetaData.FlytApplicationType == FlytApplication.BV).ToList()
+                group result by result.TestRunMetaData.BuildNumber
                 into appGroup
                 orderby appGroup.Key descending
                 select appGroup;

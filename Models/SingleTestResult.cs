@@ -5,14 +5,14 @@ namespace SeleniumResults.Models
 {
     public class SingleTestResult
     {
-        public TestRunMetaData TestRunData { get; }
+        public TestRunMetaData TestRunMetaData { get; }
         public string Name { get; }
         public string Time { get; }
         public TestResultType TestResultType { get; }
 
-        public SingleTestResult(TestRunMetaData testRunMetaData, string name, TestResultType testResultType, string time)
+        public SingleTestResult(TestRunMetaData testRunMetaMetaData, string name, TestResultType testResultType, string time)
         {
-            TestRunData = testRunMetaData;
+            TestRunMetaData = testRunMetaMetaData;
             Name = name;
             TestResultType = testResultType;
             Time = time;
@@ -22,17 +22,19 @@ namespace SeleniumResults.Models
         public bool IsFailed => TestResultType == TestResultType.Failed;
         public bool IsPassedOrSkipped => TestResultType == TestResultType.Passed || TestResultType == TestResultType.Skipped;
         public bool IsPassedOrFailed => TestResultType == TestResultType.Failed || TestResultType == TestResultType.Passed;
+        public bool IsSel1 => TestRunMetaData.TestRunType == TestRunType.Selenium;
+        public bool IsSel2 => TestRunMetaData.TestRunType == TestRunType.Selenium2;
 
         public override string ToString()
         {
-            return $"time-{Time}, file-{TestRunData.OriginalFileName}, result-{TestResultType}, app-{TestRunData.FlytApplicationType}, buildNumber-{TestRunData.BuildNumber}";
+            return $"time-{Time}, file-{TestRunMetaData.OriginalFileName}, result-{TestResultType}, app-{TestRunMetaData.FlytApplicationType}, buildNumber-{TestRunMetaData.BuildNumber}";
         }
 
         #region equals
 
         protected bool Equals(SingleTestResult other)
         {
-            return Equals(TestRunData, other.TestRunData) && Name == other.Name && Time == other.Time;
+            return Equals(TestRunMetaData, other.TestRunMetaData) && Name == other.Name && Time == other.Time;
         }
 
         public override bool Equals(object obj)
@@ -45,7 +47,7 @@ namespace SeleniumResults.Models
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(TestRunData, Name, Time);
+            return HashCode.Combine(TestRunMetaData, Name, Time);
         }
 
         public static bool operator ==(SingleTestResult left, SingleTestResult right)

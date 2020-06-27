@@ -60,7 +60,8 @@ namespace SeleniumResults
             // Console.WriteLine($"\nReport 5: tests success rate for the last {builds} builds");
             // ResultsDatabase.PrintEachTestSuccessRateForTheLastXBuilds(builds);
 
-            WebReportGenerator.GenerateTableHtml(ResultsDatabase.GetTestStatsList());
+            WebReportGenerator.GenerateSeleniumsHtml(ResultsDatabase.GetTestStatsList());
+            WebReportGenerator.GenerateBuildsHtml(ResultsDatabase.GetAllTestRuns());
         }
     }
 }
