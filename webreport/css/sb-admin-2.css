@@ -11222,6 +11222,4 @@ body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
 
-a:visited{
-  color: purple;
-}
+table a:visited{color:darkmagenta}
