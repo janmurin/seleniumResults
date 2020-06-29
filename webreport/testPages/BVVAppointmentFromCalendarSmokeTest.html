@@ -33,7 +33,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../seleniumRuns.html">
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
         </div>
@@ -66,7 +66,7 @@
     <li class="nav-item active">
         <a class="nav-link" href="../seleniumTests.html">
             <i class="fas fa-fw fa-table"></i>
-            <span>Tests</span>
+            <span>Test list</span>
         </a>
     </li>
 
@@ -287,7 +287,7 @@
         <div class="card shadow mb-4">
             <!-- Card Header - Dropdown -->
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Failure rate</h6>
                 <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -310,46 +310,127 @@
         </div>
     </div>
 </div>
-
-<div class="table-responsive bg-white">
-    <table class="table table-bordered" id="seleniumTestDatatable" width="100%" cellspacing="0">
-        <thead>
-        <tr>
-            <th>Time</th>
-            <th>File</th>
-            <th>Application</th>
-            <th>Sel1/Sel2</th>
-            <th>Result</th>
-            <th>BuildNumber</th>
-        </tr>
-        </thead>
-        <tfoot>
-        <tr>
-            <th>Time</th>
-            <th>File</th>
-            <th>Application</th>
-            <th>Sel1/Sel2</th>
-            <th>Result</th>
-            <th>BuildNumber</th>
-        </tr>
-        </tfoot>
-        <tbody>
-            <tr>
-                <td>2020-06-24 17:27:38</td>
-                <td>
-                    <a href="../data/selenium-10334 (15).html" target="_blank">selenium-10334 (15).html</a>
-                </td>
-                <td>BVV</td>
-                <td>
-                        <span class="badge badge-info">Selenium 2</span>
-                </td>
-                <td>
-                        <span class="badge badge-success">Passed</span>
-                </td>
-                <td>10331</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Test results</h6>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-warning" role="alert">
+                    The list does not contain results from test runs with too many errors. See <a href="../seleniumRuns.html">selenium test runs</a> for more detail.
+                </div>
+                <div class="table-responsive bg-white">
+                    <table class="table table-bordered" id="seleniumTestDatatable" width="100%" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>File</th>
+                            <th>Application</th>
+                            <th>Sel1/Sel2</th>
+                            <th>Result</th>
+                            <th>BuildNumber</th>
+                            <th>Failure Rate Last 10 builds</th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <th>Time</th>
+                            <th>File</th>
+                            <th>Application</th>
+                            <th>Sel1/Sel2</th>
+                            <th>Result</th>
+                            <th>BuildNumber</th>
+                            <th>Failure Rate Last 10 builds</th>
+                        </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>2020-06-24 17:27:38</td>
+                                <td>
+                                    <a href="../data/selenium-10334 (15).html" target="_blank">selenium-10334 (15).html</a>
+                                </td>
+                                <td>BVV</td>
+                                <td>
+                                        <span class="badge badge-info">Selenium 2</span>
+                                </td>
+                                <td>
+                                        <span class="badge badge-success">Passed</span>
+                                </td>
+                                <td>10331</td>
+                                <td data-order="0">
+                                    0 % BVV
+                                    <a class="" href="#" data-toggle="modal" data-target="#lastXBuildsModal_10331">Detail</a>
+                                    <div class="modal fade" id="lastXBuildsModal_10331" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">BVVAppointmentFromCalendarSmokeTest last 10 builds for 10331</h5>
+                                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <table class="table table-borderless table-sm w-auto">
+                                                        <tbody>
+                                                        <tr>
+                                                            <th scope="row">Failure rate:</th>
+                                                            <td>0 %</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Total builds:</th>
+                                                            <td>0/1</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table class="table table-bordered modal-datatable" width="100%" cellspacing="0">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Time</th>
+                                                            <th>File</th>
+                                                            <th>Application</th>
+                                                            <th>Result</th>
+                                                            <th>BuildNumber</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tfoot>
+                                                        <tr>
+                                                            <th>Time</th>
+                                                            <th>File</th>
+                                                            <th>Application</th>
+                                                            <th>Result</th>
+                                                            <th>BuildNumber</th>
+                                                        </tr>
+                                                        </tfoot>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>2020-06-24 17:27:38</td>
+                                                                <td>
+                                                                    <a href="../data/selenium-10334 (15).html" target="_blank">selenium-10334 (15).html</a>
+                                                                </td>
+                                                                <td>BVV</td>
+                                                                <td>
+                                                                    <span class="badge badge-success">Passed</span>
+                                                                </td>
+                                                                <td>10331</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -415,20 +496,38 @@
 <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
 <!-- Page level custom scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
 <script src="../vendor/chart.js/Chart.min.js"></script>
 <script src="../js/utils.js"></script>
 
     <script>
-        $(document).ready(function () {
-            $('#seleniumTestDatatable').DataTable({
-                "order": [[0, "desc"]],
-                "pageLength": 25
-            });
+    $(document).ready(function () {
+        $('#seleniumTestDatatable').DataTable({
+            "order": [[0, "desc"]],
+            "pageLength": 25
         });
-        
+    });
+    $('.modal').on('shown.bs.modal', function (e) {
+        var id = "#"+e.currentTarget.id + " .modal-datatable";
+                
+        if (!$.fn.DataTable.isDataTable(id)) {
+            $(id).DataTable({
+                "order": [[0, "desc"]]
+            });
+        }
+    });
+            
     Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
     Chart.defaults.global.defaultFontColor = '#858796';
+    var timeFormat = 'YYYY-MM-DD HH:mm:ss';
 
+    function newDate(days) {
+        return moment().add(days, 'd').toDate();
+    }
+
+    function newDateString(days) {
+        return moment().add(days, 'd').format(timeFormat);
+    }
     function number_format(number, decimals, dec_point, thousands_sep) {
       // *     example: number_format(1234.56, 2, ',', ' ');
       // *     return: '1 234,56'
@@ -458,40 +557,13 @@
     var ctx = document.getElementById("myAreaChart");
     var myLineChart = new Chart(ctx, {
       type: 'line',
-      data: {
-        labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
-        datasets: [{
-          label: "Earnings", 
-            fill: false,
-          lineTension: 0.3,
-          //backgroundColor: "rgba(78, 115, 223, 0.05)",
-          borderColor: window.chartColors.green,
-          pointRadius: 3,
-          pointBackgroundColor: window.chartColors.green,
-          pointBorderColor: window.chartColors.green,
-          pointHoverRadius: 3,
-          pointHoverBackgroundColor: window.chartColors.green,
-          pointHoverBorderColor: window.chartColors.green,
-          pointHitRadius: 10,
-          pointBorderWidth: 2,
-          data: [0, 12, 14, 34, 55, 12, 8, 0, 23, 56],
-        },{
-            label: "Earnings2",
-            fill: false,
-            lineTension: 0.3,
-            backgroundColor: "rgba(78, 115, 223, 0.05)",
-            borderColor: "rgba(78, 115, 223, 1)",
-            pointRadius: 3,
-            pointBackgroundColor: "rgba(78, 115, 223, 1)",
-            pointBorderColor: "rgba(78, 115, 223, 1)",
-            pointHoverRadius: 3,
-            pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
-            pointHoverBorderColor: "rgba(78, 115, 223, 1)",
-            pointHitRadius: 10,
-            pointBorderWidth: 2,
-            data: [15, 42, 82, 40, 3, 6, 10, 22, 34, 4],
-        }],
-      },
+            data: {
+              labels: [ // Date Objects
+                  newDate(0),
+                  newDate(6)
+              ],
+              datasets: [{label:"BVV", fill:false, borderColor:"rgb(255, 159, 64)", data:[{ x:"2020-06-24 17:27:38", y:0}]}]
+            },
       options: {
         maintainAspectRatio: false,
         layout: {
@@ -504,16 +576,16 @@
         },
         scales: {
           xAxes: [{
-            time: {
-              unit: 'date'
-            },
+              type: 'time',
+              time: {
+                  parser: timeFormat,
+                  // round: 'day'
+                  tooltipFormat: 'll HH:mm'
+              },
             gridLines: {
               display: false,
               drawBorder: false
             },
-            ticks: {
-              maxTicksLimit: 7
-            }
           }],
           yAxes: [{
             ticks: {
@@ -534,7 +606,7 @@
           }],
         },
         legend: {
-          display: false
+          display: true
         },
         tooltips: {
           backgroundColor: "rgb(255,255,255)",
@@ -553,7 +625,7 @@
           callbacks: {
             label: function(tooltipItem, chart) {
               var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-              return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
+              return datasetLabel + ': ' + number_format(tooltipItem.yLabel) + ' %';
             }
           }
         }

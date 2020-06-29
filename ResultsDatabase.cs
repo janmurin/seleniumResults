@@ -88,7 +88,7 @@ namespace SeleniumResults
 
         public List<SingleTestStats> GetTestStatsList()
         {
-            return _singleTestStatsDict.Values.OrderByDescending(x => x.LastXFailureRate).ToList();
+            return _singleTestStatsDict.Values.OrderByDescending(x => x.LastXBuildsDict.First().Value.FailureRate).ToList();
         }
 
         public List<TestRun> GetAllTestRuns()
@@ -197,10 +197,10 @@ namespace SeleniumResults
         {
             Console.WriteLine($"{"test:",40} {"P",4}");
 
-            foreach (var stat in _singleTestStatsDict.Values.OrderByDescending(x => x.LastXFailureRate).ToList())
-            {
-                Console.WriteLine(stat);
-            }
+            _singleTestStatsDict.Values
+                .OrderByDescending(x => x.LastXBuildsDict.First().Value.FailureRate)
+                .ToList()
+                .ForEach(Console.WriteLine);
 
             Console.WriteLine($"\nDeletePersonSmokeTest");
             var testStats = _singleTestStatsDict.Values.First(x => x.Name == "DeletePersonSmokeTest");

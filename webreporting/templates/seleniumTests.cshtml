@@ -34,13 +34,18 @@
         @foreach (var testStat in Model.TestStatsList)
         {
             <tr>
-                <td><a href="testPages/@(testStat.Name).html" target="_blank">@testStat.Name</a></td>
+                <td>
+                    <a href="testPages/@(testStat.Name).html" target="_blank">@testStat.Name</a>
+                </td>
                 <td data-order="@testStat.Sel1FailureRate">@testStat.Sel1Stat</td>
                 <td data-order="@testStat.Sel2FailureRate">@testStat.Sel2Stat</td>
                 <td>@testStat.TotalFailures</td>
                 <td>@testStat.TotalRuns</td>
-                <td data-order="@testStat.LastXFailureRate">
-                    @testStat.LastXFailureRateString
+                @{
+                    KeyValuePair<int, LastXBuildsStat> lastXBuilds = testStat.LastXBuildsDict.First();
+                }
+                <td data-order="@lastXBuilds.Value.FailureRate">
+                    @lastXBuilds.Value.FailureRate %
                     <a class="" href="#" data-toggle="modal" data-target="#lastXBuildsModal_@testStat.Name">Detail</a>
                     <div class="modal fade" id="lastXBuildsModal_@testStat.Name" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl" role="document">
@@ -52,18 +57,15 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    @{
-                                        KeyValuePair<int, LastXBuildsStat> valuePair = testStat.LastXBuildsDict.First();
-                                    }
                                     <table class="table table-borderless table-sm w-auto">
                                         <tbody>
                                         <tr>
                                             <th scope="row">Failure rate:</th>
-                                            <td>@valuePair.Value.FailureRate %</td>
+                                            <td>@lastXBuilds.Value.FailureRate %</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">Total builds:</th>
-                                            <td>@valuePair.Value.TotalFailed/@valuePair.Value.TotalBuilds</td>
+                                            <td>@lastXBuilds.Value.TotalFailed/@lastXBuilds.Value.TotalBuilds</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -87,7 +89,7 @@
                                         </tr>
                                         </tfoot>
                                         <tbody>
-                                        @foreach (var sr in valuePair.Value.GetOrderedTestRuns())
+                                        @foreach (var sr in lastXBuilds.Value.GetOrderedTestRuns())
                                         {
                                             <tr>
                                                 <td>@sr.Time</td>

@@ -4299,6 +4299,7 @@
           <e p="seleniumTests.cshtml" t="Include" />
         </e>
         <e p="ViewModels" t="Include">
+          <e p="ChartDataset.cs" t="Include" />
           <e p="SeleniumRunsViewModel.cs" t="Include" />
           <e p="SeleniumTestsViewModel.cs" t="Include" />
           <e p="SeleniumTestViewModel.cs" t="Include" />

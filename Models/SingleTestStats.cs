@@ -15,7 +15,7 @@ namespace SeleniumResults.Models
 
         public string Name { get; }
         public HashSet<SingleTestResult> Results { get; }
-        
+
         public Dictionary<int, LastXBuildsStat> LastXBuildsDict { get; set; }
         public Dictionary<int, LastXBuildsStat> BVVLastXBuildsDict { get; set; }
         public Dictionary<int, LastXBuildsStat> CARLastXBuildsDict { get; set; }
@@ -29,8 +29,6 @@ namespace SeleniumResults.Models
         private int Sel2Count => Results.Count(x => x.TestRunMetaData.TestRunType == TestRunType.Selenium2);
         private string MostRecentTime { get; set; }
 
-        public int LastXFailureRate => LastXBuildsDict.First().Value.FailureRate;
-
         public int Sel1FailureRate => (int) (Sel1Count > 0 ? Decimal.Divide(Sel1Failures, Sel1Count) * 100 : 0);
         public string Sel1Stat => $"{Sel1FailureRate:D2} % ({Sel1Failures}/{Sel1Count})";
         public int Sel2FailureRate => (int) (Sel2Count > 0 ? Decimal.Divide(Sel2Failures, Sel2Count) * 100 : 0);
@@ -38,7 +36,6 @@ namespace SeleniumResults.Models
 
         public string TotalFailures => $"{Sel1Failures + Sel2Failures}";
         public string TotalRuns => $"{Sel1Count + Sel2Count}";
-        public string LastXFailureRateString => $"{LastXFailureRate:D2} % ";
 
         public string GetMostRecentTime()
         {
@@ -112,10 +109,14 @@ namespace SeleniumResults.Models
         private Dictionary<int, LastXBuildsStat> CreateLastXBuildDictionary(List<IGrouping<int, SingleTestResult>> byBuildGrouping, int buildsInGroup)
         {
             var lastXBuildsDict = new Dictionary<int, LastXBuildsStat>();
-
-            if (byBuildGrouping.Count() > buildsInGroup)
+            if (byBuildGrouping.Count == 0)
             {
-                for (int i = 0; i < byBuildGrouping.Count() - buildsInGroup; i++)
+                return lastXBuildsDict;
+            }
+
+            if (byBuildGrouping.Count() >= buildsInGroup)
+            {
+                for (int i = 0; i <= byBuildGrouping.Count() - buildsInGroup; i++)
                 {
                     var take = byBuildGrouping.Skip(i).Take(buildsInGroup).ToList();
                     int buildNumber = take.First().Key;
@@ -145,7 +146,7 @@ namespace SeleniumResults.Models
 
         private IOrderedEnumerable<IGrouping<int, SingleTestResult>> GetResultsOrderedByBuildNumber(FlytApplication app)
         {
-            return from result in Results.Where(x => x.TestRunMetaData.FlytApplicationType == FlytApplication.BV).ToList()
+            return from result in Results.Where(x => x.TestRunMetaData.FlytApplicationType == app).ToList()
                 group result by result.TestRunMetaData.BuildNumber
                 into appGroup
                 orderby appGroup.Key descending
