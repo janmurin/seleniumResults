@@ -11,22 +11,24 @@
 <div class="table-responsive bg-white">
     <table class="table table-bordered" id="seleniumRunsDatatable" width="100%" cellspacing="0">
         <thead>
-        <tr>
-            <th>Time</th>
-            <th>File</th>
-            <th>Application</th>
-            <th>Result</th>
-            <th>BuildNumber</th>
-        </tr>
+            <tr>
+                <th>Time</th>
+                <th>File</th>
+                <th>Application</th>
+                <th>Sel1/Sel2</th>
+                <th>Result</th>
+                <th>BuildNumber</th>
+            </tr>
         </thead>
         <tfoot>
-        <tr>
-            <th>Time</th>
-            <th>File</th>
-            <th>Application</th>
-            <th>Result</th>
-            <th>BuildNumber</th>
-        </tr>
+            <tr>
+                <th>Time</th>
+                <th>File</th>
+                <th>Application</th>
+                <th>Sel1/Sel2</th>
+                <th>Result</th>
+                <th>BuildNumber</th>
+            </tr>
         </tfoot>
         <tbody>
         @foreach (var sr in Model.TestRuns)
@@ -38,17 +40,27 @@
                 </td>
                 <td>@sr.TestRunMetaData.FlytApplicationType</td>
                 <td>
+                    @if (sr.IsSel1)
+                    {
+                        <span class="badge badge-light">Selenium 1</span>
+                    }
+                    @if (sr.IsSel2)
+                    {
+                        <span class="badge badge-info">Selenium 2</span>
+                    }
+                </td>
+                <td>
                     @if (sr.IsPassed)
                     {
                         <span class="badge badge-success">Passed</span>
                     }
                     else if (sr.HasTooManyFailures)
                     {
-                        <span class="badge badge-dark">Too many errors</span>
+                        <span class="badge badge-dark">Too many errors</span> @sr.Results.Count(x => x.IsFailed)
                     }
                     else
                     {
-                        <span class="badge badge-danger">Failed</span>
+                        <span class="badge badge-danger">Failed</span> @sr.Results.Count(x => x.IsFailed)
                     }
                 </td>
                 <td>@sr.TestRunMetaData.BuildNumber</td>

@@ -10,6 +10,8 @@ namespace SeleniumResults.Models
         public TestRunMetaData TestRunMetaData { get; }
         public List<SingleTestResult> Results { get; }
         public bool IsPassed { get; }
+        public bool IsSel1 { get; }
+        public bool IsSel2 { get; }
         public bool HasTooManyFailures { get; }
 
         public TestRun(TestRunMetaData testRunMetaData, List<SingleTestResult> results)
@@ -18,6 +20,8 @@ namespace SeleniumResults.Models
             Results = results;
             IsPassed = results.Any() && results.All(x => x.IsPassedOrSkipped);
             HasTooManyFailures = results.Count(x => x.IsFailed) > Constants.FAILURE_THRESHOLD;
+            IsSel1 = results.Any() && results.First().IsSel1;
+            IsSel2 = results.Any() && results.First().IsSel2;
         }
 
         public string GetId()
