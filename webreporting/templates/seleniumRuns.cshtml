@@ -52,15 +52,15 @@
                 <td>
                     @if (sr.IsPassed)
                     {
-                        <span class="badge badge-success">Passed</span>
+                        <span class="badge badge-success">Passed</span> <span style="color:red;">@sr.FailedCount</span><span>/@sr.TotalCount</span>
                     }
                     else if (sr.HasTooManyFailures)
                     {
-                        <span class="badge badge-dark">Too many errors</span> @sr.Results.Count(x => x.IsFailed)
+                        <span class="badge badge-dark">Too many errors</span> <span style="color:red;">@sr.FailedCount</span><span>/@sr.TotalCount</span>
                     }
                     else
                     {
-                        <span class="badge badge-danger">Failed</span> @sr.Results.Count(x => x.IsFailed)
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">@sr.FailedCount</span><span>/@sr.TotalCount</span>
                     }
                 </td>
                 <td>@sr.TestRunMetaData.BuildNumber</td>

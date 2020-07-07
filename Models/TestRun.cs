@@ -13,6 +13,8 @@ namespace SeleniumResults.Models
         public bool IsSel1 { get; }
         public bool IsSel2 { get; }
         public bool HasTooManyFailures { get; }
+        public int FailedCount { get; }
+        public int TotalCount { get; }
 
         public TestRun(TestRunMetaData testRunMetaData, List<SingleTestResult> results)
         {
@@ -22,6 +24,8 @@ namespace SeleniumResults.Models
             HasTooManyFailures = results.Count(x => x.IsFailed) > Constants.FAILURE_THRESHOLD;
             IsSel1 = results.Any() && results.First().IsSel1;
             IsSel2 = results.Any() && results.First().IsSel2;
+            FailedCount = results.Any() ? results.Count(x => x.IsFailed) : 0;
+            TotalCount = results.Any() ? results.Count(x => x.IsPassedOrFailed) : 0;
         }
 
         public string GetId()

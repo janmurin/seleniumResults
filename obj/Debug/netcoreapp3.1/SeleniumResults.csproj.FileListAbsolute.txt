@@ -330,3 +330,4 @@ C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\refs\System.Xml.XPa
 C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\refs\WindowsBase.dll
 C:\DATA\Repositories\SeleniumResults\obj\Debug\netcoreapp3.1\SeleniumResults.csproj.CoreCompileInputs.cache
 C:\DATA\Repositories\SeleniumResults\obj\Debug\netcoreapp3.1\SeleniumResults.genruntimeconfig.cache
+C:\DATA\Repositories\SeleniumResults\obj\Debug\netcoreapp3.1\SeleniumResults.csprojAssemblyReference.cache
