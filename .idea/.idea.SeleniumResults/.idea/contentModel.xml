@@ -15,6 +15,7 @@
         <e p="LastXBuildsStat.cs" t="Include" />
         <e p="SingleTestResult.cs" t="Include" />
         <e p="SingleTestStats.cs" t="Include" />
+        <e p="SubTest.cs" t="Include" />
         <e p="TestRun.cs" t="Include" />
         <e p="TestRunMetaData.cs" t="Include" />
         <e p="UserModel.cs" t="Include" />

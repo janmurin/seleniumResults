@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using SeleniumResults.Models.enums;
 
 namespace SeleniumResults.Models
@@ -9,13 +10,19 @@ namespace SeleniumResults.Models
         public string Name { get; }
         public string Time { get; }
         public TestResultType TestResultType { get; }
-
-        public SingleTestResult(TestRunMetaData testRunMetaMetaData, string name, TestResultType testResultType, string time)
+        public DateTime EndTime { get; }
+        public DateTime StartTime { get; }
+        public List<SubTest> SubTests { get; }
+        
+        public SingleTestResult(TestRunMetaData metaData, string name, TestResultType type, DateTime start, DateTime end, List<SubTest> subTests)
         {
-            TestRunMetaData = testRunMetaMetaData;
+            TestRunMetaData = metaData;
             Name = name;
-            TestResultType = testResultType;
-            Time = time;
+            TestResultType = type;
+            Time = end.ToString("yyyy-MM-dd HH:mm:ss");
+            EndTime = end;
+            StartTime = start;
+            SubTests = subTests;
         }
 
         public bool IsPassed => TestResultType == TestResultType.Passed;
@@ -24,6 +31,7 @@ namespace SeleniumResults.Models
         public bool IsPassedOrFailed => TestResultType == TestResultType.Failed || TestResultType == TestResultType.Passed;
         public bool IsSel1 => TestRunMetaData.TestRunType == TestRunType.Selenium;
         public bool IsSel2 => TestRunMetaData.TestRunType == TestRunType.Selenium2;
+        public string GetDurationMinutes => $"{(EndTime - StartTime).TotalMinutes,0:0.00} min";
 
         public override string ToString()
         {

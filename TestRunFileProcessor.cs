@@ -157,9 +157,37 @@ namespace SeleniumResults
         {
             var name = card.SelectSingleNode(".//span[@class='fixture-name']").InnerText;
             var testResultType = ParseTestResultType(card);
-            var time = card.SelectSingleNode(".//span[@class='endedAt']").InnerText;
+            var startTimeString = card.SelectSingleNode(".//span[@class='startedAt']").InnerText;
+            var endTimeString = card.SelectSingleNode(".//span[@class='endedAt']").InnerText;
+            var startDateTime = DateTime.Parse(startTimeString);
+            var endDateTime = DateTime.Parse(endTimeString);
 
-            return new SingleTestResult(testRunMetaData, name, testResultType, time);
+            var subtestNodes = card.SelectNodes(".//div[@class='fixture-content']//table//tr");
+            List<SubTest> subTests = new List<SubTest>();
+            foreach (var node in subtestNodes.Skip(1))
+            {
+                var subName = node.SelectSingleNode(".//td[@class='test-name']").InnerText;
+                TestResultType subResultType = TestResultType.Passed;
+                string subMessage = "";
+
+                var failedNode = node.SelectSingleNode(".//td[@class='failed']");
+                var skippedNode = node.SelectSingleNode(".//td[@class='skipped']");
+
+                if (failedNode != null)
+                {
+                    subResultType = TestResultType.Failed;
+                    subMessage = node.SelectSingleNode(".//td[@class='failed']//pre").InnerText;
+                }
+                else if (skippedNode != null)
+                {
+                    subResultType = TestResultType.Skipped;
+                    subMessage = node.SelectSingleNode(".//td[@class='skipped']//pre").InnerText;
+                }
+
+                subTests.Add(new SubTest(subName, subResultType, subMessage));
+            }
+
+            return new SingleTestResult(testRunMetaData, name, testResultType, startDateTime, endDateTime, subTests);
         }
 
         private static TestResultType ParseTestResultType(HtmlNode card)

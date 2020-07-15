@@ -277,31 +277,14 @@
 
         
 
-<!-- Page Heading -->
 <h1 class="h3 mb-2 text-gray-800">StatisticsSmokeTest</h1>
 
 <div class="row">
-
-    <!-- Area Chart -->
     <div class="col-xl-12">
         <div class="card shadow mb-4">
-            <!-- Card Header - Dropdown -->
-            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-primary">Failure rate</h6>
-                <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                        <div class="dropdown-header">Dropdown Header:</div>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Failure Rate</h6>
             </div>
-            <!-- Card Body -->
             <div class="card-body">
                 <div class="chart-area">
                     <canvas id="myAreaChart"></canvas>
@@ -311,126 +294,176 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-xl-12">
-        <div class="card shadow mb-4">
-            <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Test results</h6>
+<div class="col-xl-12">
+<div class="card shadow mb-4">
+    <a href="#testRunsCard" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="testRunsCard">
+        <h6 class="m-0 font-weight-bold text-primary">Test runs</h6>
+    </a>
+    <div class="collapse show" id="testRunsCard">
+        <div class="card-body">
+            <div class="alert alert-warning" role="alert">
+                The list does not contain results from test runs with too many errors (> 50). See <a href="../seleniumRuns.html">selenium test runs</a> for more detail.
             </div>
-            <div class="card-body">
-                <div class="alert alert-warning" role="alert">
-                    The list does not contain results from test runs with too many errors (> 50). See <a href="../seleniumRuns.html">selenium test runs</a> for more detail.
-                </div>
-                <div class="table-responsive bg-white">
-                    <table class="table table-bordered" id="seleniumTestDatatable" width="100%" cellspacing="0">
-                        <thead>
+            <div class="table-responsive bg-white">
+                <table class="table table-bordered" id="seleniumTestDatatable" width="100%" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>File</th>
+                        <th>Application</th>
+                        <th>Sel1/Sel2</th>
+                        <th>Result</th>
+                        <th>BuildNumber</th>
+                        <th>Failure Rate Last 10 builds</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <th>Time</th>
+                        <th>File</th>
+                        <th>Application</th>
+                        <th>Sel1/Sel2</th>
+                        <th>Result</th>
+                        <th>BuildNumber</th>
+                        <th>Failure Rate Last 10 builds</th>
+                    </tr>
+                    </tfoot>
+                    <tbody>
                         <tr>
-                            <th>Time</th>
-                            <th>File</th>
-                            <th>Application</th>
-                            <th>Sel1/Sel2</th>
-                            <th>Result</th>
-                            <th>BuildNumber</th>
-                            <th>Failure Rate Last 10 builds</th>
-                        </tr>
-                        </thead>
-                        <tfoot>
-                        <tr>
-                            <th>Time</th>
-                            <th>File</th>
-                            <th>Application</th>
-                            <th>Sel1/Sel2</th>
-                            <th>Result</th>
-                            <th>BuildNumber</th>
-                            <th>Failure Rate Last 10 builds</th>
-                        </tr>
-                        </tfoot>
-                        <tbody>
-                            <tr>
-                                <td>2019-03-05 10:09:10</td>
-                                <td>
-                                    <a href="../data/selenium (711).html" target="_blank">selenium (711).html</a>
-                                </td>
-                                <td>BVV</td>
-                                <td>
-                                        <span class="badge badge-light">Selenium 1</span>
-                                </td>
-                                <td>
-                                        <span class="badge badge-success">Passed</span>
-                                </td>
-                                <td>6839</td>
-                                <td data-order="0">
-                                    0 % BVV
-                                    <a class="" href="#" data-toggle="modal" data-target="#lastXBuildsModal_6839">Detail</a>
-                                    <div class="modal fade" id="lastXBuildsModal_6839" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-xl" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title">StatisticsSmokeTest last 10 builds for 6839</h5>
-                                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">×</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <table class="table table-borderless table-sm w-auto">
-                                                        <tbody>
+                            <td>2019-03-05 10:09:10</td>
+                            <td>
+                                <a href="../data/selenium (711).html" target="_blank">selenium (711).html</a>
+                            </td>
+                            <td>BVV</td>
+                            <td>
+                                    <span class="badge badge-light">Selenium 1</span>
+                            </td>
+                            <td>
+                                    <span class="badge badge-success">Passed</span>
+                                0.30 min
+                            </td>
+                            <td>6839</td>
+                            <td data-order="0">
+                                0 % BVV
+                                <a class="" href="#" data-toggle="modal" data-target="#lastXBuildsModal_6839">Detail</a>
+                                <div class="modal fade" id="lastXBuildsModal_6839" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">StatisticsSmokeTest last 10 builds for 6839</h5>
+                                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <table class="table table-borderless table-sm w-auto">
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="row">Failure rate:</th>
+                                                        <td>0 %</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Total builds:</th>
+                                                        <td>0/1</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="table table-bordered modal-datatable" width="100%" cellspacing="0">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Time</th>
+                                                        <th>File</th>
+                                                        <th>Application</th>
+                                                        <th>Result</th>
+                                                        <th>BuildNumber</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tfoot>
+                                                    <tr>
+                                                        <th>Time</th>
+                                                        <th>File</th>
+                                                        <th>Application</th>
+                                                        <th>Result</th>
+                                                        <th>BuildNumber</th>
+                                                    </tr>
+                                                    </tfoot>
+                                                    <tbody>
                                                         <tr>
-                                                            <th scope="row">Failure rate:</th>
-                                                            <td>0 %</td>
+                                                            <td>2019-03-05 10:09:10</td>
+                                                            <td>
+                                                                <a href="../data/selenium (711).html" target="_blank">selenium (711).html</a>
+                                                            </td>
+                                                            <td>BVV</td>
+                                                            <td>
+                                                                <span class="badge badge-success">Passed</span>
+                                                            </td>
+                                                            <td>6839</td>
                                                         </tr>
-                                                        <tr>
-                                                            <th scope="row">Total builds:</th>
-                                                            <td>0/1</td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <table class="table table-bordered modal-datatable" width="100%" cellspacing="0">
-                                                        <thead>
-                                                        <tr>
-                                                            <th>Time</th>
-                                                            <th>File</th>
-                                                            <th>Application</th>
-                                                            <th>Result</th>
-                                                            <th>BuildNumber</th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tfoot>
-                                                        <tr>
-                                                            <th>Time</th>
-                                                            <th>File</th>
-                                                            <th>Application</th>
-                                                            <th>Result</th>
-                                                            <th>BuildNumber</th>
-                                                        </tr>
-                                                        </tfoot>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>2019-03-05 10:09:10</td>
-                                                                <td>
-                                                                    <a href="../data/selenium (711).html" target="_blank">selenium (711).html</a>
-                                                                </td>
-                                                                <td>BVV</td>
-                                                                <td>
-                                                                    <span class="badge badge-success">Passed</span>
-                                                                </td>
-                                                                <td>6839</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
-                                                </div>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
                                             </div>
                                         </div>
                                     </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
+</div>
+<div class="card shadow mb-4">
+    <a href="#testFailureMessagesCard" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="testFailureMessagesCard">
+        <h6 class="m-0 font-weight-bold text-primary">Test failure messages</h6>
+    </a>
+    <div class="collapse show" id="testFailureMessagesCard">
+        <div class="card-body">
+            <div class="table-responsive bg-white">
+                <table class="table table-bordered" id="testFailuresDatatable" width="100%" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th>Build data</th>
+                        <th>Result</th>
+                        <th>SubTest Name</th>
+                        <th>Message</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <th>Build data</th>
+                        <th>Result</th>
+                        <th>SubTest Name</th>
+                        <th>Message</th>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                            <tr>
+                                <td data-order="2019-03-05 10:09:10">
+                                    BVV<br/>
+                                    2019-03-05 10:09:10<br/>
+                                    <strong>6839</strong><br/>
+                                        <span class="badge badge-light">Selenium 1</span>
+                                    <br/>
+                                    <a href="../data/selenium (711).html" target="_blank">selenium (711).html</a>
+                                </td>
+                                <td>
+                                        <span class="badge badge-success">Passed</span>
+                                    0.30 min
+                                </td>
+                                <td>CheckStatisticsElements</td>
+                                <td style="font-size: small;"></td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 </div>
 
 
@@ -504,8 +537,28 @@
     $(document).ready(function () {
         $('#seleniumTestDatatable').DataTable({
             "order": [[0, "desc"]],
-            "pageLength": 25
+            "pageLength": 10
         });
+        $('#testFailuresDatatable thead tr').clone(true).appendTo( '#testFailuresDatatable thead' );
+            $('#testFailuresDatatable thead tr:eq(1) th').each( function (i) {
+                var title = $(this).text();
+                $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+         
+                $( 'input', this ).on( 'keyup change', function () {
+                    if ( table.column(i).search() !== this.value ) {
+                        table
+                            .column(i)
+                            .search( this.value )
+                            .draw();
+                    }
+                } );
+            } );
+         
+            var table = $('#testFailuresDatatable').DataTable( {
+                orderCellsTop: true,
+                fixedHeader: true,
+                "order": [[0, "desc"]]
+            } );
     });
     $('.modal').on('shown.bs.modal', function (e) {
         var id = "#"+e.currentTarget.id + " .modal-datatable";
