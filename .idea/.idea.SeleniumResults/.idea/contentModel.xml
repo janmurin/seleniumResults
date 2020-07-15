@@ -2358,6 +2358,47 @@
           <e p="selenium-10441 (7).html" t="Include" />
           <e p="selenium-10441 (8).html" t="Include" />
           <e p="selenium-10441 (9).html" t="Include" />
+          <e p="selenium-10463 (1).html" t="Include" />
+          <e p="selenium-10463 (10).html" t="Include" />
+          <e p="selenium-10463 (11).html" t="Include" />
+          <e p="selenium-10463 (12).html" t="Include" />
+          <e p="selenium-10463 (13).html" t="Include" />
+          <e p="selenium-10463 (14).html" t="Include" />
+          <e p="selenium-10463 (15).html" t="Include" />
+          <e p="selenium-10463 (16).html" t="Include" />
+          <e p="selenium-10463 (17).html" t="Include" />
+          <e p="selenium-10463 (18).html" t="Include" />
+          <e p="selenium-10463 (19).html" t="Include" />
+          <e p="selenium-10463 (2).html" t="Include" />
+          <e p="selenium-10463 (20).html" t="Include" />
+          <e p="selenium-10463 (21).html" t="Include" />
+          <e p="selenium-10463 (22).html" t="Include" />
+          <e p="selenium-10463 (23).html" t="Include" />
+          <e p="selenium-10463 (24).html" t="Include" />
+          <e p="selenium-10463 (25).html" t="Include" />
+          <e p="selenium-10463 (26).html" t="Include" />
+          <e p="selenium-10463 (27).html" t="Include" />
+          <e p="selenium-10463 (28).html" t="Include" />
+          <e p="selenium-10463 (29).html" t="Include" />
+          <e p="selenium-10463 (3).html" t="Include" />
+          <e p="selenium-10463 (30).html" t="Include" />
+          <e p="selenium-10463 (31).html" t="Include" />
+          <e p="selenium-10463 (32).html" t="Include" />
+          <e p="selenium-10463 (33).html" t="Include" />
+          <e p="selenium-10463 (34).html" t="Include" />
+          <e p="selenium-10463 (35).html" t="Include" />
+          <e p="selenium-10463 (36).html" t="Include" />
+          <e p="selenium-10463 (37).html" t="Include" />
+          <e p="selenium-10463 (38).html" t="Include" />
+          <e p="selenium-10463 (39).html" t="Include" />
+          <e p="selenium-10463 (4).html" t="Include" />
+          <e p="selenium-10463 (40).html" t="Include" />
+          <e p="selenium-10463 (41).html" t="Include" />
+          <e p="selenium-10463 (5).html" t="Include" />
+          <e p="selenium-10463 (6).html" t="Include" />
+          <e p="selenium-10463 (7).html" t="Include" />
+          <e p="selenium-10463 (8).html" t="Include" />
+          <e p="selenium-10463 (9).html" t="Include" />
           <e p="selenium-235 (1).html" t="Include" />
           <e p="selenium-235 (10).html" t="Include" />
           <e p="selenium-235 (11).html" t="Include" />
@@ -2486,6 +2527,28 @@
         </e>
         <e p="LICENSE" t="Include" />
         <e p="login.html" t="Include" />
+        <e p="node_modules\@fortawesome\fontawesome-free" t="IncludeRecursive" />
+        <e p="node_modules\@types" t="IncludeRecursive">
+          <e p="events" t="IncludeRecursive" />
+          <e p="minimatch" t="IncludeRecursive" />
+          <e p="node" t="IncludeRecursive" />
+        </e>
+        <e p="node_modules\bootstrap" t="IncludeRecursive" />
+        <e p="node_modules\browser-sync" t="IncludeRecursive" />
+        <e p="node_modules\chart.js" t="IncludeRecursive" />
+        <e p="node_modules\datatables.net-bs4" t="IncludeRecursive" />
+        <e p="node_modules\del" t="IncludeRecursive" />
+        <e p="node_modules\gulp" t="IncludeRecursive" />
+        <e p="node_modules\gulp-autoprefixer" t="IncludeRecursive" />
+        <e p="node_modules\gulp-clean-css" t="IncludeRecursive" />
+        <e p="node_modules\gulp-header" t="IncludeRecursive" />
+        <e p="node_modules\gulp-plumber" t="IncludeRecursive" />
+        <e p="node_modules\gulp-rename" t="IncludeRecursive" />
+        <e p="node_modules\gulp-sass" t="IncludeRecursive" />
+        <e p="node_modules\gulp-uglify" t="IncludeRecursive" />
+        <e p="node_modules\jquery" t="IncludeRecursive" />
+        <e p="node_modules\jquery.easing" t="IncludeRecursive" />
+        <e p="node_modules\merge-stream" t="IncludeRecursive" />
         <e p="package-lock.json" t="Include" />
         <e p="package.json" t="Include" />
         <e p="README.md" t="Include" />
@@ -2571,6 +2634,7 @@
           <e p="EventListSmokeTest.html" t="Include" />
           <e p="EventSmokeTest.html" t="Include" />
           <e p="FollowUpFromCalendarSmokeTest.html" t="Include" />
+          <e p="FollowUpSmokeTest.html" t="Include" />
           <e p="FormattingSmokeTest.html" t="Include" />
           <e p="HomeBackLinkSmokeTest.html" t="Include" />
           <e p="HomeSmokeTest.html" t="Include" />
@@ -4492,7 +4556,8 @@
         <e p="WebReportGenerator.cs" t="Include" />
       </e>
     </e>
-    <e p="C:\Users\jan.murin.INTERNAL\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\jan.murin.INTERNAL\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_SeleniumResults.603230407.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Murin Jan\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Murin Jan\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_SeleniumResults.603230407.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Murin Jan\AppData\Roaming\JetBrains\Rider2020.1\scratches" t="IncludeRecursive" />
   </component>
 </project>

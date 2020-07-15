@@ -329,8 +329,5 @@ C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\refs\System.Xml.XPa
 C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.XDocument.dll
 C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\refs\WindowsBase.dll
 C:\DATA\Repositories\SeleniumResults\obj\Debug\netcoreapp3.1\SeleniumResults.csprojAssemblyReference.cache
-C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
-C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
-C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\DATA\Repositories\SeleniumResults\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\DATA\Repositories\SeleniumResults\obj\Debug\netcoreapp3.1\SeleniumResults.csproj.CoreCompileInputs.cache
+C:\DATA\Repositories\SeleniumResults\obj\Debug\netcoreapp3.1\SeleniumResults.genruntimeconfig.cache

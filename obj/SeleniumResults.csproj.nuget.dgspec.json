@@ -10,14 +10,14 @@
         "projectUniqueName": "C:\\DATA\\Repositories\\SeleniumResults\\SeleniumResults.csproj",
         "projectName": "SeleniumResults",
         "projectPath": "C:\\DATA\\Repositories\\SeleniumResults\\SeleniumResults.csproj",
-        "packagesPath": "C:\\Users\\jan.murin.INTERNAL\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Murin Jan\\.nuget\\packages\\",
         "outputPath": "C:\\DATA\\Repositories\\SeleniumResults\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jan.murin.INTERNAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Murin Jan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
