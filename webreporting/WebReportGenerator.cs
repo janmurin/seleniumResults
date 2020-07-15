@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using RazorLight;
 using SeleniumResults.Models;
+using SeleniumResults.Models.enums;
 using SeleniumResults.webreporting.ViewModels;
 
 namespace SeleniumResults.webreporting
@@ -20,10 +21,7 @@ namespace SeleniumResults.webreporting
                 .UseMemoryCachingProvider()
                 .Build();
 
-            var viewModel = new SeleniumTestsViewModel()
-            {
-                TestStatsList = testStatsList
-            };
+            var viewModel = new SeleniumTestsViewModel(testStatsList);
 
             string result = engine.CompileRenderAsync("seleniumTests.cshtml", viewModel).Result;
             //Console.WriteLine(result);

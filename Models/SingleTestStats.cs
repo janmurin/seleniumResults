@@ -7,14 +7,17 @@ namespace SeleniumResults.Models
 {
     public class SingleTestStats
     {
-        public SingleTestStats(SingleTestResult sr)
+        private readonly int _buildNumber10;
+        private bool? _olderThan10builds;
+        public string Name { get; }
+        public HashSet<SingleTestResult> Results { get; }
+
+        public SingleTestStats(SingleTestResult sr, int buildNumber10)
         {
+            _buildNumber10 = buildNumber10;
             Name = sr.Name;
             Results = new HashSet<SingleTestResult>() {sr};
         }
-
-        public string Name { get; }
-        public HashSet<SingleTestResult> Results { get; }
 
         public Dictionary<int, LastXBuildsStat> LastXBuildsDict { get; set; }
         public Dictionary<int, LastXBuildsStat> BVVLastXBuildsDict { get; set; }
@@ -22,6 +25,21 @@ namespace SeleniumResults.Models
         public Dictionary<int, LastXBuildsStat> SCCLastXBuildsDict { get; set; }
         public Dictionary<int, LastXBuildsStat> BVLastXBuildsDict { get; set; }
         public Dictionary<int, LastXBuildsStat> PPTLastXBuildsDict { get; set; }
+
+        public bool IsOlderThan10Builds
+        {
+            get
+            {
+                if (!_olderThan10builds.HasValue)
+                {
+                    _olderThan10builds = Results
+                        .OrderByDescending(x => x.TestRunMetaData.BuildNumber)
+                        .First().TestRunMetaData.BuildNumber <= _buildNumber10;
+                }
+
+                return _olderThan10builds.Value;
+            }
+        }
 
         public int Sel1Failures => Results.Count(x => x.IsFailed && x.TestRunMetaData.TestRunType == TestRunType.Selenium);
         public int Sel2Failures => Results.Count(x => x.IsFailed && x.TestRunMetaData.TestRunType == TestRunType.Selenium2);
@@ -43,7 +61,7 @@ namespace SeleniumResults.Models
             {
                 if (Results.Any())
                 {
-                    MostRecentTime = Results.OrderByDescending(x => x.Time).ToArray()[0].Time;
+                    MostRecentTime = Results.OrderByDescending(x => x.Time).First().Time;
                 }
             }
 

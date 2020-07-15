@@ -14,7 +14,6 @@ namespace SeleniumResults.webreporting.ViewModels
         public SingleTestStats TestStats { get; }
         public List<ChartDataset> DataSets { get; }
         public string DataSetsJson { get; }
-        public List<string> SubTestNames { get; }
 
         public SeleniumTestViewModel(SingleTestStats stats)
         {
@@ -46,7 +45,6 @@ namespace SeleniumResults.webreporting.ViewModels
             }
 
             DataSetsJson = $"[{string.Join(",", DataSets)}]";
-            SubTestNames = TestStats.Results.SelectMany(x => x.SubTests).Select(y => y.Name).Distinct().ToList();
         }
 
         public LastXBuildsStat GetLastXBuildDataByTestResult(SingleTestResult sr)

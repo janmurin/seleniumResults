@@ -54,6 +54,7 @@ namespace SeleniumResults
         {
             _singleTestStatsDict = new ConcurrentDictionary<string, SingleTestStats>();
             int singleTestTotalDuplicates = 0;
+            var get11ThBuildNumber = Get11ThBuildNumber();
 
             foreach (TestRun testRun in _testRuns.Values)
             {
@@ -64,7 +65,7 @@ namespace SeleniumResults
                     {
                         if (!_singleTestStatsDict.ContainsKey(sr.Name))
                         {
-                            _singleTestStatsDict.TryAdd(sr.Name, new SingleTestStats(sr));
+                            _singleTestStatsDict.TryAdd(sr.Name, new SingleTestStats(sr, get11ThBuildNumber));
                         }
                         else
                         {
@@ -96,6 +97,21 @@ namespace SeleniumResults
             var testRuns = _testRuns.Values.ToList();
             testRuns.AddRange(_tooManyErrorRuns);
             return testRuns.OrderByDescending(x => x.TestRunMetaData.LastRun).ToList();
+        }
+
+        public int Get11ThBuildNumber()
+        {
+            var lastBuilds = GetAllTestRuns()
+                .GroupBy(x => x.TestRunMetaData.BuildNumber)
+                .OrderByDescending(x => x.Key)
+                .ToList();
+            
+            if (lastBuilds.Count > 10)
+            {
+                return lastBuilds.Skip(10).First().Key;
+            }
+
+            return lastBuilds.Last().Key;
         }
 
         #region Statistics

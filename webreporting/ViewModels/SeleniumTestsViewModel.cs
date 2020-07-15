@@ -5,6 +5,10 @@ namespace SeleniumResults.webreporting.ViewModels
 {
     public class SeleniumTestsViewModel
     {
-        public List<SingleTestStats> TestStatsList { get; set; }
+        public List<SingleTestStats> TestStatsList { get; }
+        public SeleniumTestsViewModel(List<SingleTestStats> testStatsList)
+        {
+            TestStatsList = testStatsList;
+        }
     }
 }

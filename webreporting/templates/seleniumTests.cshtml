@@ -44,9 +44,13 @@
                 @{
                     KeyValuePair<int, LastXBuildsStat> lastXBuilds = testStat.LastXBuildsDict.First();
                 }
-                <td data-order="@lastXBuilds.Value.FailureRate">
+                <td data-order="@(testStat.IsOlderThan10Builds ? "-1" : "" + lastXBuilds.Value.FailureRate) ">
                     @lastXBuilds.Value.FailureRate %
                     <a class="" href="#" data-toggle="modal" data-target="#lastXBuildsModal_@testStat.Name">Detail</a>
+                    @if (testStat.IsOlderThan10Builds)
+                    {
+                        <span class="text-muted">(no run in the last 10 builds)</span>
+                    }
                     <div class="modal fade" id="lastXBuildsModal_@testStat.Name" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl" role="document">
                             <div class="modal-content">
@@ -123,7 +127,8 @@
     <script>
     $(document).ready(function () {
         $('#seleniumTestsDataTable').DataTable({
-            "order": [[5, "desc"]]
+            "order": [[5, "desc"]],
+              "pageLength": 25
         });
     });
     $('.modal').on('shown.bs.modal', function (e) {
