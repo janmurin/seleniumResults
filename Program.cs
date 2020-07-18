@@ -13,7 +13,7 @@ namespace SeleniumResults
 
         static void Main(string[] args)
         {
-            string filesDir = "..\\..\\..\\webreport\\data";
+            string filesDir = "..\\..\\..\\data\\raw";
 
             Console.WriteLine($"files dir: {filesDir}");
 
@@ -32,7 +32,17 @@ namespace SeleniumResults
                     else
                     {
                         TestRun testRun = TestRunFileProcessor.ProcessFile(fileName, index);
-                        ResultsDatabase.AddTestRunData(testRun);
+                        var isAdded = ResultsDatabase.AddTestRunData(testRun);
+                        if (isAdded)
+                        {
+                            testRun.TestRunMetaData.SavedFileName =
+                                $"sel-{testRun.TestRunMetaData.FlytApplicationType}-{testRun.TestRunMetaData.BuildNumber}-{testRun.TestRunMetaData.LastRun.Ticks / 10000000}.html";
+                            File.Copy(fileName, Path.Combine("..\\..\\..\\webreport\\data", testRun.TestRunMetaData.SavedFileName), true);
+                        }
+                        else
+                        {
+                            File.Copy(fileName, Path.Combine("..\\..\\..\\data\\duplicates", testRun.TestRunMetaData.OriginalFileName), true);
+                        }
                     }
                 });
 

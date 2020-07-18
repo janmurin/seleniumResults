@@ -17,37 +17,44 @@ namespace SeleniumResults
 
         private int DuplicateTestRunsCount { get; set; }
 
-        public void AddTestRunData(TestRun testRun)
+        public bool AddTestRunData(TestRun testRun)
         {
             if (testRun == null)
             {
-                return;
+                return false;
             }
 
             if (testRun.TestRunMetaData.TestRunType != TestRunType.Selenium && testRun.TestRunMetaData.TestRunType != TestRunType.Selenium2)
             {
                 Console.WriteLine($"DB: ignoring test run {testRun}");
-                return;
+                return false;
             }
 
             int failures = testRun.Results.Count(x => x.IsFailed);
             if (failures > Constants.FAILURE_THRESHOLD)
             {
-                _tooManyErrorRuns.Add(testRun);
-                return;
+                if (!_tooManyErrorRuns.Contains(testRun))
+                {
+                    _tooManyErrorRuns.Add(testRun);
+                    return true;
+                }
+
+                return false;
             }
 
-            int results = testRun.Results.Count;
-            if (results < Constants.RESULTS_THRESHOLD)
-            {
-                //Console.WriteLine($"skipping test run [{testRun.FileName}] because of too few results: {results}");
-                _tooFewResults.Add($"({testRun.TestRunMetaData.OriginalFileName}, results-{results})");
-                return;
-            }
+            // int results = testRun.Results.Count;
+            // if (results < Constants.RESULTS_THRESHOLD)
+            // {
+            //     Console.WriteLine($"skipping test run [{testRun.TestRunMetaData.OriginalFileName}] because of too few results: {results}");
+            //     _tooFewResults.Add($"({testRun.TestRunMetaData.OriginalFileName}, results-{results})");
+            //     return;
+            // }
 
             // do not add duplicate test runs
             bool isAdded = _testRuns.TryAdd(testRun.GetId(), testRun);
             DuplicateTestRunsCount += isAdded ? 0 : 1;
+
+            return isAdded;
         }
 
         public void ProcessData()

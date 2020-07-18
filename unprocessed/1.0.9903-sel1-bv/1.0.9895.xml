@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-run start-time="2020-04-27 13:06:36Z">
-  <command-line><![CDATA["C:\Program Files (x86)\Visma Unique AS\Visma Flyt BV Selenium\NunitConsoleRunner\nunit3-console.exe" --result:"C:\TestResults\Selenium\1.0.9895.xml" "C:\Program Files (x86)\Visma Unique AS\Visma Flyt BV Selenium\Flow.Tests.Selenium.dll" --where "cat == BasicSmoke" ]]></command-line>
-</test-run>

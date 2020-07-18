@@ -53,7 +53,9 @@ namespace SeleniumResults
             string buildNumber = resultFileUrl.Substring(resultFileUrl.LastIndexOf("\\", StringComparison.Ordinal));
             buildNumber = buildNumber
                 .Replace("\\1.0.", "")
-                .Replace(".xml", "");
+                .Replace(".xml", "")
+                .Replace("-1", "")
+                .Replace("-2", "");
             return int.Parse(buildNumber);
         }
 
@@ -97,6 +99,7 @@ namespace SeleniumResults
                 .Replace("des", "Dec")
                 .Replace("feb", "Feb")
                 .Replace("jan", "Jan")
+                .Replace("mai", "May")
                 .Replace(".", ":");
             var dateTime = DateTime.Parse(date);
             return dateTime;
@@ -105,7 +108,7 @@ namespace SeleniumResults
         private static FlytApplication ParseApplicationType(HtmlDocument htmlDoc)
         {
             string innerText = htmlDoc.DocumentNode?.SelectSingleNode("//div[@id='modal1']//tr//*[contains(text(),'Machine')]//parent::tr/td[2]").InnerText;
-            if (innerText.Contains("FLYTCHILDWEB902") || innerText.Contains("FLYTCHILDWEB401"))
+            if (innerText.Contains("FLYTCHILDWEB902") || innerText.Contains("FLYTCHILDWEB401") || innerText.Contains("FLYTCHILDWEB402"))
             {
                 return FlytApplication.BV;
             }
