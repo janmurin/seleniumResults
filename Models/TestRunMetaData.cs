@@ -10,7 +10,6 @@ namespace SeleniumResults.Models
         public FlytApplication FlytApplicationType { get; }
         public DateTime LastRun { get; }
         public string OriginalFileName { get; }
-        public string SavedFileName { get; set; }
 
         public TestRunMetaData(string fileName, FlytApplication applicationType, DateTime lastRun, TestRunType testRunType, int buildNumber)
         {

@@ -62,7 +62,7 @@
                         <tr>
                             <td>@sr.Time</td>
                             <td>
-                                <a href="../data/@sr.TestRunMetaData.SavedFileName" target="_blank">@sr.TestRunMetaData.SavedFileName</a>
+                                <a href="../data/@sr.TestRunMetaData.OriginalFileName" target="_blank">@sr.TestRunMetaData.OriginalFileName</a>
                             </td>
                             <td>@sr.TestRunMetaData.FlytApplicationType</td>
                             <td>
@@ -88,76 +88,11 @@
                             </td>
                             <td>@sr.TestRunMetaData.BuildNumber</td>
                             @{
-                                LastXBuildsStat lastXBuildsStat = Model.GetLastXBuildDataByTestResult(sr);
+                                LastXBuildsStat lastXBuildsStat = Model.GetLastXBuildDataByTestResult(sr, false);
                             }
                             <td data-order="@lastXBuildsStat.FailureRate">
                                 @lastXBuildsStat.FailureRate % @sr.TestRunMetaData.FlytApplicationType
-                                <a class="" href="#" data-toggle="modal" data-target="#lastXBuildsModal_@sr.TestRunMetaData.BuildNumber">Detail</a>
-                                <div class="modal fade" id="lastXBuildsModal_@sr.TestRunMetaData.BuildNumber" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-xl" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title">@sr.Name last 10 builds for @sr.TestRunMetaData.BuildNumber</h5>
-                                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">×</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <table class="table table-borderless table-sm w-auto">
-                                                    <tbody>
-                                                    <tr>
-                                                        <th scope="row">Failure rate:</th>
-                                                        <td>@lastXBuildsStat.FailureRate %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Total builds:</th>
-                                                        <td>@lastXBuildsStat.TotalFailed/@lastXBuildsStat.TotalBuilds</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                                <table class="table table-bordered modal-datatable" width="100%" cellspacing="0">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>Time</th>
-                                                        <th>File</th>
-                                                        <th>Application</th>
-                                                        <th>Result</th>
-                                                        <th>BuildNumber</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tfoot>
-                                                    <tr>
-                                                        <th>Time</th>
-                                                        <th>File</th>
-                                                        <th>Application</th>
-                                                        <th>Result</th>
-                                                        <th>BuildNumber</th>
-                                                    </tr>
-                                                    </tfoot>
-                                                    <tbody>
-                                                    @foreach (var str in lastXBuildsStat.GetOrderedTestRuns())
-                                                    {
-                                                        <tr>
-                                                            <td>@str.Time</td>
-                                                            <td>
-                                                                <a href="../data/@str.TestRunMetaData.SavedFileName" target="_blank">@str.TestRunMetaData.SavedFileName</a>
-                                                            </td>
-                                                            <td>@str.TestRunMetaData.FlytApplicationType</td>
-                                                            <td>
-                                                                <span class="badge @(str.IsPassed ? "badge-success" : "badge-danger")">@str.TestResultType</span>
-                                                            </td>
-                                                            <td>@str.TestRunMetaData.BuildNumber</td>
-                                                        </tr>
-                                                    }
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a class="" href="#" data-toggle="modal" data-target="#lastXBuildsModal_@(sr.TestRunMetaData.FlytApplicationType)_@sr.TestRunMetaData.BuildNumber">Detail</a>
                             </td>
                         </tr>
                     }
@@ -167,6 +102,80 @@
         </div>
     </div>
 </div>
+@* generate modals *@
+@foreach (var sr in Model.TestStats.Results)
+{
+    LastXBuildsStat lastXBuildsStat = Model.GetLastXBuildDataByTestResult(sr, true);
+    if (lastXBuildsStat != null)
+    {
+        <div class="modal fade" id="lastXBuildsModal_@(sr.TestRunMetaData.FlytApplicationType)_@sr.TestRunMetaData.BuildNumber" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">@sr.Name last 10 builds for @sr.TestRunMetaData.BuildNumber</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-borderless table-sm w-auto">
+                            <tbody>
+                            <tr>
+                                <th scope="row">Failure rate:</th>
+                                <td>@lastXBuildsStat.FailureRate %</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Total builds:</th>
+                                <td>@lastXBuildsStat.TotalFailed/@lastXBuildsStat.TotalBuilds</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered modal-datatable" width="100%" cellspacing="0">
+                            <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>File</th>
+                                <th>Application</th>
+                                <th>Result</th>
+                                <th>BuildNumber</th>
+                            </tr>
+                            </thead>
+                            <tfoot>
+                            <tr>
+                                <th>Time</th>
+                                <th>File</th>
+                                <th>Application</th>
+                                <th>Result</th>
+                                <th>BuildNumber</th>
+                            </tr>
+                            </tfoot>
+                            <tbody>
+                            @foreach (var str in lastXBuildsStat.GetOrderedTestRuns())
+                            {
+                                <tr>
+                                    <td>@str.Time</td>
+                                    <td>
+                                        <a href="../data/@str.TestRunMetaData.OriginalFileName" target="_blank">@str.TestRunMetaData.OriginalFileName</a>
+                                    </td>
+                                    <td>@str.TestRunMetaData.FlytApplicationType</td>
+                                    <td>
+                                        <span class="badge @(str.IsPassed ? "badge-success" : "badge-danger")">@str.TestResultType</span>
+                                    </td>
+                                    <td>@str.TestRunMetaData.BuildNumber</td>
+                                </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+
 <div class="card shadow mb-4">
     <a href="#testFailureMessagesCard" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="testFailureMessagesCard">
         <h6 class="m-0 font-weight-bold text-primary">Test failure messages</h6>
@@ -210,7 +219,7 @@
                                         <span class="badge badge-info">Selenium 2</span>
                                     }
                                     <br/>
-                                    <a href="../data/@sr.TestRunMetaData.SavedFileName" target="_blank">@sr.TestRunMetaData.SavedFileName</a>
+                                    <a href="../data/@sr.TestRunMetaData.OriginalFileName" target="_blank">@sr.TestRunMetaData.OriginalFileName</a>
                                 </td>
                                 <td>
                                     @if (subTest.IsPassed)
@@ -248,6 +257,7 @@
             "order": [[0, "desc"]],
             "pageLength": 10
         });
+            
         $('#testFailuresDatatable thead tr').clone(true).appendTo( '#testFailuresDatatable thead' );
             $('#testFailuresDatatable thead tr:eq(1) th').each( function (i) {
                 var title = $(this).text();

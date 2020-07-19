@@ -14,6 +14,7 @@ namespace SeleniumResults.webreporting.ViewModels
         public SingleTestStats TestStats { get; }
         public List<ChartDataset> DataSets { get; }
         public string DataSetsJson { get; }
+        public HashSet<string> existingModals = new HashSet<string>();
 
         public SeleniumTestViewModel(SingleTestStats stats)
         {
@@ -47,8 +48,19 @@ namespace SeleniumResults.webreporting.ViewModels
             DataSetsJson = $"[{string.Join(",", DataSets)}]";
         }
 
-        public LastXBuildsStat GetLastXBuildDataByTestResult(SingleTestResult sr)
+        public LastXBuildsStat GetLastXBuildDataByTestResult(SingleTestResult sr, bool forModal)
         {
+            if (forModal)
+            {
+                string id = $"{sr.TestRunMetaData.FlytApplicationType}-{sr.TestRunMetaData.BuildNumber}";
+                if (existingModals.Contains(id))
+                {
+                    return null;
+                }
+
+                existingModals.Add(id);
+            }
+
             switch (sr.TestRunMetaData.FlytApplicationType)
             {
                 case FlytApplication.BV: return GetLastXBuildStat(TestStats.BVLastXBuildsDict, sr.TestRunMetaData.BuildNumber);
