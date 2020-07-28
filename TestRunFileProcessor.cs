@@ -131,7 +131,7 @@ namespace SeleniumResults
             }
 
             if (innerText.Contains("FLYTSCWEB902") || innerText.Contains("FLYTSCWEB401") || innerText.Contains("FLYTSCWEB901") ||
-                innerText.Contains("FLYTSCWEB402"))
+                innerText.Contains("FLYTSCWEB402") || innerText.Contains("FLYTSCWEB903"))
             {
                 return FlytApplication.SCC;
             }

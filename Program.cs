@@ -31,12 +31,19 @@ namespace SeleniumResults
                     }
                     else
                     {
-                        TestRun testRun = TestRunFileProcessor.ProcessFile(fileName, index);
-                        var isAdded = ResultsDatabase.AddTestRunData(testRun);
-                        if (!isAdded)
+                        try
                         {
-                            Console.WriteLine($"adding duplicate file to data/duplicates folder. filename: {fileName}");
-                            File.Copy(fileName, Path.Combine("..\\..\\..\\data\\duplicates", testRun.TestRunMetaData.OriginalFileName), true);
+                            TestRun testRun = TestRunFileProcessor.ProcessFile(fileName, index);
+                            var isAdded = ResultsDatabase.AddTestRunData(testRun);
+                            if (!isAdded)
+                            {
+                                Console.WriteLine($"adding duplicate file to data/duplicates folder. filename: {fileName}");
+                                File.Copy(fileName, Path.Combine("..\\..\\..\\data\\duplicates", testRun.TestRunMetaData.OriginalFileName), true);
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e);
                         }
                     }
                 });
