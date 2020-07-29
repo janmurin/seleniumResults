@@ -14,6 +14,7 @@ namespace SeleniumResults.webreporting.ViewModels
         public SingleTestStats TestStats { get; }
         public List<ChartDataset> DataSets { get; }
         public string DataSetsJson { get; }
+
         public HashSet<string> existingModals = new HashSet<string>();
 
         public SeleniumTestViewModel(SingleTestStats stats)
