@@ -187,7 +187,7 @@ namespace SeleniumResults
                     subMessage = node.SelectSingleNode(".//td[@class='skipped']//pre").InnerText;
                 }
 
-                subTests.Add(new SubTest(subName, subResultType, subMessage));
+                subTests.Add(new SubTest(subName, subResultType, subMessage, subTests.Count));
             }
 
             return new SingleTestResult(testRunMetaData, name, testResultType, startDateTime, endDateTime, subTests);

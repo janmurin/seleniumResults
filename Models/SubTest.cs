@@ -7,12 +7,14 @@ namespace SeleniumResults.Models
         public string Name { get; }
         public TestResultType TestResultType { get; }
         public string Message { get; }
-        
-        public SubTest(string name, TestResultType testResultType, string message)
+        public int SubTestNumber { get; }
+
+        public SubTest(string name, TestResultType testResultType, string message, int subTestNumber)
         {
             Name = name;
             TestResultType = testResultType;
             Message = message;
+            SubTestNumber = subTestNumber;
         }
 
         public bool IsPassed => TestResultType == TestResultType.Passed;

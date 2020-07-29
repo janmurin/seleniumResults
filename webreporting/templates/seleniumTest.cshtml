@@ -237,8 +237,11 @@
                                     }
                                     @sr.GetDurationMinutes
                                 </td>
-                                <td>@subTest.Name</td>
-                                <td style="font-size: small;">@subTest.Message</td>
+                                <td>
+                                    @subTest.Name<br/>
+                                    SubTest-@subTest.SubTestNumber.ToString()
+                                </td>
+                                <td style="font-size: small;">@Raw(subTest.Message.Replace(" at ","<br/> at "))</td>
                             </tr>
                         }
                     }
