@@ -63,6 +63,14 @@
                     {
                         <span class="badge badge-danger">Failed</span> <span style="color:red;">@sr.FailedCount</span><span>/@sr.TotalCount</span>
                     }
+                    @if (sr.FailedCount < 5)
+                    {
+                        foreach (var testResult in sr.Results.Where(x => x.IsFailed).OrderBy(x=>x.Name).ToList())
+                        {
+                            <a href="testPages/@(testResult.Name).html" target="_blank" style="font-size: small">@testResult.Name</a>
+                        }
+                            
+                    }
                 </td>
                 <td>@sr.TestRunMetaData.BuildNumber</td>
             </tr>
