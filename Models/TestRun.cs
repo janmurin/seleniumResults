@@ -28,14 +28,16 @@ namespace SeleniumResults.Models
             TotalCount = results.Any() ? results.Count(x => x.IsPassedOrFailed) : 0;
         }
 
+        public string GetDurationMinutesString => $"{Results.Sum(x => x.GetDurationMinutes),0:0.00} min";
+
         public string GetId()
         {
             return $"{TestRunMetaData.FlytApplicationType}-{TestRunMetaData.LastRun:yyyy-MM-dd HH:mm:ss}";
         }
-        
+
         public override string ToString()
         {
-            return $"(id={GetId()}, IsPassed={IsPassed}), TestRunMetaData={TestRunMetaData}";
+            return $"(id={GetId()}, IsPassed={IsPassed}), TotalMinutes={GetDurationMinutesString}, TestRunMetaData={TestRunMetaData}";
         }
 
         #region equals

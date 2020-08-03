@@ -51,5 +51,39 @@ namespace SeleniumResults.webreporting
             //Console.WriteLine(result);
             File.WriteAllText(Path.Combine(WebreportFolderPath, "seleniumRuns.html"), result);
         }
+
+        public static void GenerateApiRunsHtml(List<TestRun> testRuns)
+        {
+            var engine = new RazorLightEngineBuilder()
+                .UseFileSystemProject(TemplateFolderPath)
+                .UseMemoryCachingProvider()
+                .Build();
+
+            var viewModel = new ApiRunsViewModel()
+            {
+                TestRuns = testRuns
+            };
+
+            string result = engine.CompileRenderAsync("apiRuns.cshtml", viewModel).Result;
+            //Console.WriteLine(result);
+            File.WriteAllText(Path.Combine(WebreportFolderPath, "apiRuns.html"), result);
+        }
+        
+        public static void GenerateSpecflowRunsHtml(List<TestRun> testRuns)
+        {
+            var engine = new RazorLightEngineBuilder()
+                .UseFileSystemProject(TemplateFolderPath)
+                .UseMemoryCachingProvider()
+                .Build();
+
+            var viewModel = new SpecflowsRunViewModel()
+            {
+                TestRuns = testRuns
+            };
+
+            string result = engine.CompileRenderAsync("specflowRuns.cshtml", viewModel).Result;
+            //Console.WriteLine(result);
+            File.WriteAllText(Path.Combine(WebreportFolderPath, "specflowRuns.html"), result);
+        }
     }
 }

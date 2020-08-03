@@ -1,0 +1,1485 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Api Test Runs</title>
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="seleniumRuns.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">Test Statistics</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+
+      <!-- Divider -->
+
+
+      <!-- Divider -->
+
+
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Selenium
+      </div>
+      <li class="nav-item active">
+        <a class="nav-link" href="seleniumRuns.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Test runs</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="seleniumTests.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Test list</span></a>
+      </li>
+      
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        API
+      </div>
+      <li class="nav-item">
+        <a class="nav-link" href="apiRuns.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Api runs</span></a>
+      </li>
+      
+      <hr class="sidebar-divider">
+      
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Specflow
+      </div>
+      <li class="nav-item">
+        <a class="nav-link" href="specflowRuns.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Specflow runs</span></a>
+      </li>
+      
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <form class="form-inline">
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+              <i class="fa fa-bars"></i>
+            </button>
+          </form>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+
+            <!-- Nav Item - Messages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+                <!-- Counter - Messages -->
+                <span class="badge badge-danger badge-counter">7</span>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Message Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="font-weight-bold">
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                    <div class="small text-gray-500">Emily Fowler · 58m</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                    <div class="status-indicator"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+                    <div class="small text-gray-500">Jae Chun · 1d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                    <div class="status-indicator bg-warning"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+              </div>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Specflow test runs</h1>
+
+<div class="table-responsive bg-white">
+    <table class="table table-bordered" id="specflowRunsDatatable" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>File</th>
+                <th>Application</th>
+                <th>Duration</th>
+                <th>Result</th>
+                <th>BuildNumber</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Time</th>
+                <th>File</th>
+                <th>Application</th>
+                <th>Duration</th>
+                <th>Result</th>
+                <th>BuildNumber</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>2020-05-15 05:56:00</td>
+                <td>
+                    <a href="spcdata/spc-BVN-1.0.10029-157338.html" target="_blank">spc-BVN-1.0.10029-157338.html</a>
+                </td>
+                <td>BV</td>
+                <td data-order="107">
+                    <span>107 min (107,20 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/134</span>
+                </td>
+                <td>10029</td>
+            </tr>
+            <tr>
+                <td>2020-05-15 17:35:00</td>
+                <td>
+                    <a href="spcdata/spc-BVN-1.0.10036-157490.html" target="_blank">spc-BVN-1.0.10036-157490.html</a>
+                </td>
+                <td>BV</td>
+                <td data-order="146">
+                    <span>146 min (146,35 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/134</span>
+                </td>
+                <td>10036</td>
+            </tr>
+            <tr>
+                <td>2020-05-18 16:20:00</td>
+                <td>
+                    <a href="spcdata/spc-BVN-1.0.10039-157683.html" target="_blank">spc-BVN-1.0.10039-157683.html</a>
+                </td>
+                <td>BV</td>
+                <td data-order="162">
+                    <span>162 min (162,50 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/134</span>
+                </td>
+                <td>10039</td>
+            </tr>
+            <tr>
+                <td>2020-06-04 16:18:00</td>
+                <td>
+                    <a href="spcdata/spc-BVN-1.0.10190-160694.html" target="_blank">spc-BVN-1.0.10190-160694.html</a>
+                </td>
+                <td>BV</td>
+                <td data-order="119">
+                    <span>119 min (119,23 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/134</span>
+                </td>
+                <td>10190</td>
+            </tr>
+            <tr>
+                <td>2020-06-21 19:10:00</td>
+                <td>
+                    <a href="spcdata/spc-BVN-1.0.10311-163716.html" target="_blank">spc-BVN-1.0.10311-163716.html</a>
+                </td>
+                <td>BV</td>
+                <td data-order="105">
+                    <span>105 min (105,68 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">1</span><span>/134</span>
+                            <a href="testPages/StatisticsOverviewFeature.html" target="_blank" style="font-size: small">StatisticsOverviewFeature</a>
+                </td>
+                <td>10311</td>
+            </tr>
+            <tr>
+                <td>2020-06-22 15:51:00</td>
+                <td>
+                    <a href="spcdata/spc-BVN-1.0.10313-163805.html" target="_blank">spc-BVN-1.0.10313-163805.html</a>
+                </td>
+                <td>BV</td>
+                <td data-order="128">
+                    <span>128 min (128,22 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">1</span><span>/135</span>
+                            <a href="testPages/StatisticsOverviewFeature.html" target="_blank" style="font-size: small">StatisticsOverviewFeature</a>
+                </td>
+                <td>10313</td>
+            </tr>
+            <tr>
+                <td>2020-08-01 00:29:00</td>
+                <td>
+                    <a href="spcdata/spc-BVN-10565-637318385400000.html" target="_blank">spc-BVN-10565-637318385400000.html</a>
+                </td>
+                <td>BV</td>
+                <td data-order="120">
+                    <span>120 min (120,55 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">27</span><span>/112</span>
+                </td>
+                <td>10565</td>
+            </tr>
+            <tr>
+                <td>2020-08-01 00:29:00</td>
+                <td>
+                    <a href="spcdata/spc-BVN-1.0.10565-169370.html" target="_blank">spc-BVN-1.0.10565-169370.html</a>
+                </td>
+                <td>BV</td>
+                <td data-order="120">
+                    <span>120 min (120,55 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">27</span><span>/112</span>
+                </td>
+                <td>10565</td>
+            </tr>
+            <tr>
+                <td>2020-08-03 11:57:00</td>
+                <td>
+                    <a href="spcdata/spc-BVN-1.0.10565-169447.html" target="_blank">spc-BVN-1.0.10565-169447.html</a>
+                </td>
+                <td>BV</td>
+                <td data-order="144">
+                    <span>144 min (144,62 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/112</span>
+                </td>
+                <td>10565</td>
+            </tr>
+            <tr>
+                <td>2019-09-18 21:01:00</td>
+                <td>
+                    <a href="spcdata/spc-BVV-8179-637044372600000.html" target="_blank">spc-BVV-8179-637044372600000.html</a>
+                </td>
+                <td>BVV</td>
+                <td data-order="40">
+                    <span>40 min (40,97 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">5</span><span>/134</span>
+                </td>
+                <td>8179</td>
+            </tr>
+            <tr>
+                <td>2019-12-05 02:04:00</td>
+                <td>
+                    <a href="spcdata/spc-BVV-8780-637111082400000.html" target="_blank">spc-BVV-8780-637111082400000.html</a>
+                </td>
+                <td>BVV</td>
+                <td data-order="92">
+                    <span>92 min (92,98 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">8</span><span>/142</span>
+                </td>
+                <td>8780</td>
+            </tr>
+            <tr>
+                <td>2019-12-09 17:26:00</td>
+                <td>
+                    <a href="spcdata/spc-BVV-8806-637115091600000.html" target="_blank">spc-BVV-8806-637115091600000.html</a>
+                </td>
+                <td>BVV</td>
+                <td data-order="95">
+                    <span>95 min (95,95 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">2</span><span>/140</span>
+                            <a href="testPages/CorrespondenceAccessRightsFeature.html" target="_blank" style="font-size: small">CorrespondenceAccessRightsFeature</a>
+                            <a href="testPages/UpdateCorrespondenceFeature.html" target="_blank" style="font-size: small">UpdateCorrespondenceFeature</a>
+                </td>
+                <td>8806</td>
+            </tr>
+            <tr>
+                <td>2019-12-10 12:02:00</td>
+                <td>
+                    <a href="spcdata/spc-BVV-8812-637115761200000.html" target="_blank">spc-BVV-8812-637115761200000.html</a>
+                </td>
+                <td>BVV</td>
+                <td data-order="97">
+                    <span>97 min (97,75 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">1</span><span>/142</span>
+                            <a href="testPages/MergeFeature.html" target="_blank" style="font-size: small">MergeFeature</a>
+                </td>
+                <td>8812</td>
+            </tr>
+            <tr>
+                <td>2020-01-18 01:04:00</td>
+                <td>
+                    <a href="spcdata/spc-BVV-9076-637149062400000.html" target="_blank">spc-BVV-9076-637149062400000.html</a>
+                </td>
+                <td>BVV</td>
+                <td data-order="59">
+                    <span>59 min (59,23 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-dark">Too many errors</span> <span style="color:red;">36</span><span>/145</span>
+                </td>
+                <td>9076</td>
+            </tr>
+            <tr>
+                <td>2020-01-19 00:34:00</td>
+                <td>
+                    <a href="spcdata/spc-BVV-9076-637149908400000.html" target="_blank">spc-BVV-9076-637149908400000.html</a>
+                </td>
+                <td>BVV</td>
+                <td data-order="57">
+                    <span>57 min (57,25 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-dark">Too many errors</span> <span style="color:red;">36</span><span>/145</span>
+                </td>
+                <td>9076</td>
+            </tr>
+            <tr>
+                <td>2020-02-01 17:04:00</td>
+                <td>
+                    <a href="spcdata/spc-BVV-9191-637161734400000.html" target="_blank">spc-BVV-9191-637161734400000.html</a>
+                </td>
+                <td>BVV</td>
+                <td data-order="56">
+                    <span>56 min (56,95 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">5</span><span>/145</span>
+                </td>
+                <td>9191</td>
+            </tr>
+            <tr>
+                <td>2020-02-28 20:12:00</td>
+                <td>
+                    <a href="spcdata/spc-BVV-9403-637185175200000.html" target="_blank">spc-BVV-9403-637185175200000.html</a>
+                </td>
+                <td>BVV</td>
+                <td data-order="56">
+                    <span>56 min (56,82 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">1</span><span>/146</span>
+                            <a href="testPages/MergeFeature.html" target="_blank" style="font-size: small">MergeFeature</a>
+                </td>
+                <td>9403</td>
+            </tr>
+            <tr>
+                <td>2020-03-16 00:50:00</td>
+                <td>
+                    <a href="spcdata/spc-BVV-9529-637199166000000.html" target="_blank">spc-BVV-9529-637199166000000.html</a>
+                </td>
+                <td>BVV</td>
+                <td data-order="110">
+                    <span>110 min (110,55 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-dark">Too many errors</span> <span style="color:red;">33</span><span>/146</span>
+                </td>
+                <td>9529</td>
+            </tr>
+            <tr>
+                <td>2020-07-30 16:16:00</td>
+                <td>
+                    <a href="spcdata/spc-BVV-1.0.10553-169143.html" target="_blank">spc-BVV-1.0.10553-169143.html</a>
+                </td>
+                <td>BVV</td>
+                <td data-order="162">
+                    <span>162 min (162,02 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/130</span>
+                </td>
+                <td>10553</td>
+            </tr>
+            <tr>
+                <td>2020-07-30 23:09:00</td>
+                <td>
+                    <a href="spcdata/spc-BVV-10554-637317473400000.html" target="_blank">spc-BVV-10554-637317473400000.html</a>
+                </td>
+                <td>BVV</td>
+                <td data-order="147">
+                    <span>147 min (147,92 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/130</span>
+                </td>
+                <td>10554</td>
+            </tr>
+            <tr>
+                <td>2020-07-30 23:09:00</td>
+                <td>
+                    <a href="spcdata/spc-BVV-1.0.10554-169157.html" target="_blank">spc-BVV-1.0.10554-169157.html</a>
+                </td>
+                <td>BVV</td>
+                <td data-order="147">
+                    <span>147 min (147,92 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/130</span>
+                </td>
+                <td>10554</td>
+            </tr>
+            <tr>
+                <td>2019-12-10 03:23:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-8812-637115449800000.html" target="_blank">spc-CAR-8812-637115449800000.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="33">
+                    <span>33 min (33,63 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-dark">Too many errors</span> <span style="color:red;">82</span><span>/135</span>
+                </td>
+                <td>8812</td>
+            </tr>
+            <tr>
+                <td>2019-12-10 12:02:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-8812-637115761200000.html" target="_blank">spc-CAR-8812-637115761200000.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="70">
+                    <span>70 min (70,63 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">1</span><span>/135</span>
+                            <a href="testPages/MergeFeature.html" target="_blank" style="font-size: small">MergeFeature</a>
+                </td>
+                <td>8812</td>
+            </tr>
+            <tr>
+                <td>2020-06-25 11:02:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-10335-637286797200000.html" target="_blank">spc-CAR-10335-637286797200000.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="1">
+                    <span>1 min (1,00 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-dark">Too many errors</span> <span style="color:red;">181</span><span>/181</span>
+                </td>
+                <td>10335</td>
+            </tr>
+            <tr>
+                <td>2020-07-14 12:50:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10451-166933.html" target="_blank">spc-CAR-1.0.10451-166933.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="146">
+                    <span>146 min (146,23 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/135</span>
+                </td>
+                <td>10451</td>
+            </tr>
+            <tr>
+                <td>2020-07-15 13:36:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10464-167107.html" target="_blank">spc-CAR-1.0.10464-167107.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="146">
+                    <span>146 min (146,78 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/135</span>
+                </td>
+                <td>10464</td>
+            </tr>
+            <tr>
+                <td>2020-07-15 17:58:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10466-167181.html" target="_blank">spc-CAR-1.0.10466-167181.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="169">
+                    <span>169 min (169,95 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/134</span>
+                </td>
+                <td>10466</td>
+            </tr>
+            <tr>
+                <td>2020-07-16 10:13:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10471-167259.html" target="_blank">spc-CAR-1.0.10471-167259.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="144">
+                    <span>144 min (144,62 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/134</span>
+                </td>
+                <td>10471</td>
+            </tr>
+            <tr>
+                <td>2020-07-16 10:13:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-10471-637304911800000.html" target="_blank">spc-CAR-10471-637304911800000.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="144">
+                    <span>144 min (144,62 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/134</span>
+                </td>
+                <td>10471</td>
+            </tr>
+            <tr>
+                <td>2020-07-23 19:21:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10524-168412.html" target="_blank">spc-CAR-1.0.10524-168412.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="126">
+                    <span>126 min (127,00 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/126</span>
+                </td>
+                <td>10524</td>
+            </tr>
+            <tr>
+                <td>2020-07-24 19:31:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10529-168626.html" target="_blank">spc-CAR-1.0.10529-168626.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="130">
+                    <span>130 min (130,50 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/125</span>
+                </td>
+                <td>10529</td>
+            </tr>
+            <tr>
+                <td>2020-07-24 19:31:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-10529-637312158600000.html" target="_blank">spc-CAR-10529-637312158600000.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="130">
+                    <span>130 min (130,50 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/125</span>
+                </td>
+                <td>10529</td>
+            </tr>
+            <tr>
+                <td>2020-07-25 00:05:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10531-168652.html" target="_blank">spc-CAR-1.0.10531-168652.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="126">
+                    <span>126 min (126,22 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">9</span><span>/125</span>
+                </td>
+                <td>10531</td>
+            </tr>
+            <tr>
+                <td>2020-07-26 21:21:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10531-168659.html" target="_blank">spc-CAR-1.0.10531-168659.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="117">
+                    <span>117 min (117,73 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/125</span>
+                </td>
+                <td>10531</td>
+            </tr>
+            <tr>
+                <td>2020-07-26 21:21:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-10531-637313952600000.html" target="_blank">spc-CAR-10531-637313952600000.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="117">
+                    <span>117 min (117,73 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/125</span>
+                </td>
+                <td>10531</td>
+            </tr>
+            <tr>
+                <td>2020-07-27 13:21:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10532-168697.html" target="_blank">spc-CAR-1.0.10532-168697.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="134">
+                    <span>134 min (134,35 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/125</span>
+                </td>
+                <td>10532</td>
+            </tr>
+            <tr>
+                <td>2020-07-27 13:21:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-10532-637314528600000.html" target="_blank">spc-CAR-10532-637314528600000.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="134">
+                    <span>134 min (134,35 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/125</span>
+                </td>
+                <td>10532</td>
+            </tr>
+            <tr>
+                <td>2020-07-28 14:44:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10536-168794.html" target="_blank">spc-CAR-1.0.10536-168794.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="134">
+                    <span>134 min (134,28 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/124</span>
+                </td>
+                <td>10536</td>
+            </tr>
+            <tr>
+                <td>2020-07-28 14:44:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-10536-637315442400000.html" target="_blank">spc-CAR-10536-637315442400000.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="134">
+                    <span>134 min (134,28 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/124</span>
+                </td>
+                <td>10536</td>
+            </tr>
+            <tr>
+                <td>2020-07-28 23:50:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10543-168941.html" target="_blank">spc-CAR-1.0.10543-168941.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="125">
+                    <span>125 min (125,20 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/123</span>
+                </td>
+                <td>10543</td>
+            </tr>
+            <tr>
+                <td>2020-07-28 23:50:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-10543-637315770000000.html" target="_blank">spc-CAR-10543-637315770000000.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="125">
+                    <span>125 min (125,20 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/123</span>
+                </td>
+                <td>10543</td>
+            </tr>
+            <tr>
+                <td>2020-07-29 11:24:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-10544-637316186400000.html" target="_blank">spc-CAR-10544-637316186400000.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="145">
+                    <span>145 min (145,75 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/123</span>
+                </td>
+                <td>10544</td>
+            </tr>
+            <tr>
+                <td>2020-07-29 11:24:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10544-168964.html" target="_blank">spc-CAR-1.0.10544-168964.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="145">
+                    <span>145 min (145,75 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/123</span>
+                </td>
+                <td>10544</td>
+            </tr>
+            <tr>
+                <td>2020-07-29 21:03:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-10549-637316533800000.html" target="_blank">spc-CAR-10549-637316533800000.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="142">
+                    <span>142 min (142,72 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/122</span>
+                </td>
+                <td>10549</td>
+            </tr>
+            <tr>
+                <td>2020-07-29 21:03:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10549-169072.html" target="_blank">spc-CAR-1.0.10549-169072.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="142">
+                    <span>142 min (142,72 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/122</span>
+                </td>
+                <td>10549</td>
+            </tr>
+            <tr>
+                <td>2020-07-30 13:01:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10553-169141.html" target="_blank">spc-CAR-1.0.10553-169141.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="148">
+                    <span>148 min (148,20 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/122</span>
+                </td>
+                <td>10553</td>
+            </tr>
+            <tr>
+                <td>2020-07-30 13:01:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-10553-637317108600000.html" target="_blank">spc-CAR-10553-637317108600000.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="148">
+                    <span>148 min (148,20 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/122</span>
+                </td>
+                <td>10553</td>
+            </tr>
+            <tr>
+                <td>2020-07-30 18:34:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10555-169169.html" target="_blank">spc-CAR-1.0.10555-169169.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="140">
+                    <span>140 min (140,22 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/122</span>
+                </td>
+                <td>10555</td>
+            </tr>
+            <tr>
+                <td>2020-07-30 18:34:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-10555-637317308400000.html" target="_blank">spc-CAR-10555-637317308400000.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="140">
+                    <span>140 min (140,22 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/122</span>
+                </td>
+                <td>10555</td>
+            </tr>
+            <tr>
+                <td>2020-07-30 20:58:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10556-169183.html" target="_blank">spc-CAR-1.0.10556-169183.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="134">
+                    <span>134 min (134,98 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/122</span>
+                </td>
+                <td>10556</td>
+            </tr>
+            <tr>
+                <td>2020-07-30 20:58:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-10556-637317394800000.html" target="_blank">spc-CAR-10556-637317394800000.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="134">
+                    <span>134 min (134,98 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/122</span>
+                </td>
+                <td>10556</td>
+            </tr>
+            <tr>
+                <td>2020-07-31 12:32:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10560-169258.html" target="_blank">spc-CAR-1.0.10560-169258.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="144">
+                    <span>144 min (144,43 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/121</span>
+                </td>
+                <td>10560</td>
+            </tr>
+            <tr>
+                <td>2020-07-31 15:10:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10561-169272.html" target="_blank">spc-CAR-1.0.10561-169272.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="147">
+                    <span>147 min (147,33 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/120</span>
+                </td>
+                <td>10561</td>
+            </tr>
+            <tr>
+                <td>2020-07-31 17:44:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10562-169297.html" target="_blank">spc-CAR-1.0.10562-169297.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="143">
+                    <span>143 min (143,32 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/118</span>
+                </td>
+                <td>10562</td>
+            </tr>
+            <tr>
+                <td>2020-07-31 20:05:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10566-169366.html" target="_blank">spc-CAR-1.0.10566-169366.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="133">
+                    <span>133 min (133,08 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/118</span>
+                </td>
+                <td>10566</td>
+            </tr>
+            <tr>
+                <td>2020-07-31 22:25:00</td>
+                <td>
+                    <a href="spcdata/spc-CAR-1.0.10568-169378.html" target="_blank">spc-CAR-1.0.10568-169378.html</a>
+                </td>
+                <td>CAR</td>
+                <td data-order="130">
+                    <span>130 min (130,27 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/118</span>
+                </td>
+                <td>10568</td>
+            </tr>
+            <tr>
+                <td>2020-03-16 01:56:00</td>
+                <td>
+                    <a href="spcdata/spc-PPT-9529-637199205600000.html" target="_blank">spc-PPT-9529-637199205600000.html</a>
+                </td>
+                <td>PPT</td>
+                <td data-order="105">
+                    <span>105 min (105,35 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">14</span><span>/152</span>
+                </td>
+                <td>9529</td>
+            </tr>
+            <tr>
+                <td>2020-06-11 17:23:00</td>
+                <td>
+                    <a href="spcdata/spc-PPT-1.0.10230-161844.html" target="_blank">spc-PPT-1.0.10230-161844.html</a>
+                </td>
+                <td>PPT</td>
+                <td data-order="140">
+                    <span>140 min (140,23 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/149</span>
+                </td>
+                <td>10230</td>
+            </tr>
+            <tr>
+                <td>2020-06-19 16:16:00</td>
+                <td>
+                    <a href="spcdata/spc-PPT-1.0.10304-163558.html" target="_blank">spc-PPT-1.0.10304-163558.html</a>
+                </td>
+                <td>PPT</td>
+                <td data-order="158">
+                    <span>158 min (158,72 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">1</span><span>/149</span>
+                            <a href="testPages/StatisticsOverviewFeature.html" target="_blank" style="font-size: small">StatisticsOverviewFeature</a>
+                </td>
+                <td>10304</td>
+            </tr>
+            <tr>
+                <td>2020-07-13 19:22:00</td>
+                <td>
+                    <a href="spcdata/spc-PPT-1.0.10442-166901.html" target="_blank">spc-PPT-1.0.10442-166901.html</a>
+                </td>
+                <td>PPT</td>
+                <td data-order="141">
+                    <span>141 min (141,68 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/152</span>
+                </td>
+                <td>10442</td>
+            </tr>
+            <tr>
+                <td>2020-07-15 17:12:00</td>
+                <td>
+                    <a href="spcdata/spc-PPT-1.0.10463-167173.html" target="_blank">spc-PPT-1.0.10463-167173.html</a>
+                </td>
+                <td>PPT</td>
+                <td data-order="152">
+                    <span>152 min (152,08 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/152</span>
+                </td>
+                <td>10463</td>
+            </tr>
+            <tr>
+                <td>2020-07-29 19:31:00</td>
+                <td>
+                    <a href="spcdata/spc-PPT-1.0.10550-169099.html" target="_blank">spc-PPT-1.0.10550-169099.html</a>
+                </td>
+                <td>PPT</td>
+                <td data-order="134">
+                    <span>134 min (134,77 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/132</span>
+                </td>
+                <td>10550</td>
+            </tr>
+            <tr>
+                <td>2020-07-29 22:05:00</td>
+                <td>
+                    <a href="spcdata/spc-PPT-1.0.10551-169116.html" target="_blank">spc-PPT-1.0.10551-169116.html</a>
+                </td>
+                <td>PPT</td>
+                <td data-order="135">
+                    <span>135 min (135,65 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-dark">Too many errors</span> <span style="color:red;">57</span><span>/132</span>
+                </td>
+                <td>10551</td>
+            </tr>
+            <tr>
+                <td>2020-07-30 00:23:00</td>
+                <td>
+                    <a href="spcdata/spc-PPT-1.0.10552-169126.html" target="_blank">spc-PPT-1.0.10552-169126.html</a>
+                </td>
+                <td>PPT</td>
+                <td data-order="126">
+                    <span>126 min (126,30 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-dark">Too many errors</span> <span style="color:red;">62</span><span>/132</span>
+                </td>
+                <td>10552</td>
+            </tr>
+            <tr>
+                <td>2020-07-30 16:36:00</td>
+                <td>
+                    <a href="spcdata/spc-PPT-1.0.10555-169172.html" target="_blank">spc-PPT-1.0.10555-169172.html</a>
+                </td>
+                <td>PPT</td>
+                <td data-order="281">
+                    <span>281 min (281,82 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/132</span>
+                </td>
+                <td>10555</td>
+            </tr>
+            <tr>
+                <td>2020-07-30 20:45:00</td>
+                <td>
+                    <a href="spcdata/spc-PPT-1.0.10556-169186.html" target="_blank">spc-PPT-1.0.10556-169186.html</a>
+                </td>
+                <td>PPT</td>
+                <td data-order="237">
+                    <span>237 min (237,77 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/132</span>
+                </td>
+                <td>10556</td>
+            </tr>
+            <tr>
+                <td>2020-07-31 01:04:00</td>
+                <td>
+                    <a href="spcdata/spc-PPT-1.0.10557-169208.html" target="_blank">spc-PPT-1.0.10557-169208.html</a>
+                </td>
+                <td>PPT</td>
+                <td data-order="245">
+                    <span>245 min (245,70 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-dark">Too many errors</span> <span style="color:red;">43</span><span>/131</span>
+                </td>
+                <td>10557</td>
+            </tr>
+            <tr>
+                <td>2020-07-31 17:09:00</td>
+                <td>
+                    <a href="spcdata/spc-PPT-1.0.10564-169320.html" target="_blank">spc-PPT-1.0.10564-169320.html</a>
+                </td>
+                <td>PPT</td>
+                <td data-order="136">
+                    <span>136 min (136,65 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/128</span>
+                </td>
+                <td>10564</td>
+            </tr>
+            <tr>
+                <td>2020-07-31 21:32:00</td>
+                <td>
+                    <a href="spcdata/spc-PPT-1.0.10565-169337.html" target="_blank">spc-PPT-1.0.10565-169337.html</a>
+                </td>
+                <td>PPT</td>
+                <td data-order="128">
+                    <span>128 min (128,30 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/128</span>
+                </td>
+                <td>10565</td>
+            </tr>
+            <tr>
+                <td>2020-08-01 04:13:00</td>
+                <td>
+                    <a href="spcdata/spc-PPT-1.0.10568-169381.html" target="_blank">spc-PPT-1.0.10568-169381.html</a>
+                </td>
+                <td>PPT</td>
+                <td data-order="117">
+                    <span>117 min (117,20 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/128</span>
+                </td>
+                <td>10568</td>
+            </tr>
+            <tr>
+                <td>2020-02-01 17:14:00</td>
+                <td>
+                    <a href="spcdata/spc-SCC-9191-637161740400000.html" target="_blank">spc-SCC-9191-637161740400000.html</a>
+                </td>
+                <td>SCC</td>
+                <td data-order="62">
+                    <span>62 min (62,02 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">4</span><span>/145</span>
+                            <a href="testPages/EventStatisticsPagingFeature.html" target="_blank" style="font-size: small">EventStatisticsPagingFeature</a>
+                            <a href="testPages/StatisticsByClientOrganizationFeature.html" target="_blank" style="font-size: small">StatisticsByClientOrganizationFeature</a>
+                            <a href="testPages/StatisticsByEventCategoryFeature.html" target="_blank" style="font-size: small">StatisticsByEventCategoryFeature</a>
+                            <a href="testPages/StatisticsByEventsFeature.html" target="_blank" style="font-size: small">StatisticsByEventsFeature</a>
+                </td>
+                <td>9191</td>
+            </tr>
+            <tr>
+                <td>2020-02-28 20:08:00</td>
+                <td>
+                    <a href="spcdata/spc-SCC-9403-637185172800000.html" target="_blank">spc-SCC-9403-637185172800000.html</a>
+                </td>
+                <td>SCC</td>
+                <td data-order="65">
+                    <span>65 min (65,38 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">1</span><span>/145</span>
+                            <a href="testPages/MergeFeature.html" target="_blank" style="font-size: small">MergeFeature</a>
+                </td>
+                <td>9403</td>
+            </tr>
+            <tr>
+                <td>2020-05-20 17:40:00</td>
+                <td>
+                    <a href="spcdata/spc-SCC-1.0.10070-158155.html" target="_blank">spc-SCC-1.0.10070-158155.html</a>
+                </td>
+                <td>SCC</td>
+                <td data-order="149">
+                    <span>149 min (149,03 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/141</span>
+                </td>
+                <td>10070</td>
+            </tr>
+            <tr>
+                <td>2020-05-21 16:14:00</td>
+                <td>
+                    <a href="spcdata/spc-SCC-1.0.10076-158397.html" target="_blank">spc-SCC-1.0.10076-158397.html</a>
+                </td>
+                <td>SCC</td>
+                <td data-order="129">
+                    <span>129 min (129,45 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/141</span>
+                </td>
+                <td>10076</td>
+            </tr>
+            <tr>
+                <td>2020-06-11 19:32:00</td>
+                <td>
+                    <a href="spcdata/spc-SCC-1.0.10232-161975.html" target="_blank">spc-SCC-1.0.10232-161975.html</a>
+                </td>
+                <td>SCC</td>
+                <td data-order="120">
+                    <span>120 min (120,53 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">0</span><span>/141</span>
+                </td>
+                <td>10232</td>
+            </tr>
+            <tr>
+                <td>2020-06-21 23:42:00</td>
+                <td>
+                    <a href="spcdata/spc-SCC-1.0.10311-163732.html" target="_blank">spc-SCC-1.0.10311-163732.html</a>
+                </td>
+                <td>SCC</td>
+                <td data-order="118">
+                    <span>118 min (118,58 min)</span> 
+                </td>
+                <td>
+                        <span class="badge badge-danger">Failed</span> <span style="color:red;">1</span><span>/141</span>
+                            <a href="testPages/StatisticsOverviewFeature.html" target="_blank" style="font-size: small">StatisticsOverviewFeature</a>
+                </td>
+                <td>10311</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  
+    <script>
+    $(document).ready(function () {
+        $('#specflowRunsDatatable').DataTable({
+            "order": [[0, "desc"]],
+            "pageLength": 25
+        });
+    });
+    </script>
+
+</body>
+
+</html>

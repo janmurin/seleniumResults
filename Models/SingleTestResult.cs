@@ -31,7 +31,8 @@ namespace SeleniumResults.Models
         public bool IsPassedOrFailed => TestResultType == TestResultType.Failed || TestResultType == TestResultType.Passed;
         public bool IsSel1 => TestRunMetaData.TestRunType == TestRunType.Selenium;
         public bool IsSel2 => TestRunMetaData.TestRunType == TestRunType.Selenium2;
-        public string GetDurationMinutes => $"{(EndTime - StartTime).TotalMinutes,0:0.00} min";
+        public double GetDurationMinutes => (EndTime - StartTime).TotalMinutes;
+        public string GetDurationMinutesString => $"{GetDurationMinutes,0:0.00} min";
 
         public override string ToString()
         {

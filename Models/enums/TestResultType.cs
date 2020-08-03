@@ -5,6 +5,8 @@ namespace SeleniumResults.Models.enums
         Undefined = 0,
         Passed = 1,
         Failed = 2,
-        Skipped = 3
+        Skipped = 3,
+        Unknown = 4,
+        Inconclusive = 5
     }
 }

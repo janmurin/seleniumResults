@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using SeleniumResults.Models;
+using SeleniumResults.Models.enums;
 using SeleniumResults.webreporting;
 
 namespace SeleniumResults
@@ -13,11 +16,99 @@ namespace SeleniumResults
 
         static void Main(string[] args)
         {
-            string filesDir = "..\\..\\..\\webreport\\data";
+            string seleniumFilesDir = "..\\..\\..\\webreport\\data";
+            ProcessSeleniumData(seleniumFilesDir);
 
-            Console.WriteLine($"files dir: {filesDir}");
+            string specflowDir = "..\\..\\..\\webreport\\spcdata";
+            ProcessSpecflowData(specflowDir);
+        }
 
-            string[] fileEntries = Directory.GetFiles(filesDir);
+        private static void ProcessSpecflowData(string specflowDir)
+        {
+            Console.WriteLine($"loading specflow files from: {specflowDir}");
+
+            string[] fileEntries = Directory.GetFiles(specflowDir);
+
+            ConcurrentBag<TestRun> specflowRuns = new ConcurrentBag<TestRun>();
+            
+            Parallel.For(0, fileEntries.Length,
+                index =>
+                {
+                    var fileName = fileEntries[index];
+                    if (!fileName.EndsWith(".html"))
+                    {
+                        Console.WriteLine($"skipping parsing file [{fileName}]");
+                    }
+                    else
+                    {
+                        try
+                        {
+                            TestRun testRun = TestRunFileProcessor.ProcessFile(fileName, index);
+                            //Console.WriteLine(testRun);
+                            if (testRun != null)
+                            {
+                                specflowRuns.Add(testRun);
+                                // if (testRun.TestRunMetaData.OriginalFileName.StartsWith("API"))
+                                // {
+                                //     string newName = $"api-{testRun.TestRunMetaData.FlytApplicationType}-{testRun.TestRunMetaData.BuildNumber}-{testRun.TestRunMetaData.LastRun.Ticks/1000}.html";
+                                //     newName = newName.Replace("-BV-", "-BVN-");
+                                //     File.Move(fileName, Path.Combine("..\\..\\..\\data\\specflow", newName), true);
+                                // }
+                                // if (testRun.TestRunMetaData.OriginalFileName.StartsWith("specflow"))
+                                // {
+                                //     string newName = $"spc-{testRun.TestRunMetaData.FlytApplicationType}-{testRun.TestRunMetaData.BuildNumber}-{testRun.TestRunMetaData.LastRun.Ticks/1000}.html";
+                                //     newName = newName.Replace("-BV-", "-BVN-");
+                                //     File.Move(fileName, Path.Combine("..\\..\\..\\data\\specflow", newName), true);
+                                // }
+                            }
+                            else
+                            {
+                                string shortName = fileName.Substring(fileName.LastIndexOf('\\') + 1);
+                                Console.WriteLine($"moving file to data/duplicates folder. filename: {shortName}");
+                                File.Move(fileName, Path.Combine("..\\..\\..\\data\\duplicates", shortName), true);
+                            }
+                            // var isAdded = ResultsDatabase.AddTestRunData(testRun);
+                            // if (!isAdded)
+                            // {
+                            //     Console.WriteLine($"adding duplicate file to data/duplicates folder. filename: {fileName}");
+                            //     File.Copy(fileName, Path.Combine("..\\..\\..\\data\\duplicates", testRun.TestRunMetaData.OriginalFileName), true);
+                            // }
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e);
+                        }
+                    }
+                });
+
+            var testRuns = specflowRuns
+                .Where(x=>x.TestRunMetaData.TestRunType ==TestRunType.API)
+                .OrderBy(x => x.GetId())
+                .ToList();
+            Console.WriteLine($"api test runs count {testRuns.Count}");
+            // foreach (var specflowRun in testRuns)
+            // {
+            //     Console.WriteLine(specflowRun);
+            // }
+            WebReportGenerator.GenerateApiRunsHtml(testRuns);
+            
+            testRuns = specflowRuns
+                .Where(x=>x.TestRunMetaData.TestRunType ==TestRunType.Specflow)
+                .OrderBy(x => x.GetId())
+                .ToList();
+            Console.WriteLine($"specflow test runs count {testRuns.Count}");
+            // foreach (var specflowRun in testRuns)
+            // {
+            //     Console.WriteLine(specflowRun);
+            // }
+            WebReportGenerator.GenerateSpecflowRunsHtml(testRuns);
+        }
+
+        static void ProcessSeleniumData(string sourceDir)
+        {
+            Console.WriteLine($"loading selenium files from: {sourceDir}");
+
+            string[] fileEntries = Directory.GetFiles(sourceDir);
             var limitedEntries = fileEntries;
             //limitedEntries = fileEntries.Take(300).ToArray();
 
@@ -49,28 +140,6 @@ namespace SeleniumResults
                 });
 
             ResultsDatabase.ProcessData();
-
-            // STATISTICS
-            // Console.WriteLine("\nReport 0: db stats");
-            // //ResultsDatabase.PrintTooFewAndTooMany();
-            // ResultsDatabase.PrintDbStats();
-            //
-            // // Console.WriteLine("\nReport 1: Sorted list of all test runs");
-            // // ResultsDatabase.PrintSortedListOfTestRuns();
-            //
-            // Console.WriteLine("\nReport 2: selenium2 count of builds per day (successful/Total)");
-            // ResultsDatabase.PrintCountOfSelenium2BuildsPerDay();
-            //
-            // int daysPeriod = 5;
-            // Console.WriteLine($"\nReport 3: selenium2 success rate by every {daysPeriod} days");
-            // ResultsDatabase.PrintSuccessRateOfSelenium2BuildsPerDay(daysPeriod);
-            //
-            // Console.WriteLine($"\nReport 4: total success rate by each test");
-            // ResultsDatabase.PrintEachTestTotalSuccessRate();
-            //
-            // int builds = 10;
-            // Console.WriteLine($"\nReport 5: tests success rate for the last {builds} builds");
-            // ResultsDatabase.PrintEachTestSuccessRateForTheLastXBuilds(builds);
 
             WebReportGenerator.GenerateSeleniumsHtml(ResultsDatabase.GetTestStatsList());
             WebReportGenerator.GenerateBuildsHtml(ResultsDatabase.GetAllTestRuns());

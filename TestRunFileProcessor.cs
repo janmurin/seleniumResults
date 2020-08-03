@@ -30,8 +30,9 @@ namespace SeleniumResults
                     var lastRun = ParseLastRun(htmlDoc);
                     var testRunType = ParseTestRunType(htmlDoc);
                     var buildNumber = ParseBuildNumber(htmlDoc);
+                    var duration = ParseDuration(htmlDoc);
 
-                    var testRunMetaData = new TestRunMetaData(shortName, applicationType, lastRun, testRunType, buildNumber);
+                    var testRunMetaData = new TestRunMetaData(shortName, applicationType, lastRun, testRunType, buildNumber, duration);
                     var results = ParseTestResults(htmlDoc, testRunMetaData);
 
                     return new TestRun(testRunMetaData, results);
@@ -43,6 +44,28 @@ namespace SeleniumResults
             }
 
             return null;
+        }
+
+        private static int ParseDuration(HtmlDocument htmlDoc)
+        {
+            var durationHtml = htmlDoc.DocumentNode?.SelectSingleNode("//div[@id='modal1']//tr//*[contains(text(),' ms')]//parent::tr/td[2]");
+
+            if (durationHtml == null)
+            {
+                return 0;
+            }
+            
+            string buildNumber = durationHtml.InnerText.Substring(0,durationHtml.InnerText.IndexOf("."));
+
+            try
+            {
+                return int.Parse(buildNumber);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(buildNumber);
+                throw;
+            }
         }
 
         private static int ParseBuildNumber(HtmlDocument htmlDoc)
@@ -211,6 +234,16 @@ namespace SeleniumResults
                 return TestResultType.Skipped;
             }
 
+            if (node.HasClass("unknown"))
+            {
+                return TestResultType.Unknown;
+            }
+            
+            if (node.HasClass("inconclusive"))
+            {
+                return TestResultType.Inconclusive;
+            }
+            
             throw new Exception($"test result is undefined for: [{node.OuterHtml}]");
         }
     }

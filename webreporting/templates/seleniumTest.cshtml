@@ -85,7 +85,7 @@
                                 {
                                     <span class="badge badge-danger">Failed</span>
                                 }
-                                @sr.GetDurationMinutes
+                                @sr.GetDurationMinutesString
                             </td>
                             <td>@sr.TestRunMetaData.BuildNumber</td>
                             @{
@@ -235,7 +235,7 @@
                                     {
                                         <span class="badge badge-warning">Skipped</span>
                                     }
-                                    @sr.GetDurationMinutes
+                                    @sr.GetDurationMinutesString
                                 </td>
                                 <td>
                                     @subTest.Name<br/>
