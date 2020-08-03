@@ -20,7 +20,7 @@ namespace SeleniumResults.Models
         {
             TestRunMetaData = testRunMetaData;
             Results = results;
-            IsPassed = results.Any() && results.All(x => x.IsPassedOrSkipped);
+            IsPassed = results.Any() && results.All(x => !x.IsFailed);
             HasTooManyFailures = results.Count(x => x.IsFailed) > Constants.FAILURE_THRESHOLD;
             IsSel1 = results.Any() && results.First().IsSel1;
             IsSel2 = results.Any() && results.First().IsSel2;

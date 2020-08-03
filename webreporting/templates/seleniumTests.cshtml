@@ -1,9 +1,11 @@
+@using SeleniumResults
 @using SeleniumResults.Models
 @model SeleniumResults.webreporting.ViewModels.SeleniumTestsViewModel
 
 @{
     Layout = "_Layout.cshtml";
     ViewBag.Title = "Test List";
+    ViewBag.SelectedPage = Constants.SELENIUM_TEST_LIST_PAGE;
 }
 
 <!-- Page Heading -->
