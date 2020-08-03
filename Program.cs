@@ -16,10 +16,11 @@ namespace SeleniumResults
 
         static void Main(string[] args)
         {
-            string seleniumFilesDir = "..\\..\\..\\webreport\\data";
-            ProcessSeleniumData(seleniumFilesDir);
+            // string seleniumFilesDir = "..\\..\\..\\webreport\\data";
+            // ProcessSeleniumData(seleniumFilesDir);
 
-            string specflowDir = "..\\..\\..\\webreport\\spcdata";
+            //string specflowDir = "..\\..\\..\\webreport\\spcdata";
+            string specflowDir = "..\\..\\..\\data\\specflow";
             ProcessSpecflowData(specflowDir);
         }
 
@@ -64,8 +65,8 @@ namespace SeleniumResults
                             else
                             {
                                 string shortName = fileName.Substring(fileName.LastIndexOf('\\') + 1);
-                                Console.WriteLine($"moving file to data/duplicates folder. filename: {shortName}");
-                                File.Move(fileName, Path.Combine("..\\..\\..\\data\\duplicates", shortName), true);
+                                // Console.WriteLine($"moving file to data/duplicates folder. filename: {shortName}");
+                                // File.Move(fileName, Path.Combine("..\\..\\..\\data\\duplicates", shortName), true);
                             }
                             // var isAdded = ResultsDatabase.AddTestRunData(testRun);
                             // if (!isAdded)
