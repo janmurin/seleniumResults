@@ -16,8 +16,8 @@ namespace SeleniumResults
 
         static void Main(string[] args)
         {
-            string seleniumFilesDir = "..\\..\\..\\webreport\\data";
-            ProcessSeleniumData(seleniumFilesDir);
+            // string seleniumFilesDir = "..\\..\\..\\webreport\\data";
+            // ProcessSeleniumData(seleniumFilesDir);
 
             string specflowDir = "..\\..\\..\\webreport\\spcdata";
             //string specflowDir = "..\\..\\..\\data\\errors";
@@ -26,12 +26,12 @@ namespace SeleniumResults
 
         private static void ProcessSpecflowData(string specflowDir)
         {
-            Console.WriteLine($"loading specflow files from: {specflowDir}");
+            Console.WriteLine($"loading api/specflow files from: {specflowDir}");
 
             string[] fileEntries = Directory.GetFiles(specflowDir);
 
             ConcurrentBag<TestRun> specflowRuns = new ConcurrentBag<TestRun>();
-            
+
             Parallel.For(0, fileEntries.Length,
                 index =>
                 {
@@ -56,6 +56,7 @@ namespace SeleniumResults
                                 // Console.WriteLine($"moving file to data/errors folder. filename: {shortName}");
                                 // File.Move(fileName, Path.Combine("..\\..\\..\\data\\errors", shortName), true);
                             }
+
                             // var isAdded = ResultsDatabase.AddTestRunData(testRun);
                             // if (!isAdded)
                             // {
@@ -71,7 +72,7 @@ namespace SeleniumResults
                 });
 
             var testRuns = specflowRuns
-                .Where(x=>x.TestRunMetaData.TestRunType ==TestRunType.API)
+                .Where(x => x.TestRunMetaData.TestRunType == TestRunType.API)
                 .OrderBy(x => x.GetId())
                 .ToList();
             Console.WriteLine($"api test runs count {testRuns.Count}");
@@ -80,9 +81,9 @@ namespace SeleniumResults
             //     Console.WriteLine(specflowRun);
             // }
             WebReportGenerator.GenerateApiRunsHtml(testRuns);
-            
+
             testRuns = specflowRuns
-                .Where(x=>x.TestRunMetaData.TestRunType ==TestRunType.Specflow)
+                .Where(x => x.TestRunMetaData.TestRunType == TestRunType.Specflow)
                 .OrderBy(x => x.GetId())
                 .ToList();
             Console.WriteLine($"specflow test runs count {testRuns.Count}");

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.IO.Enumeration;
 using System.Linq;
 using HtmlAgilityPack;
@@ -21,13 +22,13 @@ namespace SeleniumResults
             if (htmlDoc.ParseErrors != null && htmlDoc.ParseErrors.Any())
             {
                 Console.WriteLine($"{idx}. filename: {shortName,35}    PARSE ERROR: {string.Join(",", htmlDoc.ParseErrors.Select(x => x.Reason))}");
-                return FixErrorsAndParseTestRun(htmlDoc, shortName);
+                return FixErrorsAndParseTestRun(htmlDoc, shortName, fileName);
             }
 
             return ParseTestRun(htmlDoc, shortName);
         }
 
-        private static TestRun FixErrorsAndParseTestRun(HtmlDocument htmlDoc, string shortName)
+        private static TestRun FixErrorsAndParseTestRun(HtmlDocument htmlDoc, string shortName, string fileName)
         {
             Console.WriteLine($"fixing parse errors");
             // build a list of nodes ordered by stream position
@@ -45,7 +46,14 @@ namespace SeleniumResults
                 }
             }
 
-            return ParseTestRun(htmlDoc, shortName);
+            var testRun = ParseTestRun(htmlDoc, shortName);
+            if (testRun != null)
+            {
+                StreamWriter outputFile = new StreamWriter(Path.Combine("..\\..\\..\\data\\fixed", testRun.TestRunMetaData.OriginalFileName), false);
+                htmlDoc.Save(outputFile);
+            }
+
+            return testRun;
         }
 
         private static TestRun ParseTestRun(HtmlDocument htmlDoc, string shortName)
