@@ -16,11 +16,11 @@ namespace SeleniumResults
 
         static void Main(string[] args)
         {
-            // string seleniumFilesDir = "..\\..\\..\\webreport\\data";
-            // ProcessSeleniumData(seleniumFilesDir);
+            string seleniumFilesDir = "..\\..\\..\\webreport\\data";
+            ProcessSeleniumData(seleniumFilesDir);
 
-            //string specflowDir = "..\\..\\..\\webreport\\spcdata";
-            string specflowDir = "..\\..\\..\\data\\specflow";
+            string specflowDir = "..\\..\\..\\webreport\\spcdata";
+            //string specflowDir = "..\\..\\..\\data\\errors";
             ProcessSpecflowData(specflowDir);
         }
 
@@ -49,24 +49,12 @@ namespace SeleniumResults
                             if (testRun != null)
                             {
                                 specflowRuns.Add(testRun);
-                                // if (testRun.TestRunMetaData.OriginalFileName.StartsWith("API"))
-                                // {
-                                //     string newName = $"api-{testRun.TestRunMetaData.FlytApplicationType}-{testRun.TestRunMetaData.BuildNumber}-{testRun.TestRunMetaData.LastRun.Ticks/1000}.html";
-                                //     newName = newName.Replace("-BV-", "-BVN-");
-                                //     File.Move(fileName, Path.Combine("..\\..\\..\\data\\specflow", newName), true);
-                                // }
-                                // if (testRun.TestRunMetaData.OriginalFileName.StartsWith("specflow"))
-                                // {
-                                //     string newName = $"spc-{testRun.TestRunMetaData.FlytApplicationType}-{testRun.TestRunMetaData.BuildNumber}-{testRun.TestRunMetaData.LastRun.Ticks/1000}.html";
-                                //     newName = newName.Replace("-BV-", "-BVN-");
-                                //     File.Move(fileName, Path.Combine("..\\..\\..\\data\\specflow", newName), true);
-                                // }
                             }
                             else
                             {
-                                string shortName = fileName.Substring(fileName.LastIndexOf('\\') + 1);
-                                // Console.WriteLine($"moving file to data/duplicates folder. filename: {shortName}");
-                                // File.Move(fileName, Path.Combine("..\\..\\..\\data\\duplicates", shortName), true);
+                                // string shortName = fileName.Substring(fileName.LastIndexOf('\\') + 1);
+                                // Console.WriteLine($"moving file to data/errors folder. filename: {shortName}");
+                                // File.Move(fileName, Path.Combine("..\\..\\..\\data\\errors", shortName), true);
                             }
                             // var isAdded = ResultsDatabase.AddTestRunData(testRun);
                             // if (!isAdded)

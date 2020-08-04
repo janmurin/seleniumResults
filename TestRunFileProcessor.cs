@@ -20,27 +20,52 @@ namespace SeleniumResults
 
             if (htmlDoc.ParseErrors != null && htmlDoc.ParseErrors.Any())
             {
-                Console.WriteLine($"{idx}. filename: {shortName,35}    PARSE ERROR: {htmlDoc.ParseErrors}");
+                Console.WriteLine($"{idx}. filename: {shortName,35}    PARSE ERROR: {string.Join(",", htmlDoc.ParseErrors.Select(x => x.Reason))}");
+                return FixErrorsAndParseTestRun(htmlDoc, shortName);
             }
-            else
+
+            return ParseTestRun(htmlDoc, shortName);
+        }
+
+        private static TestRun FixErrorsAndParseTestRun(HtmlDocument htmlDoc, string shortName)
+        {
+            Console.WriteLine($"fixing parse errors");
+            // build a list of nodes ordered by stream position
+            NodePositions pos = new NodePositions(htmlDoc);
+
+            // browse all tags detected as not opened
+            foreach (HtmlParseError error in htmlDoc.ParseErrors.Where(e => e.Code == HtmlParseErrorCode.TagNotOpened))
             {
-                try
+                // find the text node just before this error
+                HtmlTextNode last = pos.Nodes.OfType<HtmlTextNode>().LastOrDefault(n => n.StreamPosition < error.StreamPosition);
+                if (last != null)
                 {
-                    var applicationType = ParseApplicationType(htmlDoc);
-                    var lastRun = ParseLastRun(htmlDoc);
-                    var testRunType = ParseTestRunType(htmlDoc);
-                    var buildNumber = ParseBuildNumber(htmlDoc);
-                    var duration = ParseDuration(htmlDoc);
-
-                    var testRunMetaData = new TestRunMetaData(shortName, applicationType, lastRun, testRunType, buildNumber, duration);
-                    var results = ParseTestResults(htmlDoc, testRunMetaData);
-
-                    return new TestRun(testRunMetaData, results);
+                    // fix the text; reintroduce the broken tag
+                    last.Text = error.SourceText.Replace("/", "") + last.Text + error.SourceText;
                 }
-                catch (Exception e)
-                {
-                    Console.WriteLine($"parse error: {e.Message}, file: {shortName}");
-                }
+            }
+
+            return ParseTestRun(htmlDoc, shortName);
+        }
+
+        private static TestRun ParseTestRun(HtmlDocument htmlDoc, string shortName)
+        {
+            try
+            {
+                var applicationType = ParseApplicationType(htmlDoc);
+                var lastRun = ParseLastRun(htmlDoc);
+                var testRunType = ParseTestRunType(htmlDoc);
+                var buildNumber = ParseBuildNumber(htmlDoc);
+                var duration = ParseDuration(htmlDoc);
+
+                var testRunMetaData = new TestRunMetaData(shortName, applicationType, lastRun, testRunType, buildNumber, duration);
+                var results = ParseTestResults(htmlDoc, testRunMetaData);
+
+                return new TestRun(testRunMetaData, results);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"parse error: {e.Message}, file: {shortName}");
             }
 
             return null;
@@ -54,8 +79,8 @@ namespace SeleniumResults
             {
                 return 0;
             }
-            
-            string buildNumber = durationHtml.InnerText.Substring(0,durationHtml.InnerText.IndexOf("."));
+
+            string buildNumber = durationHtml.InnerText.Substring(0, durationHtml.InnerText.IndexOf("."));
 
             try
             {
@@ -238,12 +263,12 @@ namespace SeleniumResults
             {
                 return TestResultType.Unknown;
             }
-            
+
             if (node.HasClass("inconclusive"))
             {
                 return TestResultType.Inconclusive;
             }
-            
+
             throw new Exception($"test result is undefined for: [{node.OuterHtml}]");
         }
     }
