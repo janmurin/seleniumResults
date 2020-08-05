@@ -55,6 +55,22 @@ namespace SeleniumResults.Models
         public string TotalFailures => $"{Sel1Failures + Sel2Failures}";
         public string TotalRuns => $"{Sel1Count + Sel2Count}";
 
+        public double AverageDurationWhenPassed
+        {
+            get
+            {
+                var passedResults = Results.Where(x => x.IsPassed).ToList();
+                if (passedResults.Any())
+                {
+                    return passedResults.Average(y => y.GetDurationMinutes);
+                }
+
+                return 0;
+            }
+        }
+
+        public string AverageDurationWhenPassedString => $"{AverageDurationWhenPassed,0:0.00} min";
+
         public string GetMostRecentTime()
         {
             if (MostRecentTime == null)

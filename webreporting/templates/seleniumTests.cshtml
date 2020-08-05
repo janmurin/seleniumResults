@@ -16,6 +16,7 @@
         <thead>
         <tr>
             <th>Test Name</th>
+            <th>Avg duration</th>
             <th>Selenium1</th>
             <th>Selenium2</th>
             <th>Total Failures</th>
@@ -26,6 +27,7 @@
         <tfoot>
         <tr>
             <th>Test Name</th>
+            <th>Avg duration</th>
             <th>Selenium1</th>
             <th>Selenium2</th>
             <th>Total Failures</th>
@@ -39,6 +41,9 @@
             <tr>
                 <td>
                     <a href="testPages/@(testStat.Name).html" target="_blank">@testStat.Name</a>
+                </td>
+                <td data-order="@testStat.AverageDurationWhenPassed">
+                    <span>@testStat.AverageDurationWhenPassedString</span>
                 </td>
                 <td data-order="@testStat.Sel1FailureRate">@testStat.Sel1Stat</td>
                 <td data-order="@testStat.Sel2FailureRate">@testStat.Sel2Stat</td>
@@ -130,7 +135,7 @@
     <script>
     $(document).ready(function () {
         $('#seleniumTestsDataTable').DataTable({
-            "order": [[5, "desc"]],
+            "order": [[6, "desc"]],
               "pageLength": 25
         });
     });

@@ -16,8 +16,8 @@ namespace SeleniumResults
 
         static void Main(string[] args)
         {
-            // string seleniumFilesDir = "..\\..\\..\\webreport\\data";
-            // ProcessSeleniumData(seleniumFilesDir);
+            string seleniumFilesDir = "..\\..\\..\\webreport\\data";
+            ProcessSeleniumData(seleniumFilesDir);
 
             string specflowDir = "..\\..\\..\\webreport\\spcdata";
             //string specflowDir = "..\\..\\..\\data\\errors";
