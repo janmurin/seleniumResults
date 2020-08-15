@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using SeleniumResults.Models.enums;
 
 namespace SeleniumResults.Models
@@ -13,7 +14,7 @@ namespace SeleniumResults.Models
         public DateTime EndTime { get; }
         public DateTime StartTime { get; }
         public List<SubTest> SubTests { get; }
-        
+
         public SingleTestResult(TestRunMetaData metaData, string name, TestResultType type, DateTime start, DateTime end, List<SubTest> subTests)
         {
             TestRunMetaData = metaData;
@@ -23,8 +24,27 @@ namespace SeleniumResults.Models
             EndTime = end;
             StartTime = start;
             SubTests = subTests;
+            if (metaData.TestRunType == TestRunType.Selenium2)
+            {
+                IsMidnightError = StartTime.Hour >= 22 &&
+                                  subTests.Any(x => x.Message.ToLower() == "OneTimeSetUp: System.NullReferenceException : Object Reference Not Set To An Instance Of An Object.".ToLower());
+            }
+            else if (metaData.TestRunType == TestRunType.API)
+            {
+                IsMidnightError = StartTime.Hour >= 22 &&
+                                  subTests.Any(x => x.Message
+                                                        .ToLower()
+                                                        .StartsWith(
+                                                            "System.NullReferenceException : Object Reference Not Set To An Instance Of An Object. ->    At Flow.Tests.API.Hooks.Hooks.CreateNewCustomer()"
+                                                                .ToLower())
+                                                    || x.Message.ToLower()
+                                                        .StartsWith(
+                                                            "System.Exception : Unable To Create Administrator. Start Date Can Not Be Before Today ->    At Flow.Tests.API.Hooks.Hooks.CreateNewCustomer()"
+                                                                .ToLower()));
+            }
         }
 
+        public bool IsMidnightError { get; set; }
         public bool IsPassed => TestResultType == TestResultType.Passed;
         public bool IsFailed => TestResultType == TestResultType.Failed;
         public bool IsPassedOrSkipped => TestResultType == TestResultType.Passed || TestResultType == TestResultType.Skipped;

@@ -50,9 +50,13 @@
                     {
                         <span class="badge badge-success">Passed</span> <span style="color:red;">@sr.FailedCount</span><span>/@sr.TotalCount</span>
                     }
-                    else if (sr.HasTooManyFailures)
+                    else if (sr.HasTooManyErrors)
                     {
                         <span class="badge badge-dark">Too many errors</span> <span style="color:red;">@sr.FailedCount</span><span>/@sr.TotalCount</span>
+                    }
+                    else if (sr.HasMidnightErrors)
+                    {
+                        <span class="badge badge-dark">Midnight errors</span> <span style="color:red;">@sr.FailedCount</span><span>/@sr.TotalCount</span>
                     }
                     else
                     {

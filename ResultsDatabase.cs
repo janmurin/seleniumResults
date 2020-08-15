@@ -12,7 +12,7 @@ namespace SeleniumResults
     {
         private readonly ConcurrentDictionary<string, TestRun> _testRuns = new ConcurrentDictionary<string, TestRun>();
         private readonly List<string> _tooFewResults = new List<string>();
-        private readonly List<TestRun> _tooManyErrorRuns = new List<TestRun>();
+        private readonly List<TestRun> _midnightErrorRuns = new List<TestRun>();
         private ConcurrentDictionary<string, SingleTestStats> _singleTestStatsDict;
 
         private int DuplicateTestRunsCount { get; set; }
@@ -30,12 +30,13 @@ namespace SeleniumResults
                 return false;
             }
 
-            int failures = testRun.Results.Count(x => x.IsFailed);
-            if (failures > Constants.FAILURE_THRESHOLD)
+            //int failures = testRun.Results.Count(x => x.IsFailed);
+            //if (failures > Constants.FAILURE_THRESHOLD)
+            if (testRun.HasMidnightErrors || testRun.HasTooManyErrors)
             {
-                if (!_tooManyErrorRuns.Contains(testRun))
+                if (!_midnightErrorRuns.Contains(testRun))
                 {
-                    _tooManyErrorRuns.Add(testRun);
+                    _midnightErrorRuns.Add(testRun);
                     return true;
                 }
 
@@ -102,7 +103,7 @@ namespace SeleniumResults
         public List<TestRun> GetAllTestRuns()
         {
             var testRuns = _testRuns.Values.ToList();
-            testRuns.AddRange(_tooManyErrorRuns);
+            testRuns.AddRange(_midnightErrorRuns);
             return testRuns.OrderByDescending(x => x.TestRunMetaData.LastRun).ToList();
         }
 
@@ -112,7 +113,7 @@ namespace SeleniumResults
                 .GroupBy(x => x.TestRunMetaData.BuildNumber)
                 .OrderByDescending(x => x.Key)
                 .ToList();
-            
+
             if (lastBuilds.Count > 10)
             {
                 return lastBuilds.Skip(10).First().Key;
@@ -126,7 +127,7 @@ namespace SeleniumResults
         public void PrintTooFewAndTooMany()
         {
             Console.WriteLine("Too many failures:");
-            Console.WriteLine($"{string.Join(",", _tooManyErrorRuns)}");
+            Console.WriteLine($"{string.Join(",", _midnightErrorRuns)}");
             Console.WriteLine("Too few results:");
             Console.WriteLine($"{string.Join(",", _tooFewResults)}");
         }

@@ -43,7 +43,7 @@
                 </td>
                 <td>@sr.TestRunMetaData.FlytApplicationType</td>
                 <td data-order="@sr.TestRunMetaData.Duration">
-                    <span>@sr.TestRunMetaData.Duration min (@sr.GetDurationMinutesString)</span> 
+                    <span>@sr.TestRunMetaData.Duration min (@sr.GetDurationMinutesString)</span>
                 </td>
                 <td>
                     @if (sr.IsPassed)
@@ -52,9 +52,15 @@
                         <span style="color:red;">@sr.FailedCount</span>
                         <span>/@sr.TotalCount</span>
                     }
-                    else if (sr.HasTooManyFailures)
+                    else if (sr.HasTooManyErrors)
                     {
                         <span class="badge badge-dark">Too many errors</span>
+                        <span style="color:red;">@sr.FailedCount</span>
+                        <span>/@sr.TotalCount</span>
+                    }
+                    else if (sr.HasMidnightErrors)
+                    {
+                        <span class="badge badge-dark">Midnight errors</span>
                         <span style="color:red;">@sr.FailedCount</span>
                         <span>/@sr.TotalCount</span>
                     }
