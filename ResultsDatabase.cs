@@ -97,7 +97,18 @@ namespace SeleniumResults
 
         public List<SingleTestStats> GetTestStatsList()
         {
-            return _singleTestStatsDict.Values.OrderByDescending(x => x.LastXBuildsDict.First().Value.FailureRate).ToList();
+            var existingTestsSet = Constants.TestCategoriesDict.Select(y => y.Key).ToHashSet();
+            var existingTestStats = _singleTestStatsDict.Values.Where(x => existingTestsSet.Contains(x.Name));
+            var newTestStats = _singleTestStatsDict.Values.Where(x => !existingTestsSet.Contains(x.Name));
+            foreach (var testStat in newTestStats)
+            {
+                if (!Constants.NonExistentTests.Contains(testStat.Name))
+                {
+                    Console.WriteLine($"WARNING: test-[{testStat.Name}] does not exist.");
+                }
+            }
+
+            return existingTestStats.OrderByDescending(x => x.LastXBuildsDict.First().Value.FailureRate).ToList();
         }
 
         public List<TestRun> GetAllTestRuns()
