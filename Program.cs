@@ -18,10 +18,72 @@ namespace SeleniumResults
         {
             string seleniumFilesDir = "..\\..\\..\\webreport\\data";
             ProcessSeleniumData(seleniumFilesDir);
-
+            
             string specflowDir = "..\\..\\..\\webreport\\spcdata";
             //string specflowDir = "..\\..\\..\\data\\errors";
             ProcessSpecflowData(specflowDir);
+
+            //PrintLatestSeleniumReportIgnoreStats(seleniumFilesDir);
+        }
+
+        private static void PrintLatestSeleniumReportIgnoreStats(string seleniumFilesDir)
+        {
+            string[] filenames = {"sel-BVN-1.0.10680-171669.html","sel-BVV-1.0.10680-171673.html","sel-CAR-1.0.10680-171661.html","sel-PPT-1.0.10676-171605.html","sel-SCC-1.0.10680-171674.html"};
+
+            foreach (var filename in filenames)
+            {
+                Console.WriteLine($"filename: {filename}");
+                var bvvRunnableTests = Constants.TestCategoriesDict
+                    .Where(x => x.Value == TestCategories.All || x.Value == GetTestCategoryFromFilename(filename))
+                    .Select(y => y.Key)
+                    .ToHashSet();
+                TestRun testRun = TestRunFileProcessor.ProcessFile(Path.Combine(seleniumFilesDir, filename), 0);
+                Dictionary<string, int> ignoredTestsDurations = new Dictionary<string, int>();
+
+                foreach (var testResult in testRun.Results.Where(x => x.IsSkipped))
+                {
+                    if (!bvvRunnableTests.Contains(testResult.Name))
+                    {
+                        ignoredTestsDurations.Add(testResult.Name, testResult.GetDurationSeconds);
+                    }
+                }
+
+                // print each ignored tests and how long it was running
+                int idx = 1;
+                foreach (var keyValuePair in ignoredTestsDurations.OrderByDescending(x => x.Value))
+                {
+                    Console.WriteLine($"{idx,2}. {keyValuePair.Key,45}: {keyValuePair.Value} s");
+                    idx++;
+                }
+
+                Console.WriteLine($"{"Total:",50} {ignoredTestsDurations.Sum(x => x.Value)} s");
+            }
+        }
+
+        private static string GetTestCategoryFromFilename(string filename)
+        {
+            if (filename.Contains("BVN"))
+            {
+                return TestCategories.BV;
+            }
+            if (filename.Contains("BVV"))
+            {
+                return TestCategories.BVV;
+            }
+            if (filename.Contains("CAR"))
+            {
+                return TestCategories.CAR;
+            }
+            if (filename.Contains("PPT"))
+            {
+                return TestCategories.PPT;
+            }
+            if (filename.Contains("SCC"))
+            {
+                return TestCategories.SCC;
+            }
+
+            return "error";
         }
 
         private static void ProcessSpecflowData(string specflowDir)

@@ -47,12 +47,14 @@ namespace SeleniumResults.Models
         public bool IsMidnightError { get; set; }
         public bool IsPassed => TestResultType == TestResultType.Passed;
         public bool IsFailed => TestResultType == TestResultType.Failed;
+        public bool IsSkipped => TestResultType == TestResultType.Skipped;
         public bool IsPassedOrSkipped => TestResultType == TestResultType.Passed || TestResultType == TestResultType.Skipped;
         public bool IsPassedOrFailed => TestResultType == TestResultType.Failed || TestResultType == TestResultType.Passed;
         public bool IsSel1 => TestRunMetaData.TestRunType == TestRunType.Selenium;
         public bool IsSel2 => TestRunMetaData.TestRunType == TestRunType.Selenium2;
         public double GetDurationMinutes => (EndTime - StartTime).TotalMinutes;
         public string GetDurationMinutesString => $"{GetDurationMinutes,0:0.00} min";
+        public int GetDurationSeconds => (int) (EndTime - StartTime).TotalSeconds;
 
         public override string ToString()
         {
