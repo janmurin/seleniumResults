@@ -9,7 +9,8 @@ namespace SeleniumResults.Models
     {
         public TestRunMetaData TestRunMetaData { get; }
         public List<SingleTestResult> Results { get; }
-
+        public bool HasMidnightErrors { get; }
+        public bool HasTooManyErrors { get; }
         public TestRun(TestRunMetaData testRunMetaData, List<SingleTestResult> results)
         {
             TestRunMetaData = testRunMetaData;
@@ -23,24 +24,21 @@ namespace SeleniumResults.Models
             TotalCount = results.Any() ? results.Count(x => x.IsPassedOrFailed) : 0;
             GetDurationMinutesString = $"{Results.Sum(x => x.GetDurationMinutes),0:0.00} min";
         }
-
+        public string GetUniqueId()
+        {
+            return $"{TestRunMetaData.TestRunType}-{TestRunMetaData.FlytApplicationType}-{TestRunMetaData.LastRun:yyyy-MM-dd HH:mm:ss}";
+        }
+        
         public bool IsPassed { get; }
         public bool IsSel1 { get; }
         public bool IsSel2 { get; }
-        public bool HasMidnightErrors { get; }
         public int FailedCount { get; }
         public int TotalCount { get; }
-        public bool HasTooManyErrors { get; }
         public string GetDurationMinutesString { get; }
-
-        public string GetId()
-        {
-            return $"{TestRunMetaData.FlytApplicationType}-{TestRunMetaData.LastRun:yyyy-MM-dd HH:mm:ss}";
-        }
 
         public override string ToString()
         {
-            return $"(id={GetId()}, IsPassed={IsPassed}), TotalMinutes={GetDurationMinutesString}, TestRunMetaData={TestRunMetaData}";
+            return $"(id={GetUniqueId()}, IsPassed={IsPassed}), TotalMinutes={GetDurationMinutesString}, TestRunMetaData={TestRunMetaData}";
         }
 
         #region equals

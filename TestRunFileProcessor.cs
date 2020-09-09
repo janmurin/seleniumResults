@@ -12,20 +12,20 @@ namespace SeleniumResults
 {
     public static class TestRunFileProcessor
     {
-        public static TestRun ProcessFile(string fileName, int idx)
+        public static TestRun ProcessFile(string absolutePath, int idx)
         {
-            string shortName = fileName.Substring(fileName.LastIndexOf('\\') + 1);
+            string fileName = absolutePath.Substring(absolutePath.LastIndexOf(Path.DirectorySeparatorChar) + 1);
 
             HtmlDocument htmlDoc = new HtmlDocument {OptionFixNestedTags = true};
-            htmlDoc.Load(fileName);
+            htmlDoc.Load(absolutePath);
 
             if (htmlDoc.ParseErrors != null && htmlDoc.ParseErrors.Any())
             {
-                Console.WriteLine($"{idx}. filename: {shortName,35}    PARSE ERROR: {string.Join(",", htmlDoc.ParseErrors.Select(x => x.Reason))}");
-                return FixErrorsAndParseTestRun(htmlDoc, shortName, fileName);
+                Console.WriteLine($"{idx}. filename: {fileName,35}    PARSE ERROR: {string.Join(",", htmlDoc.ParseErrors.Select(x => x.Reason))}");
+                return FixErrorsAndParseTestRun(htmlDoc, fileName, absolutePath);
             }
 
-            return ParseTestRun(htmlDoc, shortName);
+            return ParseTestRun(htmlDoc, fileName);
         }
 
         private static TestRun FixErrorsAndParseTestRun(HtmlDocument htmlDoc, string shortName, string fileName)
@@ -49,7 +49,7 @@ namespace SeleniumResults
             var testRun = ParseTestRun(htmlDoc, shortName);
             if (testRun != null)
             {
-                StreamWriter outputFile = new StreamWriter(Path.Combine("..\\..\\..\\data\\fixed", testRun.TestRunMetaData.OriginalFileName), false);
+                StreamWriter outputFile = new StreamWriter(Path.Combine(Program.FIXED_DATA_FOLDER, testRun.TestRunMetaData.OriginalFileName), false);
                 htmlDoc.Save(outputFile);
             }
 

@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using SeleniumResults.Models.enums;
 
 namespace SeleniumResults.Models
@@ -17,8 +18,11 @@ namespace SeleniumResults.Models
             SubTestNumber = subTestNumber;
         }
 
+        [JsonIgnore]
         public bool IsPassed => TestResultType == TestResultType.Passed;
+        [JsonIgnore]
         public bool IsFailed => TestResultType == TestResultType.Failed;
+        [JsonIgnore]
         public bool IsSkipped => TestResultType == TestResultType.Skipped;
     }
 }

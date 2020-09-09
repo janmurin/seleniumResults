@@ -52,7 +52,7 @@ namespace SeleniumResults
             // }
 
             // do not add duplicate test runs
-            bool isAdded = _testRuns.TryAdd(testRun.GetId(), testRun);
+            bool isAdded = _testRuns.TryAdd(testRun.GetUniqueId(), testRun);
             DuplicateTestRunsCount += isAdded ? 0 : 1;
 
             return isAdded;
@@ -154,7 +154,7 @@ namespace SeleniumResults
         public void PrintSortedListOfTestRuns()
         {
             _testRuns.Values
-                .OrderBy(x => x.GetId())
+                .OrderBy(x => x.GetUniqueId())
                 .ToList()
                 .ForEach(tr => { Console.WriteLine($"{tr}"); });
         }
