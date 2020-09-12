@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 using SeleniumResults.Models.enums;
+using SeleniumResults.Repository.Models;
 
 namespace SeleniumResults.Models
 {
@@ -42,6 +44,17 @@ namespace SeleniumResults.Models
                                                             "System.Exception : Unable To Create Administrator. Start Date Can Not Be Before Today ->    At Flow.Tests.API.Hooks.Hooks.CreateNewCustomer()"
                                                                 .ToLower()));
             }
+        }
+
+        public SingleTestResult(TestResultDao resultDao)
+        {
+            TestRunMetaData = resultDao.TestRun.;
+            Name = resultDao.Name;
+            TestResultType = resultDao.TestResultType;
+            Time = resultDao.Time;
+            EndTime = resultDao.EndTime;
+            StartTime = resultDao.StartTime;
+            SubTests = JsonConvert.DeserializeObject<List<SubTest>>(resultDao.SubtestsJson);
         }
 
         public bool IsMidnightError { get; set; }

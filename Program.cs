@@ -215,10 +215,12 @@ namespace SeleniumResults
                     }
                 });
 
-            ResultsDatabase.ProcessData();
+            //ResultsDatabase.ProcessData();
+            _collectorRepository.ProcessData();
 
-            WebReportGenerator.GenerateSeleniumsHtml(ResultsDatabase.GetTestStatsList());
-            WebReportGenerator.GenerateBuildsHtml(ResultsDatabase.GetAllTestRuns());
+            // WebReportGenerator.GenerateSeleniumsHtml(ResultsDatabase.GetTestStatsList());
+            WebReportGenerator.GenerateSeleniumsHtml(_collectorRepository.GetTestStatsList());
+            //WebReportGenerator.GenerateBuildsHtml(ResultsDatabase.GetAllTestRuns());
         }
     }
 }

@@ -15,6 +15,8 @@ namespace SeleniumResults.Repository.Models
         public DateTime StartTime { get; set; }
         public bool IsMidnightError { get; set; }
         public string SubtestsJson { get; set; }
+        
+        public TestRunDao TestRun { get; set; }
 
         public TestResultDao()
         {
