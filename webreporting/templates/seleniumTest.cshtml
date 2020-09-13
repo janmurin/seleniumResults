@@ -61,11 +61,11 @@
                     @foreach (var sr in Model.TestStats.Results)
                     {
                         <tr>
-                            <td>@sr.Time</td>
+                            <td>@sr.TestResult.Time</td>
                             <td>
-                                <a href="../data/@sr.TestRunMetaData.OriginalFileName" target="_blank">@sr.TestRunMetaData.OriginalFileName</a>
+                                <a href="../data/@sr.TestResult.TestRunMetaData.OriginalFileName" target="_blank">@sr.TestResult.TestRunMetaData.OriginalFileName</a>
                             </td>
-                            <td>@sr.TestRunMetaData.FlytApplicationType</td>
+                            <td>@sr.TestResult.TestRunMetaData.FlytApplicationType</td>
                             <td>
                                 @if (sr.IsSel1)
                                 {
@@ -87,13 +87,13 @@
                                 }
                                 @sr.GetDurationMinutesString
                             </td>
-                            <td>@sr.TestRunMetaData.BuildNumber</td>
+                            <td>@sr.TestResult.TestRunMetaData.BuildNumber</td>
                             @{
                                 LastXBuildsStat lastXBuildsStat = Model.GetLastXBuildDataByTestResult(sr, false);
                             }
                             <td data-order="@lastXBuildsStat.FailureRate">
-                                @lastXBuildsStat.FailureRate % @sr.TestRunMetaData.FlytApplicationType
-                                <a class="" href="#" data-toggle="modal" data-target="#lastXBuildsModal_@(sr.TestRunMetaData.FlytApplicationType)_@sr.TestRunMetaData.BuildNumber">Detail</a>
+                                @lastXBuildsStat.FailureRate % @sr.TestResult.TestRunMetaData.FlytApplicationType
+                                <a class="" href="#" data-toggle="modal" data-target="#lastXBuildsModal_@(sr.TestResult.TestRunMetaData.FlytApplicationType)_@sr.TestResult.TestRunMetaData.BuildNumber">Detail</a>
                             </td>
                         </tr>
                     }
@@ -109,11 +109,11 @@
     LastXBuildsStat lastXBuildsStat = Model.GetLastXBuildDataByTestResult(sr, true);
     if (lastXBuildsStat != null)
     {
-        <div class="modal fade" id="lastXBuildsModal_@(sr.TestRunMetaData.FlytApplicationType)_@sr.TestRunMetaData.BuildNumber" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="lastXBuildsModal_@(sr.TestResult.TestRunMetaData.FlytApplicationType)_@sr.TestResult.TestRunMetaData.BuildNumber" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">@sr.Name last 10 builds for @sr.TestRunMetaData.BuildNumber</h5>
+                        <h5 class="modal-title">@sr.TestResult.Name last 10 builds for @sr.TestResult.TestRunMetaData.BuildNumber</h5>
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
@@ -154,15 +154,15 @@
                             @foreach (var str in lastXBuildsStat.GetOrderedTestRuns())
                             {
                                 <tr>
-                                    <td>@str.Time</td>
+                                    <td>@str.TestResult.Time</td>
                                     <td>
-                                        <a href="../data/@str.TestRunMetaData.OriginalFileName" target="_blank">@str.TestRunMetaData.OriginalFileName</a>
+                                        <a href="../data/@str.TestResult.TestRunMetaData.OriginalFileName" target="_blank">@str.TestResult.TestRunMetaData.OriginalFileName</a>
                                     </td>
-                                    <td>@str.TestRunMetaData.FlytApplicationType</td>
+                                    <td>@str.TestResult.TestRunMetaData.FlytApplicationType</td>
                                     <td>
-                                        <span class="badge @(str.IsPassed ? "badge-success" : "badge-danger")">@str.TestResultType</span>
+                                        <span class="badge @(str.IsPassed ? "badge-success" : "badge-danger")">@str.TestResult.TestResultType</span>
                                     </td>
-                                    <td>@str.TestRunMetaData.BuildNumber</td>
+                                    <td>@str.TestResult.TestRunMetaData.BuildNumber</td>
                                 </tr>
                             }
                             </tbody>
@@ -204,13 +204,13 @@
                     <tbody>
                     @foreach (var sr in Model.TestStats.Results)
                     {
-                        @foreach (var subTest in sr.SubTests)
+                        @foreach (var subTest in sr.TestResult.SubTests)
                         {
                             <tr>
-                                <td data-order="@sr.Time">
-                                    @sr.TestRunMetaData.FlytApplicationType<br/>
-                                    @sr.Time<br/>
-                                    <strong>@sr.TestRunMetaData.BuildNumber</strong><br/>
+                                <td data-order="@sr.TestResult.Time">
+                                    @sr.TestResult.TestRunMetaData.FlytApplicationType<br/>
+                                    @sr.TestResult.Time<br/>
+                                    <strong>@sr.TestResult.TestRunMetaData.BuildNumber</strong><br/>
                                     @if (sr.IsSel1)
                                     {
                                         <span class="badge badge-light">Selenium 1</span>
@@ -220,7 +220,7 @@
                                         <span class="badge badge-info">Selenium 2</span>
                                     }
                                     <br/>
-                                    <a href="../data/@sr.TestRunMetaData.OriginalFileName" target="_blank">@sr.TestRunMetaData.OriginalFileName</a>
+                                    <a href="../data/@sr.TestResult.TestRunMetaData.OriginalFileName" target="_blank">@sr.TestResult.TestRunMetaData.OriginalFileName</a>
                                 </td>
                                 <td>
                                     @if (subTest.IsPassed)

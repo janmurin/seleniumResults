@@ -72,9 +72,9 @@
                     }
                     @if (sr.FailedCount < 5)
                     {
-                        foreach (var testResult in sr.Results.Where(x => x.IsFailed).OrderBy(x => x.Name).ToList())
+                        foreach (var testResult in sr.Results.Where(x => x.IsFailed).OrderBy(x => x.TestResult.Name).ToList())
                         {
-                            <a href="testPages/@(testResult.Name).html" target="_blank" style="font-size: small">@testResult.Name</a>
+                            <a href="testPages/@(testResult.TestResult.Name).html" target="_blank" style="font-size: small">@testResult.TestResult.Name</a>
                         }
                     }
                     @if (sr.IsSel1)

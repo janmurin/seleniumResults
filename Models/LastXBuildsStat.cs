@@ -6,7 +6,7 @@ namespace SeleniumResults.Models
 {
     public class LastXBuildsStat
     {
-        public LastXBuildsStat(IEnumerable<IGrouping<int, SingleTestResult>> buildsGroup)
+        public LastXBuildsStat(IEnumerable<IGrouping<int, TestResultViewModel>> buildsGroup)
         {
             Builds = buildsGroup;
 
@@ -31,15 +31,15 @@ namespace SeleniumResults.Models
         public int FailureRate { get; }
         public int TotalBuilds { get; }
 
-        public IEnumerable<IGrouping<int, SingleTestResult>> Builds { get; }
+        public IEnumerable<IGrouping<int, TestResultViewModel>> Builds { get; }
 
-        public List<SingleTestResult> GetOrderedTestRuns()
+        public List<TestResultViewModel> GetOrderedTestRuns()
         {
-            List<SingleTestResult> orderedResults = new List<SingleTestResult>();
+            List<TestResultViewModel> orderedResults = new List<TestResultViewModel>();
 
             Builds.ToList().ForEach(results => { orderedResults.AddRange(results); });
 
-            return orderedResults.OrderByDescending(x => x.Time).ToList();
+            return orderedResults.OrderByDescending(x => x.TestResult.Time).ToList();
         }
 
         public override string ToString()

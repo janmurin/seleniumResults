@@ -1,7 +1,7 @@
 using System;
-using SeleniumResults.Models;
 using SeleniumResults.Models.enums;
 using Newtonsoft.Json;
+using SeleniumResults.Models.data;
 
 namespace SeleniumResults.Repository.Models
 {
@@ -13,25 +13,26 @@ namespace SeleniumResults.Repository.Models
         public TestResultType TestResultType { get; set; }
         public DateTime EndTime { get; set; }
         public DateTime StartTime { get; set; }
-        public bool IsMidnightError { get; set; }
         public string SubtestsJson { get; set; }
-        
-        public TestRunDao TestRun { get; set; }
+        public TestRunType TestRunType { get; set; }
+        public FlytApplication FlytApplicationType { get; set; }
 
         public TestResultDao()
         {
         }
 
-        public TestResultDao(SingleTestResult testResult, int testRunId)
+        public TestResultDao(TestResult testResult, int testRunId, int version)
         {
+            Version = version;
             TestRunId = testRunId;
             Name = testResult.Name;
             Time = testResult.Time;
             TestResultType = testResult.TestResultType;
             EndTime = testResult.EndTime;
             StartTime = testResult.StartTime;
-            IsMidnightError = testResult.IsMidnightError;
             SubtestsJson = JsonConvert.SerializeObject(testResult.SubTests);
+            TestRunType = testResult.TestRunMetaData.TestRunType;
+            FlytApplicationType = testResult.TestRunMetaData.FlytApplicationType;
         }
     }
 }

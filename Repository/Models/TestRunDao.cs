@@ -1,5 +1,5 @@
 using System;
-using SeleniumResults.Models;
+using SeleniumResults.Models.data;
 using SeleniumResults.Models.enums;
 
 namespace SeleniumResults.Repository.Models
@@ -12,8 +12,6 @@ namespace SeleniumResults.Repository.Models
         public FlytApplication FlytApplicationType { get; set; }
         public DateTime LastRun { get; set; }
         public string OriginalFileName { get; set; }
-        public bool HasMidnightErrors { get; set; }
-        public bool HasTooManyErrors { get; set; }
         public string UniqueId { get; set; }
 
         public bool IsProcessed { get; set; }
@@ -21,16 +19,15 @@ namespace SeleniumResults.Repository.Models
         {
         }
 
-        public TestRunDao(TestRun data)
+        public TestRunDao(TestRun data, int version)
         {
+            Version = version;
             BuildNumber = data.TestRunMetaData.BuildNumber;
             Duration = data.TestRunMetaData.Duration;
             TestRunType = data.TestRunMetaData.TestRunType;
             FlytApplicationType = data.TestRunMetaData.FlytApplicationType;
             LastRun = data.TestRunMetaData.LastRun;
             OriginalFileName = data.TestRunMetaData.OriginalFileName;
-            HasMidnightErrors = data.HasMidnightErrors;
-            HasTooManyErrors = data.HasTooManyErrors;
             UniqueId = data.GetUniqueId();
         }
     }

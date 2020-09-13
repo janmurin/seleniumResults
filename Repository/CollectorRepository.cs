@@ -1,12 +1,10 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Data.Common;
 using System.IO;
 using System.Linq;
-using System.Xml;
-using Microsoft.EntityFrameworkCore;
 using SeleniumResults.Models;
+using SeleniumResults.Models.data;
 using SeleniumResults.Models.enums;
 using SeleniumResults.Repository.Models;
 
@@ -16,29 +14,11 @@ namespace SeleniumResults.Repository
     {
         private HashSet<string> _testRunIds;
         private ConcurrentDictionary<string, SingleTestStats> _singleTestStatsDict;
+        private const int VERSION = 1;
 
         public CollectorRepository()
         {
             _testRunIds = GetTestRunIds();
-        }
-
-        private HashSet<string> GetTestRunIds()
-        {
-            using (var db = new CollectorContext())
-            {
-                return db.TestRuns.Select(x => x.UniqueId).ToHashSet();
-            }
-        }
-
-        private List<SingleTestResult> GetAllSingleTestResults()
-        {
-            using (var db = new CollectorContext())
-            {
-                return db.TestResults
-                    .Include(testResultDao => testResultDao.TestRun)
-                    .Select(x => new SingleTestResult(x))
-                    .ToList();
-            }
         }
 
         public bool AddTestRun(TestRun testRun)
@@ -50,11 +30,11 @@ namespace SeleniumResults.Repository
 
             using (var db = new CollectorContext())
             {
-                var entityEntry = db.TestRuns.Add(new TestRunDao(testRun)).Entity;
+                var entityEntry = db.TestRuns.Add(new TestRunDao(testRun, VERSION)).Entity;
                 db.SaveChanges();
                 _testRunIds.Add(testRun.GetUniqueId());
 
-                var testResultDaos = testRun.Results.Select(x => new TestResultDao(x, entityEntry.Id)).ToList();
+                var testResultDaos = testRun.Results.Select(x => new TestResultDao(x, entityEntry.Id, VERSION)).ToList();
                 db.TestResults.AddRange(testResultDaos);
                 db.SaveChanges();
             }
@@ -67,8 +47,8 @@ namespace SeleniumResults.Repository
             var filenames = allFilePaths.Select(x => x.Substring(x.LastIndexOf(Path.DirectorySeparatorChar) + 1)).ToHashSet();
             using (var db = new CollectorContext())
             {
-                var processedTestRuns = db.TestRuns.Where(x => x.IsProcessed).Select(x => x.OriginalFileName).ToHashSet();
-                return filenames.Except(processedTestRuns) as string[];
+                var processedTestRuns = db.TestRuns.Select(x => x.OriginalFileName).ToHashSet();
+                return filenames.Except(processedTestRuns).ToArray();
             }
         }
 
@@ -77,18 +57,18 @@ namespace SeleniumResults.Repository
             _singleTestStatsDict = new ConcurrentDictionary<string, SingleTestStats>();
             var get11ThBuildNumber = Get11ThBuildNumber();
 
-            foreach (var sr in GetAllSingleTestResults())
+            foreach (var sr in GetAllTestResults())
             {
                 // add only passed or failed tests into statistics
                 if (sr.IsPassedOrFailed)
                 {
-                    if (!_singleTestStatsDict.ContainsKey(sr.Name))
+                    if (!_singleTestStatsDict.ContainsKey(sr.TestResult.Name))
                     {
-                        _singleTestStatsDict.TryAdd(sr.Name, new SingleTestStats(sr, get11ThBuildNumber));
+                        _singleTestStatsDict.TryAdd(sr.TestResult.Name, new SingleTestStats(sr, get11ThBuildNumber));
                     }
                     else
                     {
-                        _singleTestStatsDict[sr.Name].Results.Add(sr);
+                        _singleTestStatsDict[sr.TestResult.Name].Results.Add(sr);
                     }
                 }
             }
@@ -104,6 +84,7 @@ namespace SeleniumResults.Repository
             using (var db = new CollectorContext())
             {
                 var lastBuilds = db.TestRuns
+                    .ToList()
                     .GroupBy(x => x.BuildNumber)
                     .OrderByDescending(x => x.Key)
                     .ToList();
@@ -131,6 +112,55 @@ namespace SeleniumResults.Repository
             }
 
             return existingTestStats.OrderByDescending(x => x.LastXBuildsDict.First().Value.FailureRate).ToList();
+        }
+
+        public List<TestRunViewModel> GetAllTestRuns(TestRunType type)
+        {
+            using (var db = new CollectorContext())
+            {
+                var testRunDaosDict = db.TestRuns
+                    .Where(t => t.TestRunType == type)
+                    .ToList()
+                    .GroupBy(c => c.Id)
+                    .ToDictionary(k => k.Key, v =>
+                        v.Select(f => f)
+                            .Single());
+
+                var testResultViewModelsDict = db.TestResults
+                    .Where(t => t.TestRunType == type)
+                    .ToList()
+                    .GroupBy(resultDao => resultDao.TestRunId)
+                    .ToDictionary(k => k.Key, v =>
+                        v.Select(f => new TestResultViewModel(new TestResult(f, testRunDaosDict[f.TestRunId])))
+                            .ToList());
+
+                return testRunDaosDict
+                    .Select(s => new TestRunViewModel(testResultViewModelsDict[s.Key]))
+                    .ToList();
+            }
+        }
+
+        private HashSet<string> GetTestRunIds()
+        {
+            using (var db = new CollectorContext())
+            {
+                return db.TestRuns.Select(x => x.UniqueId).ToHashSet();
+            }
+        }
+
+        private List<TestResultViewModel> GetAllTestResults()
+        {
+            using (var db = new CollectorContext())
+            {
+                var testRunDaosDict = db.TestRuns
+                    .ToList()
+                    .GroupBy(c => c.Id)
+                    .ToDictionary(k => k.Key, v => v.Select(f => f).Single());
+
+                return db.TestResults
+                    .Select(x => new TestResultViewModel(new TestResult(x, testRunDaosDict[x.TestRunId])))
+                    .ToList();
+            }
         }
     }
 }

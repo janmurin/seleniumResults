@@ -20,7 +20,7 @@ namespace SeleniumResults.webreporting.ViewModels
             Data = new List<ChartPoint>();
             foreach (var lastXBuildsStat in statsDict.Values.Reverse())
             {
-                var time = lastXBuildsStat.GetOrderedTestRuns().First().Time;
+                var time = lastXBuildsStat.GetOrderedTestRuns().First().TestResult.Time;
                 Data.Add(new ChartPoint(time, lastXBuildsStat.FailureRate));
             }
         }

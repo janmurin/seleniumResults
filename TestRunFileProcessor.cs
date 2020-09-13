@@ -6,6 +6,7 @@ using System.IO.Enumeration;
 using System.Linq;
 using HtmlAgilityPack;
 using SeleniumResults.Models;
+using SeleniumResults.Models.data;
 using SeleniumResults.Models.enums;
 
 namespace SeleniumResults
@@ -195,11 +196,11 @@ namespace SeleniumResults
             throw new Exception($"unknown machine name: [{innerText}]");
         }
 
-        private static List<SingleTestResult> ParseTestResults(HtmlDocument htmlDoc, TestRunMetaData testRunMetaData)
+        private static List<TestResult> ParseTestResults(HtmlDocument htmlDoc, TestRunMetaData testRunMetaData)
         {
             var cards = htmlDoc.DocumentNode?.SelectNodes("//div[@class='fixtures']//div[@class='card-panel']");
 
-            List<SingleTestResult> results = new List<SingleTestResult>();
+            List<TestResult> results = new List<TestResult>();
 
             if (cards != null)
             {
@@ -212,7 +213,7 @@ namespace SeleniumResults
             return results;
         }
 
-        private static SingleTestResult ParseCard(HtmlNode card, TestRunMetaData testRunMetaData)
+        private static TestResult ParseCard(HtmlNode card, TestRunMetaData testRunMetaData)
         {
             var name = card.SelectSingleNode(".//span[@class='fixture-name']").InnerText;
             var testResultType = ParseTestResultType(card);
@@ -246,7 +247,7 @@ namespace SeleniumResults
                 subTests.Add(new SubTest(subName, subResultType, subMessage, subTests.Count));
             }
 
-            return new SingleTestResult(testRunMetaData, name, testResultType, startDateTime, endDateTime, subTests);
+            return new TestResult(testRunMetaData, name, testResultType, startDateTime, endDateTime, subTests);
         }
 
         private static TestResultType ParseTestResultType(HtmlNode card)

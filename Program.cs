@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using SeleniumResults.Models;
+using SeleniumResults.Models.data;
 using SeleniumResults.Models.enums;
 using SeleniumResults.Repository;
 using SeleniumResults.webreporting;
@@ -38,7 +39,7 @@ namespace SeleniumResults
             Console.WriteLine($"SPC_DATA_FOLDER={SPC_DATA_FOLDER}");
             Console.WriteLine($"FIXED_DATA_FOLDER={FIXED_DATA_FOLDER}");
             //string seleniumFilesDir = "..\\..\\..\\webreport\\data";
-            //ProcessSeleniumData(seleniumFilesDir);
+            ProcessSeleniumData();
 
             //string specflowDir = "..\\..\\..\\webreport\\spcdata";
             //string specflowDir = "..\\..\\..\\data\\errors";
@@ -49,36 +50,36 @@ namespace SeleniumResults
 
         private static void PrintLatestSeleniumReportIgnoreStats(string seleniumFilesDir)
         {
-            string[] filenames = {"sel-BVN-1.0.10680-171669.html", "sel-BVV-1.0.10680-171673.html", "sel-CAR-1.0.10680-171661.html", "sel-PPT-1.0.10676-171605.html", "sel-SCC-1.0.10680-171674.html"};
-
-            foreach (var filename in filenames)
-            {
-                Console.WriteLine($"filename: {filename}");
-                var bvvRunnableTests = Constants.TestCategoriesDict
-                    .Where(x => x.Value == TestCategories.All || x.Value == GetTestCategoryFromFilename(filename))
-                    .Select(y => y.Key)
-                    .ToHashSet();
-                TestRun testRun = TestRunFileProcessor.ProcessFile(Path.Combine(seleniumFilesDir, filename), 0);
-                Dictionary<string, int> ignoredTestsDurations = new Dictionary<string, int>();
-
-                foreach (var testResult in testRun.Results.Where(x => x.IsSkipped))
-                {
-                    if (!bvvRunnableTests.Contains(testResult.Name))
-                    {
-                        ignoredTestsDurations.Add(testResult.Name, testResult.GetDurationSeconds);
-                    }
-                }
-
-                // print each ignored tests and how long it was running
-                int idx = 1;
-                foreach (var keyValuePair in ignoredTestsDurations.OrderByDescending(x => x.Value))
-                {
-                    Console.WriteLine($"{idx,2}. {keyValuePair.Key,45}: {keyValuePair.Value} s");
-                    idx++;
-                }
-
-                Console.WriteLine($"{"Total:",50} {ignoredTestsDurations.Sum(x => x.Value)} s");
-            }
+            // string[] filenames = {"sel-BVN-1.0.10680-171669.html", "sel-BVV-1.0.10680-171673.html", "sel-CAR-1.0.10680-171661.html", "sel-PPT-1.0.10676-171605.html", "sel-SCC-1.0.10680-171674.html"};
+            //
+            // foreach (var filename in filenames)
+            // {
+            //     Console.WriteLine($"filename: {filename}");
+            //     var bvvRunnableTests = Constants.TestCategoriesDict
+            //         .Where(x => x.Value == TestCategories.All || x.Value == GetTestCategoryFromFilename(filename))
+            //         .Select(y => y.Key)
+            //         .ToHashSet();
+            //     TestRun testRun = TestRunFileProcessor.ProcessFile(Path.Combine(seleniumFilesDir, filename), 0);
+            //     Dictionary<string, int> ignoredTestsDurations = new Dictionary<string, int>();
+            //
+            //     foreach (var testResult in testRun.Results.Where(x => x.IsSkipped))
+            //     {
+            //         if (!bvvRunnableTests.Contains(testResult.Name))
+            //         {
+            //             ignoredTestsDurations.Add(testResult.Name, testResult.GetDurationSeconds);
+            //         }
+            //     }
+            //
+            //     // print each ignored tests and how long it was running
+            //     int idx = 1;
+            //     foreach (var keyValuePair in ignoredTestsDurations.OrderByDescending(x => x.Value))
+            //     {
+            //         Console.WriteLine($"{idx,2}. {keyValuePair.Key,45}: {keyValuePair.Value} s");
+            //         idx++;
+            //     }
+            //
+            //     Console.WriteLine($"{"Total:",50} {ignoredTestsDurations.Sum(x => x.Value)} s");
+            // }
         }
 
         private static string GetTestCategoryFromFilename(string filename)
@@ -113,72 +114,72 @@ namespace SeleniumResults
 
         private static void ProcessSpecflowData(string specflowDir)
         {
-            Console.WriteLine($"loading api/specflow files from: {specflowDir}");
-
-            string[] fileEntries = Directory.GetFiles(specflowDir);
-
-            ConcurrentBag<TestRun> specflowRuns = new ConcurrentBag<TestRun>();
-
-            Parallel.For(0, fileEntries.Length,
-                index =>
-                {
-                    var fileName = fileEntries[index];
-                    if (!fileName.EndsWith(".html"))
-                    {
-                        Console.WriteLine($"skipping parsing file [{fileName}]");
-                    }
-                    else
-                    {
-                        try
-                        {
-                            TestRun testRun = TestRunFileProcessor.ProcessFile(fileName, index);
-                            //Console.WriteLine(testRun);
-                            if (testRun != null)
-                            {
-                                specflowRuns.Add(testRun);
-                            }
-                            else
-                            {
-                                // string shortName = fileName.Substring(fileName.LastIndexOf('\\') + 1);
-                                // Console.WriteLine($"moving file to data/errors folder. filename: {shortName}");
-                                // File.Move(fileName, Path.Combine("..\\..\\..\\data\\errors", shortName), true);
-                            }
-
-                            // var isAdded = ResultsDatabase.AddTestRunData(testRun);
-                            // if (!isAdded)
-                            // {
-                            //     Console.WriteLine($"adding duplicate file to data/duplicates folder. filename: {fileName}");
-                            //     File.Copy(fileName, Path.Combine("..\\..\\..\\data\\duplicates", testRun.TestRunMetaData.OriginalFileName), true);
-                            // }
-                        }
-                        catch (Exception e)
-                        {
-                            Console.WriteLine(e);
-                        }
-                    }
-                });
-
-            var testRuns = specflowRuns
-                .Where(x => x.TestRunMetaData.TestRunType == TestRunType.API)
-                .OrderBy(x => x.GetUniqueId())
-                .ToList();
-            Console.WriteLine($"api test runs count {testRuns.Count}");
-            // foreach (var specflowRun in testRuns)
-            // {
-            //     Console.WriteLine(specflowRun);
-            // }
-            WebReportGenerator.GenerateApiRunsHtml(testRuns);
-
-            testRuns = specflowRuns
-                .Where(x => x.TestRunMetaData.TestRunType == TestRunType.Specflow)
-                .OrderBy(x => x.GetUniqueId())
-                .ToList();
-            Console.WriteLine($"specflow test runs count {testRuns.Count}");
-            // foreach (var specflowRun in testRuns)
-            // {
-            //     Console.WriteLine(specflowRun);
-            // }
-            WebReportGenerator.GenerateSpecflowRunsHtml(testRuns);
+            // Console.WriteLine($"loading api/specflow files from: {specflowDir}");
+            //
+            // string[] fileEntries = Directory.GetFiles(specflowDir);
+            //
+            // ConcurrentBag<TestRunViewModel> specflowRuns = new ConcurrentBag<TestRunViewModel>();
+            //
+            // Parallel.For(0, fileEntries.Length,
+            //     index =>
+            //     {
+            //         var fileName = fileEntries[index];
+            //         if (!fileName.EndsWith(".html"))
+            //         {
+            //             Console.WriteLine($"skipping parsing file [{fileName}]");
+            //         }
+            //         else
+            //         {
+            //             try
+            //             {
+            //                 TestRun testRun = TestRunFileProcessor.ProcessFile(fileName, index);
+            //                 //Console.WriteLine(testRun);
+            //                 if (testRun != null)
+            //                 {
+            //                     specflowRuns.Add(testRun);
+            //                 }
+            //                 else
+            //                 {
+            //                     // string shortName = fileName.Substring(fileName.LastIndexOf('\\') + 1);
+            //                     // Console.WriteLine($"moving file to data/errors folder. filename: {shortName}");
+            //                     // File.Move(fileName, Path.Combine("..\\..\\..\\data\\errors", shortName), true);
+            //                 }
+            //
+            //                 // var isAdded = ResultsDatabase.AddTestRunData(testRun);
+            //                 // if (!isAdded)
+            //                 // {
+            //                 //     Console.WriteLine($"adding duplicate file to data/duplicates folder. filename: {fileName}");
+            //                 //     File.Copy(fileName, Path.Combine("..\\..\\..\\data\\duplicates", testRun.TestRunMetaData.OriginalFileName), true);
+            //                 // }
+            //             }
+            //             catch (Exception e)
+            //             {
+            //                 Console.WriteLine(e);
+            //             }
+            //         }
+            //     });
+            //
+            // var testRuns = specflowRuns
+            //     .Where(x => x.TestRunMetaData.TestRunType == TestRunType.API)
+            //     .OrderBy(x => x.GetUniqueId())
+            //     .ToList();
+            // Console.WriteLine($"api test runs count {testRuns.Count}");
+            // // foreach (var specflowRun in testRuns)
+            // // {
+            // //     Console.WriteLine(specflowRun);
+            // // }
+            // WebReportGenerator.GenerateApiRunsHtml(testRuns);
+            //
+            // testRuns = specflowRuns
+            //     .Where(x => x.TestRunMetaData.TestRunType == TestRunType.Specflow)
+            //     .OrderBy(x => x.GetUniqueId())
+            //     .ToList();
+            // Console.WriteLine($"specflow test runs count {testRuns.Count}");
+            // // foreach (var specflowRun in testRuns)
+            // // {
+            // //     Console.WriteLine(specflowRun);
+            // // }
+            // WebReportGenerator.GenerateSpecflowRunsHtml(testRuns);
         }
 
         static void ProcessSeleniumData()
@@ -186,8 +187,10 @@ namespace SeleniumResults
             Console.WriteLine($"loading selenium files from: {DATA_FOLDER}");
 
             string[] filePaths = Directory.GetFiles(DATA_FOLDER);
+            //filePaths = filePaths.Take(100).ToArray();
             var unprocessedFilenames = _collectorRepository.GetUnprocessedFilenames(filePaths);
 
+            Console.WriteLine($"unprocessed files count: {unprocessedFilenames.Count()}");
             Parallel.For(0, unprocessedFilenames.Length,
                 index =>
                 {
@@ -200,7 +203,8 @@ namespace SeleniumResults
                     {
                         try
                         {
-                            TestRun testRun = TestRunFileProcessor.ProcessFile(fileName, index);
+                            var absolutePath = Path.Combine(DATA_FOLDER, fileName);
+                            TestRun testRun = TestRunFileProcessor.ProcessFile(absolutePath, index);
                             var isAdded = _collectorRepository.AddTestRun(testRun);
                             //var isAdded = ResultsDatabase.AddTestRunData(testRun);
                             if (!isAdded)
@@ -215,12 +219,13 @@ namespace SeleniumResults
                     }
                 });
 
-            //ResultsDatabase.ProcessData();
+            Console.WriteLine("processing data");
             _collectorRepository.ProcessData();
 
-            // WebReportGenerator.GenerateSeleniumsHtml(ResultsDatabase.GetTestStatsList());
-            WebReportGenerator.GenerateSeleniumsHtml(_collectorRepository.GetTestStatsList());
-            //WebReportGenerator.GenerateBuildsHtml(ResultsDatabase.GetAllTestRuns());
+            Console.WriteLine("generating selenium test pages");
+            WebReportGenerator.GenerateSeleniumTestListHtml(_collectorRepository.GetTestStatsList());
+            Console.WriteLine("generating selenium runs page");
+            WebReportGenerator.GenerateSeleniumRunsHtml(_collectorRepository.GetAllTestRuns(TestRunType.Selenium2));
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Text.Encodings.Web;
 using System.Text.Json;
 using Microsoft.Extensions.WebEncoders.Testing;
 using SeleniumResults.Models;
+using SeleniumResults.Models.data;
 using SeleniumResults.Models.enums;
 
 namespace SeleniumResults.webreporting.ViewModels
@@ -49,11 +50,11 @@ namespace SeleniumResults.webreporting.ViewModels
             DataSetsJson = $"[{string.Join(",", DataSets)}]";
         }
 
-        public LastXBuildsStat GetLastXBuildDataByTestResult(SingleTestResult sr, bool forModal)
+        public LastXBuildsStat GetLastXBuildDataByTestResult(TestResultViewModel sr, bool forModal)
         {
             if (forModal)
             {
-                string id = $"{sr.TestRunMetaData.FlytApplicationType}-{sr.TestRunMetaData.BuildNumber}";
+                string id = $"{sr.TestResult.TestRunMetaData.FlytApplicationType}-{sr.TestResult.TestRunMetaData.BuildNumber}";
                 if (existingModals.Contains(id))
                 {
                     return null;
@@ -62,14 +63,14 @@ namespace SeleniumResults.webreporting.ViewModels
                 existingModals.Add(id);
             }
 
-            switch (sr.TestRunMetaData.FlytApplicationType)
+            switch (sr.TestResult.TestRunMetaData.FlytApplicationType)
             {
-                case FlytApplication.BV: return GetLastXBuildStat(TestStats.BVLastXBuildsDict, sr.TestRunMetaData.BuildNumber);
-                case FlytApplication.BVV: return GetLastXBuildStat(TestStats.BVVLastXBuildsDict, sr.TestRunMetaData.BuildNumber);
-                case FlytApplication.CAR: return GetLastXBuildStat(TestStats.CARLastXBuildsDict, sr.TestRunMetaData.BuildNumber);
-                case FlytApplication.PPT: return GetLastXBuildStat(TestStats.PPTLastXBuildsDict, sr.TestRunMetaData.BuildNumber);
-                case FlytApplication.SCC: return GetLastXBuildStat(TestStats.SCCLastXBuildsDict, sr.TestRunMetaData.BuildNumber);
-                default: throw new Exception($"unknown application type: {sr.TestRunMetaData.FlytApplicationType}");
+                case FlytApplication.BV: return GetLastXBuildStat(TestStats.BVLastXBuildsDict, sr.TestResult.TestRunMetaData.BuildNumber);
+                case FlytApplication.BVV: return GetLastXBuildStat(TestStats.BVVLastXBuildsDict, sr.TestResult.TestRunMetaData.BuildNumber);
+                case FlytApplication.CAR: return GetLastXBuildStat(TestStats.CARLastXBuildsDict, sr.TestResult.TestRunMetaData.BuildNumber);
+                case FlytApplication.PPT: return GetLastXBuildStat(TestStats.PPTLastXBuildsDict, sr.TestResult.TestRunMetaData.BuildNumber);
+                case FlytApplication.SCC: return GetLastXBuildStat(TestStats.SCCLastXBuildsDict, sr.TestResult.TestRunMetaData.BuildNumber);
+                default: throw new Exception($"unknown application type: {sr.TestResult.TestRunMetaData.FlytApplicationType}");
             }
         }
 

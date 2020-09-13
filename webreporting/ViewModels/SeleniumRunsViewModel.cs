@@ -5,6 +5,6 @@ namespace SeleniumResults.webreporting.ViewModels
 {
     public class SeleniumRunsViewModel
     {
-        public List<TestRun> TestRuns { get; set; }
+        public List<TestRunViewModel> TestRuns { get; set; }
     }
 }
