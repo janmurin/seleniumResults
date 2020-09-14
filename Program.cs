@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -173,15 +171,11 @@ namespace SeleniumResults
                 {
                     var absolutePath = Path.Combine(folder, fileName);
                     TestRun testRun = TestRunFileProcessor.ProcessFile(absolutePath, index);
-                    var isAdded = _collectorRepository.AddTestRun(testRun);
-                    if (!isAdded)
-                    {
-                        Console.WriteLine($"test run was not added into DB. filename: {fileName}");
-                    }
+                    _collectorRepository.AddTestRun(testRun);
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e);
+                    Console.WriteLine($"test run was not added into DB. filename: {fileName}. EXCEPTION: {e.Message}");
                 }
             }
         }

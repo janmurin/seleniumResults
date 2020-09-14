@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.IO;
 using System.Linq;
 using SeleniumResults.Models;
@@ -12,7 +13,7 @@ namespace SeleniumResults.Repository
 {
     public class CollectorRepository
     {
-        private HashSet<string> _testRunIds;
+        private ConcurrentDictionary<string, TestRunDao> _testRunIds;
         private ConcurrentDictionary<string, SingleTestStats> _singleTestStatsDict;
         private const int VERSION = 1;
 
@@ -21,25 +22,28 @@ namespace SeleniumResults.Repository
             _testRunIds = GetTestRunIds();
         }
 
-        public bool AddTestRun(TestRun testRun)
+        public void AddTestRun(TestRun testRun)
         {
-            if (testRun == null || _testRunIds.Contains(testRun.GetUniqueId()))
+            if (testRun == null)
             {
-                return false;
+                throw new Exception($"testRun is null");
+            }
+
+            if (_testRunIds.ContainsKey(testRun.GetUniqueId()))
+            {
+                throw new Exception($"not unique with {_testRunIds[testRun.GetUniqueId()].OriginalFileName}");
             }
 
             using (var db = new CollectorContext())
             {
                 var entityEntry = db.TestRuns.Add(new TestRunDao(testRun, VERSION)).Entity;
                 db.SaveChanges();
-                _testRunIds.Add(testRun.GetUniqueId());
+                _testRunIds.TryAdd(testRun.GetUniqueId(), entityEntry);
 
                 var testResultDaos = testRun.Results.Select(x => new TestResultDao(x, entityEntry.Id, VERSION)).ToList();
                 db.TestResults.AddRange(testResultDaos);
                 db.SaveChanges();
             }
-
-            return true;
         }
 
         public string[] GetUnprocessedFilenames(string[] allFilePaths)
@@ -140,11 +144,16 @@ namespace SeleniumResults.Repository
             }
         }
 
-        private HashSet<string> GetTestRunIds()
+        private ConcurrentDictionary<string, TestRunDao> GetTestRunIds()
         {
             using (var db = new CollectorContext())
             {
-                return db.TestRuns.Select(x => x.UniqueId).ToHashSet();
+                var testRunDaos = db.TestRuns
+                    .ToList()
+                    .GroupBy(x => x.UniqueId)
+                    .ToDictionary(k => k.Key, v => v.Select(f => f).Single());
+
+                return new ConcurrentDictionary<string, TestRunDao>(testRunDaos);
             }
         }
 
