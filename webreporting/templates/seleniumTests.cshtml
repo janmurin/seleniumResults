@@ -104,15 +104,15 @@
                                         @foreach (var sr in lastXBuilds.Value.GetOrderedTestRuns())
                                         {
                                             <tr>
-                                                <td>@sr.Time</td>
+                                                <td>@sr.TestResult.Time</td>
                                                 <td>
-                                                    <a href="data/@sr.TestRunMetaData.OriginalFileName" target="_blank">@sr.TestRunMetaData.OriginalFileName</a>
+                                                    <a href="data/@sr.TestResult.TestRunMetaData.OriginalFileName" target="_blank">@sr.TestResult.TestRunMetaData.OriginalFileName</a>
                                                 </td>
-                                                <td>@sr.TestRunMetaData.FlytApplicationType</td>
+                                                <td>@sr.TestResult.TestRunMetaData.FlytApplicationType</td>
                                                 <td>
-                                                    <span class="badge @(sr.IsPassed ? "badge-success" : "badge-danger")">@sr.TestResultType</span>
+                                                    <span class="badge @(sr.IsPassed ? "badge-success" : "badge-danger")">@sr.TestResult.TestResultType</span>
                                                 </td>
-                                                <td>@sr.TestRunMetaData.BuildNumber</td>
+                                                <td>@sr.TestResult.TestRunMetaData.BuildNumber</td>
                                             </tr>
                                         }
                                         </tbody>

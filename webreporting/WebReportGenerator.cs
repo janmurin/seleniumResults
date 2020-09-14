@@ -1,10 +1,7 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using RazorLight;
 using SeleniumResults.Models;
-using SeleniumResults.Models.enums;
 using SeleniumResults.webreporting.ViewModels;
 
 namespace SeleniumResults.webreporting
@@ -14,7 +11,7 @@ namespace SeleniumResults.webreporting
         private static readonly string TemplateFolderPath = Path.GetFullPath("..\\..\\..\\webreporting\\templates");
         private static readonly string WebreportFolderPath = Path.GetFullPath("..\\..\\..\\webreport");
 
-        public static void GenerateSeleniumsHtml(List<SingleTestStats> testStatsList)
+        public static void GenerateSeleniumTestListHtml(List<SingleTestStats> testStatsList)
         {
             var engine = new RazorLightEngineBuilder()
                 .UseFileSystemProject(TemplateFolderPath)
@@ -35,7 +32,7 @@ namespace SeleniumResults.webreporting
             });
         }
         
-        public static void GenerateBuildsHtml(List<TestRun> buildList)
+        public static void GenerateSeleniumRunsHtml(List<TestRunViewModel> buildList)
         {
             var engine = new RazorLightEngineBuilder()
                 .UseFileSystemProject(TemplateFolderPath)
@@ -52,7 +49,7 @@ namespace SeleniumResults.webreporting
             File.WriteAllText(Path.Combine(WebreportFolderPath, "seleniumRuns.html"), result);
         }
 
-        public static void GenerateApiRunsHtml(List<TestRun> testRuns)
+        public static void GenerateApiRunsHtml(List<TestRunViewModel> testRuns)
         {
             var engine = new RazorLightEngineBuilder()
                 .UseFileSystemProject(TemplateFolderPath)
@@ -69,7 +66,7 @@ namespace SeleniumResults.webreporting
             File.WriteAllText(Path.Combine(WebreportFolderPath, "apiRuns.html"), result);
         }
         
-        public static void GenerateSpecflowRunsHtml(List<TestRun> testRuns)
+        public static void GenerateSpecflowRunsHtml(List<TestRunViewModel> testRuns)
         {
             var engine = new RazorLightEngineBuilder()
                 .UseFileSystemProject(TemplateFolderPath)

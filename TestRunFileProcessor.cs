@@ -6,26 +6,27 @@ using System.IO.Enumeration;
 using System.Linq;
 using HtmlAgilityPack;
 using SeleniumResults.Models;
+using SeleniumResults.Models.data;
 using SeleniumResults.Models.enums;
 
 namespace SeleniumResults
 {
     public static class TestRunFileProcessor
     {
-        public static TestRun ProcessFile(string fileName, int idx)
+        public static TestRun ProcessFile(string absolutePath, int idx)
         {
-            string shortName = fileName.Substring(fileName.LastIndexOf('\\') + 1);
+            string fileName = absolutePath.Substring(absolutePath.LastIndexOf(Path.DirectorySeparatorChar) + 1);
 
             HtmlDocument htmlDoc = new HtmlDocument {OptionFixNestedTags = true};
-            htmlDoc.Load(fileName);
+            htmlDoc.Load(absolutePath);
 
             if (htmlDoc.ParseErrors != null && htmlDoc.ParseErrors.Any())
             {
-                Console.WriteLine($"{idx}. filename: {shortName,35}    PARSE ERROR: {string.Join(",", htmlDoc.ParseErrors.Select(x => x.Reason))}");
-                return FixErrorsAndParseTestRun(htmlDoc, shortName, fileName);
+                Console.WriteLine($"{idx}. filename: {fileName,35}    PARSE ERROR: {string.Join(",", htmlDoc.ParseErrors.Select(x => x.Reason))}");
+                return FixErrorsAndParseTestRun(htmlDoc, fileName, absolutePath);
             }
 
-            return ParseTestRun(htmlDoc, shortName);
+            return ParseTestRun(htmlDoc, fileName);
         }
 
         private static TestRun FixErrorsAndParseTestRun(HtmlDocument htmlDoc, string shortName, string fileName)
@@ -49,7 +50,7 @@ namespace SeleniumResults
             var testRun = ParseTestRun(htmlDoc, shortName);
             if (testRun != null)
             {
-                StreamWriter outputFile = new StreamWriter(Path.Combine("..\\..\\..\\data\\fixed", testRun.TestRunMetaData.OriginalFileName), false);
+                StreamWriter outputFile = new StreamWriter(Path.Combine(Program.FIXED_DATA_FOLDER, testRun.TestRunMetaData.OriginalFileName), false);
                 htmlDoc.Save(outputFile);
             }
 
@@ -195,11 +196,11 @@ namespace SeleniumResults
             throw new Exception($"unknown machine name: [{innerText}]");
         }
 
-        private static List<SingleTestResult> ParseTestResults(HtmlDocument htmlDoc, TestRunMetaData testRunMetaData)
+        private static List<TestResult> ParseTestResults(HtmlDocument htmlDoc, TestRunMetaData testRunMetaData)
         {
             var cards = htmlDoc.DocumentNode?.SelectNodes("//div[@class='fixtures']//div[@class='card-panel']");
 
-            List<SingleTestResult> results = new List<SingleTestResult>();
+            List<TestResult> results = new List<TestResult>();
 
             if (cards != null)
             {
@@ -212,7 +213,7 @@ namespace SeleniumResults
             return results;
         }
 
-        private static SingleTestResult ParseCard(HtmlNode card, TestRunMetaData testRunMetaData)
+        private static TestResult ParseCard(HtmlNode card, TestRunMetaData testRunMetaData)
         {
             var name = card.SelectSingleNode(".//span[@class='fixture-name']").InnerText;
             var testResultType = ParseTestResultType(card);
@@ -246,7 +247,7 @@ namespace SeleniumResults
                 subTests.Add(new SubTest(subName, subResultType, subMessage, subTests.Count));
             }
 
-            return new SingleTestResult(testRunMetaData, name, testResultType, startDateTime, endDateTime, subTests);
+            return new TestResult(testRunMetaData, name, testResultType, startDateTime, endDateTime, subTests);
         }
 
         private static TestResultType ParseTestResultType(HtmlNode card)

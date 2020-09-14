@@ -10,13 +10,13 @@ namespace SeleniumResults.Models
         private readonly int _buildNumber10;
         private bool? _olderThan10builds;
         public string Name { get; }
-        public HashSet<SingleTestResult> Results { get; }
+        public HashSet<TestResultViewModel> Results { get; }
 
-        public SingleTestStats(SingleTestResult sr, int buildNumber10)
+        public SingleTestStats(TestResultViewModel sr, int buildNumber10)
         {
             _buildNumber10 = buildNumber10;
-            Name = sr.Name;
-            Results = new HashSet<SingleTestResult>() {sr};
+            Name = sr.TestResult.Name;
+            Results = new HashSet<TestResultViewModel>() {sr};
         }
 
         public Dictionary<int, LastXBuildsStat> LastXBuildsDict { get; set; }
@@ -33,18 +33,18 @@ namespace SeleniumResults.Models
                 if (!_olderThan10builds.HasValue)
                 {
                     _olderThan10builds = Results
-                        .OrderByDescending(x => x.TestRunMetaData.BuildNumber)
-                        .First().TestRunMetaData.BuildNumber <= _buildNumber10;
+                        .OrderByDescending(x => x.TestResult.TestRunMetaData.BuildNumber)
+                        .First().TestResult.TestRunMetaData.BuildNumber <= _buildNumber10;
                 }
 
                 return _olderThan10builds.Value;
             }
         }
 
-        public int Sel1Failures => Results.Count(x => x.IsFailed && x.TestRunMetaData.TestRunType == TestRunType.Selenium);
-        public int Sel2Failures => Results.Count(x => x.IsFailed && x.TestRunMetaData.TestRunType == TestRunType.Selenium2);
-        private int Sel1Count => Results.Count(x => x.TestRunMetaData.TestRunType == TestRunType.Selenium);
-        private int Sel2Count => Results.Count(x => x.TestRunMetaData.TestRunType == TestRunType.Selenium2);
+        public int Sel1Failures => Results.Count(x => x.IsFailed && x.TestResult.TestRunMetaData.TestRunType == TestRunType.Selenium);
+        public int Sel2Failures => Results.Count(x => x.IsFailed && x.TestResult.TestRunMetaData.TestRunType == TestRunType.Selenium2);
+        private int Sel1Count => Results.Count(x => x.TestResult.TestRunMetaData.TestRunType == TestRunType.Selenium);
+        private int Sel2Count => Results.Count(x => x.TestResult.TestRunMetaData.TestRunType == TestRunType.Selenium2);
         private string MostRecentTime { get; set; }
 
         public int Sel1FailureRate => (int) (Sel1Count > 0 ? Decimal.Divide(Sel1Failures, Sel1Count) * 100 : 0);
@@ -77,7 +77,7 @@ namespace SeleniumResults.Models
             {
                 if (Results.Any())
                 {
-                    MostRecentTime = Results.OrderByDescending(x => x.Time).First().Time;
+                    MostRecentTime = Results.OrderByDescending(x => x.TestResult.Time).First().TestResult.Time;
                 }
             }
 
@@ -140,7 +140,7 @@ namespace SeleniumResults.Models
                 .ToDictionary(x => x.Key, y => y.Value);
         }
 
-        private Dictionary<int, LastXBuildsStat> CreateLastXBuildDictionary(List<IGrouping<int, SingleTestResult>> byBuildGrouping, int buildsInGroup)
+        private Dictionary<int, LastXBuildsStat> CreateLastXBuildDictionary(List<IGrouping<int, TestResultViewModel>> byBuildGrouping, int buildsInGroup)
         {
             var lastXBuildsDict = new Dictionary<int, LastXBuildsStat>();
             if (byBuildGrouping.Count == 0)
@@ -169,19 +169,19 @@ namespace SeleniumResults.Models
             return lastXBuildsDict;
         }
 
-        private IOrderedEnumerable<IGrouping<int, SingleTestResult>> GetResultsOrderedByBuildNumber()
+        private IOrderedEnumerable<IGrouping<int, TestResultViewModel>> GetResultsOrderedByBuildNumber()
         {
             return from result in Results.ToList()
-                group result by result.TestRunMetaData.BuildNumber
+                group result by result.TestResult.TestRunMetaData.BuildNumber
                 into appGroup
                 orderby appGroup.Key descending
                 select appGroup;
         }
 
-        private IOrderedEnumerable<IGrouping<int, SingleTestResult>> GetResultsOrderedByBuildNumber(FlytApplication app)
+        private IOrderedEnumerable<IGrouping<int, TestResultViewModel>> GetResultsOrderedByBuildNumber(FlytApplication app)
         {
-            return from result in Results.Where(x => x.TestRunMetaData.FlytApplicationType == app).ToList()
-                group result by result.TestRunMetaData.BuildNumber
+            return from result in Results.Where(x => x.TestResult.TestRunMetaData.FlytApplicationType == app).ToList()
+                group result by result.TestResult.TestRunMetaData.BuildNumber
                 into appGroup
                 orderby appGroup.Key descending
                 select appGroup;
