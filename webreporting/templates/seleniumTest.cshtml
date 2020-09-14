@@ -40,7 +40,6 @@
                         <th>Time</th>
                         <th>File</th>
                         <th>Application</th>
-                        <th>Sel1/Sel2</th>
                         <th>Result</th>
                         <th>BuildNumber</th>
                         <th>Failure Rate Last 10 builds</th>
@@ -51,7 +50,6 @@
                         <th>Time</th>
                         <th>File</th>
                         <th>Application</th>
-                        <th>Sel1/Sel2</th>
                         <th>Result</th>
                         <th>BuildNumber</th>
                         <th>Failure Rate Last 10 builds</th>
@@ -66,16 +64,6 @@
                                 <a href="../data/@sr.TestResult.TestRunMetaData.OriginalFileName" target="_blank">@sr.TestResult.TestRunMetaData.OriginalFileName</a>
                             </td>
                             <td>@sr.TestResult.TestRunMetaData.FlytApplicationType</td>
-                            <td>
-                                @if (sr.IsSel1)
-                                {
-                                    <span class="badge badge-light">Selenium 1</span>
-                                }
-                                @if (sr.IsSel2)
-                                {
-                                    <span class="badge badge-info">Selenium 2</span>
-                                }
-                            </td>
                             <td>
                                 @if (sr.IsPassed)
                                 {
@@ -211,14 +199,6 @@
                                     @sr.TestResult.TestRunMetaData.FlytApplicationType<br/>
                                     @sr.TestResult.Time<br/>
                                     <strong>@sr.TestResult.TestRunMetaData.BuildNumber</strong><br/>
-                                    @if (sr.IsSel1)
-                                    {
-                                        <span class="badge badge-light">Selenium 1</span>
-                                    }
-                                    @if (sr.IsSel2)
-                                    {
-                                        <span class="badge badge-info">Selenium 2</span>
-                                    }
                                     <br/>
                                     <a href="../data/@sr.TestResult.TestRunMetaData.OriginalFileName" target="_blank">@sr.TestResult.TestRunMetaData.OriginalFileName</a>
                                 </td>

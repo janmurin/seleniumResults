@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.ComponentModel.Design;
 using System.IO;
 using System.Linq;
 using SeleniumResults.Models;
@@ -13,13 +12,15 @@ namespace SeleniumResults.Repository
 {
     public class CollectorRepository
     {
-        private ConcurrentDictionary<string, TestRunDao> _testRunIds;
+        private readonly ConcurrentDictionary<string, TestRunDao> _testRunIds;
         private ConcurrentDictionary<string, SingleTestStats> _singleTestStatsDict;
+        private readonly DateTime _threeMonthsAgo;
         private const int VERSION = 1;
 
         public CollectorRepository()
         {
             _testRunIds = GetTestRunIds();
+            _threeMonthsAgo = DateTime.Now - TimeSpan.FromDays(90);
         }
 
         public void AddTestRun(TestRun testRun)
@@ -61,7 +62,7 @@ namespace SeleniumResults.Repository
             _singleTestStatsDict = new ConcurrentDictionary<string, SingleTestStats>();
             var get11ThBuildNumber = Get11ThBuildNumber();
 
-            foreach (var sr in GetAllTestResults(TestRunType.Selenium2))
+            foreach (var sr in GetFilteredTestResults(TestRunType.Selenium2))
             {
                 // add only passed or failed tests into statistics
                 if (sr.IsPassedOrFailed)
@@ -118,21 +119,26 @@ namespace SeleniumResults.Repository
             return existingTestStats.OrderByDescending(x => x.LastXBuildsDict.First().Value.FailureRate).ToList();
         }
 
-        public List<TestRunViewModel> GetAllTestRuns(TestRunType type)
+        public List<TestRunViewModel> GetLastTestRuns(TestRunType type)
         {
             using (var db = new CollectorContext())
             {
                 var testRunDaosDict = db.TestRuns
                     .Where(t => t.TestRunType == type)
+                    .Where(t => t.LastRun > _threeMonthsAgo) // optimization
                     .ToList()
                     .GroupBy(c => c.Id)
                     .ToDictionary(k => k.Key, v =>
                         v.Select(f => f)
                             .Single());
 
-                var testResultViewModelsDict = db.TestResults
+                var testResultDaos = db.TestResults
                     .Where(t => t.TestRunType == type)
-                    .ToList()
+                    .Where(t => t.StartTime > _threeMonthsAgo.Subtract(TimeSpan.FromDays(1))) // optimization
+                    .ToList();
+
+                var testResultViewModelsDict = testResultDaos
+                    .Where(x => testRunDaosDict.ContainsKey(x.TestRunId)) // optimization
                     .GroupBy(resultDao => resultDao.TestRunId)
                     .ToDictionary(k => k.Key, v =>
                         v.Select(f => new TestResultViewModel(new TestResult(f, testRunDaosDict[f.TestRunId])))
@@ -157,21 +163,12 @@ namespace SeleniumResults.Repository
             }
         }
 
-        private List<TestResultViewModel> GetAllTestResults(TestRunType testRunType)
+        private List<TestResultViewModel> GetFilteredTestResults(TestRunType testRunType)
         {
-            using (var db = new CollectorContext())
-            {
-                var testRunDaosDict = db.TestRuns
-                    .Where(t => t.TestRunType == testRunType)
-                    .ToList()
-                    .GroupBy(c => c.Id)
-                    .ToDictionary(k => k.Key, v => v.Select(f => f).Single());
-
-                return db.TestResults
-                    .Where(t => t.TestRunType == testRunType)
-                    .Select(x => new TestResultViewModel(new TestResult(x, testRunDaosDict[x.TestRunId])))
-                    .ToList();
-            }
+            return GetLastTestRuns(testRunType)
+                .Where(t => !t.HasMidnightErrors && !t.HasTooManyErrors)
+                .SelectMany(s => s.Results)
+                .ToList();
         }
     }
 }

@@ -17,8 +17,7 @@
         <tr>
             <th>Test Name</th>
             <th>Avg duration</th>
-            <th>Selenium1</th>
-            <th>Selenium2</th>
+            <th>Failure rate</th>
             <th>Total Failures</th>
             <th>Total Runs</th>
             <th>Failure Rate Last 10 builds</th>
@@ -28,8 +27,7 @@
         <tr>
             <th>Test Name</th>
             <th>Avg duration</th>
-            <th>Selenium1</th>
-            <th>Selenium2</th>
+            <th>Failure rate</th>
             <th>Total Failures</th>
             <th>Total Runs</th>
             <th>Failure Rate Last 10 builds</th>
@@ -45,7 +43,6 @@
                 <td data-order="@testStat.AverageDurationWhenPassed">
                     <span>@testStat.AverageDurationWhenPassedString</span>
                 </td>
-                <td data-order="@testStat.Sel1FailureRate">@testStat.Sel1Stat</td>
                 <td data-order="@testStat.Sel2FailureRate">@testStat.Sel2Stat</td>
                 <td>@testStat.TotalFailures</td>
                 <td>@testStat.TotalRuns</td>
@@ -135,7 +132,7 @@
     <script>
     $(document).ready(function () {
         $('#seleniumTestsDataTable').DataTable({
-            "order": [[6, "desc"]],
+            "order": [[5, "desc"]],
               "pageLength": 25
         });
     });

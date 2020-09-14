@@ -13,7 +13,6 @@ namespace SeleniumResults
 {
     internal static class Program
     {
-        private static readonly ResultsDatabase ResultsDatabase = new ResultsDatabase();
         private static readonly CollectorRepository _collectorRepository = new CollectorRepository();
         public static string DATA_FOLDER;
         public static string SPC_DATA_FOLDER;
@@ -121,13 +120,13 @@ namespace SeleniumResults
                     ProcessFile(fileName, index, SPC_DATA_FOLDER);
                 });
 
-            var testRuns = _collectorRepository.GetAllTestRuns(TestRunType.API)
+            var testRuns = _collectorRepository.GetLastTestRuns(TestRunType.API)
                 .OrderByDescending(x => x.TestRunMetaData.LastRun)
                 .ToList();
             Console.WriteLine($"api test runs count {testRuns.Count}");
             WebReportGenerator.GenerateApiRunsHtml(testRuns);
 
-            testRuns = _collectorRepository.GetAllTestRuns(TestRunType.Specflow)
+            testRuns = _collectorRepository.GetLastTestRuns(TestRunType.Specflow)
                 .OrderByDescending(x => x.TestRunMetaData.LastRun)
                 .ToList();
             Console.WriteLine($"specflow test runs count {testRuns.Count}");
@@ -156,7 +155,7 @@ namespace SeleniumResults
             Console.WriteLine("generating selenium test pages");
             WebReportGenerator.GenerateSeleniumTestListHtml(_collectorRepository.GetTestStatsList());
             Console.WriteLine("generating selenium runs page");
-            WebReportGenerator.GenerateSeleniumRunsHtml(_collectorRepository.GetAllTestRuns(TestRunType.Selenium2));
+            WebReportGenerator.GenerateSeleniumRunsHtml(_collectorRepository.GetLastTestRuns(TestRunType.Selenium2));
         }
 
         private static void ProcessFile(string fileName, int index, string folder)
