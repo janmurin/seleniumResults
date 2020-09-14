@@ -38,12 +38,9 @@ namespace SeleniumResults
             Console.WriteLine($"DATA_FOLDER={DATA_FOLDER}");
             Console.WriteLine($"SPC_DATA_FOLDER={SPC_DATA_FOLDER}");
             Console.WriteLine($"FIXED_DATA_FOLDER={FIXED_DATA_FOLDER}");
-            //string seleniumFilesDir = "..\\..\\..\\webreport\\data";
             ProcessSeleniumData();
 
-            //string specflowDir = "..\\..\\..\\webreport\\spcdata";
-            //string specflowDir = "..\\..\\..\\data\\errors";
-            //ProcessSpecflowData(specflowDir);
+            ProcessSpecflowData();
 
             //PrintLatestSeleniumReportIgnoreStats(seleniumFilesDir);
         }
@@ -112,74 +109,31 @@ namespace SeleniumResults
             return "error";
         }
 
-        private static void ProcessSpecflowData(string specflowDir)
+        private static void ProcessSpecflowData()
         {
-            // Console.WriteLine($"loading api/specflow files from: {specflowDir}");
-            //
-            // string[] fileEntries = Directory.GetFiles(specflowDir);
-            //
-            // ConcurrentBag<TestRunViewModel> specflowRuns = new ConcurrentBag<TestRunViewModel>();
-            //
-            // Parallel.For(0, fileEntries.Length,
-            //     index =>
-            //     {
-            //         var fileName = fileEntries[index];
-            //         if (!fileName.EndsWith(".html"))
-            //         {
-            //             Console.WriteLine($"skipping parsing file [{fileName}]");
-            //         }
-            //         else
-            //         {
-            //             try
-            //             {
-            //                 TestRun testRun = TestRunFileProcessor.ProcessFile(fileName, index);
-            //                 //Console.WriteLine(testRun);
-            //                 if (testRun != null)
-            //                 {
-            //                     specflowRuns.Add(testRun);
-            //                 }
-            //                 else
-            //                 {
-            //                     // string shortName = fileName.Substring(fileName.LastIndexOf('\\') + 1);
-            //                     // Console.WriteLine($"moving file to data/errors folder. filename: {shortName}");
-            //                     // File.Move(fileName, Path.Combine("..\\..\\..\\data\\errors", shortName), true);
-            //                 }
-            //
-            //                 // var isAdded = ResultsDatabase.AddTestRunData(testRun);
-            //                 // if (!isAdded)
-            //                 // {
-            //                 //     Console.WriteLine($"adding duplicate file to data/duplicates folder. filename: {fileName}");
-            //                 //     File.Copy(fileName, Path.Combine("..\\..\\..\\data\\duplicates", testRun.TestRunMetaData.OriginalFileName), true);
-            //                 // }
-            //             }
-            //             catch (Exception e)
-            //             {
-            //                 Console.WriteLine(e);
-            //             }
-            //         }
-            //     });
-            //
-            // var testRuns = specflowRuns
-            //     .Where(x => x.TestRunMetaData.TestRunType == TestRunType.API)
-            //     .OrderBy(x => x.GetUniqueId())
-            //     .ToList();
-            // Console.WriteLine($"api test runs count {testRuns.Count}");
-            // // foreach (var specflowRun in testRuns)
-            // // {
-            // //     Console.WriteLine(specflowRun);
-            // // }
-            // WebReportGenerator.GenerateApiRunsHtml(testRuns);
-            //
-            // testRuns = specflowRuns
-            //     .Where(x => x.TestRunMetaData.TestRunType == TestRunType.Specflow)
-            //     .OrderBy(x => x.GetUniqueId())
-            //     .ToList();
-            // Console.WriteLine($"specflow test runs count {testRuns.Count}");
-            // // foreach (var specflowRun in testRuns)
-            // // {
-            // //     Console.WriteLine(specflowRun);
-            // // }
-            // WebReportGenerator.GenerateSpecflowRunsHtml(testRuns);
+            Console.WriteLine($"loading api/specflow files from: {SPC_DATA_FOLDER}");
+            string[] fileEntries = Directory.GetFiles(SPC_DATA_FOLDER);
+            var unprocessedFilenames = _collectorRepository.GetUnprocessedFilenames(fileEntries);
+
+            Console.WriteLine($"unprocessed files count: {unprocessedFilenames.Count()}");
+            Parallel.For(0, unprocessedFilenames.Length,
+                index =>
+                {
+                    var fileName = unprocessedFilenames[index];
+                    ProcessFile(fileName, index, SPC_DATA_FOLDER);
+                });
+
+            var testRuns = _collectorRepository.GetAllTestRuns(TestRunType.API)
+                .OrderByDescending(x => x.TestRunMetaData.LastRun)
+                .ToList();
+            Console.WriteLine($"api test runs count {testRuns.Count}");
+            WebReportGenerator.GenerateApiRunsHtml(testRuns);
+
+            testRuns = _collectorRepository.GetAllTestRuns(TestRunType.Specflow)
+                .OrderByDescending(x => x.TestRunMetaData.LastRun)
+                .ToList();
+            Console.WriteLine($"specflow test runs count {testRuns.Count}");
+            WebReportGenerator.GenerateSpecflowRunsHtml(testRuns);
         }
 
         static void ProcessSeleniumData()
@@ -195,28 +149,7 @@ namespace SeleniumResults
                 index =>
                 {
                     var fileName = unprocessedFilenames[index];
-                    if (!fileName.EndsWith(".html"))
-                    {
-                        Console.WriteLine($"skipping parsing file [{fileName}]");
-                    }
-                    else
-                    {
-                        try
-                        {
-                            var absolutePath = Path.Combine(DATA_FOLDER, fileName);
-                            TestRun testRun = TestRunFileProcessor.ProcessFile(absolutePath, index);
-                            var isAdded = _collectorRepository.AddTestRun(testRun);
-                            //var isAdded = ResultsDatabase.AddTestRunData(testRun);
-                            if (!isAdded)
-                            {
-                                Console.WriteLine($"test run was not added into DB. filename: {fileName}");
-                            }
-                        }
-                        catch (Exception e)
-                        {
-                            Console.WriteLine(e);
-                        }
-                    }
+                    ProcessFile(fileName, index, DATA_FOLDER);
                 });
 
             Console.WriteLine("processing data");
@@ -226,6 +159,31 @@ namespace SeleniumResults
             WebReportGenerator.GenerateSeleniumTestListHtml(_collectorRepository.GetTestStatsList());
             Console.WriteLine("generating selenium runs page");
             WebReportGenerator.GenerateSeleniumRunsHtml(_collectorRepository.GetAllTestRuns(TestRunType.Selenium2));
+        }
+
+        private static void ProcessFile(string fileName, int index, string folder)
+        {
+            if (!fileName.EndsWith(".html"))
+            {
+                Console.WriteLine($"skipping parsing file [{fileName}]");
+            }
+            else
+            {
+                try
+                {
+                    var absolutePath = Path.Combine(folder, fileName);
+                    TestRun testRun = TestRunFileProcessor.ProcessFile(absolutePath, index);
+                    var isAdded = _collectorRepository.AddTestRun(testRun);
+                    if (!isAdded)
+                    {
+                        Console.WriteLine($"test run was not added into DB. filename: {fileName}");
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+            }
         }
     }
 }

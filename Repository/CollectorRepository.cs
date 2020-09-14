@@ -57,7 +57,7 @@ namespace SeleniumResults.Repository
             _singleTestStatsDict = new ConcurrentDictionary<string, SingleTestStats>();
             var get11ThBuildNumber = Get11ThBuildNumber();
 
-            foreach (var sr in GetAllTestResults())
+            foreach (var sr in GetAllTestResults(TestRunType.Selenium2))
             {
                 // add only passed or failed tests into statistics
                 if (sr.IsPassedOrFailed)
@@ -148,16 +148,18 @@ namespace SeleniumResults.Repository
             }
         }
 
-        private List<TestResultViewModel> GetAllTestResults()
+        private List<TestResultViewModel> GetAllTestResults(TestRunType testRunType)
         {
             using (var db = new CollectorContext())
             {
                 var testRunDaosDict = db.TestRuns
+                    .Where(t => t.TestRunType == testRunType)
                     .ToList()
                     .GroupBy(c => c.Id)
                     .ToDictionary(k => k.Key, v => v.Select(f => f).Single());
 
                 return db.TestResults
+                    .Where(t => t.TestRunType == testRunType)
                     .Select(x => new TestResultViewModel(new TestResult(x, testRunDaosDict[x.TestRunId])))
                     .ToList();
             }

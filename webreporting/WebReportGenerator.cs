@@ -1,11 +1,7 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using RazorLight;
 using SeleniumResults.Models;
-using SeleniumResults.Models.data;
-using SeleniumResults.Models.enums;
 using SeleniumResults.webreporting.ViewModels;
 
 namespace SeleniumResults.webreporting
