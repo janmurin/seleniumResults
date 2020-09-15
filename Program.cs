@@ -54,7 +54,8 @@ namespace SeleniumResults
 
             ProcessSeleniumData();
             ProcessSpecflowData();
-
+            
+            LogMessage($"elapsed seconds: {_entireStopwatch.Elapsed.Minutes}:{_entireStopwatch.Elapsed.Seconds}");
             //PrintLatestSeleniumReportIgnoreStats(seleniumFilesDir);
         }
 
@@ -182,13 +183,12 @@ namespace SeleniumResults
             WebReportGenerator.GenerateSeleniumTestListHtml(_collectorRepository.GetTestStatsList());
             LogMessage("generating selenium runs page");
             WebReportGenerator.GenerateSeleniumRunsHtml(_collectorRepository.GetLastTestRuns(TestRunType.Selenium2));
-            LogMessage($"elapsed seconds: {_entireStopwatch.Elapsed.Minutes}:{_entireStopwatch.Elapsed.Seconds}");
         }
 
         private static void LogMessage(string message)
         {
             Console.WriteLine($"{_stopwatch.Elapsed.Minutes}:{_stopwatch.Elapsed.Seconds} {message}");
-            _stopwatch.Reset();
+            _stopwatch.Restart();
         }
 
         private static void ProcessFile(string fileName, int index, string folder)
