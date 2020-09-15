@@ -3,6 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using SeleniumResults.Models;
 using SeleniumResults.Models.data;
 using SeleniumResults.Models.enums;
@@ -78,10 +79,10 @@ namespace SeleniumResults.Repository
                 }
             }
 
-            foreach (var sr in _singleTestStatsDict.Values)
+            Parallel.ForEach(_singleTestStatsDict.Values, sr =>
             {
                 sr.CalculateLastXBuildsStats(10);
-            }
+            });
         }
 
         public int Get11ThBuildNumber()
@@ -123,29 +124,15 @@ namespace SeleniumResults.Repository
         {
             using (var db = new CollectorContext())
             {
-                var testRunDaosDict = db.TestRuns
-                    .Where(t => t.TestRunType == type)
-                    .Where(t => t.LastRun > _threeMonthsAgo) // optimization
+                var testResultViewModels = from testResult in db.TestResults
+                    join testRun in db.TestRuns on testResult.TestRunId equals testRun.Id
+                    where testRun.TestRunType == type && testRun.LastRun > _threeMonthsAgo
+                    select new TestResultViewModel(new TestResult(testResult, testRun));
+                
+                return testResultViewModels
                     .ToList()
-                    .GroupBy(c => c.Id)
-                    .ToDictionary(k => k.Key, v =>
-                        v.Select(f => f)
-                            .Single());
-
-                var testResultDaos = db.TestResults
-                    .Where(t => t.TestRunType == type)
-                    .Where(t => t.StartTime > _threeMonthsAgo.Subtract(TimeSpan.FromDays(1))) // optimization
-                    .ToList();
-
-                var testResultViewModelsDict = testResultDaos
-                    .Where(x => testRunDaosDict.ContainsKey(x.TestRunId)) // optimization
-                    .GroupBy(resultDao => resultDao.TestRunId)
-                    .ToDictionary(k => k.Key, v =>
-                        v.Select(f => new TestResultViewModel(new TestResult(f, testRunDaosDict[f.TestRunId])))
-                            .ToList());
-
-                return testRunDaosDict
-                    .Select(s => new TestRunViewModel(testResultViewModelsDict[s.Key]))
+                    .GroupBy(t => t.TestResult.TestRunMetaData.Id)
+                    .Select(grp => new TestRunViewModel(grp.ToList()))
                     .ToList();
             }
         }

@@ -6,6 +6,7 @@ namespace SeleniumResults.Models.data
 {
     public class TestRunMetaData
     {
+        public int Id { get; }
         public int BuildNumber { get; }
         public int Duration { get; }
         public TestRunType TestRunType { get; }
@@ -25,6 +26,7 @@ namespace SeleniumResults.Models.data
 
         public TestRunMetaData(TestRunDao testRunDao)
         {
+            Id = testRunDao.Id;
             BuildNumber = testRunDao.BuildNumber;
             Duration = testRunDao.Duration;
             TestRunType = testRunDao.TestRunType;

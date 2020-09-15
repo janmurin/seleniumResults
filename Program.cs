@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
-using SeleniumResults.Models;
 using SeleniumResults.Models.data;
 using SeleniumResults.Models.enums;
 using SeleniumResults.Repository;
@@ -17,26 +18,41 @@ namespace SeleniumResults
         public static string DATA_FOLDER;
         public static string SPC_DATA_FOLDER;
         public static string FIXED_DATA_FOLDER;
+        public static string TEMPLATE_FOLDER;
+        public static string WEB_REPORT_FOLDER;
+        private static Stopwatch _stopwatch;
+        private static Stopwatch _entireStopwatch;
 
         static void Main(string[] args)
         {
-            IConfiguration Configuration = new ConfigurationBuilder()
+            var now = DateTime.Now;
+            _stopwatch = new Stopwatch();
+            _entireStopwatch = new Stopwatch();
+            _stopwatch.Start();
+            _entireStopwatch.Start();
+            Console.WriteLine($"\nCurrent time: {now.ToString(CultureInfo.InvariantCulture)}");
+
+            IConfiguration configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                 .AddEnvironmentVariables()
                 .AddCommandLine(args)
                 .Build();
 
-            var section = Configuration.GetSection("Collector");
+            var section = configuration.GetSection("Collector");
             DATA_FOLDER = section.GetValue<string>("dataFolder");
             SPC_DATA_FOLDER = section.GetValue<string>("spcDataFolder");
             FIXED_DATA_FOLDER = section.GetValue<string>("fixedDataFolder");
+            TEMPLATE_FOLDER = section.GetValue<string>("templateFolderPath");
+            WEB_REPORT_FOLDER = section.GetValue<string>("webreportFolderPath");
 
             Console.WriteLine($"loaded settings:");
             Console.WriteLine($"DATA_FOLDER={DATA_FOLDER}");
             Console.WriteLine($"SPC_DATA_FOLDER={SPC_DATA_FOLDER}");
             Console.WriteLine($"FIXED_DATA_FOLDER={FIXED_DATA_FOLDER}");
-            ProcessSeleniumData();
+            Console.WriteLine($"TEMPLATE_FOLDER={TEMPLATE_FOLDER}");
+            Console.WriteLine($"WEB_REPORT_FOLDER={WEB_REPORT_FOLDER}");
 
+            ProcessSeleniumData();
             ProcessSpecflowData();
 
             //PrintLatestSeleniumReportIgnoreStats(seleniumFilesDir);
@@ -108,11 +124,11 @@ namespace SeleniumResults
 
         private static void ProcessSpecflowData()
         {
-            Console.WriteLine($"loading api/specflow files from: {SPC_DATA_FOLDER}");
+            LogMessage($"loading api/specflow files from: {SPC_DATA_FOLDER}");
             string[] fileEntries = Directory.GetFiles(SPC_DATA_FOLDER);
             var unprocessedFilenames = _collectorRepository.GetUnprocessedFilenames(fileEntries);
 
-            Console.WriteLine($"unprocessed files count: {unprocessedFilenames.Count()}");
+            LogMessage($"unprocessed files count: {unprocessedFilenames.Count()}");
             Parallel.For(0, unprocessedFilenames.Length,
                 index =>
                 {
@@ -120,28 +136,33 @@ namespace SeleniumResults
                     ProcessFile(fileName, index, SPC_DATA_FOLDER);
                 });
 
+            if (unprocessedFilenames.Length == 0)
+            {
+                return;
+            }
+
             var testRuns = _collectorRepository.GetLastTestRuns(TestRunType.API)
                 .OrderByDescending(x => x.TestRunMetaData.LastRun)
                 .ToList();
-            Console.WriteLine($"api test runs count {testRuns.Count}");
+            LogMessage($"api test runs count {testRuns.Count}");
             WebReportGenerator.GenerateApiRunsHtml(testRuns);
 
             testRuns = _collectorRepository.GetLastTestRuns(TestRunType.Specflow)
                 .OrderByDescending(x => x.TestRunMetaData.LastRun)
                 .ToList();
-            Console.WriteLine($"specflow test runs count {testRuns.Count}");
+            LogMessage($"specflow test runs count {testRuns.Count}");
             WebReportGenerator.GenerateSpecflowRunsHtml(testRuns);
         }
 
         static void ProcessSeleniumData()
         {
-            Console.WriteLine($"loading selenium files from: {DATA_FOLDER}");
+            LogMessage($"loading selenium files from: {DATA_FOLDER}");
 
             string[] filePaths = Directory.GetFiles(DATA_FOLDER);
             //filePaths = filePaths.Take(100).ToArray();
             var unprocessedFilenames = _collectorRepository.GetUnprocessedFilenames(filePaths);
 
-            Console.WriteLine($"unprocessed files count: {unprocessedFilenames.Count()}");
+            LogMessage($"unprocessed files count: {unprocessedFilenames.Count()}");
             Parallel.For(0, unprocessedFilenames.Length,
                 index =>
                 {
@@ -149,13 +170,25 @@ namespace SeleniumResults
                     ProcessFile(fileName, index, DATA_FOLDER);
                 });
 
-            Console.WriteLine("processing data");
+            if (unprocessedFilenames.Length == 0)
+            {
+                return;
+            }
+
+            LogMessage($"processing data");
             _collectorRepository.ProcessData();
 
-            Console.WriteLine("generating selenium test pages");
+            LogMessage("generating selenium test pages");
             WebReportGenerator.GenerateSeleniumTestListHtml(_collectorRepository.GetTestStatsList());
-            Console.WriteLine("generating selenium runs page");
+            LogMessage("generating selenium runs page");
             WebReportGenerator.GenerateSeleniumRunsHtml(_collectorRepository.GetLastTestRuns(TestRunType.Selenium2));
+            LogMessage($"elapsed seconds: {_entireStopwatch.Elapsed.Minutes}:{_entireStopwatch.Elapsed.Seconds}");
+        }
+
+        private static void LogMessage(string message)
+        {
+            Console.WriteLine($"{_stopwatch.Elapsed.Minutes}:{_stopwatch.Elapsed.Seconds} {message}");
+            _stopwatch.Reset();
         }
 
         private static void ProcessFile(string fileName, int index, string folder)
@@ -166,15 +199,16 @@ namespace SeleniumResults
             }
             else
             {
+                var absolutePath = Path.Combine(folder, fileName);
                 try
                 {
-                    var absolutePath = Path.Combine(folder, fileName);
                     TestRun testRun = TestRunFileProcessor.ProcessFile(absolutePath, index);
                     _collectorRepository.AddTestRun(testRun);
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine($"test run was not added into DB. filename: {fileName}. EXCEPTION: {e.Message}");
+                    Console.WriteLine($"test run was not added into DB. filename: {fileName}. EXCEPTION: {e.Message}. Deleting {absolutePath}");
+                    File.Delete(absolutePath);
                 }
             }
         }
