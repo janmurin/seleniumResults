@@ -912,3 +912,4132 @@ WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
 0:36 api test runs count 420
 2:12 specflow test runs count 481
 0:2 elapsed seconds: 3:50
+
+Current time: 09/16/2020 06:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 6
+0:1 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:41 api test runs count 422
+2:13 specflow test runs count 481
+0:2 elapsed seconds: 3:58
+
+Current time: 09/16/2020 15:48:04
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 10
+0:1 processing data
+0:19 generating selenium test pages
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:41 api test runs count 422
+2:25 specflow test runs count 483
+0:2 elapsed seconds: 4:12
+
+Current time: 09/17/2020 06:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 25
+0:3 processing data
+0:18 generating selenium test pages
+0:25 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 12
+1:0 api test runs count 426
+2:42 specflow test runs count 491
+1:55 elapsed seconds: 6:43
+
+Current time: 09/17/2020 12:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 10
+0:1 processing data
+0:17 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:43 api test runs count 427
+1:57 specflow test runs count 492
+0:2 elapsed seconds: 3:44
+
+Current time: 09/17/2020 13:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:47 api test runs count 427
+2:3 specflow test runs count 494
+0:2 elapsed seconds: 3:53
+
+Current time: 09/17/2020 14:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:18 generating selenium test pages
+0:25 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:2
+
+Current time: 09/17/2020 15:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 4
+0:1 processing data
+0:18 generating selenium test pages
+0:26 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:43 api test runs count 427
+2:8 specflow test runs count 494
+0:2 elapsed seconds: 3:57
+
+Current time: 09/17/2020 16:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:17 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:41 api test runs count 427
+1:57 specflow test runs count 496
+1:42 elapsed seconds: 5:21
+
+Current time: 09/17/2020 17:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:50 api test runs count 428
+2:31 specflow test runs count 495
+0:2 elapsed seconds: 4:25
+
+Current time: 09/17/2020 18:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:17 generating selenium test pages
+0:23 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:53 api test runs count 428
+2:42 specflow test runs count 496
+0:2 elapsed seconds: 4:37
+
+Current time: 09/17/2020 19:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:40 api test runs count 428
+1:58 specflow test runs count 497
+0:2 elapsed seconds: 3:42
+
+Current time: 09/17/2020 20:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:36 api test runs count 429
+1:29 specflow test runs count 497
+0:2 elapsed seconds: 2:8
+
+Current time: 09/17/2020 21:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:18 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:43 api test runs count 429
+2:7 specflow test runs count 498
+0:2 elapsed seconds: 3:55
+
+Current time: 09/17/2020 22:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:43 api test runs count 430
+2:12 specflow test runs count 499
+0:3 elapsed seconds: 4:0
+
+Current time: 09/17/2020 23:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:36 api test runs count 430
+1:31 specflow test runs count 500
+1:24 elapsed seconds: 3:33
+
+Current time: 09/18/2020 00:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 4
+0:1 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:45 api test runs count 431
+2:19 specflow test runs count 500
+1:32 elapsed seconds: 5:39
+
+Current time: 09/18/2020 01:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 4
+0:1 processing data
+0:17 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:42 api test runs count 431
+1:57 specflow test runs count 501
+0:2 elapsed seconds: 3:43
+
+Current time: 09/18/2020 02:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:43 api test runs count 431
+1:26 specflow test runs count 502
+1:30 elapsed seconds: 3:40
+
+Current time: 09/18/2020 03:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:34 api test runs count 431
+1:31 specflow test runs count 503
+0:2 elapsed seconds: 2:9
+
+Current time: 09/18/2020 04:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:23 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:0
+
+Current time: 09/18/2020 05:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:18 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:1
+
+Current time: 09/18/2020 06:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:1 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:1
+
+Current time: 09/18/2020 07:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:17 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:59
+
+Current time: 09/18/2020 08:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:2
+
+Current time: 09/18/2020 09:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:19 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:3
+
+Current time: 09/18/2020 10:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:49 api test runs count 431
+2:37 specflow test runs count 505
+0:2 elapsed seconds: 4:31
+
+Current time: 09/18/2020 11:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 5
+0:1 processing data
+0:18 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:49 api test runs count 432
+2:45 specflow test runs count 505
+0:2 elapsed seconds: 4:40
+
+Current time: 09/18/2020 12:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:1 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:46 api test runs count 432
+2:41 specflow test runs count 506
+0:2 elapsed seconds: 4:32
+
+Current time: 09/18/2020 13:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 4
+0:1 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:57 api test runs count 432
+2:29 specflow test runs count 507
+0:2 elapsed seconds: 4:29
+
+Current time: 09/18/2020 14:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:25 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:51 api test runs count 433
+2:39 specflow test runs count 507
+0:2 elapsed seconds: 4:36
+
+Current time: 09/18/2020 15:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 4
+0:2 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:47 api test runs count 433
+3:14 specflow test runs count 509
+0:2 elapsed seconds: 5:6
+
+Current time: 09/18/2020 16:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/18/2020 17:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 4
+0:1 processing data
+0:18 generating selenium test pages
+0:25 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:49 api test runs count 434
+2:36 specflow test runs count 509
+0:43 elapsed seconds: 5:11
+
+Current time: 09/18/2020 18:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:39 api test runs count 434
+2:1 specflow test runs count 511
+1:37 elapsed seconds: 5:19
+
+Current time: 09/18/2020 19:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 4
+0:1 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:41 api test runs count 435
+2:34 specflow test runs count 511
+0:2 elapsed seconds: 4:19
+
+Current time: 09/18/2020 20:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:36 api test runs count 435
+1:51 specflow test runs count 513
+0:2 elapsed seconds: 2:30
+
+Current time: 09/18/2020 21:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/18/2020 22:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:18 generating selenium test pages
+0:26 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:51 api test runs count 436
+2:53 specflow test runs count 513
+1:49 elapsed seconds: 6:38
+
+Current time: 09/18/2020 23:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 4
+0:1 processing data
+0:18 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:45 api test runs count 436
+2:9 specflow test runs count 514
+1:38 elapsed seconds: 5:36
+
+Current time: 09/19/2020 00:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:36 api test runs count 437
+1:34 specflow test runs count 515
+0:2 elapsed seconds: 2:14
+
+Current time: 09/19/2020 01:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:1 processing data
+0:18 generating selenium test pages
+0:26 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:51 api test runs count 438
+2:54 specflow test runs count 516
+0:2 elapsed seconds: 4:50
+
+Current time: 09/19/2020 02:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:35 api test runs count 438
+1:29 specflow test runs count 517
+0:2 elapsed seconds: 2:7
+
+Current time: 09/19/2020 03:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 04:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 05:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 06:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 07:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 08:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 09:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 10:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 11:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 12:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 13:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 14:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 15:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 16:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 17:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 18:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 19:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 20:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:36 api test runs count 437
+2:12 specflow test runs count 517
+0:5 elapsed seconds: 2:54
+
+Current time: 09/19/2020 21:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:2
+
+Current time: 09/19/2020 22:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/19/2020 23:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:19 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:1
+
+Current time: 09/20/2020 00:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 01:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 02:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 03:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 04:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 05:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 06:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 07:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 08:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 09:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 10:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 11:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 12:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 13:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 14:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 15:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 16:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:19 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:2
+
+Current time: 09/20/2020 17:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:50 api test runs count 435
+2:35 specflow test runs count 517
+0:2 elapsed seconds: 4:29
+
+Current time: 09/20/2020 18:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:58 api test runs count 436
+2:42 specflow test runs count 517
+0:2 elapsed seconds: 4:46
+
+Current time: 09/20/2020 19:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 20:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/20/2020 21:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:55 api test runs count 436
+3:6 specflow test runs count 519
+1:56 elapsed seconds: 7:0
+
+Current time: 09/20/2020 22:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:0
+
+Current time: 09/20/2020 23:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:37 api test runs count 437
+1:30 specflow test runs count 519
+0:2 elapsed seconds: 2:11
+
+Current time: 09/21/2020 00:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:0
+
+Current time: 09/21/2020 01:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 4
+0:1 processing data
+0:18 generating selenium test pages
+0:23 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 3
+0:53 api test runs count 438
+2:29 specflow test runs count 521
+1:49 elapsed seconds: 6:12
+
+Current time: 09/21/2020 02:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/21/2020 03:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/21/2020 04:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/21/2020 05:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/21/2020 06:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/21/2020 07:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/21/2020 08:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/21/2020 09:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/21/2020 10:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/21/2020 11:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:54 api test runs count 438
+2:45 specflow test runs count 522
+1:55 elapsed seconds: 6:36
+
+Current time: 09/21/2020 12:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:23 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:53 api test runs count 438
+2:35 specflow test runs count 523
+0:2 elapsed seconds: 4:30
+
+Current time: 09/21/2020 13:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:54 api test runs count 439
+2:56 specflow test runs count 524
+1:56 elapsed seconds: 6:47
+
+Current time: 09/21/2020 14:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:53 api test runs count 439
+2:46 specflow test runs count 525
+0:1 elapsed seconds: 4:43
+
+Current time: 09/21/2020 15:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/21/2020 16:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:23 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:52 api test runs count 439
+2:54 specflow test runs count 526
+0:21 elapsed seconds: 5:7
+
+Current time: 09/21/2020 17:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:23 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:54 api test runs count 440
+2:51 specflow test runs count 527
+0:22 elapsed seconds: 5:7
+
+Current time: 09/21/2020 18:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:0
+
+Current time: 09/21/2020 19:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:55 api test runs count 440
+2:57 specflow test runs count 528
+0:2 elapsed seconds: 4:56
+
+Current time: 09/21/2020 20:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:17 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:48 api test runs count 441
+2:29 specflow test runs count 529
+0:2 elapsed seconds: 4:20
+
+Current time: 09/21/2020 21:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:1 processing data
+0:17 generating selenium test pages
+0:25 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:2
+
+Current time: 09/21/2020 22:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:54 api test runs count 441
+2:45 specflow test runs count 530
+0:1 elapsed seconds: 4:42
+
+Current time: 09/21/2020 23:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:38 api test runs count 442
+2:17 specflow test runs count 531
+0:2 elapsed seconds: 2:59
+
+Current time: 09/22/2020 00:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:3
+
+Current time: 09/22/2020 01:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/22/2020 02:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/22/2020 03:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/22/2020 04:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/22/2020 05:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/22/2020 06:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/22/2020 07:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/22/2020 08:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/22/2020 09:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/22/2020 10:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/22/2020 11:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:52 api test runs count 442
+2:43 specflow test runs count 533
+0:2 elapsed seconds: 4:39
+
+Current time: 09/22/2020 12:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:25 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:1
+
+Current time: 09/22/2020 13:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:19 generating selenium test pages
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:58 api test runs count 443
+3:10 specflow test runs count 533
+0:21 elapsed seconds: 5:31
+
+Current time: 09/22/2020 14:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:18 generating selenium test pages
+0:23 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:58 api test runs count 443
+3:18 specflow test runs count 535
+0:6 elapsed seconds: 5:24
+
+Current time: 09/22/2020 15:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:1 processing data
+0:19 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:54 api test runs count 444
+3:33 specflow test runs count 535
+0:2 elapsed seconds: 5:33
+
+Current time: 09/22/2020 16:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:0
+
+Current time: 09/22/2020 17:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:20 generating selenium test pages
+0:24 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:58 api test runs count 444
+2:41 specflow test runs count 536
+1:45 elapsed seconds: 6:32
+
+Current time: 09/22/2020 18:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:19 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:59 api test runs count 446
+3:13 specflow test runs count 536
+0:2 elapsed seconds: 5:19
+
+Current time: 09/22/2020 19:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:47 api test runs count 446
+2:43 specflow test runs count 538
+0:1 elapsed seconds: 4:33
+
+Current time: 09/22/2020 20:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:18 generating selenium test pages
+0:23 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:0
+
+Current time: 09/22/2020 21:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:52 api test runs count 447
+2:52 specflow test runs count 538
+0:2 elapsed seconds: 4:47
+
+Current time: 09/22/2020 22:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:18 generating selenium test pages
+0:25 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:0 api test runs count 447
+2:59 specflow test runs count 539
+0:1 elapsed seconds: 5:4
+
+Current time: 09/22/2020 23:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:42 api test runs count 448
+2:0 specflow test runs count 539
+0:2 elapsed seconds: 2:46
+
+Current time: 09/23/2020 00:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:1 processing data
+0:17 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:52 api test runs count 448
+3:0 specflow test runs count 540
+0:2 elapsed seconds: 4:56
+
+Current time: 09/23/2020 01:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 6
+0:1 processing data
+0:18 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 3
+0:58 api test runs count 451
+2:42 specflow test runs count 540
+0:2 elapsed seconds: 4:43
+
+Current time: 09/23/2020 02:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+0:25 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 3
+1:0 api test runs count 452
+3:15 specflow test runs count 542
+0:2 elapsed seconds: 5:19
+
+Current time: 09/23/2020 03:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:46 api test runs count 452
+2:8 specflow test runs count 543
+0:25 elapsed seconds: 3:21
+
+Current time: 09/23/2020 04:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/23/2020 05:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/23/2020 06:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/23/2020 07:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/23/2020 08:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:0 api test runs count 452
+3:10 specflow test runs count 544
+0:2 elapsed seconds: 5:17
+
+Current time: 09/23/2020 09:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/23/2020 10:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:42 api test runs count 453
+1:58 specflow test runs count 544
+0:37 elapsed seconds: 3:19
+
+Current time: 09/23/2020 11:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:46 api test runs count 453
+2:19 specflow test runs count 544
+0:2 elapsed seconds: 3:8
+
+Current time: 09/23/2020 12:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:2
+
+Current time: 09/23/2020 13:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:1 api test runs count 453
+3:16 specflow test runs count 545
+0:2 elapsed seconds: 5:23
+
+Current time: 09/23/2020 14:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:48 api test runs count 455
+2:19 specflow test runs count 545
+0:2 elapsed seconds: 3:11
+
+Current time: 09/23/2020 15:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:59 api test runs count 455
+2:59 specflow test runs count 547
+0:2 elapsed seconds: 5:4
+
+Current time: 09/23/2020 16:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/23/2020 17:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+0:25 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 3
+1:5 api test runs count 458
+3:18 specflow test runs count 547
+1:55 elapsed seconds: 7:25
+
+Current time: 09/23/2020 18:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:17 generating selenium test pages
+0:23 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:57 api test runs count 458
+3:7 specflow test runs count 549
+0:2 elapsed seconds: 5:7
+
+Current time: 09/23/2020 19:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:17 generating selenium test pages
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:8 api test runs count 459
+3:28 specflow test runs count 549
+0:3 elapsed seconds: 5:40
+
+Current time: 09/23/2020 20:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/23/2020 21:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:19 api test runs count 459
+3:26 specflow test runs count 551
+2:3 elapsed seconds: 7:51
+
+Current time: 09/23/2020 22:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:17 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:23 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:4 api test runs count 460
+4:15 specflow test runs count 551
+0:2 elapsed seconds: 6:21
+
+Current time: 09/23/2020 23:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:17 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:21 api test runs count 460
+3:28 specflow test runs count 553
+0:2 elapsed seconds: 5:52
+
+Current time: 09/24/2020 00:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 4
+0:1 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:23 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:59
+
+Current time: 09/24/2020 01:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 6
+0:1 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 3
+1:21 api test runs count 462
+3:51 specflow test runs count 554
+0:32 elapsed seconds: 6:46
+
+Current time: 09/24/2020 02:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 6
+0:1 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:17 api test runs count 463
+3:51 specflow test runs count 555
+0:6 elapsed seconds: 6:15
+
+Current time: 09/24/2020 03:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/24/2020 04:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/24/2020 05:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:2
+
+Current time: 09/24/2020 06:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/24/2020 07:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:5
+
+Current time: 09/24/2020 08:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/24/2020 09:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/24/2020 10:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/24/2020 11:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:27 api test runs count 463
+3:54 specflow test runs count 557
+0:2 elapsed seconds: 6:28
+
+Current time: 09/24/2020 12:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:22 api test runs count 464
+3:35 specflow test runs count 557
+0:2 elapsed seconds: 6:3
+
+Current time: 09/24/2020 13:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:5 api test runs count 464
+3:37 specflow test runs count 558
+0:3 elapsed seconds: 5:50
+
+Current time: 09/24/2020 14:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/24/2020 15:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:21 api test runs count 465
+3:55 specflow test runs count 558
+0:4 elapsed seconds: 6:26
+
+Current time: 09/24/2020 16:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:7 api test runs count 466
+3:15 specflow test runs count 559
+2:10 elapsed seconds: 7:39
+
+Current time: 09/24/2020 17:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:4
+
+Current time: 09/24/2020 18:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:16 api test runs count 467
+4:1 specflow test runs count 559
+0:3 elapsed seconds: 6:26
+
+Current time: 09/24/2020 19:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:23 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:15 api test runs count 467
+3:36 specflow test runs count 560
+0:4 elapsed seconds: 5:56
+
+Current time: 09/24/2020 20:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:17 api test runs count 468
+3:16 specflow test runs count 560
+0:4 elapsed seconds: 5:39
+
+Current time: 09/24/2020 21:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:23 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:15 api test runs count 469
+3:58 specflow test runs count 561
+0:15 elapsed seconds: 6:30
+
+Current time: 09/24/2020 22:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:13 api test runs count 469
+4:38 specflow test runs count 562
+0:7 elapsed seconds: 7:3
+
+Current time: 09/24/2020 23:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:26 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:20 api test runs count 470
+3:54 specflow test runs count 562
+0:4 elapsed seconds: 6:21
+
+Current time: 09/25/2020 00:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:18 api test runs count 469
+4:1 specflow test runs count 563
+0:13 elapsed seconds: 6:32
+
+Current time: 09/25/2020 01:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+0:58 api test runs count 471
+3:1 specflow test runs count 563
+1:49 elapsed seconds: 5:49
+
+Current time: 09/25/2020 02:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:55 api test runs count 471
+2:46 specflow test runs count 564
+0:45 elapsed seconds: 4:27
+
+Current time: 09/25/2020 03:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/25/2020 04:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:23 api test runs count 471
+4:21 specflow test runs count 565
+3:51 elapsed seconds: 10:39
+
+Current time: 09/25/2020 05:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:0
+
+Current time: 09/25/2020 06:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/25/2020 07:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:38 api test runs count 472
+5:3 specflow test runs count 565
+0:10 elapsed seconds: 7:58
+
+Current time: 09/25/2020 08:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:1 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 3
+1:30 api test runs count 473
+4:24 specflow test runs count 567
+0:11 elapsed seconds: 7:12
+
+Current time: 09/25/2020 09:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:0 api test runs count 474
+2:51 specflow test runs count 567
+2:5 elapsed seconds: 5:57
+
+Current time: 09/25/2020 10:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:3
+
+Current time: 09/25/2020 11:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:46 api test runs count 474
+4:44 specflow test runs count 569
+
+Current time: 09/25/2020 12:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:59 api test runs count 475
+2:46 specflow test runs count 569
+2:7 elapsed seconds: 5:54
+
+Current time: 09/25/2020 13:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:26 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:27 api test runs count 475
+4:28 specflow test runs count 571
+0:13 elapsed seconds: 7:16
+
+Current time: 09/25/2020 14:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:1 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:26 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:4
+
+Current time: 09/25/2020 15:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:28 api test runs count 476
+4:19 specflow test runs count 572
+0:10 elapsed seconds: 7:2
+
+Current time: 09/25/2020 16:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:21 api test runs count 476
+4:22 specflow test runs count 573
+0:46 elapsed seconds: 7:34
+
+Current time: 09/25/2020 17:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:1 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:4
+
+Current time: 09/25/2020 18:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:1 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:26 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:36 api test runs count 477
+3:58 specflow test runs count 574
+3:33 elapsed seconds: 10:14
+
+Current time: 09/25/2020 19:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+0:56 api test runs count 477
+3:33 specflow test runs count 575
+3:51 elapsed seconds: 8:21
+
+Current time: 09/25/2020 20:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:1 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:43 api test runs count 478
+
+Current time: 09/25/2020 21:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:1 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:30 api test runs count 478
+
+Current time: 09/25/2020 22:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:25 api test runs count 478
+4:43 specflow test runs count 577
+
+Current time: 09/25/2020 23:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:39 api test runs count 479
+5:50 specflow test runs count 577
+
+Current time: 09/26/2020 00:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:25 api test runs count 479
+
+Current time: 09/26/2020 01:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 5
+0:1 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+2:3 api test runs count 481
+
+Current time: 09/26/2020 02:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 3
+1:58 api test runs count 482
+
+Current time: 09/26/2020 03:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:7 api test runs count 482
+4:10 specflow test runs count 582
+0:3 elapsed seconds: 5:21
+
+Current time: 09/26/2020 04:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/26/2020 05:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:1 processing data
+0:21 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+2:7 api test runs count 482
+
+Current time: 09/26/2020 06:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/26/2020 07:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:24 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:26 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:12
+
+Current time: 09/26/2020 08:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:23 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:10
+
+Current time: 09/26/2020 09:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:4
+
+Current time: 09/26/2020 10:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:3
+
+Current time: 09/26/2020 11:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:7
+
+Current time: 09/26/2020 12:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:5
+
+Current time: 09/26/2020 13:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:4
+
+Current time: 09/26/2020 14:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:6
+
+Current time: 09/26/2020 15:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:21 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:6
+
+Current time: 09/26/2020 16:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:21 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:26 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:6
+
+Current time: 09/26/2020 17:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/26/2020 18:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:5
+
+Current time: 09/26/2020 19:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/26/2020 20:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/26/2020 21:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:3
+
+Current time: 09/26/2020 22:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/26/2020 23:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/27/2020 00:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/27/2020 01:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:19 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:3
+
+Current time: 09/27/2020 02:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/27/2020 03:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/27/2020 04:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/27/2020 05:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/27/2020 06:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:6
+
+Current time: 09/27/2020 07:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/27/2020 08:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/27/2020 09:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:5
+
+Current time: 09/27/2020 10:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/27/2020 11:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/27/2020 12:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/27/2020 13:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:6
+
+Current time: 09/27/2020 14:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/27/2020 15:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:0 api test runs count 482
+3:15 specflow test runs count 585
+2:50 elapsed seconds: 7:6
+
+Current time: 09/27/2020 16:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+2:9 api test runs count 483
+
+Current time: 09/27/2020 17:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:21 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:5
+
+Current time: 09/27/2020 18:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/27/2020 19:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:1
+
+Current time: 09/27/2020 20:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:22 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:25 generating selenium runs page
+0:21 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:11
+
+Current time: 09/27/2020 21:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 5
+0:1 processing data
+0:21 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:7
+
+Current time: 09/27/2020 22:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 8
+0:1 processing data
+0:18 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:1
+
+Current time: 09/27/2020 23:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/28/2020 00:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/28/2020 01:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/28/2020 02:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/28/2020 03:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 5
+0:1 processing data
+0:22 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:21 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:10
+
+Current time: 09/28/2020 04:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+WARNING: test-[PersonModalSmokeTest] does not exist.
+0:24 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:6
+
+Current time: 09/28/2020 05:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/28/2020 06:05:02
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/28/2020 07:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/28/2020 08:05:01
+loaded settings:
+DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+SPC_DATA_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+FIXED_DATA_FOLDER=/home/jancim/scraper.sk/processor/fixed
+TEMPLATE_FOLDER=/home/jancim/scraper.sk/processor/webreporting/templates
+WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0

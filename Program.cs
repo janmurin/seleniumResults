@@ -45,12 +45,12 @@ namespace SeleniumResults
             TEMPLATE_FOLDER = section.GetValue<string>("templateFolderPath");
             WEB_REPORT_FOLDER = section.GetValue<string>("webreportFolderPath");
 
-            Console.WriteLine($"loaded settings:");
-            Console.WriteLine($"DATA_FOLDER={DATA_FOLDER}");
-            Console.WriteLine($"SPC_DATA_FOLDER={SPC_DATA_FOLDER}");
-            Console.WriteLine($"FIXED_DATA_FOLDER={FIXED_DATA_FOLDER}");
-            Console.WriteLine($"TEMPLATE_FOLDER={TEMPLATE_FOLDER}");
-            Console.WriteLine($"WEB_REPORT_FOLDER={WEB_REPORT_FOLDER}");
+            // Console.WriteLine($"loaded settings:");
+            // Console.WriteLine($"DATA_FOLDER={DATA_FOLDER}");
+            // Console.WriteLine($"SPC_DATA_FOLDER={SPC_DATA_FOLDER}");
+            // Console.WriteLine($"FIXED_DATA_FOLDER={FIXED_DATA_FOLDER}");
+            // Console.WriteLine($"TEMPLATE_FOLDER={TEMPLATE_FOLDER}");
+            // Console.WriteLine($"WEB_REPORT_FOLDER={WEB_REPORT_FOLDER}");
 
             ProcessSeleniumData();
             ProcessSpecflowData();
