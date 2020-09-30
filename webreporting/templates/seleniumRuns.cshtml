@@ -70,7 +70,7 @@
                         <span style="color:red;">@sr.FailedCount</span>
                         <span>/@sr.TotalCount</span>
                     }
-                    @if (sr.FailedCount < 5)
+                    @if (sr.FailedCount < 8)
                     {
                         foreach (var testResult in sr.Results.Where(x => x.IsFailed).OrderBy(x => x.TestResult.Name).ToList())
                         {

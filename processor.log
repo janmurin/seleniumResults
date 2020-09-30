@@ -5041,3 +5041,452 @@ WEB_REPORT_FOLDER=/home/jancim/scraper.sk/PUBLIC/wwwroot/static
 0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
 0:0 unprocessed files count: 0
 0:0 elapsed seconds: 0:0
+
+Current time: 09/28/2020 09:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/28/2020 10:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 5
+0:1 processing data
+0:20 generating selenium test pages
+0:25 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:7
+
+Current time: 09/28/2020 11:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:21 generating selenium test pages
+0:24 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+2:8 api test runs count 483
+
+Current time: 09/28/2020 12:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+0:25 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+2:3 api test runs count 484
+
+Current time: 09/28/2020 13:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:20 generating selenium test pages
+0:26 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:6
+
+Current time: 09/28/2020 14:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:20 generating selenium test pages
+0:25 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+2:14 api test runs count 484
+
+Current time: 09/28/2020 15:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:20 generating selenium test pages
+0:26 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:58 api test runs count 484
+
+Current time: 09/28/2020 16:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:21 generating selenium test pages
+0:27 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:58 api test runs count 484
+
+Current time: 09/28/2020 17:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:21 generating selenium test pages
+0:26 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:8
+
+Current time: 09/28/2020 18:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:20 generating selenium test pages
+0:25 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+2:22 api test runs count 485
+
+Current time: 09/28/2020 19:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+2:10 api test runs count 485
+
+Current time: 09/28/2020 20:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:20 generating selenium test pages
+0:25 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+2:8 api test runs count 486
+
+Current time: 09/28/2020 21:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:16 api test runs count 485
+5:7 specflow test runs count 593
+0:2 elapsed seconds: 6:27
+
+Current time: 09/28/2020 22:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:20 generating selenium test pages
+0:28 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+2:0 api test runs count 486
+
+Current time: 09/28/2020 23:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+0:24 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:58 api test runs count 487
+
+Current time: 09/29/2020 00:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/29/2020 01:05:02
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:20 generating selenium test pages
+0:25 generating selenium runs page
+0:16 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 3
+1:38 api test runs count 488
+
+Current time: 09/29/2020 02:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/29/2020 03:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:38 api test runs count 488
+5:29 specflow test runs count 596
+0:6 elapsed seconds: 7:14
+
+Current time: 09/29/2020 04:05:02
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:23 generating selenium test pages
+0:26 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:10
+
+Current time: 09/29/2020 05:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:22 generating selenium test pages
+0:24 generating selenium runs page
+0:21 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:10
+
+Current time: 09/29/2020 06:05:02
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:20 generating selenium test pages
+0:26 generating selenium runs page
+0:21 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:9
+
+Current time: 09/29/2020 07:05:02
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:23 generating selenium test pages
+0:26 generating selenium runs page
+0:22 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:13
+
+Current time: 09/29/2020 08:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/29/2020 09:05:02
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:19 generating selenium test pages
+0:25 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:5
+
+Current time: 09/29/2020 10:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/29/2020 11:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:22 generating selenium test pages
+0:26 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:10
+
+Current time: 09/29/2020 12:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/29/2020 13:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:21 generating selenium test pages
+0:24 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:57 api test runs count 487
+
+Current time: 09/29/2020 14:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+0:25 generating selenium runs page
+0:17 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 3
+1:49 api test runs count 489
+
+Current time: 09/29/2020 15:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:21 generating selenium test pages
+0:26 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+2:0 api test runs count 489
+
+Current time: 09/29/2020 16:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:22 generating selenium test pages
+0:26 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+2:12 api test runs count 489
+
+Current time: 09/29/2020 17:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:23 generating selenium test pages
+0:25 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:53 api test runs count 490
+
+Current time: 09/29/2020 18:05:02
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:17 api test runs count 490
+4:57 specflow test runs count 603
+0:4 elapsed seconds: 6:19
+
+Current time: 09/29/2020 19:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 5
+0:1 processing data
+0:19 generating selenium test pages
+0:25 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:6
+
+Current time: 09/29/2020 20:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 2
+1:16 api test runs count 491
+4:37 specflow test runs count 604
+0:56 elapsed seconds: 6:51
+
+Current time: 09/29/2020 21:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:19 generating selenium test pages
+0:24 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:36 api test runs count 491
+
+Current time: 09/29/2020 22:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:20 generating selenium test pages
+0:25 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:59 api test runs count 492
+
+Current time: 09/29/2020 23:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:15 api test runs count 492
+5:18 specflow test runs count 606
+0:13 elapsed seconds: 6:47
+
+Current time: 09/30/2020 00:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:20 generating selenium test pages
+0:26 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:45 api test runs count 492
+
+Current time: 09/30/2020 01:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:20 generating selenium test pages
+0:25 generating selenium runs page
+0:18 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:46 api test runs count 493
+
+Current time: 09/30/2020 02:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:22 api test runs count 493
+4:47 specflow test runs count 608
+0:7 elapsed seconds: 6:16
+
+Current time: 09/30/2020 03:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 1
+1:19 api test runs count 493
+5:1 specflow test runs count 609
+0:5 elapsed seconds: 6:27
+
+Current time: 09/30/2020 04:05:02
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/30/2020 05:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 3
+0:1 processing data
+0:20 generating selenium test pages
+0:26 generating selenium runs page
+0:20 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:8
+
+Current time: 09/30/2020 06:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 0
+0:0 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 0:0
+
+Current time: 09/30/2020 07:05:01
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 2
+0:0 processing data
+0:23 generating selenium test pages
+0:26 generating selenium runs page
+0:19 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:10
+
+Current time: 09/30/2020 08:05:02
+0:0 loading selenium files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/data
+0:0 unprocessed files count: 1
+0:0 processing data
+0:23 generating selenium test pages
+0:27 generating selenium runs page
+0:23 loading api/specflow files from: /home/jancim/scraper.sk/PUBLIC/wwwroot/static/spcdata
+0:0 unprocessed files count: 0
+0:0 elapsed seconds: 1:16
