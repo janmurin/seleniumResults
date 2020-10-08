@@ -15,13 +15,13 @@ namespace SeleniumResults.Repository
     {
         private readonly ConcurrentDictionary<string, TestRunDao> _testRunIds;
         private ConcurrentDictionary<string, SingleTestStats> _singleTestStatsDict;
-        private readonly DateTime _threeMonthsAgo;
+        private readonly DateTime _twoMonthsAgo;
         private const int VERSION = 1;
 
         public CollectorRepository()
         {
             _testRunIds = GetTestRunIds();
-            _threeMonthsAgo = DateTime.Now - TimeSpan.FromDays(90);
+            _twoMonthsAgo = DateTime.Now - TimeSpan.FromDays(30);
         }
 
         public void AddTestRun(TestRun testRun)
@@ -126,7 +126,7 @@ namespace SeleniumResults.Repository
             {
                 var testResultViewModels = from testResult in db.TestResults
                     join testRun in db.TestRuns on testResult.TestRunId equals testRun.Id
-                    where testRun.TestRunType == type && testRun.LastRun > _threeMonthsAgo
+                    where testRun.TestRunType == type && testRun.LastRun > _twoMonthsAgo
                     select new TestResultViewModel(new TestResult(testResult, testRun));
                 
                 return testResultViewModels
