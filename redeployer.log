@@ -13406,3 +13406,2201 @@ REDEPLOYMENT app-BVV       version-1.0.11035 status-Executing: NOT REDEPLOYING
 REDEPLOYMENT app-ChildCare version-1.0.11035 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
 REDEPLOYMENT app-PPT       version-1.0.11035 status-Executing: NOT REDEPLOYING
 REDEPLOYMENT app-SCC       version-1.0.11035 status-Executing: NOT REDEPLOYING
+
+Current time: 09/30/2020 09:00:01
+REDEPLOYMENT app-BVV       version-1.0.11035 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11035 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11035 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11035 status-Executing: NOT REDEPLOYING
+
+Current time: 09/30/2020 09:30:01
+REDEPLOYMENT app-BVV       version-1.0.11035 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#5) taskId-ServerTasks-299257 id-Deployments-180260
+REDEPLOYMENT app-ChildCare version-1.0.11035 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11035 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11035 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#5) taskId-ServerTasks-299258 id-Deployments-180261
+
+Current time: 09/30/2020 10:00:01
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Queued: NOT REDEPLOYING
+
+Current time: 09/30/2020 10:30:01
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Queued: NOT REDEPLOYING
+
+Current time: 09/30/2020 11:00:02
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Queued: NOT REDEPLOYING
+
+Current time: 09/30/2020 11:30:01
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Queued: NOT REDEPLOYING
+
+Current time: 09/30/2020 12:00:01
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Executing: NOT REDEPLOYING
+
+Current time: 09/30/2020 12:30:02
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Executing: NOT REDEPLOYING
+
+Current time: 09/30/2020 13:00:02
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Executing: NOT REDEPLOYING
+
+Current time: 09/30/2020 13:30:02
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Executing: NOT REDEPLOYING
+
+Current time: 09/30/2020 14:00:01
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Failed: skipping Integration,Specflow
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#2) taskId-ServerTasks-299427 id-Deployments-180420
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Executing: NOT REDEPLOYING
+
+Current time: 09/30/2020 14:30:01
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#2) taskId-ServerTasks-299433 id-Deployments-180424
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#2) taskId-ServerTasks-299434 id-Deployments-180425
+
+Current time: 09/30/2020 15:00:01
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Executing: NOT REDEPLOYING
+
+Current time: 09/30/2020 15:30:01
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Executing: NOT REDEPLOYING
+
+Current time: 09/30/2020 16:00:02
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Executing: NOT REDEPLOYING
+
+Current time: 09/30/2020 16:30:02
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Failed: skipping Integration,Specflow
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#3) taskId-ServerTasks-299457 id-Deployments-180445
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Executing: NOT REDEPLOYING
+
+Current time: 09/30/2020 17:00:02
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#3) taskId-ServerTasks-299462 id-Deployments-180447
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#3) taskId-ServerTasks-299463 id-Deployments-180448
+
+Current time: 09/30/2020 17:30:01
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Executing: NOT REDEPLOYING
+
+Current time: 09/30/2020 18:00:01
+REDEPLOYMENT app-BVV       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11038 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11038 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11038 status-Executing: NOT REDEPLOYING
+
+Current time: 09/30/2020 18:30:01
+REDEPLOYMENT app-BVV       version-1.0.11051 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11051 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11051 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11051 status-Queued: NOT REDEPLOYING
+
+Current time: 09/30/2020 19:00:01
+REDEPLOYMENT app-BVV       version-1.0.11051 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11051 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11051 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11051 status-Queued: NOT REDEPLOYING
+
+Current time: 09/30/2020 19:30:01
+REDEPLOYMENT app-BVV       version-1.0.11051 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11051 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11051 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11051 status-Queued: NOT REDEPLOYING
+
+Current time: 09/30/2020 20:00:01
+REDEPLOYMENT app-BVV       version-1.0.11051 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11051 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11051 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#2) taskId-ServerTasks-299499 id-Deployments-180478
+REDEPLOYMENT app-SCC       version-1.0.11051 status-Executing: NOT REDEPLOYING
+
+Current time: 09/30/2020 20:30:01
+REDEPLOYMENT app-BVV       version-1.0.11053 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11053 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11053 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11053 status-Queued: NOT REDEPLOYING
+
+Current time: 09/30/2020 21:00:01
+REDEPLOYMENT app-BVV       version-1.0.11053 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11053 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11053 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11053 status-Queued: NOT REDEPLOYING
+
+Current time: 09/30/2020 21:30:01
+REDEPLOYMENT app-BVV       version-1.0.11053 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11053 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11053 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11053 status-Queued: NOT REDEPLOYING
+
+Current time: 09/30/2020 22:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 09/30/2020 22:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 09/30/2020 23:00:02
+no redeployments during midnight (22:00-01:59)
+
+Current time: 09/30/2020 23:30:02
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/01/2020 00:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/01/2020 00:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/01/2020 01:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/01/2020 01:30:02
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/01/2020 02:00:01
+REDEPLOYMENT app-BVV       version-1.0.11053 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#2) taskId-ServerTasks-299527 id-Deployments-180489
+REDEPLOYMENT app-ChildCare version-1.0.11053 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to FlytChildCare-Acceptance (#2) taskId-ServerTasks-299531 id-Deployments-180493
+REDEPLOYMENT app-PPT       version-1.0.11053 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#2) taskId-ServerTasks-299532 id-Deployments-180494
+REDEPLOYMENT app-SCC       version-1.0.11053 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#2) taskId-ServerTasks-299533 id-Deployments-180495
+
+Current time: 10/01/2020 02:30:01
+REDEPLOYMENT app-BVV       version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11053 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 03:00:01
+REDEPLOYMENT app-BVV       version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11053 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 03:30:01
+REDEPLOYMENT app-BVV       version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11053 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 04:00:01
+REDEPLOYMENT app-BVV       version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11053 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 04:30:01
+REDEPLOYMENT app-BVV       version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11053 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 05:00:01
+REDEPLOYMENT app-BVV       version-1.0.11053 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#3) taskId-ServerTasks-299541 id-Deployments-180496
+REDEPLOYMENT app-ChildCare version-1.0.11053 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to FlytChildCare-Acceptance (#3) taskId-ServerTasks-299542 id-Deployments-180497
+REDEPLOYMENT app-PPT       version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11053 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#3) taskId-ServerTasks-299543 id-Deployments-180498
+
+Current time: 10/01/2020 05:30:02
+REDEPLOYMENT app-BVV       version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11053 status-Failed: skipping Integration,Specflow
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#3) taskId-ServerTasks-299546 id-Deployments-180499
+REDEPLOYMENT app-SCC       version-1.0.11053 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 06:00:01
+REDEPLOYMENT app-BVV       version-1.0.11053 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#4) taskId-ServerTasks-299547 id-Deployments-180500
+REDEPLOYMENT app-ChildCare version-1.0.11053 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to FlytChildCare-Acceptance (#4) taskId-ServerTasks-299548 id-Deployments-180501
+REDEPLOYMENT app-PPT       version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11053 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#4) taskId-ServerTasks-299549 id-Deployments-180502
+
+Current time: 10/01/2020 06:30:02
+REDEPLOYMENT app-BVV       version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11053 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11053 status-Failed: skipping Integration,Specflow
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#4) taskId-ServerTasks-299552 id-Deployments-180503
+REDEPLOYMENT app-SCC       version-1.0.11053 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 07:00:02
+REDEPLOYMENT app-BVV       version-1.0.11054 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11054 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11054 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11054 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 07:30:02
+REDEPLOYMENT app-BVV       version-1.0.11054 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11054 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11054 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11054 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 08:00:01
+REDEPLOYMENT app-BVV       version-1.0.11054 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11054 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11054 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11054 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 08:30:01
+REDEPLOYMENT app-BVV       version-1.0.11054 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11054 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11054 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11054 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 09:00:02
+REDEPLOYMENT app-BVV       version-1.0.11057 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11057 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11057 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11057 status-Queued: NOT REDEPLOYING
+
+Current time: 10/01/2020 09:30:01
+REDEPLOYMENT app-BVV       version-1.0.11057 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11057 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11057 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11057 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 10:00:02
+REDEPLOYMENT app-BVV       version-1.0.11057 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11057 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11057 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11057 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 10:30:01
+REDEPLOYMENT app-BVV       version-1.0.11057 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11057 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11057 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11057 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 11:00:02
+REDEPLOYMENT app-BVV       version-1.0.11058 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-ChildCare version-1.0.11058 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11058 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-SCC       version-1.0.11058 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/01/2020 11:30:01
+REDEPLOYMENT app-BVV       version-1.0.11058 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11058 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11058 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11058 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 12:00:01
+REDEPLOYMENT app-BVV       version-1.0.11058 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11058 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11058 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11058 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 12:30:01
+REDEPLOYMENT app-BVV       version-1.0.11058 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11058 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11058 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11058 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 13:00:02
+REDEPLOYMENT app-BVV       version-1.0.11060 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-ChildCare version-1.0.11060 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11060 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-SCC       version-1.0.11060 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/01/2020 13:30:01
+REDEPLOYMENT app-BVV       version-1.0.11060 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11060 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11060 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11060 status-Queued: NOT REDEPLOYING
+
+Current time: 10/01/2020 14:00:01
+REDEPLOYMENT app-BVV       version-1.0.11060 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11060 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11060 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11060 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 14:30:01
+REDEPLOYMENT app-BVV       version-1.0.11060 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11060 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11060 status-Canceled: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11060 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 15:00:02
+REDEPLOYMENT app-BVV       version-1.0.11062 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11062 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11062 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11062 status-Queued: NOT REDEPLOYING
+
+Current time: 10/01/2020 15:30:02
+REDEPLOYMENT app-BVV       version-1.0.11062 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11062 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11062 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11062 status-Queued: NOT REDEPLOYING
+
+Current time: 10/01/2020 16:00:01
+REDEPLOYMENT app-BVV       version-1.0.11062 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11062 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11062 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11062 status-Queued: NOT REDEPLOYING
+
+Current time: 10/01/2020 16:30:02
+REDEPLOYMENT app-BVV       version-1.0.11062 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11062 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11062 status-Canceled: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11062 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 17:00:01
+REDEPLOYMENT app-BVV       version-1.0.11062 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11062 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11062 status-Canceled: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11062 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 17:30:01
+REDEPLOYMENT app-BVV       version-1.0.11063 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11063 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11063 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11063 status-Queued: NOT REDEPLOYING
+
+Current time: 10/01/2020 18:00:01
+REDEPLOYMENT app-BVV       version-1.0.11063 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11063 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11063 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11063 status-Queued: NOT REDEPLOYING
+
+Current time: 10/01/2020 18:30:01
+REDEPLOYMENT app-BVV       version-1.0.11063 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11063 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11063 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11063 status-Queued: NOT REDEPLOYING
+
+Current time: 10/01/2020 19:00:01
+REDEPLOYMENT app-BVV       version-1.0.11063 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11063 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11063 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11063 status-Executing: NOT REDEPLOYING
+
+Current time: 10/01/2020 19:30:02
+REDEPLOYMENT app-BVV       version-1.0.11064 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11064 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11064 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11064 status-Queued: NOT REDEPLOYING
+
+Current time: 10/01/2020 20:00:01
+REDEPLOYMENT app-BVV       version-1.0.11064 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11064 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11064 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11064 status-Queued: NOT REDEPLOYING
+
+Current time: 10/01/2020 20:30:01
+REDEPLOYMENT app-BVV       version-1.0.11064 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11064 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11064 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11064 status-Queued: NOT REDEPLOYING
+
+Current time: 10/01/2020 21:00:01
+REDEPLOYMENT app-BVV       version-1.0.11066 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11066 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11066 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11066 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/01/2020 21:30:01
+REDEPLOYMENT app-BVV       version-1.0.11066 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11066 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11066 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11066 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/01/2020 22:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/01/2020 22:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/01/2020 23:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/01/2020 23:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/02/2020 00:00:02
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/02/2020 00:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/02/2020 01:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/02/2020 01:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/02/2020 02:00:01
+REDEPLOYMENT app-BVV       version-1.0.11066 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#2) taskId-ServerTasks-299995 id-Deployments-180899
+REDEPLOYMENT app-ChildCare version-1.0.11066 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11066 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11066 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#2) taskId-ServerTasks-299996 id-Deployments-180900
+
+Current time: 10/02/2020 02:30:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 03:00:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 03:30:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 04:00:02
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Failed: skipping Integration,Specflow
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#2) taskId-ServerTasks-300014 id-Deployments-180913
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 04:30:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 05:00:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 05:30:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 06:00:02
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 06:30:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 07:00:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#2) taskId-ServerTasks-300028 id-Deployments-180920
+REDEPLOYMENT app-ChildCare version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 07:30:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#2) taskId-ServerTasks-300030 id-Deployments-180921
+
+Current time: 10/02/2020 08:00:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 08:30:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 09:00:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#3) taskId-ServerTasks-300050 id-Deployments-180938
+
+Current time: 10/02/2020 09:30:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#3) taskId-ServerTasks-300055 id-Deployments-180940
+REDEPLOYMENT app-ChildCare version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 10:00:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 10:30:01
+REDEPLOYMENT app-BVV       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11067 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11067 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11067 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 11:00:01
+REDEPLOYMENT app-BVV       version-1.0.11068 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-ChildCare version-1.0.11068 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11068 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-SCC       version-1.0.11068 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/02/2020 11:30:01
+REDEPLOYMENT app-BVV       version-1.0.11068 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11068 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11068 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11068 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 12:00:01
+REDEPLOYMENT app-BVV       version-1.0.11068 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11068 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11068 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11068 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 12:30:01
+REDEPLOYMENT app-BVV       version-1.0.11068 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11068 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11068 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11068 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 13:00:01
+REDEPLOYMENT app-BVV       version-1.0.11070 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11070 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11070 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11070 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 13:30:02
+REDEPLOYMENT app-BVV       version-1.0.11070 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11070 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11070 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11070 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 14:00:02
+REDEPLOYMENT app-BVV       version-1.0.11070 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11070 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11070 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11070 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 14:30:01
+REDEPLOYMENT app-BVV       version-1.0.11070 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11070 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11070 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11070 status-Executing: NOT REDEPLOYING
+
+Current time: 10/02/2020 15:00:01
+REDEPLOYMENT app-BVV       version-1.0.11070 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11070 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11070 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11070 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#2) taskId-ServerTasks-300144 id-Deployments-181007
+
+Current time: 10/02/2020 15:30:01
+REDEPLOYMENT app-BVV       version-1.0.11071 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11071 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11071 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11071 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 16:00:02
+REDEPLOYMENT app-BVV       version-1.0.11071 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11071 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11071 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11071 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 16:30:01
+REDEPLOYMENT app-BVV       version-1.0.11072 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11072 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11072 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11072 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 17:00:02
+REDEPLOYMENT app-BVV       version-1.0.11072 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11072 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11072 status-Canceled: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11072 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 17:30:01
+REDEPLOYMENT app-BVV       version-1.0.11074 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11074 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11074 status-Canceled: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11074 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 18:00:01
+REDEPLOYMENT app-BVV       version-1.0.11074 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11074 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11074 status-Canceled: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11074 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 18:30:02
+REDEPLOYMENT app-BVV       version-1.0.11074 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11074 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11074 status-Canceled: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11074 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 19:00:01
+REDEPLOYMENT app-BVV       version-1.0.11074 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11074 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11074 status-Canceled: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11074 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 19:30:01
+REDEPLOYMENT app-BVV       version-1.0.11076 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11076 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11076 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11076 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 20:00:01
+REDEPLOYMENT app-BVV       version-1.0.11076 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11076 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11076 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11076 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 20:30:01
+REDEPLOYMENT app-BVV       version-1.0.11076 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11076 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11076 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11076 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 21:00:01
+REDEPLOYMENT app-BVV       version-1.0.11076 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11076 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11076 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11076 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 21:30:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Queued: NOT REDEPLOYING
+
+Current time: 10/02/2020 22:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/02/2020 22:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/02/2020 23:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/02/2020 23:30:02
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/03/2020 00:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/03/2020 00:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/03/2020 01:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/03/2020 01:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/03/2020 02:00:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#2) taskId-ServerTasks-300327 id-Deployments-181148
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#2) taskId-ServerTasks-300328 id-Deployments-181149
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#2) taskId-ServerTasks-300329 id-Deployments-181150
+
+Current time: 10/03/2020 02:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Executing: NOT REDEPLOYING
+
+Current time: 10/03/2020 03:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Executing: NOT REDEPLOYING
+
+Current time: 10/03/2020 03:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Executing: NOT REDEPLOYING
+
+Current time: 10/03/2020 04:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Executing: NOT REDEPLOYING
+
+Current time: 10/03/2020 04:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#3) taskId-ServerTasks-300335 id-Deployments-181151
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Executing: NOT REDEPLOYING
+
+Current time: 10/03/2020 05:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Executing: NOT REDEPLOYING
+
+Current time: 10/03/2020 05:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: skipping Integration,Specflow
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#3) taskId-ServerTasks-300342 id-Deployments-181152
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#3) taskId-ServerTasks-300343 id-Deployments-181153
+
+Current time: 10/03/2020 06:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 06:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 07:00:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 07:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#4) taskId-ServerTasks-300347 id-Deployments-181154
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: skipping Integration,Specflow
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#4) taskId-ServerTasks-300348 id-Deployments-181155
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 08:00:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 08:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: skipping Integration,Specflow
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#5) taskId-ServerTasks-300352 id-Deployments-181156
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 09:00:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#5) taskId-ServerTasks-300353 id-Deployments-181157
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 09:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 10:00:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 10:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: skipping Integration,Specflow
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#6) taskId-ServerTasks-300366 id-Deployments-181164
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 11:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#6) taskId-ServerTasks-300370 id-Deployments-181166
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 11:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 12:00:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 12:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 13:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 13:30:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 14:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 14:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 15:00:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 15:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 16:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 16:30:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 17:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 17:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 18:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 18:30:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 19:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 19:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 20:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 20:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 21:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 21:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/03/2020 22:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/03/2020 22:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/03/2020 23:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/03/2020 23:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/04/2020 00:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/04/2020 00:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/04/2020 01:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/04/2020 01:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/04/2020 02:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to FlytChildCare-Acceptance (#2) taskId-ServerTasks-300420 id-Deployments-181169
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 02:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 03:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 03:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 04:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 04:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 05:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 05:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to FlytChildCare-Acceptance (#3) taskId-ServerTasks-300436 id-Deployments-181173
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 06:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 06:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to FlytChildCare-Acceptance (#4) taskId-ServerTasks-300438 id-Deployments-181174
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 07:00:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 07:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 08:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 08:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 09:00:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to FlytChildCare-Acceptance (#5) taskId-ServerTasks-300444 id-Deployments-181175
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 09:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to FlytChildCare-Acceptance (#6) taskId-ServerTasks-300450 id-Deployments-181176
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 10:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 10:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 11:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 11:30:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 12:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 12:30:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 13:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 13:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 14:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 14:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 15:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 15:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 16:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 16:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 17:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 17:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 18:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 18:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 19:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 19:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 20:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 20:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 21:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 21:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/04/2020 22:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/04/2020 22:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/04/2020 23:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/04/2020 23:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/05/2020 00:00:02
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/05/2020 00:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/05/2020 01:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/05/2020 01:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/05/2020 02:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 02:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 03:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 03:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 04:00:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 04:30:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 05:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 05:30:02
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 06:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 06:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 07:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 07:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 08:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 08:30:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 09:00:01
+REDEPLOYMENT app-BVV       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-ChildCare version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-PPT       version-1.0.11077 status-Failed: NOT REDEPLOYING, redeploy count is 5 (> 4)
+REDEPLOYMENT app-SCC       version-1.0.11077 status-Failed:  NOT REDEPLOYING: message:integration tests have failed
+
+Current time: 10/05/2020 09:30:01
+REDEPLOYMENT app-BVV       version-1.0.11078 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11078 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11078 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11078 status-Executing: NOT REDEPLOYING
+
+Current time: 10/05/2020 10:00:01
+REDEPLOYMENT app-BVV       version-1.0.11078 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11078 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11078 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11078 status-Executing: NOT REDEPLOYING
+
+Current time: 10/05/2020 10:30:01
+REDEPLOYMENT app-BVV       version-1.0.11078 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11078 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11078 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11078 status-Executing: NOT REDEPLOYING
+
+Current time: 10/05/2020 11:00:02
+REDEPLOYMENT app-BVV       version-1.0.11081 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11081 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11081 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11081 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 11:30:01
+REDEPLOYMENT app-BVV       version-1.0.11081 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#2) taskId-ServerTasks-300633 id-Deployments-181282
+REDEPLOYMENT app-ChildCare version-1.0.11081 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11081 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11081 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 12:00:02
+REDEPLOYMENT app-BVV       version-1.0.11081 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#3) taskId-ServerTasks-300635 id-Deployments-181284
+REDEPLOYMENT app-ChildCare version-1.0.11081 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11081 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11081 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 12:30:01
+REDEPLOYMENT app-BVV       version-1.0.11081 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#4) taskId-ServerTasks-300658 id-Deployments-181304
+REDEPLOYMENT app-ChildCare version-1.0.11081 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11081 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11081 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 13:00:01
+REDEPLOYMENT app-BVV       version-1.0.11082 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-ChildCare version-1.0.11082 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11082 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-SCC       version-1.0.11081 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 13:30:01
+REDEPLOYMENT app-BVV       version-1.0.11082 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11082 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11082 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11082 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 14:00:01
+REDEPLOYMENT app-BVV       version-1.0.11082 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11082 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11082 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11082 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 14:30:01
+REDEPLOYMENT app-BVV       version-1.0.11082 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11082 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11082 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11082 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 15:00:01
+REDEPLOYMENT app-BVV       version-1.0.11082 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#2) taskId-ServerTasks-300725 id-Deployments-181360
+REDEPLOYMENT app-ChildCare version-1.0.11082 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11082 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11082 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 15:30:01
+REDEPLOYMENT app-BVV       version-1.0.11084 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11084 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 16:00:02
+REDEPLOYMENT app-BVV       version-1.0.11084 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11084 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 16:30:02
+REDEPLOYMENT app-BVV       version-1.0.11084 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11084 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 17:00:01
+REDEPLOYMENT app-BVV       version-1.0.11084 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11084 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 17:30:01
+REDEPLOYMENT app-BVV       version-1.0.11084 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11084 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 18:00:01
+REDEPLOYMENT app-BVV       version-1.0.11084 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#2) taskId-ServerTasks-300770 id-Deployments-181396
+REDEPLOYMENT app-ChildCare version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11084 status-Failed: skipping Integration,Specflow
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#2) taskId-ServerTasks-300771 id-Deployments-181397
+REDEPLOYMENT app-SCC       version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 18:30:01
+REDEPLOYMENT app-BVV       version-1.0.11084 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11084 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 19:00:01
+REDEPLOYMENT app-BVV       version-1.0.11084 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11084 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11084 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 19:30:02
+REDEPLOYMENT app-BVV       version-1.0.11086 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-ChildCare version-1.0.11086 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11086 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-SCC       version-1.0.11086 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 20:00:01
+REDEPLOYMENT app-BVV       version-1.0.11086 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11086 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11086 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11086 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 20:30:01
+REDEPLOYMENT app-BVV       version-1.0.11086 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11086 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11086 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11086 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 21:00:01
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 21:30:02
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/05/2020 22:00:02
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/05/2020 22:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/05/2020 23:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/05/2020 23:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/06/2020 00:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/06/2020 00:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/06/2020 01:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/06/2020 01:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/06/2020 02:00:02
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#2) taskId-ServerTasks-300855 id-Deployments-181455
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#2) taskId-ServerTasks-300856 id-Deployments-181456
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 02:30:02
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 03:00:01
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 03:30:01
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 04:00:01
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 04:30:01
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 05:00:01
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 05:30:01
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 06:00:01
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 06:30:01
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 07:00:01
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Failed: skipping Integration,Selenium2
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#3) taskId-ServerTasks-300870 id-Deployments-181457
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 07:30:01
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 08:00:01
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 08:30:02
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Failed: skipping Integration,Selenium2,Specflow
+redeploying: deploymentResource-Deploy to VismaFlytPPT-Acceptance (#3) taskId-ServerTasks-300899 id-Deployments-181482
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 09:00:01
+REDEPLOYMENT app-BVV       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11088 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11088 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 09:30:01
+REDEPLOYMENT app-BVV       version-1.0.11089 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11089 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11089 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11089 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 10:00:01
+REDEPLOYMENT app-BVV       version-1.0.11089 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11089 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11089 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11089 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 10:30:01
+REDEPLOYMENT app-BVV       version-1.0.11089 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11089 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11089 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11089 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 11:00:01
+REDEPLOYMENT app-BVV       version-1.0.11090 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11090 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11090 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11090 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 11:30:01
+REDEPLOYMENT app-BVV       version-1.0.11091 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11091 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11091 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11091 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 12:00:01
+REDEPLOYMENT app-BVV       version-1.0.11091 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11091 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11091 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11091 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 12:30:02
+REDEPLOYMENT app-BVV       version-1.0.11091 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11091 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11091 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11091 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 13:00:02
+REDEPLOYMENT app-BVV       version-1.0.11091 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11091 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11091 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11091 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 13:30:01
+REDEPLOYMENT app-BVV       version-1.0.11091 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11091 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11091 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11091 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 14:00:01
+REDEPLOYMENT app-BVV       version-1.0.11094 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11094 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11094 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11094 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 14:30:01
+REDEPLOYMENT app-BVV       version-1.0.11095 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11095 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11095 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11095 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 15:00:02
+REDEPLOYMENT app-BVV       version-1.0.11095 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11095 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11095 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11095 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 15:30:02
+REDEPLOYMENT app-BVV       version-1.0.11095 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11095 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11095 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11095 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 16:00:02
+REDEPLOYMENT app-BVV       version-1.0.11095 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11095 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11095 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11095 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 16:30:01
+REDEPLOYMENT app-BVV       version-1.0.11095 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11095 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11095 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11095 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 17:00:01
+REDEPLOYMENT app-BVV       version-1.0.11095 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11095 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11095 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11095 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 17:30:01
+REDEPLOYMENT app-BVV       version-1.0.11098 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11098 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11098 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11098 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 18:00:02
+REDEPLOYMENT app-BVV       version-1.0.11098 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11098 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11098 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11098 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 18:30:01
+REDEPLOYMENT app-BVV       version-1.0.11098 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11098 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11098 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11098 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 19:00:01
+REDEPLOYMENT app-BVV       version-1.0.11100 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11100 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11100 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11100 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 19:30:02
+REDEPLOYMENT app-BVV       version-1.0.11100 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11100 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11100 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11100 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 20:00:01
+REDEPLOYMENT app-BVV       version-1.0.11100 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11100 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11100 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11100 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 20:30:01
+REDEPLOYMENT app-BVV       version-1.0.11100 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11100 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11100 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11100 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 21:00:01
+REDEPLOYMENT app-BVV       version-1.0.11100 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11100 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11100 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11100 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 21:30:01
+REDEPLOYMENT app-BVV       version-1.0.11102 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11102 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/06/2020 22:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/06/2020 22:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/06/2020 23:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/06/2020 23:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/07/2020 00:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/07/2020 00:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/07/2020 01:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/07/2020 01:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/07/2020 02:00:01
+REDEPLOYMENT app-BVV       version-1.0.11102 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#2) taskId-ServerTasks-301270 id-Deployments-181796
+REDEPLOYMENT app-ChildCare version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11102 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 02:30:01
+REDEPLOYMENT app-BVV       version-1.0.11102 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11102 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 03:00:02
+REDEPLOYMENT app-BVV       version-1.0.11102 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11102 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 03:30:01
+REDEPLOYMENT app-BVV       version-1.0.11102 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11102 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 04:00:01
+REDEPLOYMENT app-BVV       version-1.0.11102 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11102 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 04:30:01
+REDEPLOYMENT app-BVV       version-1.0.11102 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11102 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 05:00:01
+REDEPLOYMENT app-BVV       version-1.0.11102 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11102 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 05:30:01
+REDEPLOYMENT app-BVV       version-1.0.11102 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11102 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 06:00:02
+REDEPLOYMENT app-BVV       version-1.0.11102 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11102 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11102 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 06:30:02
+REDEPLOYMENT app-BVV       version-1.0.11103 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11103 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11103 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11103 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 07:00:01
+REDEPLOYMENT app-BVV       version-1.0.11103 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11103 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11103 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11103 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 07:30:01
+REDEPLOYMENT app-BVV       version-1.0.11103 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11103 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11103 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11103 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 08:00:01
+REDEPLOYMENT app-BVV       version-1.0.11103 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11103 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11103 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11103 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 08:30:01
+REDEPLOYMENT app-BVV       version-1.0.11103 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11103 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11103 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11103 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 09:00:02
+REDEPLOYMENT app-BVV       version-1.0.11103 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11103 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11103 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11103 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 09:30:02
+REDEPLOYMENT app-BVV       version-1.0.11104 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11104 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11104 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11104 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 10:00:01
+REDEPLOYMENT app-BVV       version-1.0.11104 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11104 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11104 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11104 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 10:30:01
+REDEPLOYMENT app-BVV       version-1.0.11104 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11104 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11104 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11104 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 11:00:01
+REDEPLOYMENT app-BVV       version-1.0.11107 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-ChildCare version-1.0.11107 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11107 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-SCC       version-1.0.11107 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 11:30:02
+REDEPLOYMENT app-BVV       version-1.0.11107 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11107 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11107 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11107 status-Executing: NOT REDEPLOYING
+
+Current time: 10/07/2020 12:00:01
+REDEPLOYMENT app-BVV       version-1.0.11107 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11107 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11107 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11107 status-Executing: NOT REDEPLOYING
+
+Current time: 10/07/2020 12:30:01
+REDEPLOYMENT app-BVV       version-1.0.11109 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11109 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11109 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11109 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 13:00:01
+REDEPLOYMENT app-BVV       version-1.0.11109 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11109 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11109 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11109 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 13:30:01
+REDEPLOYMENT app-BVV       version-1.0.11109 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11109 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11109 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11109 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 14:00:01
+REDEPLOYMENT app-BVV       version-1.0.11109 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11109 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11109 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11109 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 14:30:01
+REDEPLOYMENT app-BVV       version-1.0.11109 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11109 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to FlytChildCare-Acceptance (#2) taskId-ServerTasks-301568 id-Deployments-182056
+REDEPLOYMENT app-PPT       version-1.0.11109 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11109 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 15:00:01
+REDEPLOYMENT app-BVV       version-1.0.11114 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11114 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11114 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11114 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 15:30:02
+REDEPLOYMENT app-BVV       version-1.0.11114 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11114 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11114 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11114 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 16:00:01
+REDEPLOYMENT app-BVV       version-1.0.11114 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11114 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11114 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11114 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 16:30:01
+REDEPLOYMENT app-BVV       version-1.0.11117 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11117 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11117 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11117 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 17:00:01
+REDEPLOYMENT app-BVV       version-1.0.11120 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-ChildCare version-1.0.11120 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11120 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-SCC       version-1.0.11120 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 17:30:01
+REDEPLOYMENT app-BVV       version-1.0.11120 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11120 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11120 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11120 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 18:00:01
+REDEPLOYMENT app-BVV       version-1.0.11120 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11120 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11120 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11120 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 18:30:01
+REDEPLOYMENT app-BVV       version-1.0.11120 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11120 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11120 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11120 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 19:00:01
+REDEPLOYMENT app-BVV       version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11121 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 19:30:01
+REDEPLOYMENT app-BVV       version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11121 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 20:00:01
+REDEPLOYMENT app-BVV       version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11121 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 20:30:01
+REDEPLOYMENT app-BVV       version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11121 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 21:00:01
+REDEPLOYMENT app-BVV       version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11121 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11121 status-Queued: NOT REDEPLOYING
+
+Current time: 10/07/2020 21:30:01
+REDEPLOYMENT app-BVV       version-1.0.11122 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-ChildCare version-1.0.11122 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11122 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-SCC       version-1.0.11122 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/07/2020 22:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/07/2020 22:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/07/2020 23:00:02
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/07/2020 23:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/08/2020 00:00:02
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/08/2020 00:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/08/2020 01:00:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/08/2020 01:30:01
+no redeployments during midnight (22:00-01:59)
+
+Current time: 10/08/2020 02:00:01
+REDEPLOYMENT app-BVV       version-1.0.11122 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#2) taskId-ServerTasks-301784 id-Deployments-182237
+REDEPLOYMENT app-ChildCare version-1.0.11122 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to FlytChildCare-Acceptance (#2) taskId-ServerTasks-301786 id-Deployments-182238
+REDEPLOYMENT app-PPT       version-1.0.11122 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11122 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#2) taskId-ServerTasks-301790 id-Deployments-182242
+
+Current time: 10/08/2020 02:30:02
+REDEPLOYMENT app-BVV       version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11124 status-Queued: NOT REDEPLOYING
+
+Current time: 10/08/2020 03:00:02
+REDEPLOYMENT app-BVV       version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11124 status-Queued: NOT REDEPLOYING
+
+Current time: 10/08/2020 03:30:01
+REDEPLOYMENT app-BVV       version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11124 status-Queued: NOT REDEPLOYING
+
+Current time: 10/08/2020 04:00:01
+REDEPLOYMENT app-BVV       version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11124 status-Executing: NOT REDEPLOYING
+
+Current time: 10/08/2020 04:30:01
+REDEPLOYMENT app-BVV       version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11124 status-Executing: NOT REDEPLOYING
+
+Current time: 10/08/2020 05:00:02
+REDEPLOYMENT app-BVV       version-1.0.11124 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#2) taskId-ServerTasks-301807 id-Deployments-182253
+REDEPLOYMENT app-ChildCare version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11124 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#2) taskId-ServerTasks-301808 id-Deployments-182254
+
+Current time: 10/08/2020 05:30:01
+REDEPLOYMENT app-BVV       version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11124 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to FlytChildCare-Acceptance (#2) taskId-ServerTasks-301813 id-Deployments-182255
+REDEPLOYMENT app-PPT       version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11124 status-Executing: NOT REDEPLOYING
+
+Current time: 10/08/2020 06:00:01
+REDEPLOYMENT app-BVV       version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11124 status-Executing: NOT REDEPLOYING
+
+Current time: 10/08/2020 06:30:01
+REDEPLOYMENT app-BVV       version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11124 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#3) taskId-ServerTasks-301816 id-Deployments-182256
+
+Current time: 10/08/2020 07:00:02
+REDEPLOYMENT app-BVV       version-1.0.11124 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytBVV-Acc (#3) taskId-ServerTasks-301818 id-Deployments-182257
+REDEPLOYMENT app-ChildCare version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11124 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11124 status-Executing: NOT REDEPLOYING
+
+Current time: 10/08/2020 07:30:01
+REDEPLOYMENT app-BVV       version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11124 status-Executing: NOT REDEPLOYING
+
+Current time: 10/08/2020 08:00:02
+REDEPLOYMENT app-BVV       version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11124 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to FlytChildCare-Acceptance (#3) taskId-ServerTasks-301821 id-Deployments-182258
+REDEPLOYMENT app-PPT       version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11124 status-Executing: NOT REDEPLOYING
+
+Current time: 10/08/2020 08:30:02
+REDEPLOYMENT app-BVV       version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11124 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11124 status-Failed: skipping Integration
+redeploying: deploymentResource-Deploy to VismaFlytSCC-Acceptance (#4) taskId-ServerTasks-301824 id-Deployments-182259
+
+Current time: 10/08/2020 09:00:02
+REDEPLOYMENT app-BVV       version-1.0.11125 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-ChildCare version-1.0.11125 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-PPT       version-1.0.11125 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+REDEPLOYMENT app-SCC       version-1.0.11125 NOT REDEPLOYING: message:latest release does not have acceptance deployment yet
+
+Current time: 10/08/2020 09:30:01
+REDEPLOYMENT app-BVV       version-1.0.11125 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11125 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11125 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11125 status-Queued: NOT REDEPLOYING
+
+Current time: 10/08/2020 10:00:01
+REDEPLOYMENT app-BVV       version-1.0.11125 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-ChildCare version-1.0.11125 status-Executing: NOT REDEPLOYING
+REDEPLOYMENT app-PPT       version-1.0.11125 status-Queued: NOT REDEPLOYING
+REDEPLOYMENT app-SCC       version-1.0.11125 status-Queued: NOT REDEPLOYING

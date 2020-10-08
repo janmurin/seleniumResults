@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using SeleniumResults.Models.data;
@@ -52,10 +53,17 @@ namespace SeleniumResults
             // Console.WriteLine($"TEMPLATE_FOLDER={TEMPLATE_FOLDER}");
             // Console.WriteLine($"WEB_REPORT_FOLDER={WEB_REPORT_FOLDER}");
 
-            ProcessSeleniumData();
-            ProcessSpecflowData();
+            try
+            {
+                ProcessSeleniumData();
+                ProcessSpecflowData();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
             
-            LogMessage($"elapsed seconds: {_entireStopwatch.Elapsed.Minutes}:{_entireStopwatch.Elapsed.Seconds}");
+            LogMessage($"elapsed minutes: {_entireStopwatch.Elapsed.Minutes:D2}:{_entireStopwatch.Elapsed.Seconds:D2}");
             //PrintLatestSeleniumReportIgnoreStats(seleniumFilesDir);
         }
 
@@ -187,7 +195,7 @@ namespace SeleniumResults
 
         private static void LogMessage(string message)
         {
-            Console.WriteLine($"{_stopwatch.Elapsed.Minutes}:{_stopwatch.Elapsed.Seconds} {message}");
+            Console.WriteLine($"{_stopwatch.Elapsed.Minutes:D2}:{_stopwatch.Elapsed.Seconds:D2} {message}");
             _stopwatch.Restart();
         }
 

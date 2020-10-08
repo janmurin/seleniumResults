@@ -114,6 +114,7 @@ namespace SeleniumResults
             new KeyValuePair<string, string>("PPTAppointmentFromHomeSmokeTest", TestCategories.PPT),
             new KeyValuePair<string, string>("QuerySmokeTest", TestCategories.All),
             new KeyValuePair<string, string>("RolesTest", TestCategories.All),
+            new KeyValuePair<string, string>("ReportOfConcernFromClientDetailsSmokeTest", TestCategories.BV),
             new KeyValuePair<string, string>("SCCAppointmentFromCalendarSmokeTest", TestCategories.SCC),
             new KeyValuePair<string, string>("SCCAppointmentFromHomeSmokeTest", TestCategories.SCC),
             new KeyValuePair<string, string>("SccCk5EditorEnquirySmokeTest", TestCategories.SCC),
