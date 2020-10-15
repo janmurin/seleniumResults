@@ -9,6 +9,7 @@ namespace SeleniumResults.Models
         public TestRunMetaData TestRunMetaData { get; }
         public List<TestResultViewModel> Results { get; }
         public bool HasMidnightErrors { get; }
+        public bool HasSeleniumGridErrors { get; set; }
         public bool HasTooManyErrors { get; }
         public bool IsPassed { get; }
         public bool IsSel1 { get; }
@@ -23,7 +24,8 @@ namespace SeleniumResults.Models
             Results = results;
             IsPassed = results.Any() && results.All(x => !x.IsFailed);
             HasMidnightErrors = results.Any(x => x.IsMidnightError);
-            HasTooManyErrors = !HasMidnightErrors && results.Count(x => x.IsFailed) > Constants.FAILURE_THRESHOLD;
+            HasSeleniumGridErrors = results.Any(x => x.IsSeleniumGridError);
+            HasTooManyErrors = !HasMidnightErrors && !HasSeleniumGridErrors && results.Count(x => x.IsFailed) > Constants.FAILURE_THRESHOLD;
             IsSel1 = results.Any() && results.First().IsSel1;
             IsSel2 = results.Any() && results.First().IsSel2;
             FailedCount = results.Any() ? results.Count(x => x.IsFailed) : 0;

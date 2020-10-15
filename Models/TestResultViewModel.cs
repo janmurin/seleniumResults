@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using SeleniumResults.Models.data;
 using SeleniumResults.Models.enums;
@@ -8,6 +9,7 @@ namespace SeleniumResults.Models
     {
         public TestResult TestResult { get; }
         public bool IsMidnightError { get; }
+        public bool IsSeleniumGridError { get; }
         public bool IsPassed => TestResult.TestResultType == TestResultType.Passed;
         public bool IsFailed => TestResult.TestResultType == TestResultType.Failed;
         public bool IsSkipped => TestResult.TestResultType == TestResultType.Skipped;
@@ -27,6 +29,8 @@ namespace SeleniumResults.Models
                 IsMidnightError = TestResult.StartTime.Hour >= 22 &&
                                   TestResult.SubTests
                                       .Any(x => x.Message.ToLower() == "OneTimeSetUp: System.NullReferenceException : Object Reference Not Set To An Instance Of An Object.".ToLower());
+                IsSeleniumGridError = TestResult.SubTests
+                    .Any(x => x.Message.ToLower().Contains("http://flytapp901.flyttest.visma.com:4444".ToLower()));
             }
             else if (TestResult.TestRunMetaData.TestRunType == TestRunType.API)
             {

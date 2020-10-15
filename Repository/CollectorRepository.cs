@@ -153,7 +153,7 @@ namespace SeleniumResults.Repository
         private List<TestResultViewModel> GetFilteredTestResults(TestRunType testRunType)
         {
             return GetLastTestRuns(testRunType)
-                .Where(t => !t.HasMidnightErrors && !t.HasTooManyErrors)
+                .Where(t => !t.HasMidnightErrors && !t.HasTooManyErrors && !t.HasSeleniumGridErrors)
                 .SelectMany(s => s.Results)
                 .ToList();
         }

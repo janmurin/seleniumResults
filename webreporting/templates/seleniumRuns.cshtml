@@ -49,27 +49,25 @@
                     @if (sr.IsPassed)
                     {
                         <span class="badge badge-success">Passed</span>
-                        <span style="color:red;">@sr.FailedCount</span>
-                        <span>/@sr.TotalCount</span>
                     }
                     else if (sr.HasTooManyErrors)
                     {
                         <span class="badge badge-dark">Too many errors</span>
-                        <span style="color:red;">@sr.FailedCount</span>
-                        <span>/@sr.TotalCount</span>
                     }
                     else if (sr.HasMidnightErrors)
                     {
                         <span class="badge badge-dark">Midnight errors</span>
-                        <span style="color:red;">@sr.FailedCount</span>
-                        <span>/@sr.TotalCount</span>
+                    }
+                    else if (sr.HasSeleniumGridErrors)
+                    {
+                        <span class="badge badge-dark">Selenium grid errors</span>
                     }
                     else
                     {
                         <span class="badge badge-danger">Failed</span>
-                        <span style="color:red;">@sr.FailedCount</span>
-                        <span>/@sr.TotalCount</span>
                     }
+                    <span style="color:red;">@sr.FailedCount</span>
+                    <span>/@sr.TotalCount</span>
                     @if (sr.FailedCount < 8)
                     {
                         foreach (var testResult in sr.Results.Where(x => x.IsFailed).OrderBy(x => x.TestResult.Name).ToList())
