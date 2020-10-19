@@ -36,10 +36,7 @@ namespace SeleniumResults.webreporting
                 .UseMemoryCachingProvider()
                 .Build();
 
-            var viewModel = new SeleniumRunsViewModel()
-            {
-                TestRuns = buildList
-            };
+            var viewModel = new SeleniumRunsViewModel(buildList);
 
             string result = engine.CompileRenderAsync("seleniumRuns.cshtml", viewModel).Result;
             //Console.WriteLine(result);

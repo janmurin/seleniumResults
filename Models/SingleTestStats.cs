@@ -5,39 +5,33 @@ using SeleniumResults.Models.enums;
 
 namespace SeleniumResults.Models
 {
-    public class SingleTestStats
+    public sealed class SingleTestStats : LastXBuildStatsByApp
     {
         private readonly int _buildNumber10;
-        private bool? _olderThan10builds;
+        private bool? _olderThan10Builds;
         public string Name { get; }
-        public HashSet<TestResultViewModel> Results { get; }
+        public override HashSet<TestResultViewModel> Results { get; set; }
 
-        public SingleTestStats(TestResultViewModel sr, int buildNumber10)
+        public SingleTestStats(List<TestResultViewModel> sr)
         {
-            _buildNumber10 = buildNumber10;
-            Name = sr.TestResult.Name;
-            Results = new HashSet<TestResultViewModel>() {sr};
+            _buildNumber10 = 10;
+            Name = sr.First().TestResult.Name;
+            Results = sr.ToHashSet();
+            CalculateLastXBuildsStats(_buildNumber10, LastXBuildStatType.Failed);
         }
-
-        public Dictionary<int, LastXBuildsStat> LastXBuildsDict { get; set; }
-        public Dictionary<int, LastXBuildsStat> BVVLastXBuildsDict { get; set; }
-        public Dictionary<int, LastXBuildsStat> CARLastXBuildsDict { get; set; }
-        public Dictionary<int, LastXBuildsStat> SCCLastXBuildsDict { get; set; }
-        public Dictionary<int, LastXBuildsStat> BVLastXBuildsDict { get; set; }
-        public Dictionary<int, LastXBuildsStat> PPTLastXBuildsDict { get; set; }
 
         public bool IsOlderThan10Builds
         {
             get
             {
-                if (!_olderThan10builds.HasValue)
+                if (!_olderThan10Builds.HasValue)
                 {
-                    _olderThan10builds = Results
+                    _olderThan10Builds = Results
                         .OrderByDescending(x => x.TestResult.TestRunMetaData.BuildNumber)
                         .First().TestResult.TestRunMetaData.BuildNumber <= _buildNumber10;
                 }
 
-                return _olderThan10builds.Value;
+                return _olderThan10Builds.Value;
             }
         }
 
@@ -106,85 +100,6 @@ namespace SeleniumResults.Models
 
             string[] array = LastXBuildsDict.Select(x => new String($"{x.Key}-{x.Value.FailureRate:0}")).ToArray();
             return string.Join(" ", array);
-        }
-
-        public void CalculateLastXBuildsStats(int buildsInGroup)
-        {
-            var byBuildNumber = GetResultsOrderedByBuildNumber().ToList();
-            LastXBuildsDict = CreateLastXBuildDictionary(byBuildNumber, buildsInGroup).OrderByDescending(x => x.Key)
-                .ToDictionary(x => x.Key, y => y.Value);
-
-            byBuildNumber = GetResultsOrderedByBuildNumber(FlytApplication.BV).ToList();
-            BVLastXBuildsDict = CreateLastXBuildDictionary(byBuildNumber, buildsInGroup)
-                .OrderByDescending(x => x.Key)
-                .ToDictionary(x => x.Key, y => y.Value);
-
-            byBuildNumber = GetResultsOrderedByBuildNumber(FlytApplication.BVV).ToList();
-            BVVLastXBuildsDict = CreateLastXBuildDictionary(byBuildNumber, buildsInGroup)
-                .OrderByDescending(x => x.Key)
-                .ToDictionary(x => x.Key, y => y.Value);
-
-            byBuildNumber = GetResultsOrderedByBuildNumber(FlytApplication.CAR).ToList();
-            CARLastXBuildsDict = CreateLastXBuildDictionary(byBuildNumber, buildsInGroup)
-                .OrderByDescending(x => x.Key)
-                .ToDictionary(x => x.Key, y => y.Value);
-
-            byBuildNumber = GetResultsOrderedByBuildNumber(FlytApplication.PPT).ToList();
-            PPTLastXBuildsDict = CreateLastXBuildDictionary(byBuildNumber, buildsInGroup)
-                .OrderByDescending(x => x.Key)
-                .ToDictionary(x => x.Key, y => y.Value);
-
-            byBuildNumber = GetResultsOrderedByBuildNumber(FlytApplication.SCC).ToList();
-            SCCLastXBuildsDict = CreateLastXBuildDictionary(byBuildNumber, buildsInGroup)
-                .OrderByDescending(x => x.Key)
-                .ToDictionary(x => x.Key, y => y.Value);
-        }
-
-        private Dictionary<int, LastXBuildsStat> CreateLastXBuildDictionary(List<IGrouping<int, TestResultViewModel>> byBuildGrouping, int buildsInGroup)
-        {
-            var lastXBuildsDict = new Dictionary<int, LastXBuildsStat>();
-            if (byBuildGrouping.Count == 0)
-            {
-                return lastXBuildsDict;
-            }
-
-            if (byBuildGrouping.Count() >= buildsInGroup)
-            {
-                for (int i = 0; i <= byBuildGrouping.Count() - buildsInGroup; i++)
-                {
-                    var take = byBuildGrouping.Skip(i).Take(buildsInGroup).ToList();
-                    int buildNumber = take.First().Key;
-
-                    lastXBuildsDict.TryAdd(buildNumber, new LastXBuildsStat(take));
-                }
-            }
-            else
-            {
-                int buildNumber = byBuildGrouping.First().Key;
-                var take = byBuildGrouping.Take(Math.Min(buildsInGroup, byBuildGrouping.Count()));
-
-                lastXBuildsDict.TryAdd(buildNumber, new LastXBuildsStat(take));
-            }
-
-            return lastXBuildsDict;
-        }
-
-        private IOrderedEnumerable<IGrouping<int, TestResultViewModel>> GetResultsOrderedByBuildNumber()
-        {
-            return from result in Results.ToList()
-                group result by result.TestResult.TestRunMetaData.BuildNumber
-                into appGroup
-                orderby appGroup.Key descending
-                select appGroup;
-        }
-
-        private IOrderedEnumerable<IGrouping<int, TestResultViewModel>> GetResultsOrderedByBuildNumber(FlytApplication app)
-        {
-            return from result in Results.Where(x => x.TestResult.TestRunMetaData.FlytApplicationType == app).ToList()
-                group result by result.TestResult.TestRunMetaData.BuildNumber
-                into appGroup
-                orderby appGroup.Key descending
-                select appGroup;
         }
     }
 }

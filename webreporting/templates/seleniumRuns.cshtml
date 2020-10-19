@@ -11,80 +11,107 @@
 <!-- Page Heading -->
 <h1 class="h3 mb-2 text-gray-800">Selenium test runs</h1>
 
-<div class="table-responsive bg-white">
-    <table class="table table-bordered" id="seleniumRunsDatatable" width="100%" cellspacing="0">
-        <thead>
-        <tr>
-            <th>Time</th>
-            <th>File</th>
-            <th>Application</th>
-            <th>Duration</th>
-            <th>Result</th>
-            <th>BuildNumber</th>
-        </tr>
-        </thead>
-        <tfoot>
-        <tr>
-            <th>Time</th>
-            <th>File</th>
-            <th>Application</th>
-            <th>Duration</th>
-            <th>Result</th>
-            <th>BuildNumber</th>
-        </tr>
-        </tfoot>
-        <tbody>
-        @foreach (var sr in Model.TestRuns)
-        {
-            <tr>
-                <td>@($"{sr.TestRunMetaData.LastRun:yyyy-MM-dd HH:mm:ss}")</td>
-                <td>
-                    <a href="data/@sr.TestRunMetaData.OriginalFileName" target="_blank">@sr.TestRunMetaData.OriginalFileName</a>
-                </td>
-                <td>@sr.TestRunMetaData.FlytApplicationType</td>
-                <td data-order="@sr.TestRunMetaData.Duration">
-                    <span>@sr.TestRunMetaData.Duration min (@sr.GetDurationMinutesString)</span>
-                </td>
-                <td>
-                    @if (sr.IsPassed)
-                    {
-                        <span class="badge badge-success">Passed</span>
-                    }
-                    else if (sr.HasTooManyErrors)
-                    {
-                        <span class="badge badge-dark">Too many errors</span>
-                    }
-                    else if (sr.HasMidnightErrors)
-                    {
-                        <span class="badge badge-dark">Midnight errors</span>
-                    }
-                    else if (sr.HasSeleniumGridErrors)
-                    {
-                        <span class="badge badge-dark">Selenium grid errors</span>
-                    }
-                    else
-                    {
-                        <span class="badge badge-danger">Failed</span>
-                    }
-                    <span style="color:red;">@sr.FailedCount</span>
-                    <span>/@sr.TotalCount</span>
-                    @if (sr.FailedCount < 8)
-                    {
-                        foreach (var testResult in sr.Results.Where(x => x.IsFailed).OrderBy(x => x.TestResult.Name).ToList())
-                        {
-                            <a href="testPages/@(testResult.TestResult.Name).html" target="_blank" style="font-size: small">@testResult.TestResult.Name</a>
-                        }
-                    }
-                    @if (sr.IsSel1)
-                    {
-                        <span class="badge badge-light">Selenium 1</span>
-                    }
-                </td>
-                <td>@sr.TestRunMetaData.BuildNumber</td>
-            </tr>
-        }
-        </tbody>
-    </table>
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Selenium grid errors rate</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-area">
+                    <canvas id="myAreaChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card shadow mb-4">
+            <a href="#testRunsCard" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="testRunsCard">
+                <h6 class="m-0 font-weight-bold text-primary">Test runs</h6>
+            </a>
+            <div class="collapse show" id="testRunsCard">
+                <div class="card-body">
+                    <div class="table-responsive bg-white">
+                        <table class="table table-bordered" id="seleniumRunsDatatable" width="100%" cellspacing="0">
+                            <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>File</th>
+                                <th>Application</th>
+                                <th>Duration</th>
+                                <th>Result</th>
+                                <th>BuildNumber</th>
+                            </tr>
+                            </thead>
+                            <tfoot>
+                            <tr>
+                                <th>Time</th>
+                                <th>File</th>
+                                <th>Application</th>
+                                <th>Duration</th>
+                                <th>Result</th>
+                                <th>BuildNumber</th>
+                            </tr>
+                            </tfoot>
+                            <tbody>
+                            @foreach (var sr in Model.TestRuns)
+                            {
+                                <tr>
+                                    <td>@($"{sr.TestRunMetaData.LastRun:yyyy-MM-dd HH:mm:ss}")</td>
+                                    <td>
+                                        <a href="data/@sr.TestRunMetaData.OriginalFileName" target="_blank">@sr.TestRunMetaData.OriginalFileName</a>
+                                    </td>
+                                    <td>@sr.TestRunMetaData.FlytApplicationType</td>
+                                    <td data-order="@sr.TestRunMetaData.Duration">
+                                        <span>@sr.TestRunMetaData.Duration min (@sr.GetDurationMinutesString)</span>
+                                    </td>
+                                    <td>
+                                        @if (sr.IsPassed)
+                                        {
+                                            <span class="badge badge-success">Passed</span>
+                                        }
+                                        else if (sr.HasTooManyErrors)
+                                        {
+                                            <span class="badge badge-dark">Too many errors</span>
+                                        }
+                                        else if (sr.HasMidnightErrors)
+                                        {
+                                            <span class="badge badge-dark">Midnight errors</span>
+                                        }
+                                        else if (sr.IsSeleniumGridErrorRun)
+                                        {
+                                            <span class="badge badge-dark">Selenium grid errors</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge badge-danger">Failed</span>
+                                        }
+                                        <span style="color:red;">@sr.FailedCount</span>
+                                        <span>/@sr.TotalCount</span>
+                                        @if (sr.FailedCount < 8)
+                                        {
+                                            foreach (var testResult in sr.Results.Where(x => x.IsFailed).OrderBy(x => x.TestResult.Name).ToList())
+                                            {
+                                                <a href="testPages/@(testResult.TestResult.Name).html" target="_blank" style="font-size: small">@testResult.TestResult.Name</a>
+                                            }
+                                        }
+                                        @if (sr.IsSel1)
+                                        {
+                                            <span class="badge badge-light">Selenium 1</span>
+                                        }
+                                    </td>
+                                    <td>@sr.TestRunMetaData.BuildNumber</td>
+                                </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 @section scripts {
@@ -93,6 +120,121 @@
         $('#seleniumRunsDatatable').DataTable({
             "order": [[0, "desc"]],
             "pageLength": 25
+        });
+    
+    Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+        Chart.defaults.global.defaultFontColor = '#858796';
+        var timeFormat = 'YYYY-MM-DD HH:mm:ss';
+    
+        function newDate(days) {
+            return moment().add(days, 'd').toDate();
+        }
+    
+        function newDateString(days) {
+            return moment().add(days, 'd').format(timeFormat);
+        }
+        function number_format(number, decimals, dec_point, thousands_sep) {
+          // *     example: number_format(1234.56, 2, ',', ' ');
+          // *     return: '1 234,56'
+          number = (number + '').replace(',', '').replace(' ', '');
+          var n = !isFinite(+number) ? 0 : +number,
+            prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
+            sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
+            dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
+            s = '',
+            toFixedFix = function(n, prec) {
+              var k = Math.pow(10, prec);
+              return '' + Math.round(n * k) / k;
+            };
+          // Fix for IE parseFloat(0.55).toFixed(0) = 0;
+          s = (prec ? toFixedFix(n, prec) : '' + Math.round(n)).split('.');
+          if (s[0].length > 3) {
+            s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+          }
+          if ((s[1] || '').length < prec) {
+            s[1] = s[1] || '';
+            s[1] += new Array(prec - s[1].length + 1).join('0');
+          }
+          return s.join(dec);
+        }
+    
+        // Area Chart Example
+        var ctx = document.getElementById("myAreaChart");
+        var myLineChart = new Chart(ctx, {
+          type: 'line',
+                data: {
+                  labels: [ // Date Objects
+                      newDate(0),
+                      newDate(6)
+                  ],
+                  datasets: @Raw(Model.DataSetsJson)
+                },
+          options: {
+            maintainAspectRatio: false,
+            layout: {
+              padding: {
+                left: 10,
+                right: 25,
+                top: 25,
+                bottom: 0
+              }
+            },
+            scales: {
+              xAxes: [{
+                  type: 'time',
+                  time: {
+                      parser: timeFormat,
+                      // round: 'day'
+                      tooltipFormat: 'll HH:mm'
+                  },
+                gridLines: {
+                  display: false,
+                  drawBorder: false
+                },
+              }],
+              yAxes: [{
+                ticks: {
+                  maxTicksLimit: 5,
+                  padding: 10,
+                  // Include a dollar sign in the ticks
+                  callback: function(value, index, values) {
+                    return number_format(value) + "%";
+                  }
+                },
+                gridLines: {
+                  color: "rgb(234, 236, 244)",
+                  zeroLineColor: "rgb(234, 236, 244)",
+                  drawBorder: false,
+                  borderDash: [2],
+                  zeroLineBorderDash: [2]
+                }
+              }],
+            },
+            legend: {
+              display: true
+            },
+            tooltips: {
+              backgroundColor: "rgb(255,255,255)",
+              bodyFontColor: "#858796",
+              titleMarginBottom: 10,
+              titleFontColor: '#6e707e',
+              titleFontSize: 14,
+              borderColor: '#dddfeb',
+              borderWidth: 1,
+              xPadding: 15,
+              yPadding: 15,
+              displayColors: false,
+              intersect: false,
+              mode: 'index',
+              caretPadding: 10,
+              callbacks: {
+                label: function(tooltipItem, chart) {
+                  var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
+                  return datasetLabel + ': ' + number_format(tooltipItem.yLabel) + ' %';
+                }
+              }
+            }
+          }
         });
     });
     </script>

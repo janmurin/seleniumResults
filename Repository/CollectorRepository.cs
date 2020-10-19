@@ -14,7 +14,7 @@ namespace SeleniumResults.Repository
     public class CollectorRepository
     {
         private readonly ConcurrentDictionary<string, TestRunDao> _testRunIds;
-        private ConcurrentDictionary<string, SingleTestStats> _singleTestStatsDict;
+        private Dictionary<string, SingleTestStats> _singleTestStatsDict;
         private readonly DateTime _twoMonthsAgo;
         private const int VERSION = 1;
 
@@ -22,6 +22,7 @@ namespace SeleniumResults.Repository
         {
             _testRunIds = GetTestRunIds();
             _twoMonthsAgo = DateTime.Now - TimeSpan.FromDays(30);
+            _twoMonthsAgo = DateTime.Now - TimeSpan.FromDays(120);
         }
 
         public void AddTestRun(TestRun testRun)
@@ -60,29 +61,34 @@ namespace SeleniumResults.Repository
 
         public void ProcessData()
         {
-            _singleTestStatsDict = new ConcurrentDictionary<string, SingleTestStats>();
+            _singleTestStatsDict = new Dictionary<string, SingleTestStats>();
             var get11ThBuildNumber = Get11ThBuildNumber();
 
-            foreach (var sr in GetFilteredTestResults(TestRunType.Selenium2))
-            {
-                // add only passed or failed tests into statistics
-                if (sr.IsPassedOrFailed)
-                {
-                    if (!_singleTestStatsDict.ContainsKey(sr.TestResult.Name))
-                    {
-                        _singleTestStatsDict.TryAdd(sr.TestResult.Name, new SingleTestStats(sr, get11ThBuildNumber));
-                    }
-                    else
-                    {
-                        _singleTestStatsDict[sr.TestResult.Name].Results.Add(sr);
-                    }
-                }
-            }
+            // foreach (var sr in GetFilteredTestResults(TestRunType.Selenium2))
+            // {
+            //     // add only passed or failed tests into statistics
+            //     if (sr.IsPassedOrFailed)
+            //     {
+            //         if (!_singleTestStatsDict.ContainsKey(sr.TestResult.Name))
+            //         {
+            //             _singleTestStatsDict.TryAdd(sr.TestResult.Name, new SingleTestStats(sr, get11ThBuildNumber));
+            //         }
+            //         else
+            //         {
+            //             _singleTestStatsDict[sr.TestResult.Name].Results.Add(sr);
+            //         }
+            //     }
+            // }
 
-            Parallel.ForEach(_singleTestStatsDict.Values, sr =>
-            {
-                sr.CalculateLastXBuildsStats(10);
-            });
+            _singleTestStatsDict = GetFilteredTestResults(TestRunType.Selenium2)
+                .Where(t => t.IsPassedOrFailed)
+                .GroupBy(sr => sr.TestResult.Name)
+                .ToDictionary(x => x.Key,
+                    y => new SingleTestStats(y.ToList()));
+            // Parallel.ForEach(_singleTestStatsDict.Values, sr =>
+            // {
+            //     sr.CalculateLastXBuildsStats(10);
+            // });
         }
 
         public int Get11ThBuildNumber()
@@ -128,7 +134,7 @@ namespace SeleniumResults.Repository
                     join testRun in db.TestRuns on testResult.TestRunId equals testRun.Id
                     where testRun.TestRunType == type && testRun.LastRun > _twoMonthsAgo
                     select new TestResultViewModel(new TestResult(testResult, testRun));
-                
+
                 return testResultViewModels
                     .ToList()
                     .GroupBy(t => t.TestResult.TestRunMetaData.Id)

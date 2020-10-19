@@ -1,12 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using SeleniumResults.Models.enums;
 
 namespace SeleniumResults.Models
 {
     public class LastXBuildsStat
     {
-        public LastXBuildsStat(IEnumerable<IGrouping<int, TestResultViewModel>> buildsGroup)
+        public LastXBuildsStat(IEnumerable<IGrouping<int, TestResultViewModel>> buildsGroup, LastXBuildStatType lastXBuildStatType)
         {
             Builds = buildsGroup;
 
@@ -16,7 +17,14 @@ namespace SeleniumResults.Models
             {
                 foreach (var testResult in results)
                 {
-                    failed += testResult.IsPassed ? 0 : 1;
+                    if (lastXBuildStatType == LastXBuildStatType.Failed)
+                    {
+                        failed += testResult.IsPassed ? 0 : 1;
+                    }
+                    else if (lastXBuildStatType == LastXBuildStatType.SeleniumGridError)
+                    {
+                        failed += testResult.IsSeleniumGridError ? 1 : 0;
+                    }
                 }
 
                 builds += results.Count();
@@ -31,7 +39,7 @@ namespace SeleniumResults.Models
         public int FailureRate { get; }
         public int TotalBuilds { get; }
 
-        public IEnumerable<IGrouping<int, TestResultViewModel>> Builds { get; }
+        private IEnumerable<IGrouping<int, TestResultViewModel>> Builds { get; }
 
         public List<TestResultViewModel> GetOrderedTestRuns()
         {
