@@ -26,6 +26,9 @@ namespace SeleniumResults
 
         static void Main(string[] args)
         {
+            // PrintSeleniumRunsPerDay();
+            // return;
+            
             var now = DateTime.Now;
             _stopwatch = new Stopwatch();
             _entireStopwatch = new Stopwatch();
@@ -67,6 +70,19 @@ namespace SeleniumResults
             //PrintLatestSeleniumReportIgnoreStats(seleniumFilesDir);
         }
 
+        private static void PrintSeleniumRunsPerDay()
+        {
+            var runs = _collectorRepository.GetLastTestRuns(TestRunType.Selenium2);
+            var dictionary = runs.GroupBy(x => x.TestRunMetaData.LastRun.DayOfYear / 7)
+                .OrderBy(x => x.Key)
+                .ToDictionary(k => k.Key, v => v.ToList().Count);
+            
+            foreach (var keyValuePair in dictionary)
+            {
+                Console.WriteLine($"{FirstDateOfWeekISO8601(2020,keyValuePair.Key).ToString("d")}: {keyValuePair.Value}");
+            }
+        }
+        
         private static void PrintLatestSeleniumReportIgnoreStats(string seleniumFilesDir)
         {
             // string[] filenames = {"sel-BVN-1.0.10680-171669.html", "sel-BVV-1.0.10680-171673.html", "sel-CAR-1.0.10680-171661.html", "sel-PPT-1.0.10676-171605.html", "sel-SCC-1.0.10680-171674.html"};
@@ -101,6 +117,33 @@ namespace SeleniumResults
             // }
         }
 
+        public static DateTime FirstDateOfWeekISO8601(int year, int weekOfYear)
+        {
+            DateTime jan1 = new DateTime(year, 1, 1);
+            int daysOffset = DayOfWeek.Thursday - jan1.DayOfWeek;
+
+            // Use first Thursday in January to get first week of the year as
+            // it will never be in Week 52/53
+            DateTime firstThursday = jan1.AddDays(daysOffset);
+            var cal = CultureInfo.CurrentCulture.Calendar;
+            int firstWeek = cal.GetWeekOfYear(firstThursday, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday);
+
+            var weekNum = weekOfYear;
+            // As we're adding days to a date in Week 1,
+            // we need to subtract 1 in order to get the right date for week #1
+            if (firstWeek == 1)
+            {
+                weekNum -= 1;
+            }
+
+            // Using the first Thursday as starting week ensures that we are starting in the right year
+            // then we add number of weeks multiplied with days
+            var result = firstThursday.AddDays(weekNum * 7);
+
+            // Subtract 3 days from Thursday to get Monday, which is the first weekday in ISO8601
+            return result.AddDays(-3);
+        } 
+        
         private static string GetTestCategoryFromFilename(string filename)
         {
             if (filename.Contains("BVN"))

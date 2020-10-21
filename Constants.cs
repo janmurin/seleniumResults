@@ -50,6 +50,7 @@ namespace SeleniumResults
             new KeyValuePair<string, string>("AdministrationSmokeTest", TestCategories.All),
             new KeyValuePair<string, string>("ApiRedirectErrorPageSmokeTest", TestCategories.SCC),
             new KeyValuePair<string, string>("ApprovalSmokeTest", TestCategories.All),
+            new KeyValuePair<string, string>("BlueLightTest", TestCategories.CAR),
             new KeyValuePair<string, string>("BVAppointmentFromCalendarSmokeTest", TestCategories.BV),
             new KeyValuePair<string, string>("BVAppointmentFromHomeSmokeTest", TestCategories.BV),
             new KeyValuePair<string, string>("BVIncomingPostSmokeTest", TestCategories.BV),

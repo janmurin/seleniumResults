@@ -22,7 +22,7 @@ namespace SeleniumResults.Repository
         {
             _testRunIds = GetTestRunIds();
             _twoMonthsAgo = DateTime.Now - TimeSpan.FromDays(30);
-            _twoMonthsAgo = DateTime.Now - TimeSpan.FromDays(120);
+            //_twoMonthsAgo = DateTime.Now - TimeSpan.FromDays(180);
         }
 
         public void AddTestRun(TestRun testRun)
