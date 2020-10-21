@@ -64,31 +64,11 @@ namespace SeleniumResults.Repository
             _singleTestStatsDict = new Dictionary<string, SingleTestStats>();
             var get11ThBuildNumber = Get11ThBuildNumber();
 
-            // foreach (var sr in GetFilteredTestResults(TestRunType.Selenium2))
-            // {
-            //     // add only passed or failed tests into statistics
-            //     if (sr.IsPassedOrFailed)
-            //     {
-            //         if (!_singleTestStatsDict.ContainsKey(sr.TestResult.Name))
-            //         {
-            //             _singleTestStatsDict.TryAdd(sr.TestResult.Name, new SingleTestStats(sr, get11ThBuildNumber));
-            //         }
-            //         else
-            //         {
-            //             _singleTestStatsDict[sr.TestResult.Name].Results.Add(sr);
-            //         }
-            //     }
-            // }
-
             _singleTestStatsDict = GetFilteredTestResults(TestRunType.Selenium2)
                 .Where(t => t.IsPassedOrFailed)
                 .GroupBy(sr => sr.TestResult.Name)
                 .ToDictionary(x => x.Key,
-                    y => new SingleTestStats(y.ToList()));
-            // Parallel.ForEach(_singleTestStatsDict.Values, sr =>
-            // {
-            //     sr.CalculateLastXBuildsStats(10);
-            // });
+                    y => new SingleTestStats(y.ToList(), get11ThBuildNumber));
         }
 
         public int Get11ThBuildNumber()

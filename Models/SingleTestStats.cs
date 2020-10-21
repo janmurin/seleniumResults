@@ -12,12 +12,12 @@ namespace SeleniumResults.Models
         public string Name { get; }
         public override HashSet<TestResultViewModel> Results { get; set; }
 
-        public SingleTestStats(List<TestResultViewModel> sr)
+        public SingleTestStats(List<TestResultViewModel> sr, int buildNumber10Th)
         {
-            _buildNumber10 = 10;
+            _buildNumber10 = buildNumber10Th;
             Name = sr.First().TestResult.Name;
             Results = sr.ToHashSet();
-            CalculateLastXBuildsStats(_buildNumber10, LastXBuildStatType.Failed);
+            CalculateLastXBuildsStats(10, LastXBuildStatType.Failed);
         }
 
         public bool IsOlderThan10Builds
