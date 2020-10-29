@@ -95,6 +95,7 @@ namespace SeleniumResults
             new KeyValuePair<string, string>("HomeSmokeTest", TestCategories.All),
             new KeyValuePair<string, string>("IncomingPostReferralTest", TestCategories.PPT),
             new KeyValuePair<string, string>("IncomingPostSmokeTest", TestCategories.All),
+            new KeyValuePair<string, string>("InvestigationSmokeTest", TestCategories.BV),
             new KeyValuePair<string, string>("JournalBackLinkSmokeTest", TestCategories.All),
             new KeyValuePair<string, string>("JournalCopyToSiblingsSmokeTest", TestCategories.BV),
             new KeyValuePair<string, string>("JournalCopyToSiblingsSmokeTest", TestCategories.BVV),
