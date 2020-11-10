@@ -21,7 +21,7 @@ namespace SeleniumResults.Repository
         public CollectorRepository()
         {
             _testRunIds = GetTestRunIds();
-            _twoMonthsAgo = DateTime.Now - TimeSpan.FromDays(30);
+            _twoMonthsAgo = DateTime.Now - TimeSpan.FromDays(10);
             //_twoMonthsAgo = DateTime.Now - TimeSpan.FromDays(180);
         }
 
