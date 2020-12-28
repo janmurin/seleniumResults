@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
+using SeleniumResults.Models;
 using SeleniumResults.Models.data;
 using SeleniumResults.Models.enums;
 using SeleniumResults.Repository;
@@ -68,8 +69,16 @@ namespace SeleniumResults
             
             LogMessage($"elapsed minutes: {_entireStopwatch.Elapsed.Minutes:D2}:{_entireStopwatch.Elapsed.Seconds:D2}");
             //PrintLatestSeleniumReportIgnoreStats(seleniumFilesDir);
+            //PrintApiTestTimes();
         }
 
+        private static void PrintApiTestTimes()
+        {
+            TestRunViewModel model = _collectorRepository.GetTestRun(TestRunType.API, FlytApplication.BVV, 11563);
+            
+            WebReportGenerator.GenerateApiRunsStatsHtml(model);
+        }
+        
         private static void PrintSeleniumRunsPerDay()
         {
             var runs = _collectorRepository.GetLastTestRuns(TestRunType.Selenium2);

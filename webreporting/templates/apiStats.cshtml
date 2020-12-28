@@ -1,0 +1,47 @@
+@model SeleniumResults.webreporting.ViewModels.ApiStatsViewModel
+
+@{
+Layout = "_Layout.cshtml";
+ViewBag.Title = "Api stats";
+    ViewBag.SelectedPage = "";
+}
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Api stats</h1>
+
+<div class="table-responsive bg-white">
+    <table class="table table-bordered" id="apiRunsDatatable" width="100%" cellspacing="0">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Duration</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <th>Name</th>
+            <th>Duration</th>
+        </tr>
+        </tfoot>
+        <tbody>
+        @foreach (var sr in Model.BVVresults.Results)
+        {
+        <tr>
+            <td>@sr.TestResult.Name</td>
+            <td>@sr.GetDurationMinutesString</td>
+        </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+@section scripts {
+<script>
+    $(document).ready(function () {
+        $('#apiRunsDatatable').DataTable({
+            "order": [[0, "desc"]],
+            "pageLength": 25
+        });
+    });
+</script>
+}

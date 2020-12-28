@@ -76,5 +76,22 @@ namespace SeleniumResults.webreporting
             //Console.WriteLine(result);
             File.WriteAllText(Path.Combine(Program.WEB_REPORT_FOLDER, "specflowRuns.html"), result);
         }
+
+        public static void GenerateApiRunsStatsHtml(TestRunViewModel model)
+        {
+            var engine = new RazorLightEngineBuilder()
+                .UseFileSystemProject(Program.TEMPLATE_FOLDER)
+                .UseMemoryCachingProvider()
+                .Build();
+
+            var viewModel = new ApiStatsViewModel()
+            {
+                BVVresults = model
+            };
+
+            string result = engine.CompileRenderAsync("apiStats.cshtml", viewModel).Result;
+            //Console.WriteLine(result);
+            File.WriteAllText(Path.Combine(Program.WEB_REPORT_FOLDER, "apiStats.html"), result);
+        }
     }
 }

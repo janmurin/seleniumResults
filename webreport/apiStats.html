@@ -1,0 +1,2182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Api stats</title>
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="seleniumRuns.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">Test Statistics</div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+
+    <!-- Divider -->
+
+
+    <!-- Divider -->
+
+
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Selenium
+    </div>
+    <li class="nav-item ">
+        <a class="nav-link" href="seleniumRuns.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Test runs</span>
+        </a>
+    </li>
+    <li class="nav-item ">
+        <a class="nav-link" href="seleniumTests.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Test list</span>
+        </a>
+    </li>
+
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        API
+    </div>
+    <li class="nav-item ">
+        <a class="nav-link" href="apiRuns.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Api runs</span>
+        </a>
+    </li>
+
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Specflow
+    </div>
+    <li class="nav-item ">
+        <a class="nav-link" href="specflowRuns.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Specflow runs</span>
+        </a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+</ul>
+<!-- End of Sidebar -->
+
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+<!-- Main Content -->
+<div id="content">
+
+    <!-- Topbar -->
+    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+        <!-- Sidebar Toggle (Topbar) -->
+        <form class="form-inline">
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                <i class="fa fa-bars"></i>
+            </button>
+        </form>
+
+        <!-- Topbar Search -->
+        <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Topbar Navbar -->
+        <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+                <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-search fa-fw"></i>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                    <form class="form-inline mr-auto w-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bell fa-fw"></i>
+                    <!-- Counter - Alerts -->
+                    <span class="badge badge-danger badge-counter">3+</span>
+                </a>
+                <!-- Dropdown - Alerts -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                    <h6 class="dropdown-header">
+                        Alerts Center
+                    </h6>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-primary">
+                                <i class="fas fa-file-alt text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 12, 2019</div>
+                            <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-success">
+                                <i class="fas fa-donate text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 7, 2019</div>
+                            $290.29 has been deposited into your account!
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-warning">
+                                <i class="fas fa-exclamation-triangle text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 2, 2019</div>
+                            Spending Alert: We've noticed unusually high spending for your account.
+                        </div>
+                    </a>
+                    <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                </div>
+            </li>
+
+            <!-- Nav Item - Messages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-envelope fa-fw"></i>
+                    <!-- Counter - Messages -->
+                    <span class="badge badge-danger badge-counter">7</span>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                    <h6 class="dropdown-header">
+                        Message Center
+                    </h6>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                            <div class="status-indicator bg-success"></div>
+                        </div>
+                        <div class="font-weight-bold">
+                            <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                            <div class="small text-gray-500">Emily Fowler · 58m</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                            <div class="status-indicator"></div>
+                        </div>
+                        <div>
+                            <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+                            <div class="small text-gray-500">Jae Chun · 1d</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                            <div class="status-indicator bg-warning"></div>
+                        </div>
+                        <div>
+                            <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                            <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                            <div class="status-indicator bg-success"></div>
+                        </div>
+                        <div>
+                            <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+                            <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                </div>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                    <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                </a>
+                <!-- Dropdown - User Information -->
+                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Profile
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Settings
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Activity Log
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Logout
+                    </a>
+                </div>
+            </li>
+
+        </ul>
+
+    </nav>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+        
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Api stats</h1>
+
+<div class="table-responsive bg-white">
+    <table class="table table-bordered" id="apiRunsDatatable" width="100%" cellspacing="0">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Duration</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <th>Name</th>
+            <th>Duration</th>
+        </tr>
+        </tfoot>
+        <tbody>
+        <tr>
+            <td>LoginUsingOrgUnitFeature</td>
+            <td>1.02 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivateEmployeeAccessPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ViewEmployeePublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdateEmployeePublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>SearchEmployeePublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>CreateEmployeePublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivateEmployeePublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ViewOrganizationStructurePublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdateServiceOwnerPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdateCustomerOrganizationPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>CreateCustomerOrganizationPublicFeature</td>
+            <td>0.02 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivateCustomerOrganizationPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ViewClientPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdateClientPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>SearchClientPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>CreateClientPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdateOrganizationFeature</td>
+            <td>5.02 min</td>
+        </tr>
+        <tr>
+            <td>UpdateOrganizationPersonFeature</td>
+            <td>2.08 min</td>
+        </tr>
+        <tr>
+            <td>SearchOrganizationFeature</td>
+            <td>2.07 min</td>
+        </tr>
+        <tr>
+            <td>ViewOrganizationFeature</td>
+            <td>0.28 min</td>
+        </tr>
+        <tr>
+            <td>CreateOrganizationFeature</td>
+            <td>7.20 min</td>
+        </tr>
+        <tr>
+            <td>SearchOrganizationByNumberFeature</td>
+            <td>1.15 min</td>
+        </tr>
+        <tr>
+            <td>FilterOrganizationFeature</td>
+            <td>4.87 min</td>
+        </tr>
+        <tr>
+            <td>OrganizationAccessPointsFeature</td>
+            <td>1.73 min</td>
+        </tr>
+        <tr>
+            <td>CreateEmployeeAccessPublicFeature</td>
+            <td>0.02 min</td>
+        </tr>
+        <tr>
+            <td>ViewEmployeeAccessPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>EmployeePositionsPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivateFamilyPersonPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivatePersonFailFeature</td>
+            <td>4.47 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivatePersonSuccessFeature</td>
+            <td>2.88 min</td>
+        </tr>
+        <tr>
+            <td>CreatePersonFeature</td>
+            <td>3.60 min</td>
+        </tr>
+        <tr>
+            <td>GetPersonPhoneFeature</td>
+            <td>0.52 min</td>
+        </tr>
+        <tr>
+            <td>PlanCRUDFeature</td>
+            <td>0.52 min</td>
+        </tr>
+        <tr>
+            <td>EvaluationCRUDFeature</td>
+            <td>0.15 min</td>
+        </tr>
+        <tr>
+            <td>ViewRolePublicFeature</td>
+            <td>0.02 min</td>
+        </tr>
+        <tr>
+            <td>ViewBaseRegistryPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ViewTeamPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdatePublicTeamFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>PassifyPublicTeamFeature</td>
+            <td>0.02 min</td>
+        </tr>
+        <tr>
+            <td>GetOrganizationPersonDetailsFeature</td>
+            <td>1.78 min</td>
+        </tr>
+        <tr>
+            <td>CreatePublicTeamFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdatePersonPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>SearchPersonPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>CreatePersonPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ViewOrganizationPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdateOrganizationPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>SearchOrganizationPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>CreateOrganizationPublicFeature</td>
+            <td>0.02 min</td>
+        </tr>
+        <tr>
+            <td>Activate_DeactivateOrganizationPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ViewFamilyPersonPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdateFamilyPersonPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>CreateFamilyPersonPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ViewPersonPublicFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>AssignPersonToOrganizationFeature</td>
+            <td>4.83 min</td>
+        </tr>
+        <tr>
+            <td>CreateAndAssignPersonToOrganizationFeature</td>
+            <td>3.92 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivateOrganizationFeature</td>
+            <td>2.72 min</td>
+        </tr>
+        <tr>
+            <td>MigrationSettingsFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>MigrationServiceOwnerFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>MigrationMappingFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>MigrateSystemCaseFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>MigrateReferralFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>MigratePersonCaseFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>MigrateNetworkPersonFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>MigrateJournalFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>MigrateFollowUpFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>MigrateFamilyPersonFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>MigrateEnquiryFeature</td>
+            <td>0.88 min</td>
+        </tr>
+        <tr>
+            <td>MigrateOrganizationFeature</td>
+            <td>1.02 min</td>
+        </tr>
+        <tr>
+            <td>MigrateEmployeeFeature</td>
+            <td>0.02 min</td>
+        </tr>
+        <tr>
+            <td>MigrateClientsFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>MigrateClientItemsFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>MigrateClientHistoryFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>CopyTemplateFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ReturnFinishedCorrespondenceFeature</td>
+            <td>2.82 min</td>
+        </tr>
+        <tr>
+            <td>UploadPdfInInboxFeature</td>
+            <td>0.80 min</td>
+        </tr>
+        <tr>
+            <td>IncomingPostInboxInCasesFeature</td>
+            <td>1.92 min</td>
+        </tr>
+        <tr>
+            <td>IncomingPostInboxSetStatusRejectedFeature</td>
+            <td>1.02 min</td>
+        </tr>
+        <tr>
+            <td>RegisterIncomingMailFeature</td>
+            <td>0.28 min</td>
+        </tr>
+        <tr>
+            <td>IncomingPostInboxCopyToSiblingsFeature</td>
+            <td>1.82 min</td>
+        </tr>
+        <tr>
+            <td>IncomingPostInboxSearchFeature</td>
+            <td>0.47 min</td>
+        </tr>
+        <tr>
+            <td>MigrateCorrespondenceFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdatePersonContactsFeature</td>
+            <td>5.23 min</td>
+        </tr>
+        <tr>
+            <td>DeleteFinishedJournalFeature</td>
+            <td>0.95 min</td>
+        </tr>
+        <tr>
+            <td>DeleteJournalFeature</td>
+            <td>1.67 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactiveOrganizationPersonFeature</td>
+            <td>1.20 min</td>
+        </tr>
+        <tr>
+            <td>ViewNetworkPersonRolesFeature</td>
+            <td>2.05 min</td>
+        </tr>
+        <tr>
+            <td>CreateNetworkPersonSuccessFeature</td>
+            <td>6.67 min</td>
+        </tr>
+        <tr>
+            <td>CreateNetworkPersonFailFeature</td>
+            <td>5.55 min</td>
+        </tr>
+        <tr>
+            <td>ViewNetworkPersonFeature</td>
+            <td>3.05 min</td>
+        </tr>
+        <tr>
+            <td>UpdateNetworkPersonFeature</td>
+            <td>3.03 min</td>
+        </tr>
+        <tr>
+            <td>NetworkPersonAccessRightsFeature</td>
+            <td>2.83 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivateNetworkPersonFeature</td>
+            <td>1.22 min</td>
+        </tr>
+        <tr>
+            <td>CaseNotificationsFeature</td>
+            <td>0.35 min</td>
+        </tr>
+        <tr>
+            <td>JournalCopyToSiblingsFeature</td>
+            <td>8.40 min</td>
+        </tr>
+        <tr>
+            <td>UpdateJournalFeature</td>
+            <td>2.80 min</td>
+        </tr>
+        <tr>
+            <td>FinishJournalFeature</td>
+            <td>1.12 min</td>
+        </tr>
+        <tr>
+            <td>ViewJournalPdfFeature</td>
+            <td>1.13 min</td>
+        </tr>
+        <tr>
+            <td>LockJournalFeature</td>
+            <td>2.38 min</td>
+        </tr>
+        <tr>
+            <td>MergeFeature</td>
+            <td>1.80 min</td>
+        </tr>
+        <tr>
+            <td>JournalAccessRightsFeature</td>
+            <td>3.98 min</td>
+        </tr>
+        <tr>
+            <td>JournalNotArchivedFeature</td>
+            <td>0.38 min</td>
+        </tr>
+        <tr>
+            <td>JournalChangeConnectionFeature</td>
+            <td>2.72 min</td>
+        </tr>
+        <tr>
+            <td>JournalDraftFeature</td>
+            <td>0.68 min</td>
+        </tr>
+        <tr>
+            <td>CreateJournalFeature</td>
+            <td>4.60 min</td>
+        </tr>
+        <tr>
+            <td>JournalCommentsFeature</td>
+            <td>0.23 min</td>
+        </tr>
+        <tr>
+            <td>JournalChangeCaseworkerFeature</td>
+            <td>1.32 min</td>
+        </tr>
+        <tr>
+            <td>JournalActivityLogFeature</td>
+            <td>0.42 min</td>
+        </tr>
+        <tr>
+            <td>JournalAccessRightsEventsFeature</td>
+            <td>0.28 min</td>
+        </tr>
+        <tr>
+            <td>ViewJournalFeature</td>
+            <td>0.63 min</td>
+        </tr>
+        <tr>
+            <td>IncomingPostInboxLockFeature</td>
+            <td>0.22 min</td>
+        </tr>
+        <tr>
+            <td>PersonAccessPointsFeature</td>
+            <td>7.92 min</td>
+        </tr>
+        <tr>
+            <td>FilterPersonFeature</td>
+            <td>10.55 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByConclusionFeature</td>
+            <td>0.58 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByClientGroupFeature</td>
+            <td>0.28 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByCaseworkerFeature</td>
+            <td>0.68 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByCaseworkerEventsAndTimeFeature</td>
+            <td>0.68 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByAffiliationFeature</td>
+            <td>2.28 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByCaseDeadlineFeature</td>
+            <td>0.43 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByCaseworkerAndCaseTypeFeature</td>
+            <td>0.33 min</td>
+        </tr>
+        <tr>
+            <td>GetCasesStatisticsFeature</td>
+            <td>1.57 min</td>
+        </tr>
+        <tr>
+            <td>GetEmployeeFilterAccessFeature</td>
+            <td>0.35 min</td>
+        </tr>
+        <tr>
+            <td>ChangeUserLanguageSuccessFeature</td>
+            <td>0.73 min</td>
+        </tr>
+        <tr>
+            <td>ChangeUserLanguageFailFeature</td>
+            <td>0.67 min</td>
+        </tr>
+        <tr>
+            <td>CurrentRoleFeature</td>
+            <td>0.50 min</td>
+        </tr>
+        <tr>
+            <td>CurrentPositionFeature</td>
+            <td>0.53 min</td>
+        </tr>
+        <tr>
+            <td>UpdateTimeRegistrationFeature</td>
+            <td>1.83 min</td>
+        </tr>
+        <tr>
+            <td>CreateTimeRegistrationFeature</td>
+            <td>1.88 min</td>
+        </tr>
+        <tr>
+            <td>DeleteTimeRegistrationFeature</td>
+            <td>0.73 min</td>
+        </tr>
+        <tr>
+            <td>UpdateTeamFailFeature</td>
+            <td>1.40 min</td>
+        </tr>
+        <tr>
+            <td>UpdateTeamSuccessFeature</td>
+            <td>0.17 min</td>
+        </tr>
+        <tr>
+            <td>ViewTeamFeature</td>
+            <td>0.80 min</td>
+        </tr>
+        <tr>
+            <td>TeamAccessPointsFeature</td>
+            <td>0.82 min</td>
+        </tr>
+        <tr>
+            <td>CreateTeamFailFeature</td>
+            <td>1.03 min</td>
+        </tr>
+        <tr>
+            <td>CreateTeamSuccessFeature</td>
+            <td>0.67 min</td>
+        </tr>
+        <tr>
+            <td>PassifyTeamFeature</td>
+            <td>0.32 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByEventCategoryFeature</td>
+            <td>0.68 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByEventCategoryAndAffiliationFeature</td>
+            <td>1.52 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByClientOrganizationFeature</td>
+            <td>1.72 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByEventFinishedInPeriodFilterFeature</td>
+            <td>0.60 min</td>
+        </tr>
+        <tr>
+            <td>AppointmentSettingsFeature</td>
+            <td>0.13 min</td>
+        </tr>
+        <tr>
+            <td>AppointmentParticipantValidationFeature</td>
+            <td>0.50 min</td>
+        </tr>
+        <tr>
+            <td>AppointmentMergeFeature</td>
+            <td>0.57 min</td>
+        </tr>
+        <tr>
+            <td>AppointmentHideClientInfoFeature</td>
+            <td>0.52 min</td>
+        </tr>
+        <tr>
+            <td>AppointmentCancelSendSmsFeature</td>
+            <td>0.52 min</td>
+        </tr>
+        <tr>
+            <td>AppointmentAccessPointsFeature</td>
+            <td>0.52 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByMunicipalityAndAssigmentFeature</td>
+            <td>8.48 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsOverviewFeature</td>
+            <td>0.95 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsTimeRegistrationFeature</td>
+            <td>0.50 min</td>
+        </tr>
+        <tr>
+            <td>EventStatisticsPagingFeature</td>
+            <td>0.32 min</td>
+        </tr>
+        <tr>
+            <td>ReferralStatisticsPagingFeature</td>
+            <td>0.02 min</td>
+        </tr>
+        <tr>
+            <td>UpdatingSettingsFeature</td>
+            <td>1.67 min</td>
+        </tr>
+        <tr>
+            <td>CaseStatisticsPagingFeature</td>
+            <td>0.23 min</td>
+        </tr>
+        <tr>
+            <td>UpdateStatisticFilterFeature</td>
+            <td>0.17 min</td>
+        </tr>
+        <tr>
+            <td>DeleteStatisticFilterFeature</td>
+            <td>0.72 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsExportFeature</td>
+            <td>1.10 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByEventsFeature</td>
+            <td>1.72 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByTeamFeature</td>
+            <td>0.77 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByWorkTimeFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByProcessingTimeAndAffiliationFeature</td>
+            <td>0.95 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByReferrrerFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByReferralFeature</td>
+            <td>0.02 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByOrganizationFeature</td>
+            <td>0.60 min</td>
+        </tr>
+        <tr>
+            <td>StatisticsByAgeGroupFeature</td>
+            <td>4.30 min</td>
+        </tr>
+        <tr>
+            <td>SaveStatisticFilterFeature</td>
+            <td>1.03 min</td>
+        </tr>
+        <tr>
+            <td>DocumentSttingsFeature</td>
+            <td>0.65 min</td>
+        </tr>
+        <tr>
+            <td>CitizenDialogueSettingsFeature</td>
+            <td>0.62 min</td>
+        </tr>
+        <tr>
+            <td>PeriodSettingsFeature</td>
+            <td>0.17 min</td>
+        </tr>
+        <tr>
+            <td>PersonCaseQueryExportFeature</td>
+            <td>0.28 min</td>
+        </tr>
+        <tr>
+            <td>ReferralQueryExportFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>OutgoingCorrespondenceExportFeature</td>
+            <td>0.40 min</td>
+        </tr>
+        <tr>
+            <td>JournalsQueryExportFeature</td>
+            <td>0.37 min</td>
+        </tr>
+        <tr>
+            <td>IncomingCorrespondenceExportFeature</td>
+            <td>0.32 min</td>
+        </tr>
+        <tr>
+            <td>EnquirySccQueryExportFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>EnquiryQueryExportFeature</td>
+            <td>0.58 min</td>
+        </tr>
+        <tr>
+            <td>ClientQueryExportFeature</td>
+            <td>0.25 min</td>
+        </tr>
+        <tr>
+            <td>OutgoingCorrespondenceQueryFeature</td>
+            <td>4.98 min</td>
+        </tr>
+        <tr>
+            <td>JournalQueryFeature</td>
+            <td>4.85 min</td>
+        </tr>
+        <tr>
+            <td>IncomingCorrespondenceQueryFeature</td>
+            <td>3.70 min</td>
+        </tr>
+        <tr>
+            <td>SystemCaseQueryExportFeature</td>
+            <td>0.27 min</td>
+        </tr>
+        <tr>
+            <td>EnquiryQueryFeature</td>
+            <td>2.68 min</td>
+        </tr>
+        <tr>
+            <td>SaveQueryFeature</td>
+            <td>1.12 min</td>
+        </tr>
+        <tr>
+            <td>UpdateQueryFeature</td>
+            <td>0.20 min</td>
+        </tr>
+        <tr>
+            <td>DeleteQueryFeature</td>
+            <td>0.83 min</td>
+        </tr>
+        <tr>
+            <td>ReportOfConcernCRUDFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>InvestigationCRUDFeature</td>
+            <td>0.32 min</td>
+        </tr>
+        <tr>
+            <td>ReferralAccessFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>CreateUpdateReferralFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ViewPersonFeature</td>
+            <td>5.47 min</td>
+        </tr>
+        <tr>
+            <td>UpdatePersonFeature</td>
+            <td>6.72 min</td>
+        </tr>
+        <tr>
+            <td>ViewPersonListFeature</td>
+            <td>2.90 min</td>
+        </tr>
+        <tr>
+            <td>ViewPersonRolesFeature</td>
+            <td>1.80 min</td>
+        </tr>
+        <tr>
+            <td>CombinedQueryFeature</td>
+            <td>0.60 min</td>
+        </tr>
+        <tr>
+            <td>SearchPersonFeature</td>
+            <td>8.52 min</td>
+        </tr>
+        <tr>
+            <td>ReferralQueryFeature</td>
+            <td>0.02 min</td>
+        </tr>
+        <tr>
+            <td>ClientQueryPagingFeature</td>
+            <td>0.28 min</td>
+        </tr>
+        <tr>
+            <td>AuthenticationSettingsFeature</td>
+            <td>1.20 min</td>
+        </tr>
+        <tr>
+            <td>CategoriesOnTopSettingsFeature</td>
+            <td>0.18 min</td>
+        </tr>
+        <tr>
+            <td>ShipmentLogFeature</td>
+            <td>0.28 min</td>
+        </tr>
+        <tr>
+            <td>ViewRoleFeature</td>
+            <td>1.68 min</td>
+        </tr>
+        <tr>
+            <td>ViewAccessPointsFeature</td>
+            <td>1.37 min</td>
+        </tr>
+        <tr>
+            <td>UpdateRoleFailFeature</td>
+            <td>1.47 min</td>
+        </tr>
+        <tr>
+            <td>UpdateRoleSuccessFeature</td>
+            <td>0.73 min</td>
+        </tr>
+        <tr>
+            <td>RoleHistoryFeature</td>
+            <td>1.63 min</td>
+        </tr>
+        <tr>
+            <td>RoleReasonFeature</td>
+            <td>0.47 min</td>
+        </tr>
+        <tr>
+            <td>CreateRoleSuccessFeature</td>
+            <td>1.33 min</td>
+        </tr>
+        <tr>
+            <td>CreateRoleFailFeature</td>
+            <td>0.93 min</td>
+        </tr>
+        <tr>
+            <td>SCC_ClientQueryFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>RoleAccessPointsFeature</td>
+            <td>0.82 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivateRoleSuccessFeature</td>
+            <td>0.22 min</td>
+        </tr>
+        <tr>
+            <td>SystemCaseQueryFeature</td>
+            <td>4.35 min</td>
+        </tr>
+        <tr>
+            <td>ClientQueryFeature</td>
+            <td>12.55 min</td>
+        </tr>
+        <tr>
+            <td>PersonCaseQueryFeature</td>
+            <td>6.20 min</td>
+        </tr>
+        <tr>
+            <td>SystemCaseQueryPagingFeature</td>
+            <td>0.27 min</td>
+        </tr>
+        <tr>
+            <td>PersonCaseQueryPagingFeature</td>
+            <td>0.27 min</td>
+        </tr>
+        <tr>
+            <td>ReferralQueryPagingFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>OutgoingCorrespondencePagingFeature</td>
+            <td>0.43 min</td>
+        </tr>
+        <tr>
+            <td>JournalQueryPagingFeature</td>
+            <td>0.42 min</td>
+        </tr>
+        <tr>
+            <td>IncomingCorrespondencePagingFeature</td>
+            <td>0.35 min</td>
+        </tr>
+        <tr>
+            <td>EnquiryQueryPagingFeature</td>
+            <td>0.47 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivateRoleFailFeature</td>
+            <td>1.02 min</td>
+        </tr>
+        <tr>
+            <td>IncomingPostInboxGetPdfFeature</td>
+            <td>0.30 min</td>
+        </tr>
+        <tr>
+            <td>IncomingPostInboxAccessPointsFeature</td>
+            <td>0.47 min</td>
+        </tr>
+        <tr>
+            <td>IncomingPostInboxClientDetailsFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>SearchClientFeature</td>
+            <td>2.67 min</td>
+        </tr>
+        <tr>
+            <td>DeleteClientWithEventsFeature</td>
+            <td>3.72 min</td>
+        </tr>
+        <tr>
+            <td>CreateClientSuccessFeature</td>
+            <td>4.30 min</td>
+        </tr>
+        <tr>
+            <td>CreateClientFailFeature</td>
+            <td>5.05 min</td>
+        </tr>
+        <tr>
+            <td>GetClientFamilyFeature</td>
+            <td>1.08 min</td>
+        </tr>
+        <tr>
+            <td>DeleteClientWithEventsWithoutAuthorizationFeature</td>
+            <td>1.03 min</td>
+        </tr>
+        <tr>
+            <td>DeleteClientFeature</td>
+            <td>2.07 min</td>
+        </tr>
+        <tr>
+            <td>ClientDetailsHistoryFeature</td>
+            <td>5.32 min</td>
+        </tr>
+        <tr>
+            <td>ClientSecretAddressFeature</td>
+            <td>3.27 min</td>
+        </tr>
+        <tr>
+            <td>ClientStatusSuccessFeature</td>
+            <td>2.83 min</td>
+        </tr>
+        <tr>
+            <td>ClientStatusFailFeature</td>
+            <td>0.88 min</td>
+        </tr>
+        <tr>
+            <td>ClientAccessRightsFailFeature</td>
+            <td>2.78 min</td>
+        </tr>
+        <tr>
+            <td>ClientAccessRightsSuccessFeature</td>
+            <td>1.92 min</td>
+        </tr>
+        <tr>
+            <td>ClientDetailsSummaryFeature</td>
+            <td>0.60 min</td>
+        </tr>
+        <tr>
+            <td>ClientRelationsFeature</td>
+            <td>0.30 min</td>
+        </tr>
+        <tr>
+            <td>ClientDetailsFeature</td>
+            <td>0.13 min</td>
+        </tr>
+        <tr>
+            <td>ClientAccessPointsFeature</td>
+            <td>0.88 min</td>
+        </tr>
+        <tr>
+            <td>ViewAllSystemCasesFeature</td>
+            <td>2.78 min</td>
+        </tr>
+        <tr>
+            <td>UpdateSystemCaseStatusDatesFeature</td>
+            <td>0.30 min</td>
+        </tr>
+        <tr>
+            <td>SystemCaseStatusFeature</td>
+            <td>1.65 min</td>
+        </tr>
+        <tr>
+            <td>CreateSystemCaseFeature</td>
+            <td>2.85 min</td>
+        </tr>
+        <tr>
+            <td>UpdateSystemCaseFeature</td>
+            <td>1.10 min</td>
+        </tr>
+        <tr>
+            <td>SystemCaseEventsAccessRightsFeature</td>
+            <td>0.57 min</td>
+        </tr>
+        <tr>
+            <td>ViewClientEventsFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ViewClientCasesFeature</td>
+            <td>0.58 min</td>
+        </tr>
+        <tr>
+            <td>ViewClientFeature</td>
+            <td>3.08 min</td>
+        </tr>
+        <tr>
+            <td>UpdateClientSuccessFeature</td>
+            <td>2.50 min</td>
+        </tr>
+        <tr>
+            <td>ViewClientGroupFeature</td>
+            <td>0.38 min</td>
+        </tr>
+        <tr>
+            <td>ClientGroupAccessPointsFeature</td>
+            <td>0.52 min</td>
+        </tr>
+        <tr>
+            <td>ViewClientServiceAuthorizationFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdateClientServiceAuthorizationFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>SearchClientServiceCodeFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>CreateClientServiceAuthorizationFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ClientServiceAuthorizationHistoryFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ClientServiceAccessAffiliationsFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivateClientServiceAuthorizationFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ViewClientServiceFeatureFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdateClientServiceFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>GetAllRelatedCasesFeature</td>
+            <td>0.27 min</td>
+        </tr>
+        <tr>
+            <td>SearchClientServiceCodeFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>CreateClientServiceFeature</td>
+            <td>0.02 min</td>
+        </tr>
+        <tr>
+            <td>ClientServiceAuthorizationFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ViewClientEmployeeDeviationHistoryFeature</td>
+            <td>0.98 min</td>
+        </tr>
+        <tr>
+            <td>ViewClientEmployeeDeviationSuccessFeature</td>
+            <td>0.47 min</td>
+        </tr>
+        <tr>
+            <td>ViewClientEmployeeDeviationFailFeature</td>
+            <td>0.42 min</td>
+        </tr>
+        <tr>
+            <td>UpdateClientEmployeeDeviationFailFeature</td>
+            <td>1.18 min</td>
+        </tr>
+        <tr>
+            <td>UpdateClientEmployeeDeviationSuccessFeature</td>
+            <td>0.80 min</td>
+        </tr>
+        <tr>
+            <td>CreateClientEmployeeDeviationFailFeature</td>
+            <td>1.75 min</td>
+        </tr>
+        <tr>
+            <td>CreateClientEmployeeDeviationSuccessFeature</td>
+            <td>0.92 min</td>
+        </tr>
+        <tr>
+            <td>DeleteClientWithDeviationFeature</td>
+            <td>0.27 min</td>
+        </tr>
+        <tr>
+            <td>UpdateClientFailFeature</td>
+            <td>5.12 min</td>
+        </tr>
+        <tr>
+            <td>DeleteClientServiceFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ViewAllPersonCasesFeature</td>
+            <td>5.73 min</td>
+        </tr>
+        <tr>
+            <td>PersonCaseStatusFeature</td>
+            <td>3.12 min</td>
+        </tr>
+        <tr>
+            <td>UpdatePersonCaseStatusDatesFeature</td>
+            <td>1.07 min</td>
+        </tr>
+        <tr>
+            <td>ClientBulkQueryFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ClientBulkChangeValidateAffiliationFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ClientBulkChangeOrganizationFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ClientBulkChangeMunicipalityFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ClientBulkChangeAffiliationAndGroupFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>BulkChangeClientDeactivateQueryFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>BulkChangeClientDeactivateFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>BulkChangeActivityLogFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>BlueLightAuthorizationFeature</td>
+            <td>0.50 min</td>
+        </tr>
+        <tr>
+            <td>SearchActivityLogFeature</td>
+            <td>3.20 min</td>
+        </tr>
+        <tr>
+            <td>ClientRelatedInformationLoggingFeature</td>
+            <td>3.08 min</td>
+        </tr>
+        <tr>
+            <td>PersonCaseBulkChangeCaseworkerFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ReauthenticationActivityLogFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>AssessmentAccessPointFeature</td>
+            <td>1.12 min</td>
+        </tr>
+        <tr>
+            <td>AssessmentAccessRightsFeature</td>
+            <td>1.08 min</td>
+        </tr>
+        <tr>
+            <td>ArchiveResetFeature</td>
+            <td>0.48 min</td>
+        </tr>
+        <tr>
+            <td>ArchiveLogFeature</td>
+            <td>0.30 min</td>
+        </tr>
+        <tr>
+            <td>AddAdministratorForCustomerFeature</td>
+            <td>0.90 min</td>
+        </tr>
+        <tr>
+            <td>CreateCustomerFeature</td>
+            <td>0.08 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivateCustomerFeature</td>
+            <td>0.02 min</td>
+        </tr>
+        <tr>
+            <td>FeatureToggleFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>AdminBaseRegistryCRUDFeature</td>
+            <td>0.07 min</td>
+        </tr>
+        <tr>
+            <td>AdminActivityLogFeature</td>
+            <td>0.03 min</td>
+        </tr>
+        <tr>
+            <td>ApplicationSwitcherFeature</td>
+            <td>1.78 min</td>
+        </tr>
+        <tr>
+            <td>ClientServiceLoggingFeature</td>
+            <td>1.02 min</td>
+        </tr>
+        <tr>
+            <td>CreateClientGroupFeature</td>
+            <td>1.00 min</td>
+        </tr>
+        <tr>
+            <td>PersonCaseBulkChangeCoCaseworkerFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>AutoCompleteSearchFeature</td>
+            <td>0.73 min</td>
+        </tr>
+        <tr>
+            <td>CreatePersonCaseFailFeature</td>
+            <td>2.23 min</td>
+        </tr>
+        <tr>
+            <td>UpdatePersonCaseFeature</td>
+            <td>0.60 min</td>
+        </tr>
+        <tr>
+            <td>GetAllByPersonClientIdFeature</td>
+            <td>1.23 min</td>
+        </tr>
+        <tr>
+            <td>CreatePersonCaseSuccessFeature</td>
+            <td>1.37 min</td>
+        </tr>
+        <tr>
+            <td>CaseClientAffliationHistoryFeature</td>
+            <td>0.45 min</td>
+        </tr>
+        <tr>
+            <td>ClientClosedCasesAccessRightFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>AllClientGroupCasesFeature</td>
+            <td>0.42 min</td>
+        </tr>
+        <tr>
+            <td>OnlyBoysClientGroupCasesFeature</td>
+            <td>0.18 min</td>
+        </tr>
+        <tr>
+            <td>RecentCasesFeature</td>
+            <td>1.60 min</td>
+        </tr>
+        <tr>
+            <td>CreateHiddenCaseFeature</td>
+            <td>0.77 min</td>
+        </tr>
+        <tr>
+            <td>MyCasesFeature</td>
+            <td>0.20 min</td>
+        </tr>
+        <tr>
+            <td>PersonCaseBulkQueryFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>GetSimpleCaseFeature</td>
+            <td>0.40 min</td>
+        </tr>
+        <tr>
+            <td>GetCaseStatusesFeature</td>
+            <td>0.33 min</td>
+        </tr>
+        <tr>
+            <td>CreateCitizenDialogueFeature</td>
+            <td>0.30 min</td>
+        </tr>
+        <tr>
+            <td>CitizenDialogueSettingsFeature</td>
+            <td>0.05 min</td>
+        </tr>
+        <tr>
+            <td>CitizenDialogueAttachmentsFeature</td>
+            <td>0.25 min</td>
+        </tr>
+        <tr>
+            <td>ViewBaseRegistryFeature</td>
+            <td>2.92 min</td>
+        </tr>
+        <tr>
+            <td>SearchBaseRegistryFeature</td>
+            <td>1.72 min</td>
+        </tr>
+        <tr>
+            <td>UpdateBaseRegistryFailFeature</td>
+            <td>2.20 min</td>
+        </tr>
+        <tr>
+            <td>UpdateBaseRegistrySuccessFeature</td>
+            <td>0.35 min</td>
+        </tr>
+        <tr>
+            <td>CreateBaseRegistryFailFeature</td>
+            <td>1.13 min</td>
+        </tr>
+        <tr>
+            <td>CreateBaseRegistrySuccessFeature</td>
+            <td>0.73 min</td>
+        </tr>
+        <tr>
+            <td>DeleteBaseRegistryFeature</td>
+            <td>0.68 min</td>
+        </tr>
+        <tr>
+            <td>GetCaseFeature</td>
+            <td>1.67 min</td>
+        </tr>
+        <tr>
+            <td>UpdateClientGroupFeature</td>
+            <td>0.73 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivateClientGroupFeature</td>
+            <td>2.68 min</td>
+        </tr>
+        <tr>
+            <td>CorrespondenceAccessPointsFeature</td>
+            <td>0.12 min</td>
+        </tr>
+        <tr>
+            <td>InitialEnquiryFeature</td>
+            <td>1.15 min</td>
+        </tr>
+        <tr>
+            <td>EnquiryMergeFeature</td>
+            <td>1.00 min</td>
+        </tr>
+        <tr>
+            <td>EnquiryFeature</td>
+            <td>0.57 min</td>
+        </tr>
+        <tr>
+            <td>EnquiryMarkedEventsFeature</td>
+            <td>0.38 min</td>
+        </tr>
+        <tr>
+            <td>EnquiryDraftFeature</td>
+            <td>0.62 min</td>
+        </tr>
+        <tr>
+            <td>CreateEnquiryFeature</td>
+            <td>1.87 min</td>
+        </tr>
+        <tr>
+            <td>EnquiryAccessRightsFeature</td>
+            <td>0.58 min</td>
+        </tr>
+        <tr>
+            <td>DeleteEnquiryFeature</td>
+            <td>0.37 min</td>
+        </tr>
+        <tr>
+            <td>EnquiryAccessFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ViewDownloadEnquirySccPdfFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdateEnquirySccFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdateEnquiryFeature</td>
+            <td>1.18 min</td>
+        </tr>
+        <tr>
+            <td>InitialEnquirySccFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>EnquirySccMarkedEventsFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>EnquirySccFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>EnquirySccDraftFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>EnquirySccAccessRightsFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>EnquirySccAccessFeature</td>
+            <td>0.02 min</td>
+        </tr>
+        <tr>
+            <td>DeleteEnquirySccFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>CreateEnquirySccFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>SearchEmployeeFeature</td>
+            <td>5.40 min</td>
+        </tr>
+        <tr>
+            <td>UpdateEmployeeFeature</td>
+            <td>3.13 min</td>
+        </tr>
+        <tr>
+            <td>ViewEmployeeFeature</td>
+            <td>1.48 min</td>
+        </tr>
+        <tr>
+            <td>CreateEmployeeFailFeature</td>
+            <td>4.15 min</td>
+        </tr>
+        <tr>
+            <td>EnquirySccMergeFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>CreateEmployeeSuccessFeature</td>
+            <td>0.50 min</td>
+        </tr>
+        <tr>
+            <td>ViewDownloadEnquiryPdfFeature</td>
+            <td>1.03 min</td>
+        </tr>
+        <tr>
+            <td>CategoryOnTopFeature</td>
+            <td>0.27 min</td>
+        </tr>
+        <tr>
+            <td>UpdateFamilyPersonFailFeature</td>
+            <td>6.60 min</td>
+        </tr>
+        <tr>
+            <td>UpdateFamilyPersonSuccessFeature</td>
+            <td>3.17 min</td>
+        </tr>
+        <tr>
+            <td>FamilyPersonAccessPointsFeature</td>
+            <td>4.17 min</td>
+        </tr>
+        <tr>
+            <td>CreateFamilyPersonSuccessFeature</td>
+            <td>3.08 min</td>
+        </tr>
+        <tr>
+            <td>CreateFamilyPersonFailFeature</td>
+            <td>2.60 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivateFamilyPersonFeature</td>
+            <td>1.17 min</td>
+        </tr>
+        <tr>
+            <td>UnreadEventsFeature</td>
+            <td>1.98 min</td>
+        </tr>
+        <tr>
+            <td>InProgressDocumentsFeature</td>
+            <td>1.32 min</td>
+        </tr>
+        <tr>
+            <td>CorrespondenceApprovalsFeature</td>
+            <td>0.53 min</td>
+        </tr>
+        <tr>
+            <td>RegisterPostFeature</td>
+            <td>0.60 min</td>
+        </tr>
+        <tr>
+            <td>HeartBeatFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>EnquiryCopyToSiblingsFeature</td>
+            <td>3.82 min</td>
+        </tr>
+        <tr>
+            <td>FollowUpValidationFeature</td>
+            <td>0.75 min</td>
+        </tr>
+        <tr>
+            <td>SearchEventsFeature</td>
+            <td>6.78 min</td>
+        </tr>
+        <tr>
+            <td>GetMergedEventElementForPdfCountFeature</td>
+            <td>9.92 min</td>
+        </tr>
+        <tr>
+            <td>GetMergedEventElementsAsPdfFeature</td>
+            <td>7.32 min</td>
+        </tr>
+        <tr>
+            <td>CreateCorrespondenceWithMergedEventElementsPdfFeature</td>
+            <td>7.10 min</td>
+        </tr>
+        <tr>
+            <td>SearchEventFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>IsAllEventsLockedFeature</td>
+            <td>1.12 min</td>
+        </tr>
+        <tr>
+            <td>InProgressDocumentsFeatureFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>FilterEventsFeature</td>
+            <td>4.37 min</td>
+        </tr>
+        <tr>
+            <td>GetMergedEventElementEarliestCreationDateFeature</td>
+            <td>1.92 min</td>
+        </tr>
+        <tr>
+            <td>EventsFeature</td>
+            <td>1.35 min</td>
+        </tr>
+        <tr>
+            <td>EventAsPdfFeature</td>
+            <td>0.40 min</td>
+        </tr>
+        <tr>
+            <td>FollowUpDeadlineOnCaseFeature</td>
+            <td>0.02 min</td>
+        </tr>
+        <tr>
+            <td>SmsLogFeature</td>
+            <td>1.53 min</td>
+        </tr>
+        <tr>
+            <td>EmployeePositionsFeature</td>
+            <td>2.07 min</td>
+        </tr>
+        <tr>
+            <td>EmployeesByAccessToClientFeature</td>
+            <td>0.17 min</td>
+        </tr>
+        <tr>
+            <td>CorrespondenceApprovalFailFeature</td>
+            <td>7.30 min</td>
+        </tr>
+        <tr>
+            <td>CorrespondenceApprovalSuccessFeature</td>
+            <td>5.68 min</td>
+        </tr>
+        <tr>
+            <td>SearchSenderRecipientsByCaseFeature</td>
+            <td>12.58 min</td>
+        </tr>
+        <tr>
+            <td>SearchSenderRecipientsByClientFeature</td>
+            <td>11.47 min</td>
+        </tr>
+        <tr>
+            <td>MergeFeature</td>
+            <td>10.78 min</td>
+        </tr>
+        <tr>
+            <td>ViewCorrespondencePdfFeature</td>
+            <td>0.95 min</td>
+        </tr>
+        <tr>
+            <td>ViewCorrespondenceFeature</td>
+            <td>0.37 min</td>
+        </tr>
+        <tr>
+            <td>UpdateCorrespondenceFeature</td>
+            <td>2.87 min</td>
+        </tr>
+        <tr>
+            <td>SearchSenderRecipientsFeature</td>
+            <td>2.83 min</td>
+        </tr>
+        <tr>
+            <td>CreateCorrespondenceFeature</td>
+            <td>4.68 min</td>
+        </tr>
+        <tr>
+            <td>CorrespondenceCopyToSiblingsFeature</td>
+            <td>8.38 min</td>
+        </tr>
+        <tr>
+            <td>DiagnosisCodeFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>SearchRecipientsFeature</td>
+            <td>1.17 min</td>
+        </tr>
+        <tr>
+            <td>FinishCorrespondenceFeature</td>
+            <td>1.12 min</td>
+        </tr>
+        <tr>
+            <td>DeleteCorrespondenceFeature</td>
+            <td>0.83 min</td>
+        </tr>
+        <tr>
+            <td>CorrespondenceUpdateConnectionFeature</td>
+            <td>0.92 min</td>
+        </tr>
+        <tr>
+            <td>CorrespondenceDocumentsFeature</td>
+            <td>2.12 min</td>
+        </tr>
+        <tr>
+            <td>CorrespondenceDraftFeature</td>
+            <td>0.85 min</td>
+        </tr>
+        <tr>
+            <td>CorrespondenceNotArchivedFeature</td>
+            <td>0.20 min</td>
+        </tr>
+        <tr>
+            <td>CorrespondenceActivityLogFeature</td>
+            <td>6.52 min</td>
+        </tr>
+        <tr>
+            <td>CorrespondenceChangeCaseworkerFeature</td>
+            <td>4.78 min</td>
+        </tr>
+        <tr>
+            <td>CorrespondenceChangeConnectionFeature</td>
+            <td>2.23 min</td>
+        </tr>
+        <tr>
+            <td>CorrespondenceAccessRightsFeature</td>
+            <td>3.18 min</td>
+        </tr>
+        <tr>
+            <td>CorrespondenceAttachmentsFeature</td>
+            <td>2.67 min</td>
+        </tr>
+        <tr>
+            <td>LockCorrespondenceFeature</td>
+            <td>1.83 min</td>
+        </tr>
+        <tr>
+            <td>GetSimpleEmployeeFeature</td>
+            <td>0.65 min</td>
+        </tr>
+        <tr>
+            <td>GetDocumentTemplatesFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>ViewCategoriesFeature</td>
+            <td>0.40 min</td>
+        </tr>
+        <tr>
+            <td>EmployeeProfileFeature</td>
+            <td>0.13 min</td>
+        </tr>
+        <tr>
+            <td>EmployeePositionAccessPointsFeature</td>
+            <td>0.63 min</td>
+        </tr>
+        <tr>
+            <td>EmployeeAlternativeLoginFeature</td>
+            <td>0.72 min</td>
+        </tr>
+        <tr>
+            <td>EmployeeAccessPointsFeature</td>
+            <td>1.03 min</td>
+        </tr>
+        <tr>
+            <td>ViewEmployeeTeamRoleFeature</td>
+            <td>1.22 min</td>
+        </tr>
+        <tr>
+            <td>CreateEmployeeTeamRoleFeature</td>
+            <td>1.83 min</td>
+        </tr>
+        <tr>
+            <td>EmployeeTeamRoleAccessPointsFeature</td>
+            <td>0.40 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivateEmployeeTeamRoleFeature</td>
+            <td>1.03 min</td>
+        </tr>
+        <tr>
+            <td>ViewEmployeeAccessByOrgUnitsFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>UpdateEmployeeAccessByOrgUnitFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>CreateEmployeeAccessByOrgUnitsSuccessFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>DocumentTemplateAccessPointsFeature</td>
+            <td>0.95 min</td>
+        </tr>
+        <tr>
+            <td>CreateEmployeeAccessByOrgUnitsFailFeature</td>
+            <td>0.00 min</td>
+        </tr>
+        <tr>
+            <td>CreateOrganiztionUnitsFeature</td>
+            <td>5.83 min</td>
+        </tr>
+        <tr>
+            <td>ViewCustomersFeature</td>
+            <td>0.53 min</td>
+        </tr>
+        <tr>
+            <td>OrganizationStructureHistoryFeature</td>
+            <td>2.85 min</td>
+        </tr>
+        <tr>
+            <td>UpdateOrganizationStructureFeature</td>
+            <td>2.22 min</td>
+        </tr>
+        <tr>
+            <td>GetOrganizationFeature</td>
+            <td>1.93 min</td>
+        </tr>
+        <tr>
+            <td>CustomerActivateAssessmentFeature</td>
+            <td>1.58 min</td>
+        </tr>
+        <tr>
+            <td>ActivateDeactivateOrganizationStructureFeature</td>
+            <td>1.48 min</td>
+        </tr>
+        <tr>
+            <td>ViewMenuStructureFeature</td>
+            <td>0.30 min</td>
+        </tr>
+        <tr>
+            <td>CreateDocumentTemplateFeature</td>
+            <td>2.27 min</td>
+        </tr>
+        <tr>
+            <td>ViewDocumentTemplatesFeature</td>
+            <td>0.75 min</td>
+        </tr>
+        <tr>
+            <td>UpdateDocumentTemplateFeature</td>
+            <td>1.38 min</td>
+        </tr>
+        <tr>
+            <td>UpdateOrganizationUnitsFeature</td>
+            <td>6.00 min</td>
+        </tr>
+        <tr>
+            <td>SmsSendFeature</td>
+            <td>0.50 min</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+
+<!-- Footer -->
+<footer class="sticky-footer bg-white">
+    <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2020</span>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+</div>
+<!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin-2.min.js"></script>
+
+<!-- Page level plugins -->
+<script src="vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<script src="vendor/chart.js/Chart.min.js"></script>
+<script src="js/utils.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#apiRunsDatatable').DataTable({
+            "order": [[0, "desc"]],
+            "pageLength": 25
+        });
+    });
+</script>
+
+</body>
+
+</html>

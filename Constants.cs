@@ -86,6 +86,7 @@ namespace SeleniumResults
             new KeyValuePair<string, string>("EnquiryFromEventsSmokeTest", TestCategories.BVV),
             new KeyValuePair<string, string>("EventBackLinkSmokeTest", TestCategories.All),
             new KeyValuePair<string, string>("EventListSmokeTest", TestCategories.All),
+            new KeyValuePair<string, string>("EventListBackLinkSmokeTest", TestCategories.All),
             new KeyValuePair<string, string>("FollowUpFromCalendarSmokeTest", TestCategories.All),
             new KeyValuePair<string, string>("FollowUpFromCaseSmokeTest", TestCategories.All),
             new KeyValuePair<string, string>("FollowUpFromEventSmokeTest", TestCategories.All),

@@ -21,7 +21,7 @@ namespace SeleniumResults.Repository
         public CollectorRepository()
         {
             _testRunIds = GetTestRunIds();
-            _twoMonthsAgo = DateTime.Now - TimeSpan.FromDays(10);
+            //_twoMonthsAgo = DateTime.Now - TimeSpan.FromDays(10);
             //_twoMonthsAgo = DateTime.Now - TimeSpan.FromDays(180);
         }
 
@@ -142,6 +142,23 @@ namespace SeleniumResults.Repository
                 .Where(t => !t.HasMidnightErrors && !t.HasTooManyErrors && !t.HasSeleniumGridErrors)
                 .SelectMany(s => s.Results)
                 .ToList();
+        }
+
+        public TestRunViewModel GetTestRun(TestRunType type, FlytApplication app, int version)
+        {
+            using (var db = new CollectorContext())
+            {
+                var testResultViewModels = from testResult in db.TestResults
+                    join testRun in db.TestRuns on testResult.TestRunId equals testRun.Id
+                    where testRun.TestRunType == type && testRun.FlytApplicationType ==  app && testRun.BuildNumber==version
+                    select new TestResultViewModel(new TestResult(testResult, testRun));
+
+                return testResultViewModels
+                    .ToList()
+                    .GroupBy(t => t.TestResult.TestRunMetaData.Id)
+                    .Select(grp => new TestRunViewModel(grp.ToList()))
+                    .First();
+            }
         }
     }
 }
